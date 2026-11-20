@@ -1,6 +1,56 @@
 {
- "updated": "2026-11-20T15:58:33Z",
+ "updated": "2026-11-20T17:01:04Z",
  "items": [
+  {
+   "field": "space",
+   "title": "حفل توزيع جوائز ناسا الشرفية يكرّم الموظفين في مركز ستينيس الفضائي",
+   "summary": "تم تكريم الموظفين المساهمين في مهمة ناسا في مركز ستينيس الفضائي التابع للوكالة بالقرب من باي سانت لويس، ميسيسيبي، خلال حفل توزيع جوائز الشرف للمركز في 18 نوفمبر. وقدمت الجوائز كريستين باول، مديرة مركز ستينيس التابع لناسا، و...",
+   "url": "https://www.nasa.gov/centers-and-facilities/stennis/honor-awards-ceremony-at-stennis/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "NASA Honor Awards Ceremony Recognizes Employees at Stennis Space Center"
+  },
+  {
+   "field": "space",
+   "title": "تقوم المركبة الفضائية Curiosity Mars Rover التابعة لناسا بجمع العينات",
+   "summary": "تُظهر هذه الصورة المجمعة بتاريخ 16 تشرين الثاني/نوفمبر 49 حفرة حفر تم التقاطها بواسطة مركبة كيوريوسيتي المريخية التابعة لناسا اعتبارًا من تشرين الثاني/نوفمبر 2026. وتمثل كل حفرة عينة تم جمعها من الصخور الموجودة على سطح المريخ؛ يقوم مثقاب كيوريوسيتي، الموجود في نهاية ذراعه الآلية، بإسقاط الصخور المسحوقة ...",
+   "url": "https://www.nasa.gov/image-article/nasas-curiosity-mars-rover-collects-samples/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "NASA’s Curiosity Mars Rover Collects Samples"
+  },
+  {
+   "field": "physics",
+   "title": "تحاكي الإكسيتونات الضوء في مادة رقيقة الذرة، مما يؤكد التنبؤ الكمي القديم",
+   "summary": "من خلال الجمع بين مهاراتهم في النظرية والتجربة، لاحظ باحثو جامعة ييل لأول مرة نوعًا من الجسيمات المركبة الحاملة للطاقة تتحرك بطريقة غير متوقعة إلى حد كبير. إنه اكتشاف يمكن أن يؤدي إلى تقدم في تقنيات الكم، والطاقة الشمسية، ...",
+   "url": "https://phys.org/news/2026-11-excitons-mimic-atom-thin-material.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "Excitons mimic light in atom-thin material, confirming decade-old quantum prediction"
+  },
+  {
+   "field": "space",
+   "title": "يتتبع الباحثون أوضاع النبض المتغيرة في نجم δ Scuti KIC 4737720",
+   "summary": "قد تبدو النجوم في سماء الليل هادئة وغير متغيرة، لكن بعضها في الواقع \"يهتز\" باستمرار. مثلما يمكن للآلة الموسيقية أن تصدر عدة نغمات في وقت واحد، يمكن للنجم أن ينبض في عدة أوضاع في وقت واحد. من خلال قياس التغيرات الدقيقة في النجم...",
+   "url": "https://phys.org/news/2026-11-shifting-pulsation-modes-scuti-star.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "Researchers trace shifting pulsation modes in δ Scuti star KIC 4737720"
+  },
+  {
+   "field": "space",
+   "title": "تكشف الظروف الشبيهة بالزهرة كيف يمكن للمعادن أن تحافظ على آثار المياه القديمة",
+   "summary": "يعد كوكب الزهرة أحد أكثر البيئات قسوة في نظامنا الشمسي، حيث تكون درجات حرارة سطحه مرتفعة بما يكفي لإذابة الرصاص، كما أن الضغط الجوي أكبر بما يقرب من 100 مرة من ضغط الأرض. ومع ذلك، فإن سطحه قد يحتفظ بأدلة تشير إلى وقت كان الكوكب يبدو فيه كثيرًا...",
+   "url": "https://phys.org/news/2026-11-venus-conditions-reveal-minerals-ancient.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "Venus-like conditions reveal how minerals could preserve traces of ancient water"
+  },
   {
    "field": "space",
    "url": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
@@ -299,18 +349,6 @@
    "date": "2026-11-18"
   },
   {
-   "field": "space",
-   "url": "https://www.sciencedaily.com/releases/2026/11/261117033920.htm",
-   "source": "ScienceDaily",
-   "date": "2026-11-17",
-   "title": "مراوح تكسر حاجز الصوت في هواء المريخ: ناسا تمهّد لجيل جديد من المروحيات",
-   "summary": "في حجرة تحاكي غلاف المريخ الرقيق، دارت شفرات تجريبية حتى تجاوزت أطرافها سرعة الصوت دون أن تتحطّم، فارتفعت قوة الرفع الممكنة ٣٠٪.",
-   "orig": "NASA pushes Mars helicopter blades beyond the speed of sound",
-   "lang": "ar",
-   "slug": "mars-supersonic-rotor",
-   "cover": "assets/img/news/mars-supersonic-rotor.jpg"
-  },
-  {
    "field": "chemistry",
    "url": "https://www.sciencedaily.com/releases/2026/11/261117033909.htm",
    "source": "ScienceDaily",
@@ -343,6 +381,18 @@
    "summary": "قبل أكثر من ٣٠٠ مليون سنة، وقبل وقت طويل من ظهور الديناصورات على الأرض، كانت منطقة شيكاغو عبارة عن منطقة رطبة ومستنقعية تعج بمخلوقات غريبة. والآن، تمكن علماء في متحف فيلد من تحديد نوع غير معروف سابقًا من البرمائيات القديمة…",
    "orig": "This strange creature lived 309 million years ago, long before the dinosaurs",
    "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261117033920.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-17",
+   "title": "مراوح تكسر حاجز الصوت في هواء المريخ: ناسا تمهّد لجيل جديد من المروحيات",
+   "summary": "في حجرة تحاكي غلاف المريخ الرقيق، دارت شفرات تجريبية حتى تجاوزت أطرافها سرعة الصوت دون أن تتحطّم، فارتفعت قوة الرفع الممكنة ٣٠٪.",
+   "orig": "NASA pushes Mars helicopter blades beyond the speed of sound",
+   "lang": "ar",
+   "slug": "mars-supersonic-rotor",
+   "cover": "assets/img/news/mars-supersonic-rotor.jpg"
   },
   {
    "field": "space",
@@ -499,6 +549,16 @@
    "date": "2026-11-14"
   },
   {
+   "field": "tech",
+   "title": "عيوب صغيرة في الماس يمكن أن تطلق العنان لثورة في الحوسبة الكمومية",
+   "summary": "اكتشف العلماء طريقة أسرع لتحديد المواد المعتمدة على الماس والتي يمكنها تشغيل أجهزة الكمبيوتر وأجهزة الاستشعار الكمومية في درجة حرارة الغرفة. وقد كشف هذا الاختراق بالفعل عن وحدات بناء كمومية جديدة واعدة يمكن أن تساعد في إطلاق العنان للحوسبة...",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261111005855.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-13",
+   "orig": "Tiny flaws in diamonds could unlock a quantum computing revolution"
+  },
+  {
    "field": "space",
    "title": "عاصفة شمسية هائلة… وغلاف الأرض ربما ضاعفها",
    "summary": "قياسات الأقمار الصناعية تشير إلى أن غلاف الأرض الجوي ضخّم عاصفة مايو ٢٠٢٤.",
@@ -542,6 +602,36 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261108233054.htm",
    "source": "ScienceDaily",
    "date": "2026-11-09"
+  },
+  {
+   "field": "math",
+   "title": "يمكن لتيار فائق صغير أن يفتح المعلومات الكمومية دون تدميرها",
+   "summary": "اقترح الباحثون تقنية متقدمة لقراءة المعلومات الكمومية دون تدمير الحالات الدقيقة التي تجعل أجهزة الكمبيوتر الكمومية تعمل. ومن خلال الكشف عن إشارة كهربائية يولدها الكيوبت نفسه، حققت طريقتهم ما يصل إلى 99.85%...",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261102202831.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-05",
+   "orig": "A tiny supercurrent could unlock quantum information without destroying it"
+  },
+  {
+   "field": "math",
+   "title": "اكتشف الفيزيائيون خاصية \"مذهلة\" للضوء تتحدى التوقعات",
+   "summary": "اكتشف العلماء قدرة خفية مذهلة للضوء تسمح له بتطوير سلوك الدوران والالتواء أثناء انتقاله عبر الفضاء الفارغ، دون عدسات خاصة أو مرايا أو مواد. اكتشف الباحثون أن الهندسة الداخلية للضوء يمكن أن...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-10-13",
+   "orig": "Physicists discover “astonishing” property of light that defies expectations"
+  },
+  {
+   "field": "math",
+   "title": "يعيد العلماء إنشاء تأثير كمي غريب يوقف برودة الجسيمات",
+   "summary": "أعاد فيزيائيو أكسفورد إنشاء تأثير كمي غريب يستجيب فيه الجسيم لمجال مغناطيسي دون المرور عبره على الإطلاق. وباستخدام حاسوب كمي هجين، أوضحوا كيف أن إدخال محاكاة التدفق المغناطيسي يمكن أن يوقف تماما...",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261011211554.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-10-13",
+   "orig": "Scientists recreate a bizarre quantum effect that stops a particle cold"
   }
  ]
 }
