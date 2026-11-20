@@ -1,0 +1,39 @@
+<!doctype html><html dir="ltr"><head><meta charset="utf-8"><style>
+@font-face{font-family:A;src:url(../../assets/fonts/Amiri-Bold.woff2)}
+@font-face{font-family:P;src:url(../../assets/fonts/IBMPlexSansArabic-Regular.woff2);font-weight:400}
+@font-face{font-family:P;src:url(../../assets/fonts/IBMPlexSansArabic-SemiBold.woff2);font-weight:600}
+@font-face{font-family:P;src:url(../../assets/fonts/IBMPlexSansArabic-Bold.woff2);font-weight:700}
+html,body{margin:0;overflow:hidden}body{direction:rtl;width:1240px;height:1754px;position:relative;overflow:hidden;background:radial-gradient(900px 700px at 80% 15%,rgba(74,100,176,.35),transparent 60%),radial-gradient(700px 600px at 0% 100%,rgba(62,156,130,.22),transparent 60%),#04060c;color:#eef0f5;font-family:P}
+#st{position:absolute;inset:0}
+.planet{position:absolute;width:1050px;height:1050px;border-radius:50%;left:-470px;top:640px;background:url(../../assets/img/planet/day.jpg) 35% 50%/auto 100%;box-shadow:0 0 120px 10px rgba(80,130,255,.35)}
+.planet::after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(100deg,transparent 35%,rgba(2,4,10,.6) 62%,rgba(2,4,10,.97) 82%),radial-gradient(circle at 40% 45%,transparent 55%,rgba(0,0,0,.6) 72%)}
+.ring{position:absolute;left:-640px;top:960px;width:1500px;height:420px;border-radius:50%;border:2px solid rgba(233,185,73,.45);transform:rotate(-14deg)}
+.moon{position:absolute;left:600px;top:1300px;width:26px;height:26px;border-radius:50%;background:#F2C230;box-shadow:0 0 30px 10px rgba(242,194,48,.55)}
+.top{z-index:3;position:absolute;top:70px;right:80px;left:80px;display:flex;justify-content:space-between;align-items:center;font-size:24px;color:#b8bfcc}
+.top img{height:80px}
+.brand{display:flex;gap:16px;align-items:center}
+.brand b{display:block;font-size:26px;color:#eef0f5}
+.brand small{color:#E9B949;letter-spacing:6px;font-size:16px}
+h1{z-index:3;position:absolute;top:190px;right:72px;margin:0;font-family:A;font-size:300px;line-height:1;background:linear-gradient(180deg,#fff 20%,#c9cfdb);-webkit-background-clip:text;color:transparent}
+.tag{z-index:3;position:absolute;top:520px;right:84px;font-size:34px;color:#E9B949;font-weight:600}
+.rule{position:absolute;top:585px;right:84px;width:120px;height:4px;background:#3E9C82;box-shadow:0 0 14px #3E9C82}
+.heads{z-index:3;position:absolute;top:640px;right:84px;width:560px;display:grid;gap:26px}
+.h{border-right:4px solid var(--c);padding-right:20px}
+.h span{display:block;font-size:20px;color:var(--c);font-weight:600}
+.h b{display:block;font-family:A;font-size:40px;line-height:1.35}
+.bottom{z-index:3;position:absolute;bottom:60px;right:80px;left:80px;display:flex;justify-content:space-between;align-items:end;font-size:24px;color:#b8bfcc}
+.issue{font-family:A;font-size:44px;color:#eef0f5}
+.free{border:2px solid rgba(200,80,90,.8);color:#f0a0a7;padding:8px 22px;border-radius:999px;font-weight:600}
+</style></head><body><canvas id="st" width="1240" height="1754"></canvas>
+<div class="ring"></div><div class="planet"></div><div class="moon"></div>
+<div class="top"><div class="brand"><img src="../../assets/img/emblem.svg"><div><b>مؤسسة إرتوفيا الخيرية</b><small>ACF</small></div></div><div>مجلة أسبوعية للعلم والفكر</div></div>
+<h1>المدار</h1><div class="tag">ما يدور في عالم العلم هذا الأسبوع</div><div class="rule"></div>
+<div class="heads">
+ <div class="h" style="--c:#6f8cff"><span>ملف العدد</span><b>«هيرا» تصل إلى الكويكب الذي صدمته البشرية</b></div>
+ <div class="h" style="--c:#9b7bff"><span>فيزياء</span><b>ما الذي يعيق الموصلات الفائقة في حرارة الغرفة؟</b></div>
+ <div class="h" style="--c:#E9B949"><span>تجربة الأسبوع</span><b>اصنع حجرة ابن الهيثم المظلمة في بيتك</b></div>
+ <div class="h" style="--c:#3fb8a6"><span>ألغاز وفعاليات</span><b>ثلاثة ألغاز، وموعد مع شهب التوأميات</b></div>
+</div>
+<div class="bottom"><div><div class="issue">العدد ١</div>الجمعة ١٠ جمادى الآخرة ١٤٤٨هـ · ٢٠ نوفمبر ٢٠٢٦م</div><div class="free">إصدار خيري مجاني، لا يُباع ولا يُشترى</div></div>
+<script>const c=document.getElementById('st').getContext('2d');let s=7;const r=()=>(s=(s*16807)%2147483647)/2147483647;for(let i=0;i<900;i++){const a=r();c.fillStyle=`rgba(255,255,255,${.15+a*.7})`;c.beginPath();c.arc(r()*1240,r()*1754,r()*1.6+.2,0,7);c.fill()}</script>
+</body></html>

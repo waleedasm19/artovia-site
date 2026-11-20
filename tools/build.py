@@ -1,0 +1,93 @@
+#!/usr/bin/env python3
+"""يبني صفحات الموقع الثابتة من tools/pages/*.html بإضافة الترويسة والشريط والتذييل الموحّدة.
+كل قالب يبدأ بسطر تعليق JSON:  <!--{"title":"...","desc":"...","nav":"library","scripts":["library.js"]}-->
+التشغيل: python3 tools/build.py   (يكتب الصفحات في جذر الموقع)
+"""
+import json, os, re, glob
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SITE = "مؤسسة إرتوفيا الخيرية"
+NAV = [("index", "الرئيسية", "./"), ("library", "المكتبة", "library.html"), ("magazine", "مجلة المدار", "magazine.html"),
+       ("rawaq", "الرواق", "rawaq.html"), ("news", "الأخبار العلمية", "news.html"), ("about", "عن المؤسسة", "about.html")]
+
+ICONS = {
+ "moon": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>',
+ "gear": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+ "user": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',
+ "mail": '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
+ "menu": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>',
+ "pause": '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>',
+}
+
+def header(nav):
+    links = "".join(f'<li><a href="{h}"{" aria-current=\"page\"" if k == nav else ""}>{t}</a></li>' for k, t, h in NAV)
+    return f'''<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+<div class="nebula" aria-hidden="true"></div><canvas id="stars" aria-hidden="true"></canvas>
+<header class="site-header"><div class="wrap nav">
+ <a class="brand" href="./" aria-label="{SITE}، الصفحة الرئيسية"><img src="assets/img/emblem.svg" alt="" width="46" height="38"><span><b>{SITE}</b><small>ACF</small></span></a>
+ <ul class="nav-links" id="nav-links">{links}</ul>
+ <div class="nav-tools">
+  <button class="icon-btn theme-btn" type="button" aria-label="تبديل المظهر الليلي والنهاري">{ICONS["moon"]}</button>
+  <a class="icon-btn" href="settings.html" aria-label="الإعدادات"{" aria-current=\"page\"" if nav == "settings" else ""}>{ICONS["gear"]}</a>
+  <a class="icon-btn account-btn" href="account.html" aria-label="تسجيل الدخول" data-icon='{ICONS["user"]}'>{ICONS["user"]}</a>
+  <button class="icon-btn menu-btn" type="button" aria-label="القائمة" aria-controls="nav-links" aria-expanded="false">{ICONS["menu"]}</button>
+ </div></div></header>
+<div class="ticker" role="region" aria-label="آخر أخبار العلم والتقنية">
+ <a class="ticker-label" href="news.html"><span class="dot"></span>العلم الآن</a>
+ <div class="ticker-viewport"><div class="ticker-track"><span class="ticker-item">جارٍ تحميل آخر الأخبار…</span></div></div>
+ <button class="ticker-pause" type="button" aria-label="إيقاف الشريط">{ICONS["pause"]}</button>
+</div>'''
+
+FOOTER = f'''<footer class="site-footer"><div class="wrap">
+ <div class="foot-grid">
+  <div class="foot-brand"><a class="brand" href="./"><img src="assets/img/emblem.svg" alt="" width="46" height="38"><span><b>{SITE}</b><small>ACF · Artovia Charitable Foundation</small></span></a>
+   <p>منصة عربية للعلم والمعرفة: نؤلّف الكتب العلمية ونترجمها ونراجعها، وننشرها مجانًا لكل قارئ.</p>
+   <span class="free-seal">إصدار خيري مجاني، لا يُباع ولا يُشترى</span></div>
+  <div><h4>المنصة</h4><ul><li><a href="library.html">المكتبة</a></li><li><a href="magazine.html">مجلة المدار</a></li><li><a href="rawaq.html">الرواق</a></li><li><a href="news.html">الأخبار العلمية</a></li><li><a href="account.html">حسابي</a></li><li><a href="settings.html">الإعدادات</a></li></ul></div>
+  <div><h4>الحقوق</h4><ul><li><a href="rights.html">حقوق النشر والترخيص</a></li><li><a href="terms.html">شروط الاستخدام</a></li><li><a href="privacy.html">سياسة الخصوصية</a></li></ul></div>
+  <div><h4>تواصل معنا</h4><ul><li><a href="mailto:artoviacentr@gmail.com" class="mail-link">{ICONS["mail"]}<span class="en">artoviacentr@gmail.com</span></a></li><li><a href="about.html">عن المؤسسة</a></li><li class="insta" hidden><a href="#" target="_blank" rel="noopener">إنستغرام</a></li></ul></div>
+ </div>
+ <div class="foot-bottom"><span>© <span class="yr">٢٠٢٦</span> {SITE} (ACF). جميع الحقوق محفوظة وفق <a href="rights.html" style="text-decoration:underline">شروط الترخيص</a>.</span><span>صُنع بعناية للقارئ العربي</span></div>
+</div></footer>'''
+
+def build():
+    out = []
+    for path in sorted(glob.glob(os.path.join(ROOT, "tools", "pages", "*.html"))):
+        src = open(path, encoding="utf-8").read()
+        m = re.match(r"<!--(\{.*?\})-->\s*", src, re.S)
+        meta = json.loads(m.group(1)); body = src[m.end():]
+        name = os.path.basename(path)
+        title = meta["title"] if name == "index.html" else f'{meta["title"]} | {SITE}'
+        scripts = ('<script src="assets/vendor/supabase.js" defer></script><script src="assets/js/config.js" defer></script>'
+                   '<script src="assets/js/auth.js" defer></script><script src="assets/js/site.js" defer></script>') + "".join(
+            f'<script {"type=\"module\"" if s.endswith(".mjs") or s == "hero.js" else "defer"} src="assets/js/{s}"></script>' for s in meta.get("scripts", []))
+        html = f'''<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{title}</title>
+<meta name="description" content="{meta["desc"]}">
+<meta name="theme-color" content="#04060c">
+<meta property="og:title" content="{title}"><meta property="og:description" content="{meta["desc"]}">
+<meta property="og:type" content="website"><meta property="og:locale" content="ar_AR"><meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preload" href="assets/fonts/Amiri-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/IBMPlexSansArabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<script>try{{var s=JSON.parse(localStorage.getItem("acf-settings")||"{{}}");if(s.theme)document.documentElement.dataset.theme=s.theme;if(s.fontsize)document.documentElement.dataset.fontsize=s.fontsize}}catch(e){{}}</script>
+{scripts}
+</head>
+<body class="page-{name[:-5]}">
+{header(meta.get("nav", ""))}
+<main id="main">
+{body.strip()}
+</main>
+{FOOTER}
+</body>
+</html>
+'''
+        open(os.path.join(ROOT, name), "w", encoding="utf-8").write(html); out.append(name)
+    print("built:", " ".join(out))
+
+if __name__ == "__main__":
+    build()

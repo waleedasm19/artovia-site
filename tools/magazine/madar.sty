@@ -1,0 +1,72 @@
+% مجلة المدار — قالب مشترك لكل الأعداد (XeLaTeX)
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{madar}
+\RequirePackage[a4paper,top=26mm,bottom=24mm,inner=20mm,outer=20mm,headheight=14mm,headsep=8mm]{geometry}
+\RequirePackage{fontspec}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{qrcode}
+\RequirePackage{fancyhdr}
+\RequirePackage{multicol}
+\RequirePackage{enumitem}
+\RequirePackage{eso-pic}
+\RequirePackage{polyglossia}
+\setmainlanguage[numerals=western]{arabic}
+\setotherlanguage{english}
+\newcommand{\fp}{../fonts/}
+\setmainfont{Amiri}[Path=\fp,UprightFont=*-Regular,BoldFont=*-Bold,Extension=.ttf,Script=Arabic,Scale=1.05]
+\newfontfamily\arabicfont{Amiri}[Path=\fp,UprightFont=*-Regular,BoldFont=*-Bold,Extension=.ttf,Script=Arabic,Scale=1.05]
+\newfontfamily\sansfont{IBMPlexSansArabic}[Path=\fp,UprightFont=*-Regular,BoldFont=*-Bold,Extension=.ttf,Script=Arabic]
+\newfontfamily\arabicfontsf{IBMPlexSansArabic}[Path=\fp,UprightFont=*-Regular,BoldFont=*-Bold,Extension=.ttf,Script=Arabic]
+\newfontfamily\englishfont{IBMPlexSans}[Path=\fp,UprightFont=*-Regular,BoldFont=*-Bold,Extension=.ttf]
+\linespread{1.25}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+
+\definecolor{night}{HTML}{0A1020}\definecolor{ink}{HTML}{2B2218}\definecolor{muted}{HTML}{7B6A58}
+\definecolor{gold}{HTML}{C9952E}\definecolor{goldL}{HTML}{E9B949}\definecolor{teal}{HTML}{3E9C82}
+\definecolor{red}{HTML}{C8505A}\definecolor{blue}{HTML}{4A64B0}\definecolor{cream}{HTML}{FDFBF6}\definecolor{paper}{HTML}{F6F1E6}
+\color{ink}
+
+% ترويسة: شريط ليلي باسم المجلة والقسم
+\newcommand{\madarsection}{}
+\newcommand{\Section}[2][blue]{\renewcommand{\madarsection}{#2}\def\madarcolor{#1}%
+  \begin{tikzpicture}[remember picture,overlay]
+   \fill[#1] ([yshift=-14mm]current page.north west) rectangle ([yshift=-15.2mm]current page.north east);
+  \end{tikzpicture}%
+  {\sansfont\bfseries\color{#1}\large #2}\par\vspace{-2pt}}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\color{white}\sansfont\small\raisebox{4mm}{\textbf{المدار}\quad·\quad\madarissue}}
+\fancyhead[L]{\color{goldL}\sansfont\small\raisebox{4mm}{مؤسسة إرتوفيا الخيرية}}
+\fancyfoot[C]{\sansfont\small\color{muted}\textarabic[numerals=mashriq]{\thepage}}
+\fancyfoot[R]{\sansfont\scriptsize\color{muted}إصدار خيري مجاني، لا يُباع ولا يُشترى}
+\fancyfoot[L]{\sansfont\scriptsize\color{muted}\textenglish{artoviacentr@gmail.com}}
+\AddToShipoutPictureBG{\ifnum\value{page}>1\begin{tikzpicture}[remember picture,overlay]\fill[night] (current page.north west) rectangle ([yshift=-14mm]current page.north east);\end{tikzpicture}\fi}
+
+\newcommand{\Title}[1]{{\fontsize{30}{40}\selectfont\bfseries #1\par}\vspace{2pt}}
+\newcommand{\Deck}[1]{{\sansfont\large\color{muted}#1\par}\vspace{6pt}}
+
+% خبر مع رمز QR للمصدر
+\newtcolorbox{newsbox}[1][blue]{enhanced,breakable,colback=white,colframe=#1!60,boxrule=0.6pt,arc=3mm,left=4mm,right=4mm,top=3mm,bottom=3mm,
+  borderline west={3pt}{0pt}{#1},before skip=8pt,after skip=8pt}
+\newcommand{\News}[6][blue]{% [color]{field}{title}{text}{source}{url}
+  \begin{newsbox}[#1]
+  \begin{minipage}[t]{\dimexpr\linewidth-26mm}
+   {\sansfont\small\bfseries\color{#1}#2}\par
+   {\Large\bfseries #3\par}\vspace{2pt}
+   #4\par
+   {\sansfont\footnotesize\color{muted}المصدر: \textenglish{#5}}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{22mm}\centering\vspace{2mm}
+   \textenglish{\qrcode[height=20mm]{#6}}\par{\sansfont\scriptsize\color{muted}امسح للمصدر}
+  \end{minipage}
+  \end{newsbox}}
+
+\newtcolorbox{feature}[1][]{enhanced,breakable,colback=paper,colframe=gold!70,boxrule=0.6pt,arc=3mm,left=6mm,right=6mm,top=4mm,bottom=4mm,#1}
+\newtcolorbox{quotebox}{enhanced,colback=night,colupper=white,colframe=goldL,boxrule=0.8pt,arc=4mm,left=10mm,right=10mm,top=8mm,bottom=8mm,halign=center}
+\newtcolorbox{puzzle}[1]{enhanced,colback=white,colframe=teal!70,boxrule=0.6pt,arc=3mm,left=5mm,right=5mm,
+  title={\sansfont\bfseries #1},coltitle=white,colbacktitle=teal,fonttitle=\sansfont}
+\newtcolorbox{event}[1]{enhanced,colback=white,colframe=blue!60,boxrule=0.6pt,arc=3mm,left=5mm,right=5mm,
+  title={\sansfont\bfseries #1},coltitle=white,colbacktitle=blue}
+\newtcolorbox{safety}{enhanced,colback=red!6,colframe=red!70,boxrule=0.6pt,arc=3mm,left=5mm,right=5mm,title={\sansfont\bfseries تنبيه سلامة},colbacktitle=red,coltitle=white}

@@ -1,0 +1,11 @@
+[
+ {"id":"space","name":"الفضاء والفلك","en":"Space","color":"#6f8cff"},
+ {"id":"physics","name":"الفيزياء","en":"Physics","color":"#9b7bff"},
+ {"id":"chemistry","name":"الكيمياء","en":"Chemistry","color":"#e8a34a"},
+ {"id":"biology","name":"علوم الحياة","en":"Biology","color":"#5fc28a"},
+ {"id":"health","name":"الطب والصحة","en":"Health","color":"#e0646f"},
+ {"id":"earth","name":"الأرض والمناخ","en":"Earth & Climate","color":"#3fb8a6"},
+ {"id":"tech","name":"التقنية والذكاء الاصطناعي","en":"Technology","color":"#4fb3e8"},
+ {"id":"engineering","name":"الهندسة والصناعة","en":"Engineering","color":"#E9B949"},
+ {"id":"math","name":"الرياضيات والحوسبة","en":"Mathematics","color":"#c58be0"}
+]

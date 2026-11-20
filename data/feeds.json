@@ -1,0 +1,22 @@
+{
+ "_note":"مصادر الأخبار. lang=ar تُعرض كما هي، وlang=en تُترجم آليًا إن وُجد مفتاح DeepL. أضف أو احذف مصدرًا بتعديل هذا الملف فقط.",
+ "feeds":[
+  {"url":"https://feeds.bbci.co.uk/arabic/science-and-tech/rss.xml","source":"بي بي سي عربي","lang":"ar","field":"auto"},
+  {"url":"https://www.nasa.gov/news-release/feed/","source":"NASA","lang":"en","field":"space"},
+  {"url":"https://www.esa.int/rssfeed/Our_Activities/Space_Science","source":"ESA","lang":"en","field":"space"},
+  {"url":"https://www.sciencedaily.com/rss/space_time.xml","source":"ScienceDaily","lang":"en","field":"space"},
+  {"url":"https://www.sciencedaily.com/rss/matter_energy/physics.xml","source":"ScienceDaily","lang":"en","field":"physics"},
+  {"url":"https://phys.org/rss-feed/physics-news/","source":"Phys.org","lang":"en","field":"physics"},
+  {"url":"https://www.sciencedaily.com/rss/matter_energy/chemistry.xml","source":"ScienceDaily","lang":"en","field":"chemistry"},
+  {"url":"https://www.sciencedaily.com/rss/plants_animals.xml","source":"ScienceDaily","lang":"en","field":"biology"},
+  {"url":"https://www.sciencedaily.com/rss/health_medicine.xml","source":"ScienceDaily","lang":"en","field":"health"},
+  {"url":"https://www.sciencedaily.com/rss/earth_climate.xml","source":"ScienceDaily","lang":"en","field":"earth"},
+  {"url":"https://www.technologyreview.com/feed/","source":"MIT Technology Review","lang":"en","field":"tech"},
+  {"url":"https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml","source":"ScienceDaily","lang":"en","field":"tech"},
+  {"url":"https://www.sciencedaily.com/rss/matter_energy/engineering.xml","source":"ScienceDaily","lang":"en","field":"engineering"},
+  {"url":"https://www.sciencedaily.com/rss/computers_math/mathematics.xml","source":"ScienceDaily","lang":"en","field":"math"}
+ ],
+ "per_feed":6,
+ "keep":240,
+ "blocked_words":["wine","beer","alcohol","casino","gambling","dating"]
+}

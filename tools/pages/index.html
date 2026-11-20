@@ -1,0 +1,98 @@
+<!--{"title":"مؤسسة إرتوفيا الخيرية | منصة عربية للعلم والمعرفة","desc":"مؤسسة إرتوفيا الخيرية (ACF): كتب علمية عربية مؤلَّفة ومترجمة تُنشر مجانًا، وأخبار العلم والتقنية لحظة بلحظة.","nav":"index","scripts":["hero.js","fields-icons.js","home.js","showcase.js"]}-->
+<section class="hero" aria-labelledby="hero-title">
+ <canvas id="globe" aria-label="كوكب المعرفة: كرة ثلاثية الأبعاد يمكن تدويرها بالسحب" role="img"></canvas>
+ <div class="hero-fallback" aria-hidden="true"></div>
+ <div class="planet-label" aria-hidden="true">كوكب المعرفة · اسحب لتدويره</div>
+ <div class="wrap hero-inner">
+  <div class="hero-copy reveal">
+   <span class="eyebrow">ARTOVIA CHARITABLE FOUNDATION</span>
+   <h1 id="hero-title">المعرفة<br><em>بلغتنا</em></h1>
+   <div class="hero-rule"></div>
+   <p class="lead">منصة عربية مفتوحة للعلم: نؤلّف الكتب العلمية ونترجمها ونراجعها بعناية، ثم نضعها بين يديك مجانًا. ومعها نافذة يومية على أحدث ما توصّل إليه العلم والتقنية.</p>
+   <div class="hero-actions">
+    <a class="btn btn-primary" href="library.html">تصفّح المكتبة
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+    <a class="btn btn-ghost" href="news.html">أخبار العلم اليوم</a>
+   </div>
+  </div>
+ </div>
+ <div class="hero-meta"><div class="wrap"><div class="scroll-cue"><span></span>مرّر لتكتشف</div><div>إصدارات خيرية مجانية · لا تُباع ولا تُشترى</div></div></div>
+</section>
+
+<section class="section" style="padding-top:40px">
+ <div class="wrap">
+  <div class="stats reveal">
+   <div class="stat"><b data-count="2">٢</b><span>كتابان في المكتبة حتى الآن</span></div>
+   <div class="stat"><b data-count="16">١٦</b><span>فصلًا في «أساسيات الإلكترونيات»</span></div>
+   <div class="stat"><b data-count="9">٩</b><span>مجالات علمية في الأخبار</span></div>
+   <div class="stat"><b>مجانًا</b><span>كل إصداراتنا، لا تُباع ولا تُشترى</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" aria-labelledby="screen-title" style="padding-top:20px">
+ <div class="wrap">
+  <div class="section-head reveal"><div><span class="kicker">شاشة الأسبوع</span><h2 id="screen-title">ثلاث لقطات تستحق التأمل</h2><p>حقيقة وحكمة ومعلومة، في مقاطع متحركة تتجدّد كل يوم جمعة.</p></div></div>
+  <div class="screen reveal" id="showcase"><canvas aria-hidden="true"></canvas><div class="screen-text" aria-live="polite"></div>
+   <div class="screen-ui"><button class="screen-play" type="button" aria-label="إيقاف مؤقت"></button><div class="screen-dots"></div></div></div>
+ </div>
+</section>
+
+<section class="section" aria-labelledby="lib-title">
+ <div class="wrap">
+  <div class="section-head reveal">
+   <div><span class="kicker">المكتبة</span><h2 id="lib-title">كتب تُكتب لتُفهم</h2><p>كل كتاب يمرّ بالتأليف أو الترجمة، ثم المراجعة العلمية واللغوية، ثم التحرير والإخراج. رسوم أصلية، وأمثلة محلولة، ومسائل متدرّجة.</p></div>
+   <a class="link-arrow" href="library.html">كل الكتب <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+  </div>
+  <div class="books" id="home-books"></div>
+ </div>
+</section>
+
+<hr class="divider">
+
+<section class="section" aria-labelledby="fields-title">
+ <div class="wrap">
+  <div class="section-head reveal"><div><span class="kicker">آفاق المعرفة</span><h2 id="fields-title">تسعة مجالات، نافذة واحدة</h2><p>نتابع كل يوم أحدث ما ينشره العلماء ووكالات الفضاء والمختبرات، ونصنّفه لتصل إلى ما يهمّك بسرعة.</p></div></div>
+  <div class="fields" id="fields"></div>
+ </div>
+</section>
+
+<section class="section" aria-labelledby="news-title" style="padding-top:0">
+ <div class="wrap">
+  <div class="section-head reveal">
+   <div><span class="kicker">العلم الآن</span><h2 id="news-title">أحدث الاكتشافات</h2><p class="updated" id="home-updated"></p></div>
+   <a class="link-arrow" href="news.html">كل الأخبار <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+  </div>
+  <div class="news-grid" id="home-news"></div>
+ </div>
+</section>
+
+<section class="section" aria-labelledby="mission-title">
+ <div class="wrap mission">
+  <div class="emblem-stage reveal" aria-hidden="true"><div class="orbit"><i></i></div><div class="orbit"><i></i></div><img src="assets/img/emblem.svg" alt=""></div>
+  <div class="reveal" data-delay="1">
+   <span class="kicker">رسالتنا</span>
+   <h2 id="mission-title" style="font-size:clamp(1.9rem,3.6vw,2.8rem)">أن يجد كل قارئ عربي كتابًا علميًّا يحترم عقله</h2>
+   <p style="color:var(--ink-2)">مؤسسة إرتوفيا الخيرية مؤسسة غير ربحية، تؤلّف الكتب العلمية والتقنية بالعربية وتترجمها وتراجعها وتحرّرها على نفقتها، ثم تنشرها مجانًا. نؤمن أن العلم يُفهم أعمق حين يُقرأ باللغة التي نفكّر بها.</p>
+   <div class="values">
+    <div class="value" style="--c:var(--gold)"><b>الدقّة أولًا</b><span>مراجعة علمية ولغوية لكل صفحة قبل نشرها.</span></div>
+    <div class="value" style="--c:var(--teal)"><b>الفهم قبل الحفظ</b><span>تجربة، ثم تفسير، ثم تطبيق.</span></div>
+    <div class="value" style="--c:var(--red)"><b>مجانية دائمًا</b><span>إصداراتنا لا تُباع ولا تُشترى.</span></div>
+    <div class="value" style="--c:var(--blue)"><b>أصالة الإنتاج</b><span>رسوم أصلية ونصوص مكتوبة لا منقولة.</span></div>
+   </div>
+   <p style="margin-top:26px"><a class="link-arrow" href="about.html">تعرّف على المؤسسة <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a></p>
+  </div>
+ </div>
+</section>
+
+<section class="section" style="padding-top:0">
+ <div class="wrap">
+  <div class="band reveal">
+   <div class="tri-strip" aria-hidden="true"><i style="--c:var(--teal)"></i><i style="--c:var(--gold)"></i><i style="--c:var(--red)"></i><i style="--c:var(--blue)"></i><i style="--c:var(--teal)"></i><i style="--c:var(--gold)"></i></div>
+   <span class="kicker">إصدار خيري مجاني</span>
+   <h2>اقرأ، وشارك النسخة كما هي، وانشر الفائدة</h2>
+   <p>يحقّ لك تنزيل كتبنا وقراءتها وطباعتها لنفسك، ومشاركتها مع غيرك مجانًا دون تعديل. أما البيع أو التعديل أو الترجمة فتحتاج إذنًا مكتوبًا من المؤسسة.</p>
+   <div class="hero-actions" style="margin-top:22px"><a class="btn btn-primary" href="library.html">ابدأ القراءة</a><a class="btn btn-ghost" href="rights.html">تفاصيل الترخيص</a></div>
+  </div>
+ </div>
+</section>
