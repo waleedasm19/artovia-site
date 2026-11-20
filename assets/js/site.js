@@ -132,10 +132,11 @@
     const t = $(".ticker-track"); if (!t) return;
     try {
       const [news, F] = await Promise.all([getJSON("data/news.json"), fieldsP]);
+      news.items = news.items.filter((i) => i.slug);
       const pref = store.get().fields;
       let items = news.items.filter((i) => !pref.length || pref.includes(i.field)).slice(0, 18);
       if (!items.length) items = news.items.slice(0, 18);
-      const html = items.map((i) => { const f = F[i.field] || {}; return `<a class="ticker-item" href="${esc(i.url)}" target="_blank" rel="noopener"><span class="tag" style="color:${f.color || "var(--accent)"}">${esc(f.name || "")}</span>${esc(i.title)}</a>`; }).join("");
+      const html = items.map((i) => { const f = F[i.field] || {}; return `<a class="ticker-item" href="article.html?id=${esc(i.slug)}"><span class="tag" style="color:${f.color || "var(--accent)"}">${esc(f.name || "")}</span>${esc(i.title)}</a>`; }).join("");
       t.innerHTML = html + html.replace(/<a /g, '<a aria-hidden="true" tabindex="-1" ');
       requestAnimationFrame(() => t.style.setProperty("--dur", Math.max(60, t.scrollWidth / 2 / 55) + "s"));
     } catch { t.innerHTML = '<span class="ticker-item">تعذّر تحميل الأخبار الآن</span>'; }
@@ -162,11 +163,12 @@
   }
   function newsCard(i, F, feature = false) {
     const f = F[i.field] || {};
-    return `<a class="news-card reveal${feature ? " news-feature" : ""}" href="${esc(i.url)}" target="_blank" rel="noopener" style="--c:${f.color}">
+    return `<a class="news-card reveal${feature ? " news-feature" : ""}${i.cover ? " has-cover" : ""}" href="article.html?id=${esc(i.slug)}" style="--c:${f.color}">
+      ${i.cover ? `<div class="cover"><img src="${esc(i.cover)}" alt="" loading="lazy" width="1600" height="900"></div>` : ""}
       <div class="top"><span class="chip">${esc(f.name || i.field)}</span><time datetime="${esc(i.date)}">${ago(i.date)}</time></div>
-      <h3>${esc(i.title)}</h3>${i.orig ? `<div class="orig" lang="en">${esc(i.orig)}</div>` : ""}
+      <h3>${esc(i.title)}</h3>
       ${i.summary ? `<p>${esc(i.summary)}</p>` : ""}
-      <div class="src"><span>المصدر: ${esc(i.source)}${i.orig ? " · اقرأه بلغته الأصلية" : ""}</span>${ICON.ext}</div></a>`;
+      <div class="src"><span>اقرأ المقال كاملًا</span>${ICON.arrow || ""}</div></a>`;
   }
 
   window.ACF = { $, $$, store, apply, getJSON, fieldsP, arNum, arDate, ago, esc, toast, observe, tilt, bookCard, newsCard, ICON, BASE };

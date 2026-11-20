@@ -2,6 +2,7 @@
 (async () => {
   const { $, $$, getJSON, fieldsP, newsCard, observe, arDate, arNum, esc, store } = window.ACF;
   const [news, F] = await Promise.all([getJSON("data/news.json").catch(() => ({ items: [], updated: "" })), fieldsP]);
+  news.items = news.items.filter((i) => i.slug);
   const params = new URLSearchParams(location.search);
   let field = params.get("field") || "all", q = "", shown = 13;
   if (news.updated) $("#news-updated").textContent = "آخر تحديث: " + arDate(news.updated.slice(0, 10));
