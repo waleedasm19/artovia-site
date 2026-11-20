@@ -2,6 +2,146 @@
  "updated": "2026-11-20T15:55:20Z",
  "items": [
   {
+   "field": "space",
+   "url": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
+   "source": "NASA",
+   "date": "2026-11-20",
+   "title": "عواصف جنوب غرب المحيط الهادئ من الفضاء",
+   "summary": "أطلق الإعصار الاستوائي «كزافييه» موسم العواصف في الحوض بقوة.",
+   "orig": "The Stormy Southwest Pacific",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261119194605.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-20",
+   "title": "قد يكون هناك نجمان ضخمان يغذيان سرًّا الثقب الأسود فائق الكتلة في مجرة درب التبانة",
+   "summary": "تتبّع علماء الفلك أصل السحب الغازية الغامضة الموجودة بالقرب من الثقب الأسود فائق الكتلة في مركز مجرة درب التبانة، ووجدوا أنها تنبع من زوج من النجوم الضخمة التي يبدو أن تصادم رياحها يؤدي إلى تكوين كتل كثيفة من المادة. وقد تغذي هذه السحب الثقب الأسود في نهاية المطاف، مما يكشف عن...",
+   "orig": "Two massive stars may be secretly feeding the Milky Way’s supermassive black hole",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261119194525.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-20",
+   "title": "العلماء يحولون غبار القمر إلى مكعبات تشبه مكعبات «ليغو» من أجل القواعد القمرية المستقبلية",
+   "summary": "اكتشف العلماء طريقة لطباعة غبار القمر ثلاثي الأبعاد على شكل مكعبات تشبه مكعبات «ليغو»، مما يفتح الباب أمام إمكانية بناء قواعد قمرية باستخدام المواد الموجودة بالفعل على سطح القمر. ولا تزال هذه المكعبات التجريبية بحاجة إلى تعزيز متانتها، لكن هذه التكنولوجيا قد تغير الطريقة التي...",
+   "orig": "Scientists turn Moon dust into LEGO-like bricks for future lunar bases",
+   "lang": "ar"
+  },
+  {
+   "field": "physics",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261119194530.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-20",
+   "title": "تمكن علماء «سيرن» أخيرًا من العثور على دليل على اضمحلال جسيم نادر للغاية، لدرجة أن اكتشافه استغرق ٤٠ عامًا",
+   "summary": "توصل العلماء في منظمة CERN إلى أول دليل على اضمحلال جسيم نادر للغاية بعد أكثر من ٤٠ عامًا من البحث، حيث رصدوا عملية يُتوقع أن تحدث مرة واحدة فقط لكل ١٠ مليارات جسيم من جسيمات «بيوتي». وقد يساعد هذا الاكتشاف الفيزيائيين على استكشاف...",
+   "orig": "CERN scientists finally find evidence of a particle decay so rare it took 40 years to detect",
+   "lang": "ar"
+  },
+  {
+   "field": "physics",
+   "url": "https://phys.org/news/2026-11-critical-temperature-superconductors.html",
+   "source": "Phys.org",
+   "date": "2026-11-20",
+   "title": "نموذج جديد يتنبأ بدرجة الحرارة الحرجة للموصلات الفائقة",
+   "summary": "تم اكتشاف ظاهرة التوصيل الفائق — وهي القدرة على توصيل التيار دون أي مقاومة — في مواد تتراوح بين المعادن والأكاسيد. وتفسر نظرية باردين-كوبر-شريفر (BCS) التقليدية ظاهرة التوصيل الفائق في المعادن عند درجات الحرارة المنخفضة تفسيرًا جيدًا، لكنها تواجه صعوبة في تفسير…",
+   "orig": "New model predicts critical temperature of superconductors",
+   "lang": "ar"
+  },
+  {
+   "field": "physics",
+   "url": "https://phys.org/news/2026-11-spiraling-quantum-motion-diamond-sensors.html",
+   "source": "Phys.org",
+   "date": "2026-11-20",
+   "title": "اللفّ المغزلي الحلزوني يمنح مستشعرات الماس حركة كمومية منسّقة",
+   "summary": "يوجد داخل الشبكة البلورية للماس عيوب صغيرة تُسمى مراكز «فراغ النيتروجين» (NV)، حيث توجد ذرة نيتروجين بجانب فراغ كان من المفترض أن توجد فيه ذرة كربون. وبسبب دوراناتها الكمومية، تتصرف الإلكترونات المحبوسة في هذه العيوب كأنها...",
+   "orig": "Spiraling spins bring coordinated quantum motion to diamond sensors",
+   "lang": "ar"
+  },
+  {
+   "field": "physics",
+   "url": "https://phys.org/news/2026-11-dimensions.html",
+   "source": "Phys.org",
+   "date": "2026-11-20",
+   "title": "بناء أنظمة الضوء المُهيكَل في ثلاثة أبعاد",
+   "summary": "أصبح الضوء المنظم أداةً مهمة في مجال البصريات الحديثة. ومن خلال تشكيل خصائص مثل السعة والطور والاستقطاب والوضع المكاني، يمكن للباحثين إنشاء حقول ضوئية تتمتع بقدرات تفوق تلك التي تتمتع بها أشعة الليزر التقليدية. وهذه الحقول المصممة هندسيًّا…",
+   "orig": "Building structured-light systems in three dimensions",
+   "lang": "ar"
+  },
+  {
+   "field": "biology",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261118065531.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-20",
+   "title": "طفل يبلغ عمره ٣ ملايين سنة جعل للتو مسار تطور البشرية أكثر تعقيدًا بكثير",
+   "summary": "تشير دراسة رائدة أجريت على حفرية «طفل تاونغ» التي يبلغ عمرها ٣ ملايين سنة إلى أن العديد من أسلاف البشر القدامى، الذين كان يُعتقد في السابق أنهم ينتمون إلى نفس النوع، قد يمثلون في الواقع فروعًا مختلفة من شجرة عائلتنا التطورية. ويشكل هذا الاكتشاف تحديًا لـ...",
+   "orig": "A 3-million-year-old child just made human evolution far more complicated",
+   "lang": "ar"
+  },
+  {
+   "field": "health",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261120070904.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-20",
+   "title": "حمية الكيتو تقلل الدهون في الكبد بنسبة ٦٧% في غضون ٤ أشهر فقط",
+   "summary": "أظهرت تجربة سريرية جديدة أن النظام الغذائي الكيتوني تفوق بشكل كبير على النظام الغذائي المتوسطي والنظام الغذائي قليل الدهون في تقليل الدهون في الكبد وتحسين الصحة الأيضية، حتى عندما فقد المشاركون كميات مماثلة من الوزن. وبعد أربعة إلى خمسة أشهر فقط، حوالي…",
+   "orig": "Keto diet slashes liver fat by 67% in just 4 months",
+   "lang": "ar"
+  },
+  {
+   "field": "health",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261119194601.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-20",
+   "title": "من أجل صحة نفسية أفضل، قد يكون تواتر ممارسة الرياضة أكثر أهمية من شدتها",
+   "summary": "أظهرت دراسة شملت أكثر من ١٠,٠٠٠ طالب جامعي أن ممارسة التمارين الرياضية بانتظام قد تكون أكثر أهمية للصحة النفسية من إجهاد النفس بتمارين مكثفة أو مطولة. وكان الطلاب الذين يمارسون التمارين الرياضية بوتيرة أقل أكثر عرضة للإصابة بالاكتئاب…",
+   "orig": "For better mental health, how often you exercise may matter more than how hard",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://phys.org/news/2026-11-viscosity-lavas-reveal-key-mars.html",
+   "source": "Phys.org",
+   "date": "2026-11-20",
+   "title": "تكشف الحمم البركانية منخفضة اللزوجة عن مفتاح لفهم ماضي المريخ",
+   "summary": "منذ عام ٢٠٢١، تجوب المركبة «بيرسيفيرانس» فوهة جيزيرو، حيث تجمع معلومات عن جيولوجيا الكوكب الأحمر وتلميحات عن ماضيه. وخلال رحلتها، التقطت المركبة صورًا مقربة لتشكيل «سييتاه»، وهو طبقة يبلغ عمرها حوالي ٤ مليارات سنة من…",
+   "orig": "Low-viscosity lavas reveal a key to Mars's past",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://phys.org/news/2026-11-star-gasps-alma-reveals-giant.html",
+   "source": "Phys.org",
+   "date": "2026-11-20",
+   "title": "الأنفاس الأخيرة لنجم: تكتشف «ألمّا» حلقة غازية عملاقة وشكلًا يشبه الساعة الرملية في مرحلة التكوين حول نجم يمر بمرحلة انتقالية",
+   "summary": "النجوم مثل شمسنا لا تموت بهدوء. ففي مرحلتها الأخيرة، تتضخم لتصبح عمالقة حمراء، وتلقي بطبقاتها الخارجية في الفضاء، وتترك وراءها سحابة غازية متوهجة، غالبًا ما تكون ذات شكل مذهل، تُعرف باسم «السديم الكوكبي». ويُعتقد أن هذا التحول لا يستغرق سوى…",
+   "orig": "A star's last gasps: ALMA reveals a giant gas ring and budding hourglass around a star in transition",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://phys.org/news/2026-11-astronomers-reveal-oceanic-europa-sodium.html",
+   "source": "Phys.org",
+   "date": "2026-11-20",
+   "title": "يكشف علماء الفلك عن الأصل المحيطي لسحابة الصوديوم الموجودة حول أوروبا",
+   "summary": "يُعد قمر كوكب المشتري «أوروبا» عالماً يثير الفضول العلمي، حيث يُعتقد أن محيطاً عالمياً يكمن تحت قشرته الجليدية. والآن، تكشف الملاحظات التي أجراها مرصد «دبليو. إم. كيك» في ماوناكي، بجزيرة هاواي، عن أمر غير متوقع: سحابة ضخمة ومتناثرة من الصوديوم…",
+   "orig": "Astronomers reveal the oceanic origin of Europa's sodium cloud",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://phys.org/news/2026-11-dark-energy-laws-particle-physics.html",
+   "source": "Phys.org",
+   "date": "2026-11-20",
+   "title": "قد تنشأ الطاقة المظلمة من القوانين المعروفة في فيزياء الجسيمات",
+   "summary": "على مدى ما يقرب من ثلاثة عقود، كافح العلماء لتفسير أحد أكثر ألغاز الكون إثارةً للجدل: كيف أن عنصرًا يُعرف باسم «الطاقة المظلمة» هو الذي يدفع التمدد المتسارع للكون.",
+   "orig": "Dark energy may originate from known laws of particle physics",
+   "lang": "ar"
+  },
+  {
    "field": "health",
    "title": "مركّب تجريبي يحرق الدهون دون أن يُضعف العضلات",
    "summary": "فريق من جامعة كاليفورنيا في بيركلي يعلن مركّبًا رفع حرق الطاقة لدى الفئران بدل أن يكبح الشهية.",
@@ -56,6 +196,76 @@
    "date": "2026-11-19"
   },
   {
+   "field": "space",
+   "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/challenge-public-input-on-life-and-the-world-in-2075/",
+   "source": "NASA",
+   "date": "2026-11-19",
+   "title": "التحدي: آراء الجمهور حول الحياة والعالم في عام ٢٠٧٥",
+   "summary": "تقوم مبادرة «الأدوات والتقنيات التحويلية» (TTT) التابعة لوكالة ناسا بجمع آراء الجمهور حول الحياة في الوقت الحاضر وكيف قد يتغير العالم بحلول عام ٢٠٧٥. ويطلب هذا التحدي تقديم أفكار مفاهيمية حول الحياة في عام ٢٠٧٥ في أربعة مواضيع محددة. وينبغي أن تستكشف الأفكار كيف سيكون المستقبل…",
+   "orig": "Challenge: Public Input on Life and the World in 2075",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://science.nasa.gov/open-science/fermi-data-pulsar-discovery/",
+   "source": "NASA",
+   "date": "2026-11-19",
+   "title": "البيانات العلمية لوكالة ناسا تدعم طريقة جديدة لاكتشاف النجوم النابضة التي يصعب العثور عليها",
+   "summary": "ساعدت البيانات المفتوحة المستمدة من بعثة «فيرمي» التابعة لوكالة ناسا فريقًا دوليًا من العلماء على تطوير طريقة لاكتشاف النجوم النابضة بسرعة تفوق السرعة السابقة بحوالي مليون مرة.",
+   "orig": "NASA Science Data Powers New Method to Discover Hard-to-Find Pulsars",
+   "lang": "ar"
+  },
+  {
+   "field": "physics",
+   "url": "https://phys.org/news/2026-11-pac-capsules-gobble-particles-turbulent.html",
+   "source": "Phys.org",
+   "date": "2026-11-19",
+   "title": "تُعد كبسولات «باك مان» التي تلتهم الجسيمات في المياه المضطربة واعدةً في مجالي الترشيح وتوصيل الأدوية",
+   "summary": "ابتكر العلماء كبسولات مجوفة ذات فتحة واحدة قادرة على تصفية الجسيمات بشكل انتقائي بفضل الاضطرابات المائية في المياه المحيطة — حيث تقوم أحيانًا بابتلاع الجسيمات كما يفعل «باك مان» عندما يلتهم النقاط.",
+   "orig": "'PAC-MAN' capsules that gobble up particles in turbulent water show promise for filtration and drug delivery",
+   "lang": "ar"
+  },
+  {
+   "field": "biology",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261118065512.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-19",
+   "title": "هناك كائن غريب يعيش تحت جلد خنازير أعماق البحار",
+   "summary": "اكتشف العلماء بكتيريا غريبة تختبئ تحت جلد كائنات تعيش في أعماق البحار تُعرف باسم «خنازير البحر»، مما كشف عن شراكة بيولوجية غير متوقعة. تتميز هذه الميكروبة بجينوم صغير بشكل غير عادي، ومع ذلك فإن أكثر من ربع حمضها النووي مخصص لتكوين…",
+   "orig": "Something strange is living beneath the skin of deep-sea pigs",
+   "lang": "ar"
+  },
+  {
+   "field": "tech",
+   "url": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
+   "source": "MIT Technology Review",
+   "date": "2026-11-19",
+   "title": "تم الحفاظ على كبد بشري حيًا خارج الجسم لمدة سبعة أسابيع، وهو رقم قياسي",
+   "summary": "يدعي باحثون في أستراليا أنهم تمكنوا من إبقاء كبد بشري على قيد الحياة، بمساعدة أجهزة الإنعاش، خارج الجسم لمدة سبعة أسابيع، مما يفتح آفاقًا جديدة محتملة في مجال الهندسة الطبية الحيوية. وقد تم تحقيق هذا الإنجاز، الذي لم تُنشر تفاصيله بعد، في سيدني…",
+   "orig": "A human liver has been kept alive outside the body for a record seven weeks",
+   "lang": "ar"
+  },
+  {
+   "field": "tech",
+   "url": "https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/",
+   "source": "MIT Technology Review",
+   "date": "2026-11-19",
+   "title": "ماذا تكشف صفقة بقيمة مليار دولار عن سوق البطاريات في الولايات المتحدة",
+   "summary": "بعد بضع سنوات صعبة شهدت بعض الإخفاقات البارزة، هناك بعض الأخبار الإيجابية بشأن بطاريات الجيل القادم في الولايات المتحدة. فقد وقعت شركة «سيلا» للتو اتفاقية مع شركة «باناسونيك إنيرجي»، وهي شركة عالمية متخصصة في تصنيع البطاريات، لتوريد مادة الأنود المصنوعة من السيليكون والكربون،…",
+   "orig": "What a billion-dollar deal says about the US battery market",
+   "lang": "ar"
+  },
+  {
+   "field": "biology",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261117033914.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-19",
+   "title": "لغز «ستونهنج» البالغ وزنه ستة أطنان يزداد غموضًا مع تضييق العلماء نطاق بحثهم",
+   "summary": "كشفت دراسة جديدة واسعة النطاق حول «حجر المذبح» الغامض في ستونهنج، الذي يزن ستة أطنان، عن أدلة جديدة، في الوقت الذي استبعدت فيه عدة مصادر محتملة. فبعد أن كان يُعتقد في السابق أن هذا اللوح الضخم المصنوع من الحجر الرملي قد جاء من ويلز، يُعتقد الآن أنه قد جاء من...",
+   "orig": "Stonehenge’s six-ton mystery deepens as scientists narrow their search",
+   "lang": "ar"
+  },
+  {
    "field": "physics",
    "title": "اكتشاف جديد يكشف ما قد يعيق الموصلات الفائقة في درجة حرارة الغرفة",
    "summary": "الإلكترونات قد تشكّل أزواجًا مستقرة في درجات أعلى مما كان معروفًا، ما يعني أن عائقًا آخر يمنع الموصلية الفائقة.",
@@ -81,6 +291,46 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261117033911.htm",
    "source": "ScienceDaily",
    "date": "2026-11-18"
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261117033920.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-18",
+   "title": "ناسا تدفع شفرات مروحية المريخ إلى ما يتجاوز سرعة الصوت",
+   "summary": "نجحت وكالة ناسا في اختبار شفرات دوارة لطائرة هليكوبتر مخصصة للمريخ بسرعات تفوق سرعة الصوت، مما أدى إلى زيادة قوة الرفع المحتملة بنسبة ٣٠% وتخطي عقبة رئيسية أمام تطوير طائرات أكثر قوة على الكوكب الأحمر. وقد يتيح هذا الإنجاز للجيل القادم من طائرات الهليكوبتر حمل…",
+   "orig": "NASA pushes Mars helicopter blades beyond the speed of sound",
+   "lang": "ar"
+  },
+  {
+   "field": "chemistry",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261117033909.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-18",
+   "title": "ابتكر العلماء بطارية جديدة قابلة لإعادة الشحن ومذهلة باستخدام فيتامين ب١٢",
+   "summary": "اكتشف العلماء استخدامًا جديدًا ومفاجئًا لفيتامين ب١٢، حيث طوروا بطارية قابلة لإعادة الشحن تستخدم هذا العنصر الغذائي الأساسي للمساعدة في توليد الكهرباء وتخزينها. وقد صمد النموذج الأولي لما يصل إلى ٢٥٠ دورة شحن، وقد يفتح الباب أمام بطاريات أكثر أمانًا وأرخص ثمناً،…",
+   "orig": "Scientists create a remarkable new rechargeable battery using vitamin B12",
+   "lang": "ar"
+  },
+  {
+   "field": "earth",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261116023403.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-18",
+   "title": "تلاشى أكثر من مليار سنة من تاريخ الأرض. وقد يكون العلماء قد توصلوا أخيرًا إلى السبب",
+   "summary": "ربما يكون العلماء قد توصلوا أخيرًا إلى تفسير لسبب فقدان ما يصل إلى أكثر من مليار سنة من التاريخ الجيولوجي للأرض في الصخور الموجودة في أنحاء العالم. تشير أبحاث جديدة إلى أن تيارات قوية في أعماق الكوكب قامت برفع وخفض قارات بأكملها ببطء،…",
+   "orig": "More than a billion years of Earth's history vanished. Scientists may finally know why",
+   "lang": "ar"
+  },
+  {
+   "field": "biology",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261117033928.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-18",
+   "title": "عاش هذا المخلوق الغريب قبل ٣٠٩ ملايين سنة، أي قبل ظهور الديناصورات بفترة طويلة",
+   "summary": "قبل أكثر من ٣٠٠ مليون سنة، وقبل وقت طويل من ظهور الديناصورات على الأرض، كانت منطقة شيكاغو عبارة عن منطقة رطبة ومستنقعية تعج بمخلوقات غريبة. والآن، تمكن علماء في متحف فيلد من تحديد نوع غير معروف سابقًا من البرمائيات القديمة…",
+   "orig": "This strange creature lived 309 million years ago, long before the dinosaurs",
+   "lang": "ar"
   },
   {
    "field": "space",
@@ -119,6 +369,46 @@
    "date": "2026-11-17"
   },
   {
+   "field": "physics",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261115085554.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-17",
+   "title": "مادة لا يتجاوز سمكها ذرة واحدة تكشف عن سر كمي غريب",
+   "summary": "اكتشف باحثون في جامعة أوساكا حالة كمومية لافتة تتشكل على الحدود الفاصلة بين مادة بسماكة ذرة واحدة ومعدن. وقد لاحظوا أن الإلكترونات تتصرف كما لو كانت ثقيلة بشكل غير معتاد، بما في ذلك حالة لم يسبق رؤيتها من قبل…",
+   "orig": "A material just one atom thick reveals a strange quantum secret",
+   "lang": "ar"
+  },
+  {
+   "field": "chemistry",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261116023405.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-17",
+   "title": "قد تساهم هذه المادة الجديدة الرائعة في حل مشكلة رئيسية تتعلق باحتجاز الكربون",
+   "summary": "طور العلماء مادة جديدة لالتقاط الكربون تحول الرطوبة من عائق إلى ميزة، مما قد يحل مشكلة كبيرة تتعلق بإزالة ثاني أكسيد الكربون من الانبعاثات الصناعية. تعمل هذه المادة حتى في الظروف شديدة الرطوبة ويمكنها…",
+   "orig": "This remarkable new material could solve a major carbon capture problem",
+   "lang": "ar"
+  },
+  {
+   "field": "tech",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261116014725.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-17",
+   "title": "تتبع العلماء الأطفال لمدة ٨ سنوات. وكانت النتائج التي توصلوا إليها بشأن وقت استخدام الشاشات مفاجئة",
+   "summary": "كشفت دراسة فنلندية مفاجئة أن الأطفال الذين يقضون وقتًا أطول أمام الشاشات يميلون إلى التمتع بقدرات معالجة معرفية أفضل في مرحلة المراهقة، مما يتحدى الافتراض القائل بأن قضاء الوقت أمام الشاشات ضار دائمًا. ويشير الباحثون إلى أن ما يفعله الأطفال على…",
+   "orig": "Scientists tracked kids for 8 years. What they found about screen time was surprising",
+   "lang": "ar"
+  },
+  {
+   "field": "tech",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261115085557.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-17",
+   "title": "أصبحت الحواسيب الكمومية أقوى من أن يمكن التحقق منها. والعلماء لديهم حل لهذا الأمر",
+   "summary": "طور العلماء طريقة جديدة لتحديد مدى موثوقية المحاكاة الكمومية، مما يحل مشكلة متزايدة في ظل تزايد قوة الحواسيب الكمومية إلى درجة تجعل من الصعب على الحواسيب التقليدية التحقق منها. وقد تم عرض هذه التقنية على نظام مكون من ٥١ كيوبت، وهي تقيس…",
+   "orig": "Quantum computers are getting too powerful to check. Scientists have a solution",
+   "lang": "ar"
+  },
+  {
    "field": "space",
    "title": "ناسا تعرض مليون دولار لأفكار جريئة لبناء قاعدة على القمر",
    "summary": "مسابقة «قاعدة القمر» للطلاب تبحث عن حلول للطاقة وسلامة رواد الفضاء في موقع قمري دائم.",
@@ -135,6 +425,46 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261116023351.htm",
    "source": "ScienceDaily",
    "date": "2026-11-16"
+  },
+  {
+   "field": "physics",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261114202232.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-16",
+   "title": "الفيزيائيون يفاجئون الجميع بالتحكم في القلب المغناطيسي لذرة واحدة",
+   "summary": "اكتشف العلماء بشكل غير متوقع طريقة للتحكم في الدوران المغناطيسي داخل نواة ذرة واحدة باستخدام الموجات الراديوية، مما قلب الافتراضات السابقة حول سلوك الذرات. وقد يمهد هذا الاكتشاف الطريق لإنشاء ذاكرة كمومية أكثر موثوقية، على الرغم من أن…",
+   "orig": "Physicists defy expectations by controlling the magnetic heart of a single atom",
+   "lang": "ar"
+  },
+  {
+   "field": "chemistry",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261115085549.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-16",
+   "title": "قد يكمن سر بناء قواعد على سطح القمر في بطانيات الطوارئ",
+   "summary": "نجح العلماء في تحويل البلاستيك الرقيق المستخدم في بطانيات الطوارئ إلى مادة عازلة تتمتع بقوة ملحوظة، يمكن أن تساعد رواد الفضاء على تحمل درجات الحرارة القاسية على سطح القمر. وتتكون هذه المادة من مئات الطبقات المتراكبة، وهي قادرة على تحمل ضغطًا هائلاً دون…",
+   "orig": "The secret to building Moon bases may be hiding in emergency blankets",
+   "lang": "ar"
+  },
+  {
+   "field": "physics",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261112230500.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-15",
+   "title": "يستخدم الفيزيائيون ضوء الليزر لإطلاق العنان للقدرات الكهربائية الكامنة في البلورة",
+   "summary": "اكتشف العلماء كيفية استخدام ومضات ضوء الليزر لتنظيم مناطق كهربائية دقيقة داخل البلورة، مما أدى إلى حل لغز استمر لعقود حول كيفية تصرف هذه المادة. ويستمر هذا الترتيب الناتج عن الليزر لمدة تريليون جزء من الثانية فقط، لكن...",
+   "orig": "Physicists use laser light to unlock a crystal's hidden electrical powers",
+   "lang": "ar"
+  },
+  {
+   "field": "tech",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261112230456.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-15",
+   "title": "يكتشف الذكاء الاصطناعي إشارة قلبية خفية قد تساعد في التنبؤ بالموت المفاجئ",
+   "summary": "اكتشف العلماء علامة تحذيرية خفية في الفحوصات الروتينية للقلب يمكنها التنبؤ بالموت القلبي المفاجئ قبل حدوثه. وقد تفوق هذا الاكتشاف، المدعوم بالذكاء الاصطناعي، على طرق الفحص التقليدية، مما قد يكشف عن آلاف الأشخاص المعرضين لخطر...",
+   "orig": "AI discovers a hidden heart signal that could predict sudden death",
+   "lang": "ar"
   },
   {
    "field": "space",
