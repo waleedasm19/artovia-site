@@ -1,6 +1,26 @@
 {
- "updated": "2026-11-20T17:01:04Z",
+ "updated": "2026-11-20T17:46:28Z",
  "items": [
+  {
+   "field": "physics",
+   "title": "تشرح النظرية كيف تدخل بلازما الاندماج في حالة من حبس الطاقة المحسنة، مما يحل لغزًا دام 40 عامًا",
+   "summary": "يعد الاندماج النووي بمصدر للطاقة من خلال الجمع بين النوى الذرية الخفيفة، وهي نفس العملية التي تزود الشمس بالطاقة. لتحقيق الاندماج على الأرض، يجب على العلماء تسخين الغاز إلى درجات حرارة قصوى، مما يخلق حالة مشحونة من المادة تسمى البلازما. الحفاظ على هذا…",
+   "url": "https://phys.org/news/2026-11-theory-fusion-plasmas-state-energy.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "Theory explains how fusion plasmas enter a state of improved energy confinement, solving a 40-year puzzle"
+  },
+  {
+   "field": "space",
+   "title": "هناك طريقة جديدة لاستخراج الأكسجين من التربة القمرية يمكن أن تدعم القواعد الموجودة على القمر",
+   "summary": "يبدو أن صناعة شرائح الكمبيوتر واستكشاف القمر هما عالمان مختلفان تمامًا. ومع ذلك، تشير أحدث أبحاثنا إلى أن الاثنين قد يكونان مرتبطين بشكل أوثق مما كان متوقعا.",
+   "url": "https://phys.org/news/2026-11-oxygen-lunar-soil-bases-moon.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "A new way to extract oxygen from lunar soil could support bases on the moon"
+  },
   {
    "field": "space",
    "title": "حفل توزيع جوائز ناسا الشرفية يكرّم الموظفين في مركز ستينيس الفضائي",
