@@ -1,22 +1,174 @@
 {
- "_note":"مصادر الأخبار. lang=ar تُعرض كما هي، وlang=en تُترجم آليًا إن وُجد مفتاح DeepL. أضف أو احذف مصدرًا بتعديل هذا الملف فقط.",
- "feeds":[
-  {"url":"https://feeds.bbci.co.uk/arabic/science-and-tech/rss.xml","source":"بي بي سي عربي","lang":"ar","field":"auto"},
-  {"url":"https://www.nasa.gov/news-release/feed/","source":"NASA","lang":"en","field":"space"},
-  {"url":"https://www.esa.int/rssfeed/Our_Activities/Space_Science","source":"ESA","lang":"en","field":"space"},
-  {"url":"https://www.sciencedaily.com/rss/space_time.xml","source":"ScienceDaily","lang":"en","field":"space"},
-  {"url":"https://www.sciencedaily.com/rss/matter_energy/physics.xml","source":"ScienceDaily","lang":"en","field":"physics"},
-  {"url":"https://phys.org/rss-feed/physics-news/","source":"Phys.org","lang":"en","field":"physics"},
-  {"url":"https://www.sciencedaily.com/rss/matter_energy/chemistry.xml","source":"ScienceDaily","lang":"en","field":"chemistry"},
-  {"url":"https://www.sciencedaily.com/rss/plants_animals.xml","source":"ScienceDaily","lang":"en","field":"biology"},
-  {"url":"https://www.sciencedaily.com/rss/health_medicine.xml","source":"ScienceDaily","lang":"en","field":"health"},
-  {"url":"https://www.sciencedaily.com/rss/earth_climate.xml","source":"ScienceDaily","lang":"en","field":"earth"},
-  {"url":"https://www.technologyreview.com/feed/","source":"MIT Technology Review","lang":"en","field":"tech"},
-  {"url":"https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml","source":"ScienceDaily","lang":"en","field":"tech"},
-  {"url":"https://www.sciencedaily.com/rss/matter_energy/engineering.xml","source":"ScienceDaily","lang":"en","field":"engineering"},
-  {"url":"https://www.sciencedaily.com/rss/computers_math/mathematics.xml","source":"ScienceDaily","lang":"en","field":"math"}
+ "_note": "مصادر الأخبار: علمية وتقنية فقط. كل خبر إنجليزي يُترجم إلى العربية (DeepL إن وُجد المفتاح، وإلا ترجمة Google الآلية)، وما تعذّرت ترجمته لا يُنشر. أي خبر يحوي كلمة من blocked_words يُستبعد.",
+ "feeds": [
+  {
+   "url": "https://www.nasa.gov/news-release/feed/",
+   "source": "NASA",
+   "lang": "en",
+   "field": "space"
+  },
+  {
+   "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+   "source": "ESA",
+   "lang": "en",
+   "field": "space"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/space_time.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "space"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/matter_energy/physics.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "physics"
+  },
+  {
+   "url": "https://phys.org/rss-feed/physics-news/",
+   "source": "Phys.org",
+   "lang": "en",
+   "field": "physics"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/matter_energy/chemistry.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "chemistry"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/plants_animals.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "biology"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/health_medicine.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "health"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/earth_climate.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "earth"
+  },
+  {
+   "url": "https://www.technologyreview.com/feed/",
+   "source": "MIT Technology Review",
+   "lang": "en",
+   "field": "tech"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "tech"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/matter_energy/engineering.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "engineering"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/computers_math/mathematics.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "math"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/fossils_ruins.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "biology"
+  },
+  {
+   "url": "https://www.sciencedaily.com/rss/computers_math.xml",
+   "source": "ScienceDaily",
+   "lang": "en",
+   "field": "tech"
+  },
+  {
+   "url": "https://phys.org/rss-feed/space-news/",
+   "source": "Phys.org",
+   "lang": "en",
+   "field": "space"
+  }
  ],
- "per_feed":6,
- "keep":240,
- "blocked_words":["wine","beer","alcohol","casino","gambling","dating"]
+ "per_feed": 6,
+ "keep": 240,
+ "blocked_words": [
+  "wine",
+  "beer",
+  "alcohol",
+  "casino",
+  "gambling",
+  "dating",
+  "sex",
+  "war",
+  "wars",
+  "warfare",
+  "military",
+  "army",
+  "troops",
+  "missile strike",
+  "airstrike",
+  "bomb",
+  "bombing",
+  "weapon",
+  "weapons",
+  "nuclear weapon",
+  "drone strike",
+  "terror",
+  "hamas",
+  "israel",
+  "gaza",
+  "ukraine",
+  "russia's invasion",
+  "pentagon",
+  "defense department",
+  "election",
+  "elections",
+  "president",
+  "trump",
+  "biden",
+  "congress",
+  "senate",
+  "parliament",
+  "politic",
+  "political",
+  "politics",
+  "government shutdown",
+  "tariff",
+  "tariffs",
+  "sanction",
+  "sanctions",
+  "protest",
+  "immigration",
+  "the download",
+  "hype index",
+  "حرب",
+  "الحرب",
+  "حروب",
+  "عسكري",
+  "قصف",
+  "غارة",
+  "صاروخ باليستي",
+  "هجوم",
+  "مقتل",
+  "قتلى",
+  "انتخابات",
+  "رئيس الوزراء",
+  "الرئيس",
+  "سياسي",
+  "سياسة",
+  "حكومة",
+  "برلمان",
+  "الحوثي",
+  "التحالف",
+  "ترامب"
+ ]
 }

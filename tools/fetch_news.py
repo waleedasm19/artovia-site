@@ -2,8 +2,9 @@
 """يجمع أخبار العلوم والتقنية من خلاصات RSS/Atom في data/feeds.json ويكتب data/news.json.
 
 - مكتبة بايثون القياسية فقط (لا تثبيت).
-- إن وُجد متغير البيئة DEEPL_API_KEY تُترجم العناوين والملخصات الإنجليزية إلى العربية،
-  ويُحفظ العنوان الأصلي في الحقل orig. بدونه تُعرض بلغتها الأصلية مع وسم المصدر.
+- تُترجم العناوين والملخصات الإنجليزية إلى العربية: عبر DeepL إن وُجد DEEPL_API_KEY،
+  وإلا عبر ترجمة Google الآلية. يُحفظ العنوان الأصلي في orig، والخبر الذي تتعذّر ترجمته لا يُنشر.
+- يُستبعد ما يتعلق بالسياسة والحروب (blocked_words في feeds.json).
 - يدمج الجديد مع القديم، ويحذف المكرر بالرابط، ويحتفظ بأحدث `keep` خبر.
 التشغيل:  python3 tools/fetch_news.py
 """
@@ -77,12 +78,37 @@ def deepl(texts):
     with urllib.request.urlopen(req, timeout=60) as r:
         return [t["text"] for t in json.load(r)["translations"]]
 
+def gtx(texts):
+    """ترجمة Google الآلية المجانية (بلا مفتاح)، نصًّا نصًّا."""
+    out = []
+    for t in texts:
+        if not t or t == "-": out.append(""); continue
+        q = urllib.parse.urlencode({"client": "gtx", "sl": "en", "tl": "ar", "dt": "t", "q": t})
+        with urllib.request.urlopen(urllib.request.Request("https://translate.googleapis.com/translate_a/single?" + q, headers=UA), timeout=30) as r:
+            d = json.load(r)
+        out.append("".join(seg[0] for seg in d[0] if seg and seg[0]).strip())
+    return out
+
+def translate(texts):
+    try:
+        r = deepl(texts)
+        if r: return r
+    except Exception as e:
+        print("warn: DeepL:", e, file=sys.stderr)
+    return gtx(texts)
+
+AR = re.compile(r"[\u0600-\u06FF]")
+
 def main():
     old = {"items": []}
     if os.path.exists(OUT):
         old = json.load(open(OUT, encoding="utf-8"))
+    blocked = re.compile(r"\b(?:" + "|".join(re.escape(w) for w in CFG.get("blocked_words", [])) + r")\b" if CFG.get("blocked_words") else "$^", re.I)
+    feeds_urls = {f["source"] for f in CFG["feeds"]} | {"Bloomberg"}
+    # تنظيف: لا نُبقي إلا ما تُرجم إلى العربية، ومن مصادر علمية حالية، وخاليًا من السياسة والحروب
+    old["items"] = [i for i in old["items"] if i.get("lang", "ar") == "ar" and AR.search(i["title"]) and i.get("source") in feeds_urls
+                    and not blocked.search(i["title"] + " " + i.get("summary", "") + " " + i.get("orig", ""))]
     seen = {i["url"] for i in old["items"]}
-    blocked = re.compile("|".join(CFG.get("blocked_words", [])) or "$^", re.I)
     fresh, errors = [], []
     for f in CFG["feeds"]:
         try:
@@ -100,15 +126,16 @@ def main():
     en = [i for i in fresh if i["lang"] == "en"]
     if en:
         try:
-            tr = deepl([i["title"] for i in en] + [i["summary"] or "-" for i in en])
-            if tr:
-                n = len(en)
-                for k, i in enumerate(en):
-                    i["orig"] = i["title"]; i["title"] = tr[k]
-                    i["summary"] = tr[n + k] if i["summary"] else ""
-                    i["lang"] = "ar"
+            tr = translate([i["title"] for i in en] + [i["summary"] or "-" for i in en])
+            n = len(en)
+            for k, i in enumerate(en):
+                if not AR.search(tr[k] or ""): continue
+                i["orig"] = i["title"]; i["title"] = tr[k]
+                i["summary"] = tr[n + k] if i["summary"] else ""
+                i["lang"] = "ar"
         except Exception as e:
-            errors.append(f"DeepL: {e}")
+            errors.append(f"translate: {e}")
+    fresh = [i for i in fresh if i["lang"] == "ar"]  # ما لم يُترجم لا يُنشر
     items = sorted(fresh + old["items"], key=lambda i: i.get("date", ""), reverse=True)[: CFG.get("keep", 240)]
     json.dump({"updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "items": items},
               open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

@@ -166,7 +166,7 @@
       <div class="top"><span class="chip">${esc(f.name || i.field)}</span><time datetime="${esc(i.date)}">${ago(i.date)}</time></div>
       <h3>${esc(i.title)}</h3>${i.orig ? `<div class="orig" lang="en">${esc(i.orig)}</div>` : ""}
       ${i.summary ? `<p>${esc(i.summary)}</p>` : ""}
-      <div class="src"><span>المصدر: ${esc(i.source)}</span>${ICON.ext}</div></a>`;
+      <div class="src"><span>المصدر: ${esc(i.source)}${i.orig ? " · اقرأه بلغته الأصلية" : ""}</span>${ICON.ext}</div></a>`;
   }
 
   window.ACF = { $, $$, store, apply, getJSON, fieldsP, arNum, arDate, ago, esc, toast, observe, tilt, bookCard, newsCard, ICON, BASE };
