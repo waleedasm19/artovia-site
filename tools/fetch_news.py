@@ -78,15 +78,34 @@ def deepl(texts):
     with urllib.request.urlopen(req, timeout=60) as r:
         return [t["text"] for t in json.load(r)["translations"]]
 
+def _gtx_one(q):
+    import time
+    body = urllib.parse.urlencode({"q": q}).encode()
+    url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ar&dt=t"
+    for attempt in range(4):
+        try:
+            req = urllib.request.Request(url, data=body, headers={**UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.load(r)
+            return "".join(seg[0] for seg in d[0] if seg and seg[0])
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 3: raise
+            time.sleep(8 * (attempt + 1))
+
 def gtx(texts):
-    """ترجمة Google الآلية المجانية (بلا مفتاح)، نصًّا نصًّا."""
-    out = []
+    """ترجمة Google الآلية المجانية (بلا مفتاح)، على دفعات قليلة لتفادي حدّ الطلبات."""
+    SEP = "\n§§\n"
+    out, batch = [], []
+    def flush():
+        if not batch: return
+        res = _gtx_one(SEP.join(batch)).split("§§")
+        if len(res) != len(batch): res = [_gtx_one(t) for t in batch]
+        out.extend(x.strip() for x in res); batch.clear()
     for t in texts:
-        if not t or t == "-": out.append(""); continue
-        q = urllib.parse.urlencode({"client": "gtx", "sl": "en", "tl": "ar", "dt": "t", "q": t})
-        with urllib.request.urlopen(urllib.request.Request("https://translate.googleapis.com/translate_a/single?" + q, headers=UA), timeout=30) as r:
-            d = json.load(r)
-        out.append("".join(seg[0] for seg in d[0] if seg and seg[0]).strip())
+        t = t if t and t != "-" else "."
+        if sum(len(x) for x in batch) + len(t) > 3500: flush()
+        batch.append(t)
+    flush()
     return out
 
 def translate(texts):
