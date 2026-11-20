@@ -15,7 +15,7 @@
         <div>
           <span class="kicker">العدد الأحدث · ${arNum(last.issue)}</span>
           <h2 style="font-size:clamp(2rem,4vw,3rem);margin:10px 0 6px">${esc(last.title)}</h2>
-          <p style="color:var(--accent);font-weight:600;font-size:.9rem;margin-bottom:14px">الجمعة ${arDate(last.date)} · ${esc(last.hijri)} · ${arNum(last.pages)} صفحات</p>
+          <p style="color:var(--accent);font-weight:600;font-size:.9rem;margin-bottom:14px">الجمعة ${arDate(last.date)} · ${esc(last.hijri)} · ${arNum(last.pages)} ${last.pages>10?'صفحة':'صفحات'}</p>
           <p style="color:var(--ink-2);font-size:1.04rem">${esc(last.summary)}</p>
           <ul class="toc-book" style="margin:18px 0 22px">${last.highlights.map((h) => `<li class="part" style="font-family:var(--sans);font-size:.96rem;padding:8px 0;border-bottom:1px dashed var(--line);border-radius:0">✦ ${esc(h)}</li>`).join("")}</ul>
           <div class="hero-actions">${btn(last, u)}</div>
