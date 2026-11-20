@@ -1,7 +1,7 @@
 # يحدّث أخبار العلوم كل ساعتين وينشر الموقع على GitHub Pages.
 name: تحديث الأخبار ونشر الموقع
 on:
-  schedule: [{ cron: "17 */2 * * *" }]
+  schedule: [{ cron: "17 */6 * * *" }]
   push: { branches: [main] }
   workflow_dispatch:
 permissions: { contents: write, pages: write, id-token: write }
@@ -20,7 +20,7 @@ jobs:
         run: |
           git config user.name "artovia-news-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/news.json
+          git add data/news.json data/news-queue.json
           git diff --cached --quiet || (git commit -m "تحديث الأخبار" && git push)
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

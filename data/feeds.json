@@ -8,12 +8,6 @@
    "field": "space"
   },
   {
-   "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
-   "source": "ESA",
-   "lang": "en",
-   "field": "space"
-  },
-  {
    "url": "https://www.sciencedaily.com/rss/space_time.xml",
    "source": "ScienceDaily",
    "lang": "en",
@@ -98,7 +92,7 @@
    "field": "space"
   }
  ],
- "per_feed": 6,
+ "per_feed": 4,
  "keep": 240,
  "blocked_words": [
   "wine",

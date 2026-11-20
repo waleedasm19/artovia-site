@@ -16,6 +16,7 @@ import xml.etree.ElementTree as ET
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, "data", "feeds.json"), encoding="utf-8"))
 OUT = os.path.join(ROOT, "data", "news.json")
+QUEUE = os.path.join(ROOT, "data", "news-queue.json")  # أخبار تنتظر الترجمة، لا تُعرض
 UA = {"User-Agent": "ArtoviaNewsBot/1.0 (+charitable science site)"}
 
 AUTO_FIELDS = [  # كلمات مفتاحية عربية لتصنيف الخلاصات العربية العامة
@@ -82,14 +83,14 @@ def _gtx_one(q):
     import time
     body = urllib.parse.urlencode({"q": q}).encode()
     url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ar&dt=t"
-    for attempt in range(4):
+    for attempt in range(2):
         try:
             req = urllib.request.Request(url, data=body, headers={**UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
             with urllib.request.urlopen(req, timeout=30) as r:
                 d = json.load(r)
             return "".join(seg[0] for seg in d[0] if seg and seg[0])
         except urllib.error.HTTPError as e:
-            if e.code != 429 or attempt == 3: raise
+            if e.code != 429 or attempt == 1: raise
             time.sleep(8 * (attempt + 1))
 
 def gtx(texts):
@@ -127,7 +128,8 @@ def main():
     # تنظيف: لا نُبقي إلا ما تُرجم إلى العربية، ومن مصادر علمية حالية، وخاليًا من السياسة والحروب
     old["items"] = [i for i in old["items"] if i.get("lang", "ar") == "ar" and AR.search(i["title"]) and i.get("source") in feeds_urls
                     and not blocked.search(i["title"] + " " + i.get("summary", "") + " " + i.get("orig", ""))]
-    seen = {i["url"] for i in old["items"]}
+    queue = json.load(open(QUEUE, encoding="utf-8")) if os.path.exists(QUEUE) else []
+    seen = {i["url"] for i in old["items"]} | {i["url"] for i in queue}
     fresh, errors = [], []
     for f in CFG["feeds"]:
         try:
@@ -154,7 +156,12 @@ def main():
                 i["lang"] = "ar"
         except Exception as e:
             errors.append(f"translate: {e}")
-    fresh = [i for i in fresh if i["lang"] == "ar"]  # ما لم يُترجم لا يُنشر
+    # ما لم يُترجم لا يُنشر: يذهب إلى طابور الترجمة (تترجمه مهمة أسبوعية/يومية ثم يُنقل إلى news.json)
+    cutoff = (datetime.now(timezone.utc).date().toordinal() - 6)
+    queue = [q for q in queue + [i for i in fresh if i["lang"] != "ar"]
+             if datetime.strptime(q["date"], "%Y-%m-%d").date().toordinal() >= cutoff][-80:]
+    json.dump(queue, open(QUEUE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    fresh = [i for i in fresh if i["lang"] == "ar"]
     items = sorted(fresh + old["items"], key=lambda i: i.get("date", ""), reverse=True)[: CFG.get("keep", 240)]
     json.dump({"updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "items": items},
               open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
