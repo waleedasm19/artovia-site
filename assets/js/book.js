@@ -8,7 +8,7 @@
   document.title = `${b.title} | مؤسسة إرتوفيا الخيرية`;
   $("#crumb").textContent = b.title;
   const f = F[b.field] || {};
-  const dl = b.pdf ? `<button class="btn btn-primary" id="dl">تنزيل الكتاب PDF ${ICON.arrow}</button>`
+  const dl = b.review ? `<span class="btn btn-ghost" aria-disabled="true" style="cursor:default">يُتاح للتنزيل بعد اعتماده رسميًا</span>` : b.pdf ? `<button class="btn btn-primary" id="dl">تنزيل الكتاب PDF ${ICON.arrow}</button>`
     : `<span class="btn btn-ghost" aria-disabled="true" style="cursor:default">${b.status === "done" ? "رابط التنزيل يُضاف قريبًا" : "يُتاح عند اكتماله"}</span>`;
   const sample = b.sample ? `<a class="btn btn-ghost" href="${esc(b.sample)}" target="_blank" rel="noopener">اقرأ عيّنة</a>` : "";
   $("#book").innerHTML = `
@@ -29,7 +29,7 @@
      <div class="fact"><span>السعر</span><b style="color:var(--teal)">مجاني</b></div>
     </div>
     <div class="hero-actions">${dl}${sample}</div>
-    ${b.pdf ? `<p style="font-size:.82rem;color:var(--ink-2);margin-top:14px" id="dl-note"></p>` : ""}
+    ${b.pdf && !b.review ? `<p style="font-size:.82rem;color:var(--ink-2);margin-top:14px" id="dl-note"></p>` : ""}
     <p style="font-size:.8rem;color:var(--ink-3);margin-top:18px">إصدار خيري مجاني من مؤسسة إرتوفيا الخيرية، لا يُباع ولا يُشترى. <a href="rights.html" style="color:var(--accent)">شروط الترخيص</a></p>
    </div>`;
   $("#book-more").innerHTML = `
@@ -41,6 +41,7 @@
    </div>`;
   observe(document);
   const A = window.ACFAuth;
+  if (b.review) { const n = document.createElement("p"); n.style.cssText = "font-size:.84rem;color:var(--ink-2);margin-top:14px"; n.textContent = "اكتمل الكتاب وهو الآن قيد المراجعة لدى الجهات المختصة، وسيُتاح تنزيله مجانًا للأعضاء فور اعتماده."; $(".hero-actions", $("#book"))?.after(n); }
   $("#dl")?.addEventListener("click", (e) => A.download("books", b.pdf, e.currentTarget));
   A.onChange((u) => { const n = $("#dl-note"); if (n) n.textContent = u ? "التنزيل متاح لك لأنك عضو مسجَّل." : "التنزيل مجاني للأعضاء المسجّلين: أنشئ حسابك في دقيقة."; });
 })();

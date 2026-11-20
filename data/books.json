@@ -10,7 +10,7 @@
   "type": "تأليف",
   "field": "engineering",
   "edition": "الطبعة الأولى، جمادى الآخرة ١٤٤٨هـ / نوفمبر ٢٠٢٦م",
-  "pages": "نحو ٦٠٠ صفحة",
+  "pages": "٩٣٤ صفحة",
   "level": "مبتدئ إلى متوسط",
   "format": "PDF ملوّن",
   "pdf": "electronics/asasiyat-electronics-1.pdf",
@@ -84,7 +84,8 @@
    {
     "t": "المتحكّمات الدقيقة ومشروع الري الذكي"
    }
-  ]
+  ],
+  "review": true
  },
  {
   "id": "atlas",

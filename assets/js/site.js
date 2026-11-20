@@ -153,7 +153,7 @@
   /* ---------- رسم بطاقات ---------- */
   function bookCard(b, F) {
     const f = F[b.field] || {};
-    const badge = b.status === "done" ? '<span class="book-badge done">مكتمل · متاح مجانًا</span>' : `<span class="book-badge wip">قيد الكتابة · ${arNum(b.progress)}٪</span>`;
+    const badge = b.review ? '<span class="book-badge wip">مكتمل · قيد المراجعة والاعتماد</span>' : b.status === "done" ? '<span class="book-badge done">مكتمل · متاح مجانًا</span>' : `<span class="book-badge wip">قيد الكتابة · ${arNum(b.progress)}٪</span>`;
     return `<a class="book reveal" href="${BASE}book.html?id=${b.id}">
       <div class="book-cover">${badge}<img src="${BASE}${b.cover}" alt="غلاف كتاب ${esc(b.title)}" loading="lazy" width="900" height="1200"></div>
       <div class="book-body"><h3>${esc(b.title)}</h3><div class="sub">${esc(b.subtitle)}</div>
