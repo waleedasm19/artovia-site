@@ -23,7 +23,7 @@ def header(nav):
     return f'''<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
 <div class="nebula" aria-hidden="true"></div><canvas id="stars" aria-hidden="true"></canvas>
 <header class="site-header"><div class="wrap nav">
- <a class="brand" href="./" aria-label="{SITE}، الصفحة الرئيسية"><img src="assets/img/emblem-sm.png" alt="" width="46" height="46"><span><b>{SITE}</b><small>ACF</small></span></a>
+ <a class="brand" href="./" aria-label="{SITE}، الصفحة الرئيسية"><img src="assets/img/emblem-sm.png?v=2" alt="" width="46" height="46"><span><b>{SITE}</b><small>ACF</small></span></a>
  <ul class="nav-links" id="nav-links">{links}</ul>
  <div class="nav-tools">
   <button class="icon-btn theme-btn" type="button" aria-label="تبديل المظهر الليلي والنهاري">{ICONS["moon"]}</button>
@@ -39,7 +39,7 @@ def header(nav):
 
 FOOTER = f'''<footer class="site-footer"><div class="wrap">
  <div class="foot-grid">
-  <div class="foot-brand"><a class="brand" href="./"><img src="assets/img/emblem-sm.png" alt="" width="46" height="46"><span><b>{SITE}</b><small>ACF · Artovia Charitable Foundation</small></span></a>
+  <div class="foot-brand"><a class="brand" href="./"><img src="assets/img/emblem-sm.png?v=2" alt="" width="46" height="46"><span><b>{SITE}</b><small>ACF · Artovia Charitable Foundation</small></span></a>
    <p>منصة عربية للعلم والمعرفة: نؤلّف الكتب العلمية ونترجمها ونراجعها، وننشرها مجانًا لكل قارئ.</p>
    <span class="free-seal">إصدار خيري مجاني، لا يُباع ولا يُشترى</span></div>
   <div><h4>المنصة</h4><ul><li><a href="library.html">المكتبة</a></li><li><a href="magazine.html">مجلة المدار</a></li><li><a href="rawaq.html">الرواق</a></li><li><a href="news.html">الأخبار العلمية</a></li><li><a href="account.html">حسابي</a></li><li><a href="settings.html">الإعدادات</a></li></ul></div>
@@ -69,8 +69,8 @@ def build():
 <meta name="description" content="{meta["desc"]}">
 <meta name="theme-color" content="#04060c">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{meta["desc"]}">
-<meta property="og:type" content="website"><meta property="og:locale" content="ar_AR"><meta property="og:image" content="assets/img/og.jpg">
-<link rel="icon" href="assets/img/favicon.png"><link rel="apple-touch-icon" href="assets/img/icon-512.png">
+<meta property="og:type" content="website"><meta property="og:locale" content="ar_AR"><meta property="og:image" content="assets/img/og.jpg?v=2">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png?v=2"><link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v=2"><link rel="shortcut icon" href="assets/img/favicon.ico?v=2"><link rel="apple-touch-icon" href="assets/img/icon-512.png?v=2">
 <link rel="preload" href="assets/fonts/Amiri-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/IBMPlexSansArabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css">
