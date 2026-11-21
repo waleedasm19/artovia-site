@@ -70,7 +70,7 @@ if (canvas && ok()) {
 
   // حلقة مدارية ذهبية رقيقة بلون الهوية
   const ringGeo = new THREE.RingGeometry(2.25, 2.252, 256);
-  const ring = new THREE.Mesh(ringGeo, new THREE.MeshBasicMaterial({ color: 0xE9B949, transparent: true, opacity: .35, side: THREE.DoubleSide }));
+  const ring = new THREE.Mesh(ringGeo, new THREE.MeshBasicMaterial({ color: 0xFFC530, transparent: true, opacity: .35, side: THREE.DoubleSide }));
   ring.rotation.x = THREE.MathUtils.degToRad(74); ring.rotation.y = THREE.MathUtils.degToRad(-12);
   scene.add(ring);
   const moon = new THREE.Mesh(new THREE.SphereGeometry(0.07, 32, 32), new THREE.MeshBasicMaterial({ color: 0xF2C230 }));

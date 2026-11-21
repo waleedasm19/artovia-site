@@ -37,9 +37,9 @@
     glow(cx, cy, orbit * 1.25, "rgba(70,110,220,.22)");
     // النواة: بروتون متوهج
     const nr = 46 - 38 * k;
-    glow(cx, cy, nr * 5, "rgba(233,185,73,.55)");
+    glow(cx, cy, nr * 5, "rgba(255,197,48,.55)");
     const ng = ctx.createRadialGradient(cx - nr * .3, cy - nr * .3, 1, cx, cy, nr);
-    ng.addColorStop(0, "#fff3c8"); ng.addColorStop(.5, "#E9B949"); ng.addColorStop(1, "#9a5a12");
+    ng.addColorStop(0, "#fff3c8"); ng.addColorStop(.5, "#FFC530"); ng.addColorStop(1, "#9a5a12");
     ctx.fillStyle = ng; ctx.beginPath(); ctx.arc(cx, cy, Math.max(nr, 9), 0, 6.29); ctx.fill();
     // الإلكترونات على المدارات
     for (let i = 0; i < 3; i++) {
@@ -51,7 +51,7 @@
     // مقياس: نواة ١ سم ← ٣٠٠ م
     const m = ease((t - 4.5) / 1.5);
     if (m > 0) {
-      ctx.globalAlpha = m; ctx.strokeStyle = "rgba(233,185,73,.85)"; ctx.lineWidth = 2; ctx.setLineDash([8, 8]);
+      ctx.globalAlpha = m; ctx.strokeStyle = "rgba(255,197,48,.85)"; ctx.lineWidth = 2; ctx.setLineDash([8, 8]);
       ctx.beginPath(); ctx.moveTo(cx, cy + orbit * .62); ctx.lineTo(cx + orbit, cy + orbit * .62); ctx.stroke(); ctx.setLineDash([]);
       [cx, cx + orbit].forEach((x) => { ctx.beginPath(); ctx.moveTo(x, cy + orbit * .62 - 10); ctx.lineTo(x, cy + orbit * .62 + 10); ctx.stroke(); });
       ctx.fillStyle = "#F4E3B5"; ctx.font = "600 30px 'Plex Arabic',sans-serif"; ctx.textAlign = "center"; ctx.direction = "rtl";
@@ -76,14 +76,14 @@
     const r = rnd(3); for (let i = 0; i < 70; i++) { const x = 60 + ((r() * W * .55 + t * 14 * (r() + .3)) % (W * .55)); const y = H * .24 + (r() - .5) * (x / (W * .62)) * H * .9; ctx.globalAlpha = .25 + .4 * r(); ctx.fillStyle = "#ffe6b0"; ctx.beginPath(); ctx.arc(x, y + Math.sin(t + i) * 4, r() * 1.8 + .4, 0, 6.29); ctx.fill(); }
     ctx.globalAlpha = 1;
     // هالة خلف الحكيم
-    glow(sx + 40, sy - 40, 380, "rgba(233,185,73,.35)");
+    glow(sx + 40, sy - 40, 380, "rgba(255,197,48,.35)");
     ctx.save(); const s = 1.25 + .02 * Math.sin(t * .4); ctx.translate(sx - 216 * s + 30, sy - 300 * s + 20 + 6 * Math.sin(t * .5)); ctx.scale(s, s);
     ctx.shadowColor = "rgba(255,200,110,.85)"; ctx.shadowBlur = 40; ctx.fillStyle = "#0b0704"; ctx.fill(sage);
     ctx.shadowBlur = 0;
     ctx.save(); ctx.clip(sage); const lit = ctx.createLinearGradient(40, 0, 260, 0); lit.addColorStop(0, "rgba(255,196,110,.55)"); lit.addColorStop(.35, "rgba(160,96,30,.18)"); lit.addColorStop(1, "rgba(0,0,0,0)"); ctx.fillStyle = lit; ctx.fillRect(0, 0, 420, 540); ctx.restore();
     ctx.strokeStyle = "rgba(255,205,120,.9)"; ctx.lineWidth = 2.4; ctx.stroke(sage);
     // لفّات العمامة وطيّات الثوب
-    ctx.strokeStyle = "rgba(233,185,73,.4)"; ctx.lineWidth = 2;
+    ctx.strokeStyle = "rgba(255,197,48,.4)"; ctx.lineWidth = 2;
     [[112, 120, 318, 110], [106, 145, 326, 140], [116, 165, 318, 172], [150, 70, 240, 150]].forEach(([a, b, c, e]) => { ctx.beginPath(); ctx.moveTo(a, b); ctx.quadraticCurveTo((a + c) / 2, b - 26, c, e); ctx.stroke(); });
     [[130, 380, 110, 520], [220, 330, 230, 520], [310, 290, 340, 520]].forEach(([a, b, c, e]) => { ctx.beginPath(); ctx.moveTo(a, b); ctx.quadraticCurveTo(a + 20, (b + e) / 2, c, e); ctx.stroke(); });
     ctx.restore();
@@ -124,7 +124,7 @@
   }
 
   const DRAW = { atom, sage: sageScene, light };
-  const fallback = (t) => { sky(t); glow(W * .3, H * .5, 300, "rgba(233,185,73,.3)"); };
+  const fallback = (t) => { sky(t); glow(W * .3, H * .5, 300, "rgba(255,197,48,.3)"); };
 
   /* واجهة */
   dots.innerHTML = S.map((s, i) => `<button type="button" aria-label="المقطع ${i + 1}: ${esc(s.title || s.tag)}"><i></i></button>`).join("");
