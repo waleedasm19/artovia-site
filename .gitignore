@@ -4,3 +4,4 @@
 *.out
 *.toc
 __pycache__/
+tools/madar/*/out.html
