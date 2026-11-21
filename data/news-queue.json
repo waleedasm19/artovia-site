@@ -1,1 +1,47 @@
-[]
+[
+ {
+  "field": "space",
+  "title": "APOD: 2026 November 21 – Voyager’s Neptune",
+  "summary": "APOD Science APOD APOD: 2026 November 21 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is…",
+  "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
+  "source": "NASA",
+  "lang": "en",
+  "date": "2026-11-21"
+ },
+ {
+  "field": "space",
+  "title": "NASA’s Voyager 1 is now so far away that light takes 24 hours to reach it",
+  "summary": "NASA’s Voyager 1 has reached an extraordinary milestone, traveling 16.1 billion miles from Earth to become the first spacecraft so distant that its signals take a full day to reach us. Nearly 50 years after launch, the aging probe continues its historic…",
+  "url": "https://www.sciencedaily.com/releases/2026/11/261120075554.htm",
+  "source": "ScienceDaily",
+  "lang": "en",
+  "date": "2026-11-21"
+ },
+ {
+  "field": "space",
+  "title": "After 8 years in space, a groundbreaking X-ray telescope finally opens its eyes",
+  "summary": "After eight years and 10 billion kilometers in space, a groundbreaking X-ray telescope heading to Mercury has captured its first cosmic observations and is performing even better than scientists expected. The instrument could soon reveal Mercury's hidden…",
+  "url": "https://www.sciencedaily.com/releases/2026/11/261120075547.htm",
+  "source": "ScienceDaily",
+  "lang": "en",
+  "date": "2026-11-21"
+ },
+ {
+  "field": "physics",
+  "title": "Quantum software matches classical benchmark for a molecular interaction",
+  "summary": "Predicting how molecules interact is central to drug discovery: it offers important information about how a new drug might work in the human body, the side effects it can cause and more. Computationally modeling these interactions can reduce the need for…",
+  "url": "https://phys.org/news/2026-11-quantum-software-classical-benchmark-molecular.html",
+  "source": "Phys.org",
+  "lang": "en",
+  "date": "2026-11-21"
+ },
+ {
+  "field": "tech",
+  "title": "A decades-old mystery about light could hold the key to faster internet",
+  "summary": "A promising material for ultra-fast optical communications has held a secret for decades, but scientists may have finally cracked it. Researchers at KAIST and Caltech have precisely measured how barium titanate controls and absorbs light, resolving…",
+  "url": "https://www.sciencedaily.com/releases/2026/11/261119194544.htm",
+  "source": "ScienceDaily",
+  "lang": "en",
+  "date": "2026-11-21"
+ }
+]
