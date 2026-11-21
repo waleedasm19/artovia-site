@@ -136,10 +136,12 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261119194605.htm",
    "source": "ScienceDaily",
    "date": "2026-11-20",
-   "title": "قد يكون هناك نجمان ضخمان يغذيان سرًّا الثقب الأسود فائق الكتلة في مجرة درب التبانة",
-   "summary": "تتبّع علماء الفلك أصل السحب الغازية الغامضة الموجودة بالقرب من الثقب الأسود فائق الكتلة في مركز مجرة درب التبانة، ووجدوا أنها تنبع من زوج من النجوم الضخمة التي يبدو أن تصادم رياحها يؤدي إلى تكوين كتل كثيفة من المادة. وقد تغذي هذه السحب الثقب الأسود في نهاية المطاف، مما يكشف عن...",
+   "title": "نجمان عملاقان يُطعمان قلب المجرّة: من أين يأتي غذاء الثقب الأسود في درب التبانة؟",
+   "summary": "بعد عقدين من رصد سحب غازية غامضة تقترب من الثقب الأسود في مركز مجرتنا، يتتبّع فريق معهد ماكس بلانك أثرها حتى نجمين متلاصقين تتصادم رياحهما فتنتج كتلًا من الغاز تسقط نحو المركز.",
    "orig": "Two massive stars may be secretly feeding the Milky Way’s supermassive black hole",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "galactic-center-streamer",
+   "cover": "assets/img/news/galactic-center-streamer.jpg"
   },
   {
    "field": "engineering",
@@ -220,10 +222,12 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261119194601.htm",
    "source": "ScienceDaily",
    "date": "2026-11-20",
-   "title": "من أجل صحة نفسية أفضل، قد يكون تواتر ممارسة الرياضة أكثر أهمية من شدتها",
-   "summary": "أظهرت دراسة شملت أكثر من ١٠,٠٠٠ طالب جامعي أن ممارسة التمارين الرياضية بانتظام قد تكون أكثر أهمية للصحة النفسية من إجهاد النفس بتمارين مكثفة أو مطولة. وكان الطلاب الذين يمارسون التمارين الرياضية بوتيرة أقل أكثر عرضة للإصابة بالاكتئاب…",
+   "title": "قليل دائم خير من كثير منقطع: انتظام الرياضة يحمي النفس أكثر من شدّتها",
+   "summary": "دراسة نرويجية تابعت أكثر من عشرة آلاف طالب جامعي عامًا كاملًا، فوجدت أن عدد مرات التمرين في الأسبوع أوثق صلة بالوقاية من القلق والاكتئاب من قوة التمرين أو مدته.",
    "orig": "For better mental health, how often you exercise may matter more than how hard",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "exercise-frequency-mind",
+   "cover": "assets/img/news/exercise-frequency-mind.jpg"
   },
   {
    "field": "space",
@@ -276,21 +280,25 @@
   },
   {
    "field": "chemistry",
-   "title": "لماذا يتوهّج لهب الهيدروجين برتقاليًّا ثم يكاد يختفي؟",
-   "summary": "آثار ضئيلة من الصوديوم في الهواء تغيّر وضوح لهب الهيدروجين، وهو ما قد يفيد في تصميم أجهزة هيدروجينية أكثر أمانًا.",
+   "title": "لهب لا تراه العين: لماذا يتوهّج الهيدروجين برتقاليًا يومًا ويختفي في اليوم التالي؟",
+   "summary": "دراسة من جامعة أديلايد تكشف أن ذرات الصوديوم القادمة مع رذاذ البحر هي ما يلوّن لهب الهيدروجين، وأن غيابها قد يجعل الموقد المشتعل يبدو مطفأً.",
    "orig": "Why Hydrogen Flames Can Glow Orange, Then Turn Nearly Invisible",
    "url": "https://www.sciencedaily.com/releases/2026/11/261118065509.htm",
    "source": "ScienceDaily",
-   "date": "2026-11-19"
+   "date": "2026-11-19",
+   "slug": "hydrogen-flame-sodium",
+   "cover": "assets/img/news/hydrogen-flame-sodium.jpg"
   },
   {
    "field": "biology",
-   "title": "حوت عمره ستة ملايين عام ربما امتلك أكثر وجه ملتوٍ في تاريخ الثدييات",
-   "summary": "أحفورة حوت من بيرو تكشف وجهًا قد يكون الأشدّ لا تناظرًا بين الثدييات المعروفة.",
+   "title": "«واتشافو»: حوت عمره ستة ملايين عام بأكثر وجه ملتوٍ في تاريخ الثدييات",
+   "summary": "جمجمة من صحراء بيرو تكشف حوت عنبر قزمًا انزاح منخراه كلاهما إلى اليسار، وانحنى خطمه نحو قاع البحر ليصطاد في الرمل.",
    "orig": "This 6-million-year-old Whale May Have Had the Most Crooked Face in Mammal History",
    "url": "https://www.sciencedaily.com/releases/2026/11/261118065528.htm",
    "source": "ScienceDaily",
-   "date": "2026-11-19"
+   "date": "2026-11-19",
+   "slug": "crooked-whale",
+   "cover": "assets/img/news/crooked-whale.jpg"
   },
   {
    "field": "earth",
