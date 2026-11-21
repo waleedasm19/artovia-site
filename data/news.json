@@ -1,6 +1,56 @@
 {
- "updated": "2026-11-20T17:46:28Z",
+ "updated": "2026-11-21T00:00:28Z",
  "items": [
+  {
+   "field": "space",
+   "title": "بقع الفضول تنجرف غيوم الشفق",
+   "summary": "التقطت المركبة الفضائية Curiosity Mars التابعة لناسا هذه السحب المنجرفة في 31 أكتوبر 2026، وهو اليوم المريخي رقم 5061 أو اليوم المريخي للمهمة. تستخدم المركبة كاميرات الملاحة الخاصة بها لالتقاط سحب ما بعد غروب الشمس، والتي تسمى سحب الشفق، والتي تظهر لمدة…",
+   "url": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "Curiosity Spots Drifting Twilight Clouds"
+  },
+  {
+   "field": "space",
+   "title": "تمويل ناسا الأولي الجديد يهيئ الشركات الصغيرة للابتكار",
+   "summary": "تعالج الجوائز المقدمة للشركات الصغيرة في جميع أنحاء البلاد بعضًا من أهم احتياجات ناسا التكنولوجية لاستكشاف القمر والمريخ أثناء تغذية اقتصاد الفضاء الأمريكي. أبحاث ابتكارات الأعمال الصغيرة التابعة لناسا/نقل تكنولوجيا الأعمال الصغيرة...",
+   "url": "https://www.nasa.gov/directorates/rtmd/new-nasa-seed-funding-primes-small-businesses-for-innovation/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "New NASA Seed Funding Primes Small Businesses for Innovation"
+  },
+  {
+   "field": "physics",
+   "title": "يقوم ليزر الأشعة السينية بتسجيل الأرقام القياسية بتوليد ومضات ذات أطوال موجية أقصر من المسافات بين الذرات",
+   "summary": "أثبت باحثون من DESY وXFEL الأوروبي إنتاجًا موثوقًا ونقلًا لمضات ليزر الأشعة السينية بطول موجة يبلغ حوالي 0.04 نانومتر (أو طاقة فوتون تبلغ 30000 إلكترون فولت) في XFEL الأوروبي، مما رفع رقمهم القياسي العالمي. هذا…",
+   "url": "https://phys.org/news/2026-11-ray-laser-reliably-generates-wavelengths.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "Record-setting X-ray laser reliably generates flashes with wavelengths shorter than distances between atoms"
+  },
+  {
+   "field": "physics",
+   "title": "تعمل تقنية الأشعة السينية على تحسين قياسات درجة الحرارة تحت ضغط شديد",
+   "summary": "طور العلماء في مختبر لورانس ليفرمور الوطني (LLNL) القدرة على قياس درجات الحرارة في المواد المعرضة لضغوط شديدة في مرفق الإشعال الوطني (NIF)، مما يوفر رؤى جديدة حول كيفية تصرف المواد تحت...",
+   "url": "https://phys.org/news/2026-11-ray-technique-advances-temperature-extreme.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "X-ray technique advances temperature measurements under extreme pressure"
+  },
+  {
+   "field": "tech",
+   "title": "الرسم البياني الأكثر سوء فهم في الذكاء الاصطناعي حصل للتو على تحديث كبير",
+   "summary": "وجد تقرير جديد صادر عن منظمة METR غير الربحية لتقييم الذكاء الاصطناعي أن بعض قدرات الذكاء الاصطناعي مستمرة في التحسن على طول مسار أسي - ولكنه يشير أيضًا إلى أن النماذج ليست جيدة تمامًا في المهام التي تتطلب الحكم كما هي في البرمجة. ال…",
+   "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+   "source": "MIT Technology Review",
+   "lang": "ar",
+   "date": "2026-11-20",
+   "orig": "The most misunderstood graph in AI just got a major update"
+  },
   {
    "field": "physics",
    "title": "تشرح النظرية كيف تدخل بلازما الاندماج في حالة من حبس الطاقة المحسنة، مما يحل لغزًا دام 40 عامًا",
