@@ -1,0 +1,43 @@
+Artovia Charitable Foundation / مؤسسة إرتوفيا الخيرية - official palette (logo v2-4 "sun ring")
+
+RING (conical gradient, clockwise from top-right)
+  Gold        #FFC530
+  Orange      #FF8A1F
+  Red         #E2262B
+  Deep red    #B3141A
+
+SUN
+  Highlight   #FFF6C8
+  Gold        #FFC530   (also sun rays + glow, gold dot)
+  Orange      #FF8A1F
+
+INNER DISC (night sky) #3B4F7A -> #24304A -> #18202F ; gap backing #161B23
+
+MOUNTAIN / BOOK
+  Teal light  #3FD6A8
+  Teal        #19B58A
+  Teal dark   #0B6E55
+  Green light #7ED957   (book pages)
+  Green dark  #2E9E4F
+  Spine       #06463A
+
+BLUE SWOOSH  #1E5BD8 -> #22C3E6 -> #E6FBFF
+SPARKLES     #FFFFFF (dark versions) / #1B2433 (light versions)
+
+TEXT - dark backgrounds
+  "Arto"      #FFFFFF -> #DCE3EB
+  "via"       #FFE27A -> #F0A000
+  Tagline     #AEB9C6
+  Arabic name #EEF2F6
+
+TEXT - light/cream backgrounds
+  "Arto"      #1B2433 (navy)
+  "via"       #FFB52E -> #E27C00 (gold-orange)
+  Tagline     #2A3038
+  Arabic name #2A3038
+
+BACKGROUNDS
+  Dark slate  #2A3038
+  Cream       #FDFBF6
+
+FONTS: Segoe UI Black (wordmark), Segoe UI Bold (tagline, Arabic)
