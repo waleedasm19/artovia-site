@@ -8,8 +8,8 @@
 @font-face{font-family:PlexL;font-weight:700;src:url(fonts/IBMPlexSans-Bold.ttf)}
 
 :root{
-  --night:#0A1020; --ink:#2B2218; --muted:#7B6A58; --gold:#C9952E; --goldL:#E9B949;
-  --teal:#3E9C82; --red:#C8505A; --blue:#4A64B0; --cream:#FDFBF6; --paper:#F4EEE2; --line:#D9CDB8;
+  --night:#1B2433; --ink:#1B2433; --muted:#66707D; --gold:#E27C00; --goldL:#FFC530;
+  --teal:#19B58A; --red:#E2262B; --blue:#1E5BD8; --cream:#FDFBF6; --paper:#F4EEE2; --line:#D9CDB8;
   --acc:var(--gold);
 }
 @page{size:210mm 297mm;margin:0}
@@ -91,6 +91,6 @@ h1.t.xl{font-size:40pt}
 
 /* section accent colours */
 .s-space{--acc:var(--blue)} .s-gold{--acc:var(--gold)} .s-phys{--acc:#7A4FB0} .s-tech{--acc:var(--teal)}
-.s-life{--acc:#2E8C9E} .s-med{--acc:var(--red)} .s-earth{--acc:#A86B32} .s-energy{--acc:#D9822B}
+.s-life{--acc:#0B6E55} .s-med{--acc:var(--red)} .s-earth{--acc:#A86B32} .s-energy{--acc:#FF8A1F}
 .c2 .pq{font-size:12.5pt}.c2 .pq:before{font-size:36pt}
 svg{direction:ltr}
