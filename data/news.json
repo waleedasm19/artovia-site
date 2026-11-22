@@ -3,6 +3,116 @@
  "items": [
   {
    "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261120075554.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "أصبحت «فوياجر ١» بعيدة إلى حد أن الضوء يحتاج ٢٤ ساعة ليصل إليها",
+   "summary": "حققت مركبة «فوياجر ١» التابعة لناسا إنجازًا استثنائيًا، إذ صارت على بعد ١٦٫١ مليار ميل من الأرض، فهي أول مركبة فضائية تحتاج إشاراتها يومًا كاملًا لتصل إلينا. وبعد نحو ٥٠ عامًا من إطلاقها، ما زال المسبار يواصل رحلته التاريخية…",
+   "orig": "NASA’s Voyager 1 is now so far away that light takes 24 hours to reach it",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261120075547.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "بعد ٨ سنوات في الفضاء، تلسكوب أشعة سينية رائد يفتح عينيه أخيرًا",
+   "summary": "بعد ثماني سنوات وعشرة مليارات كيلومتر في الفضاء، التقط تلسكوب أشعة سينية رائد متجه إلى عطارد أولى أرصاده الكونية، وأداؤه يفوق توقعات العلماء. وقد يكشف الجهاز قريبًا ما خفي من أسرار عطارد…",
+   "orig": "After 8 years in space, a groundbreaking X-ray telescope finally opens its eyes",
+   "lang": "ar"
+  },
+  {
+   "field": "physics",
+   "url": "https://phys.org/news/2026-11-quantum-software-classical-benchmark-molecular.html",
+   "source": "Phys.org",
+   "date": "2026-11-21",
+   "title": "برمجيات كمومية تضاهي المعيار الكلاسيكي في حساب تفاعل جزيئي",
+   "summary": "التنبؤ بكيفية تفاعل الجزيئات أساس اكتشاف الأدوية: فهو يكشف كيف قد يعمل الدواء الجديد في جسم الإنسان وما آثاره الجانبية. والنمذجة الحاسوبية لهذه التفاعلات قد تقلل الحاجة إلى…",
+   "orig": "Quantum software matches classical benchmark for a molecular interaction",
+   "lang": "ar"
+  },
+  {
+   "field": "tech",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261119194544.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "لغز قديم عن الضوء قد يكون مفتاح إنترنت أسرع",
+   "summary": "مادة واعدة للاتصالات الضوئية فائقة السرعة أخفت سرًّا لعقود، وربما حلّه العلماء أخيرًا. فقد قاس باحثون في معهد كايست ومعهد كاليفورنيا للتقنية بدقة كيف تتحكم تيتانات الباريوم في الضوء وتمتصه…",
+   "orig": "A decades-old mystery about light could hold the key to faster internet",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261120075558.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "قد يكون الزمن أغرب مما نتصور، والعلماء يقترحون طريقة لاختباره",
+   "summary": "قد يكون الزمن أغرب بكثير مما ندرك، واقترح العلماء طريقة لرصد ساعات تعيش أكثر من مسار زمني في آن واحد. وباستعمال ساعات ذرية فائقة الحساسية يأمل الباحثون أن يكشفوا ظاهرة لم تُرصد من قبل…",
+   "orig": "Time may be far stranger than we realize. Scientists have a way to test it",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261120075556.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "نجم عملاق ابتلع نجمًا آخر، و«جيمس ويب» يكشف ما بعد الحادثة",
+   "summary": "شهد الفلكيون اصطدامًا كونيًّا مذهلًا في مجرة المرأة المسلسلة (أندروميدا)، إذ انجرف نجم صغير في مسار حلزوني نحو نجم عملاق أسطع من الشمس بـ١٨ ألف مرة، فأطلق ثورانًا عنيفًا. والتقط تلسكوب جيمس ويب آثار الحادثة…",
+   "orig": "A giant star swallowed another star. James Webb reveals the aftermath",
+   "lang": "ar"
+  },
+  {
+   "field": "biology",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261119194538.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "نظرية تطورية عمرها ٥٠ عامًا ربما كانت خاطئة من الأساس",
+   "summary": "تلقّت نظرية قديمة تقول إن التطور يحمي أهم الجينات من الطفرات ضربة قوية: فتحليل واسع للطفرات في البكتيريا والخميرة لم يجد دليلًا على أن الجينات الأساسية تتحور أقل من غيرها…",
+   "orig": "A 50-year-old theory about evolution may have been wrong all along",
+   "lang": "ar"
+  },
+  {
+   "field": "biology",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261118074039.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "شجرة العائلة البشرية قد تحتاج إلى إعادة كتابة جذرية",
+   "summary": "قد تحتاج شجرة العائلة البشرية إلى مراجعة كبرى. فبحث جديد من جامعة موناش يتحدى التصنيف التقليدي لأسلافنا القدماء، ويرى أن أنواعًا مثل أسترالوبيثكس وبارانثروبوس ينبغي ضمّها إلى جنسنا نفسه…",
+   "orig": "Scientists say the human family tree may need a radical rewrite",
+   "lang": "ar"
+  },
+  {
+   "field": "health",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261120075549.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "الجسيمات البلاستيكية الدقيقة أخطر مما ظننا، والعلماء يكتشفون السبب",
+   "summary": "قد تفعل الجسيمات البلاستيكية الدقيقة ما هو أخطر من التراكم في أجسامنا: فقد اكتشف العلماء أنها تتفاعل مع الماء فتولّد جزيئات شديدة النشاط قادرة على إتلاف الخلايا والأنسجة…",
+   "orig": "Microplastics may be more dangerous than we thought. Scientists just discovered why",
+   "lang": "ar"
+  },
+  {
+   "field": "tech",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261120075701.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-21",
+   "title": "الذكاء الاصطناعي قد لا يعمل مثل الدماغ البشري في النهاية",
+   "summary": "قد لا يفكر الذكاء الاصطناعي مثل الدماغ البشري، بحسب اكتشاف جديد لافت. فقد وجد الباحثون أن نماذج الذكاء الاصطناعي التي تتنبأ بدقة بنشاط الدماغ قد تعتمد على عمليات داخلية مختلفة…",
+   "orig": "AI may not work like the human brain after all, scientists discover",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://phys.org/news/2026-11-fermi-year-sky-bridges-astronomy.html",
+   "source": "Phys.org",
+   "date": "2026-11-21",
+   "title": "خريطة «فيرمي» للسماء على مدى ١٤ عامًا تسدّ «فجوة الميغا إلكترون فولت»",
+   "summary": "أشعة غاما، أعلى أنواع الإشعاع الكهرومغناطيسي طاقة، ظلت لها «نقطة عمياء» في نطاق الميغا إلكترون فولت، وهو ما يسميه الفلكيون «فجوة MeV». لكن…",
+   "orig": "Fermi's 14-year all-sky map bridges astronomy's elusive 'MeV gap'",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
    "title": "بقع الفضول تنجرف غيوم الشفق",
    "summary": "التقطت المركبة الفضائية Curiosity Mars التابعة لناسا هذه السحب المنجرفة في 31 أكتوبر 2026، وهو اليوم المريخي رقم 5061 أو اليوم المريخي للمهمة. تستخدم المركبة كاميرات الملاحة الخاصة بها لالتقاط سحب ما بعد غروب الشمس، والتي تسمى سحب الشفق، والتي تظهر لمدة…",
    "url": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/",
@@ -267,6 +377,16 @@
    "title": "قد تنشأ الطاقة المظلمة من القوانين المعروفة في فيزياء الجسيمات",
    "summary": "على مدى ما يقرب من ثلاثة عقود، كافح العلماء لتفسير أحد أكثر ألغاز الكون إثارةً للجدل: كيف أن عنصرًا يُعرف باسم «الطاقة المظلمة» هو الذي يدفع التمدد المتسارع للكون.",
    "orig": "Dark energy may originate from known laws of particle physics",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261120075551.htm",
+   "source": "ScienceDaily",
+   "date": "2026-11-20",
+   "title": "محرك صاروخ القمر يهدر في اختبار مثير مدته ٢٠٠ ثانية",
+   "summary": "اختبرت ناسا بنجاح محرك الصواريخ القوي RS-٢٥، فشغّلته ٢٠٠ ثانية لجمع بيانات تجعل رحلات القمر المقبلة أكثر أمانًا وموثوقية. ويدعم الاختبار الاستعداد لهبوط «أرتميس ٤» على القمر عام ٢٠٢٨…",
+   "orig": "NASA's powerful Moon rocket engine roars through a dramatic 200-second test",
    "lang": "ar"
   },
   {
