@@ -1,0 +1,12 @@
+خامات الكواكب ودرب التبانة (assets/img/solar/*.jpg, saturn_ring_alpha.png):
+  Solar System Scope — https://www.solarsystemscope.com/textures/ — CC BY 4.0 (عبر ويكيميديا كومنز)
+rock1.png  Bennu — NASA/Goddard/University of Arizona — ملكية عامة — https://commons.wikimedia.org/wiki/File:Bennu_mosaic_OSIRIS-REx_(square).png
+rock2.png  433 Eros — NASA/JPL/JHUAPL — ملكية عامة — https://commons.wikimedia.org/wiki/File:Eros_-_PIA02923_(color).jpg
+rock3.png  Itokawa — ISAS/JAXA — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Itokawa06_hayabusa.jpg
+rock4.png  4 Vesta — NASA/JPL-Caltech/UCLA/MPS/DLR/IDA — ملكية عامة — https://commons.wikimedia.org/wiki/File:Vesta_Full-Frame.jpg
+meteor.jpg Fireball over Maunakea 2006 — International Gemini Observatory/NOIRLab/NSF/AURA — CC BY 4.0
+           https://commons.wikimedia.org/wiki/File:Fireball_over_Maunakea_in_2006_(200626-012912_CC-West_meteor_CC).jpg
+streak.jpg 2016 Meteor — Jacek Halicki — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:2016_Meteor.jpg
+corona.jpg Total solar eclipse corona 2009 — Miloslav Druckmüller, Peter Aniol, Vojtech Rušin, Ľubomír Klocok, Karel Martišek, Martin Dietzel / NOIRLab — CC BY 4.0
+           https://commons.wikimedia.org/wiki/File:The_Sun%E2%80%99s_corona_shining_brightly_during_a_total_solar_eclipse_(noirlab1902a).jpg
+التعديل: قصّ وتدوير وتعتيم الخلفية فقط.
