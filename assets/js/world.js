@@ -2,6 +2,7 @@
 (async () => {
   const { $, $$, getJSON, observe, arDate, arNum, esc } = window.ACF;
   const W = await getJSON("data/world.json").catch(() => ({ items: [], themes: {} }));
+  W.items = W.items.filter((i) => i.cover);
   const T = W.themes || {};
   let theme = new URLSearchParams(location.search).get("t") || "all", q = "", shown = 12;
   if (W.updated) $("#world-updated").textContent = "آخر تحديث: " + arDate(W.updated.slice(0, 10));
