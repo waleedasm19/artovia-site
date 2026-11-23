@@ -152,10 +152,10 @@
   "en": "Foundations of Motion and Bodies: Mechanics, Rigid Bodies, Oscillations and Waves",
   "cover": "assets/img/covers/mechanics.jpg?v=1",
   "status": "wip",
-  "progress": 88,
+  "progress": 91,
   "type": "تأليف",
   "field": "physics",
-  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–٢١",
+  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–٢٢",
   "pages": "٢٣ فصلًا في ٦ أجزاء وستة ملاحق (مخطط)",
   "level": "مبتدئ إلى متقدّم",
   "format": "PDF ملوّن 21×28 سم",
@@ -269,10 +269,10 @@
     "part": "الجزء السادس: نحو الإتقان"
    },
    {
-    "t": "ميكانيكا لاغرانج وهاملتون", "note": "قيد الكتابة"
+    "t": "ميكانيكا لاغرانج وهاملتون", "note": "صدر"
    },
    {
-    "t": "الحركة اللاخطية والفوضى"
+    "t": "الحركة اللاخطية والفوضى", "note": "قيد الكتابة"
    }
   ]
  }
