@@ -32,5 +32,6 @@
  "source": "ScienceDaily / جامعة كاليفورنيا في بيركلي",
  "study": "An ECG biomarker for sudden cardiac death discovered with deep learning, Nature (2026)",
  "url": "https://www.sciencedaily.com/releases/2026/11/261112230456.htm",
- "cover": "assets/img/news/ai-heart-signal.jpg"
+ "cover": "assets/img/news/ai-heart-signal.jpg",
+ "license": "مقال عربي أصيل يلخّص الخبر؛ النص الأصلي محفوظ الحقوق لمصدره"
 }
