@@ -1,4 +1,4 @@
-/* شاشة المعرفة: لوحات مرسومة في Krita تتعاقب بعرض الشاشة كاملًا، وتتجدّد كل يومين.
+/* شاشة المعرفة: صور حقيقية مرخّصة تتعاقب تلقائيًّا بعرض الشاشة كاملًا، وتتجدّد كل يومين.
    البيانات: data/showcase.json — وما يُستبدل يُحفظ في data/knowledge.json (صفحة «معلومات عامة»). */
 (async () => {
   const { $, getJSON, esc } = window.ACF;
@@ -6,44 +6,25 @@
   const data = await getJSON("data/showcase.json").catch(() => null); if (!data?.scenes?.length) return;
   const S = data.scenes;
   const slides = host.querySelector(".screen-slides"), txt = host.querySelector(".screen-text");
-  const dots = host.querySelector(".screen-dots"), play = host.querySelector(".screen-play");
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches || ["reduce", "off"].includes(document.documentElement.dataset.motion);
-
   slides.innerHTML = S.map((s, i) => `<figure class="slide" data-i="${i}"><img src="${esc(s.img)}" alt="" loading="${i ? "lazy" : "eager"}" decoding="async"></figure>`).join("");
-  dots.innerHTML = S.map((s, i) => `<button type="button" aria-label="اللوحة ${i + 1}"><i></i></button>`).join("");
-  const F = [...slides.children], D = [...dots.children];
-
-  let idx = -1, t0 = 0, paused = reduce, pausedAt = 0, visible = false, raf;
+  const F = [...slides.children];
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches || ["reduce", "off"].includes(document.documentElement.dataset.motion);
   const words = (s) => esc(s).split(/\s+/).map((w, i) => `<span style="--i:${i}">${w}</span>`).join(" ");
+  let idx = -1, timer = null, visible = false;
   function show(i) {
-    idx = (i + S.length) % S.length; const s = S[idx];
+    const first = idx < 0; idx = (i + S.length) % S.length; const s = S[idx];
     F.forEach((f, k) => f.classList.toggle("on", k === idx));
-    D.forEach((d, k) => { d.classList.toggle("done", k < idx); d.classList.toggle("now", k === idx); d.querySelector("i").style.transform = k < idx ? "scaleX(1)" : "scaleX(0)"; });
     txt.classList.remove("on"); txt.classList.toggle("quote", !s.title);
     setTimeout(() => {
       txt.innerHTML = (s.title ? `<h3>${esc(s.title)}</h3>` : "") + `<p>${words(s.text)}</p>` + (s.cite ? `<cite>${esc(s.cite)}</cite>` : "") + (s.credit ? `<small class="credit">الصورة: ${esc(s.credit)}</small>` : "");
       requestAnimationFrame(() => txt.classList.add("on"));
-    }, idx === i && t0 ? 450 : 0);
-    t0 = performance.now(); pausedAt = 0;
+    }, first ? 0 : 450);
+    schedule();
   }
-  function setPaused(p) {
-    paused = p;
-    play.innerHTML = p ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg>' : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
-    play.setAttribute("aria-label", p ? "تشغيل" : "إيقاف مؤقت");
-    host.classList.toggle("paused", p);
-    if (p) pausedAt = performance.now() - t0; else { t0 = performance.now() - pausedAt; loop(); }
-  }
-  function frame(now) {
-    const d = (S[idx].dur || 12) * 1000, el = paused ? pausedAt : now - t0;
-    D[idx].querySelector("i").style.transform = `scaleX(${Math.min(el / d, 1)})`;
-    if (!paused && el >= d) show(idx + 1);
-  }
-  function loop() { cancelAnimationFrame(raf); if (paused || !visible) return; raf = requestAnimationFrame((n) => { frame(n); loop(); }); }
-
-  D.forEach((d, k) => d.addEventListener("click", () => { show(k); if (paused) frame(performance.now()); }));
-  play.addEventListener("click", () => setPaused(!paused));
-  new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) { if (idx < 0) show(0); loop(); } }, { threshold: .25 }).observe(host);
-  setPaused(paused);
+  // تتنقل اللوحات تلقائيًّا بلا أي أزرار، وتتوقف فقط حين تكون الشاشة خارج النظر
+  function schedule() { clearTimeout(timer); if (visible) timer = setTimeout(() => show(idx + 1), (S[idx].dur || 12) * 1000); }
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) { idx < 0 ? show(0) : schedule(); } else clearTimeout(timer); }, { threshold: .25 }).observe(host);
+  document.addEventListener("visibilitychange", () => { if (document.hidden) clearTimeout(timer); else if (visible) schedule(); });
 
   /* دمج الشاشة مع المشهد العلوي أثناء التمرير */
   const hero = $(".hero"), band = host.closest(".screen-band");
