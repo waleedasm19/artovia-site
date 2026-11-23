@@ -1,135 +1,135 @@
 [
- {
-  "out": "assets/img/world/authors/paul-graham.jpg",
-  "title": "File:Paul Graham programming.jpg",
-  "width": 500,
-  "json": "data/world/what-you-cant-say.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/authors/david-graeber.jpg",
-  "title": "File:David Graeber 2015-03-07 (16741093492) (cropped).jpg",
-  "width": 500,
-  "json": "data/world/bullshit-jobs.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/authors/robert-epstein.jpg",
-  "title": "File:Dr.Robert Epstein CeBIT Conference.jpg",
-  "width": 500,
-  "json": "data/world/the-empty-brain.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/authors/richard-feynman.jpg",
-  "title": "File:Richard Feynman 1959.png",
-  "width": 500,
-  "json": "data/world/cargo-cult-science.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/authors/isaac-asimov.jpg",
-  "title": "File:Isaac.Asimov01.jpg",
-  "width": 500,
-  "json": "data/world/asimov-new-ideas.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/authors/nick-bostrom.jpg",
-  "title": "File:Prof Nick Bostrom 324-1.jpg",
-  "width": 500,
-  "json": "data/world/dragon-tyrant.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/authors/bertrand-russell.jpg",
-  "title": "File:Bertrand Russell photo.jpg",
-  "width": 500,
-  "json": "data/world/in-praise-of-idleness.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/authors/peter-singer.jpg",
-  "title": "File:Peter Singer 2017 (cropped).jpg",
-  "width": 500,
-  "json": "data/world/singer-solution-poverty.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/authors/yuval-noah-harari.jpg",
-  "title": "File:Yuval Noah Harari cropped.jpg",
-  "width": 500,
-  "json": "data/world/myth-of-freedom.json",
-  "field": "author"
- },
- {
-  "out": "assets/img/world/world-awful-much-better.jpg",
-  "query": "child mortality Our World in Data chart",
-  "width": 1280,
-  "json": "data/world/world-awful-much-better.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/what-you-cant-say.jpg",
-  "query": "Galileo facing the Roman Inquisition Cristiano Banti",
-  "width": 1280,
-  "json": "data/world/what-you-cant-say.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/bullshit-jobs.jpg",
-  "query": "office cubicles employees",
-  "width": 1280,
-  "json": "data/world/bullshit-jobs.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/the-empty-brain.jpg",
-  "query": "human brain specimen",
-  "width": 1280,
-  "json": "data/world/the-empty-brain.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/cargo-cult-science.jpg",
-  "query": "John Frum cargo cult Tanna",
-  "width": 1280,
-  "json": "data/world/cargo-cult-science.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/asimov-new-ideas.jpg",
-  "query": "Darwin tree of life sketch notebook 1837",
-  "width": 1280,
-  "json": "data/world/asimov-new-ideas.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/dragon-tyrant.jpg",
-  "query": "Saint George and the Dragon Paolo Uccello",
-  "width": 1280,
-  "json": "data/world/dragon-tyrant.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/in-praise-of-idleness.jpg",
-  "query": "Encyclopedie epinglier planche",
-  "width": 1280,
-  "json": "data/world/in-praise-of-idleness.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/singer-solution-poverty.jpg",
-  "query": "Central do Brasil station Rio de Janeiro",
-  "width": 1280,
-  "json": "data/world/singer-solution-poverty.json",
-  "field": "cover"
- },
- {
-  "out": "assets/img/world/myth-of-freedom.jpg",
-  "query": "data center server room",
-  "width": 1280,
-  "json": "data/world/myth-of-freedom.json",
-  "field": "cover"
- }
+  {
+    "out": "assets/img/world/authors/paul-graham.jpg",
+    "title": "File:Paul Graham programming.jpg",
+    "width": 500,
+    "json": "data/world/what-you-cant-say.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/authors/david-graeber.jpg",
+    "title": "File:David Graeber 2015-03-07 (16741093492) (cropped).jpg",
+    "width": 500,
+    "json": "data/world/bullshit-jobs.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/authors/robert-epstein.jpg",
+    "title": "File:Dr.Robert Epstein CeBIT Conference.jpg",
+    "width": 500,
+    "json": "data/world/the-empty-brain.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/authors/richard-feynman.jpg",
+    "title": "File:Richard Feynman 1959.png",
+    "width": 500,
+    "json": "data/world/cargo-cult-science.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/authors/isaac-asimov.jpg",
+    "title": "File:Isaac.Asimov01.jpg",
+    "width": 500,
+    "json": "data/world/asimov-new-ideas.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/authors/nick-bostrom.jpg",
+    "title": "File:Prof Nick Bostrom 324-1.jpg",
+    "width": 500,
+    "json": "data/world/dragon-tyrant.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/authors/bertrand-russell.jpg",
+    "title": "File:Bertrand Russell photo.jpg",
+    "width": 500,
+    "json": "data/world/in-praise-of-idleness.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/authors/peter-singer.jpg",
+    "title": "File:Peter Singer 2017 (cropped).jpg",
+    "width": 500,
+    "json": "data/world/singer-solution-poverty.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/authors/yuval-noah-harari.jpg",
+    "title": "File:Yuval Noah Harari cropped.jpg",
+    "width": 500,
+    "json": "data/world/myth-of-freedom.json",
+    "field": "author"
+  },
+  {
+    "out": "assets/img/world/world-awful-much-better.jpg",
+    "query": "child mortality Our World in Data chart",
+    "width": 1280,
+    "json": "data/world/world-awful-much-better.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/what-you-cant-say.jpg",
+    "query": "Galileo facing the Roman Inquisition Cristiano Banti",
+    "width": 1280,
+    "json": "data/world/what-you-cant-say.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/bullshit-jobs.jpg",
+    "query": "office cubicles employees",
+    "width": 1280,
+    "json": "data/world/bullshit-jobs.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/the-empty-brain.jpg",
+    "query": "human brain specimen",
+    "width": 1280,
+    "json": "data/world/the-empty-brain.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/cargo-cult-science.jpg",
+    "query": "John Frum cargo cult Tanna",
+    "width": 1280,
+    "json": "data/world/cargo-cult-science.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/asimov-new-ideas.jpg",
+    "query": "Darwin tree of life sketch notebook 1837",
+    "width": 1280,
+    "json": "data/world/asimov-new-ideas.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/dragon-tyrant.jpg",
+    "query": "Saint George and the Dragon Paolo Uccello",
+    "width": 1280,
+    "json": "data/world/dragon-tyrant.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/in-praise-of-idleness.jpg",
+    "query": "Encyclopedie epinglier planche",
+    "width": 1280,
+    "json": "data/world/in-praise-of-idleness.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/singer-solution-poverty.jpg",
+    "query": "Central do Brasil station Rio de Janeiro",
+    "width": 1280,
+    "json": "data/world/singer-solution-poverty.json",
+    "field": "cover"
+  },
+  {
+    "out": "assets/img/world/myth-of-freedom.jpg",
+    "query": "data center server room",
+    "width": 1280,
+    "json": "data/world/myth-of-freedom.json",
+    "field": "cover"
+  }
 ]
