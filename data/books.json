@@ -152,10 +152,10 @@
   "en": "Foundations of Motion and Bodies: Mechanics, Rigid Bodies, Oscillations and Waves",
   "cover": "assets/img/covers/mechanics.jpg?v=1",
   "status": "wip",
-  "progress": 48,
+  "progress": 51,
   "type": "تأليف",
   "field": "physics",
-  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–١٠",
+  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–١١",
   "pages": "٢٣ فصلًا في ٦ أجزاء وستة ملاحق (مخطط)",
   "level": "مبتدئ إلى متقدّم",
   "format": "PDF ملوّن 21×28 سم",
@@ -224,13 +224,13 @@
     "note": "صدر"
    },
    {
-    "t": "الجاذبية الكونية", "note": "قيد الكتابة"
+    "t": "الجاذبية الكونية", "note": "صدر"
    },
    {
     "part": "الجزء الثالث: الأجسام الصلبة"
    },
    {
-    "t": "حركة الجسم الصلب الدورانية"
+    "t": "حركة الجسم الصلب الدورانية", "note": "قيد الكتابة"
    },
    {
     "t": "العزم وديناميكا الدوران"
