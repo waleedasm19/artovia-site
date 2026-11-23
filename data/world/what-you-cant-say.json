@@ -6,7 +6,10 @@
  "author": {
   "name": "Paul Graham",
   "nameAr": "بول غراهام",
-  "bio": "مبرمج وكاتب مقالات بريطاني أمريكي، شارك في تأسيس حاضنة الشركات الناشئة Y Combinator، وتُعدّ مقالاته من أكثر النصوص قراءة بين روّاد التقنية في العالم."
+  "bio": "مبرمج وكاتب مقالات بريطاني أمريكي، شارك في تأسيس حاضنة الشركات الناشئة Y Combinator، وتُعدّ مقالاته من أكثر النصوص قراءة بين روّاد التقنية في العالم.",
+  "photo": "assets/img/world/authors/paul-graham.jpg",
+  "photoCredit": "Gabor Cselle · CC BY 2.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Paul_Graham_programming.jpg"
  },
  "source": "مدوّنة paulgraham.com",
  "pubDate": "يناير ٢٠٠٤",
@@ -62,5 +65,9 @@
  ],
  "slug": "what-you-cant-say",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/what-you-cant-say.jpg",
+ "credit": "Cristiano Banti · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Galileo_facing_the_Roman_Inquisition.jpg",
+ "coverAlt": ""
 }

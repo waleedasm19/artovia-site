@@ -6,7 +6,10 @@
  "author": {
   "name": "Robert Epstein",
   "nameAr": "روبرت إبستين",
-  "bio": "عالم نفس أمريكي، باحث أول في المعهد الأمريكي لأبحاث السلوك والتقنية، ورئيس تحرير سابق لمجلة Psychology Today."
+  "bio": "عالم نفس أمريكي، باحث أول في المعهد الأمريكي لأبحاث السلوك والتقنية، ورئيس تحرير سابق لمجلة Psychology Today.",
+  "photo": "assets/img/world/authors/robert-epstein.jpg",
+  "photoCredit": "Jimwheels · CC BY-SA 4.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Dr.Robert_Epstein_CeBIT_Conference.jpg"
  },
  "source": "مجلة Aeon",
  "pubDate": "١٨ مايو ٢٠١٦",
@@ -63,5 +66,9 @@
  ],
  "slug": "the-empty-brain",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/the-empty-brain.jpg",
+ "credit": "Authors of the study: Jeremy M. DeSilva, James F. A. Traniello, Alexander G. Claxton, Luke · CC BY 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Trends_in_hominin_brain_size_evolution.jpg",
+ "coverAlt": "\"Trends in hominin brain evolution. (A) Cranial capacity in fossil apes (Miocene hominids) and hominins over the last 10"
 }

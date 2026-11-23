@@ -6,7 +6,10 @@
  "author": {
   "name": "Yuval Noah Harari",
   "nameAr": "يوفال نوح هراري",
-  "bio": "مؤرخ ومفكّر، أستاذ التاريخ في الجامعة العبرية في القدس، ومؤلف كتب «العاقل» و«الإنسان الإله» و«٢١ درسًا للقرن الحادي والعشرين» التي تُرجمت إلى عشرات اللغات."
+  "bio": "مؤرخ ومفكّر، أستاذ التاريخ في الجامعة العبرية في القدس، ومؤلف كتب «العاقل» و«الإنسان الإله» و«٢١ درسًا للقرن الحادي والعشرين» التي تُرجمت إلى عشرات اللغات.",
+  "photo": "assets/img/world/authors/yuval-noah-harari.jpg",
+  "photoCredit": "Daniel Naber · CC BY-SA 4.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Yuval_Noah_Harari_cropped.jpg"
  },
  "source": "صحيفة الغارديان (عبر inkl)",
  "pubDate": "سبتمبر ٢٠١٨",
@@ -67,5 +70,9 @@
  ],
  "slug": "myth-of-freedom",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/myth-of-freedom.jpg",
+ "credit": "BalticServers.com · CC BY-SA 3.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
+ "coverAlt": "Server room of BalticServers"
 }

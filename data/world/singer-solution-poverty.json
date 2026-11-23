@@ -6,7 +6,10 @@
  "author": {
   "name": "Peter Singer",
   "nameAr": "بيتر سينغر",
-  "bio": "فيلسوف أسترالي، أستاذ الأخلاقيات الحيوية في جامعة برينستون، من أكثر الفلاسفة الأحياء تأثيرًا وإثارة للجدل، وصاحب كتاب «الحياة التي يمكنك إنقاذها»."
+  "bio": "فيلسوف أسترالي، أستاذ الأخلاقيات الحيوية في جامعة برينستون، من أكثر الفلاسفة الأحياء تأثيرًا وإثارة للجدل، وصاحب كتاب «الحياة التي يمكنك إنقاذها».",
+  "photo": "assets/img/world/authors/peter-singer.jpg",
+  "photoCredit": "Ula Zarosa · CC BY 2.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Peter_Singer_2017_(cropped).jpg"
  },
  "source": "مجلة نيويورك تايمز",
  "pubDate": "٥ سبتمبر ١٩٩٩",
@@ -68,5 +71,9 @@
  ],
  "slug": "singer-solution-poverty",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/singer-solution-poverty.jpg",
+ "credit": "Boaventuravinicius · CC BY-SA 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Central_do_Brasil_%C3%A0_noite.jpg",
+ "coverAlt": "estação ferroviária no Rio de Janeiro, Brasil"
 }

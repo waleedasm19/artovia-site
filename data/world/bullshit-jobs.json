@@ -6,7 +6,10 @@
  "author": {
   "name": "David Graeber",
   "nameAr": "ديفيد غريبر",
-  "bio": "عالم أنثروبولوجيا أمريكي (١٩٦١–٢٠٢٠)، درّس في كلية لندن للاقتصاد، ومؤلف كتابي «الدَّين: أول خمسة آلاف عام» و«وظائف تافهة»."
+  "bio": "عالم أنثروبولوجيا أمريكي (١٩٦١–٢٠٢٠)، درّس في كلية لندن للاقتصاد، ومؤلف كتابي «الدَّين: أول خمسة آلاف عام» و«وظائف تافهة».",
+  "photo": "assets/img/world/authors/david-graeber.jpg",
+  "photoCredit": "Guido van Nispen from amsterdam, the netherlands · CC BY 2.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:David_Graeber_2015-03-07_(16741093492)_(cropped).jpg"
  },
  "source": "مجلة Strike!",
  "pubDate": "أغسطس ٢٠١٣",
@@ -64,5 +67,9 @@
  ],
  "slug": "bullshit-jobs",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/bullshit-jobs.jpg",
+ "credit": "Carol M. Highsmith · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Office_cubicles._New_Carrollton_Federal_Office_Building,_New_Carrollton,_Maryland_LCCN2016648243.tif",
+ "coverAlt": "Title: Office cubicles. New Carrollton Federal Office Building, New Carrollton, Maryland Physical description: 1 photogr"
 }

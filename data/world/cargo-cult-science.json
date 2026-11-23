@@ -6,7 +6,10 @@
  "author": {
   "name": "Richard Feynman",
   "nameAr": "ريتشارد فاينمان",
-  "bio": "فيزيائي أمريكي (١٩١٨–١٩٨٨)، حائز على جائزة نوبل في الفيزياء عام ١٩٦٥ لأعماله في الديناميكا الكهربائية الكمّية، ومن أشهر معلّمي العلم في القرن العشرين."
+  "bio": "فيزيائي أمريكي (١٩١٨–١٩٨٨)، حائز على جائزة نوبل في الفيزياء عام ١٩٦٥ لأعماله في الديناميكا الكهربائية الكمّية، ومن أشهر معلّمي العلم في القرن العشرين.",
+  "photo": "assets/img/world/authors/richard-feynman.jpg",
+  "photoCredit": "Unknown authorUnknown author · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Richard_Feynman_1959.png"
  },
  "source": "خطاب تخرّج معهد كالتك",
  "pubDate": "يونيو ١٩٧٤",
@@ -69,5 +72,9 @@
  ],
  "slug": "cargo-cult-science",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/cargo-cult-science.jpg",
+ "credit": "Tim Ross · CC BY 3.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:JohnFrumCrossTanna1967.jpg",
+ "coverAlt": "Ceremonial cross of John Frum cargo cult, Tanna island, New Hebrides (now Vanuatu), 1967"
 }

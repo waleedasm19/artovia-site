@@ -6,7 +6,10 @@
  "author": {
   "name": "Nick Bostrom",
   "nameAr": "نِك بوستروم",
-  "bio": "فيلسوف سويدي، أسّس معهد مستقبل الإنسانية في جامعة أكسفورد، ومؤلف كتاب «الذكاء الفائق» عن مخاطر الذكاء الاصطناعي ومستقبل البشر."
+  "bio": "فيلسوف سويدي، أسّس معهد مستقبل الإنسانية في جامعة أكسفورد، ومؤلف كتاب «الذكاء الفائق» عن مخاطر الذكاء الاصطناعي ومستقبل البشر.",
+  "photo": "assets/img/world/authors/nick-bostrom.jpg",
+  "photoCredit": "Future of Humanity Institute · CC BY 4.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Prof_Nick_Bostrom_324-1.jpg"
  },
  "source": "مجلة Journal of Medical Ethics",
  "pubDate": "مايو ٢٠٠٥، المجلد ٣١، العدد ٥",
@@ -58,5 +61,9 @@
  ],
  "slug": "dragon-tyrant",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/dragon-tyrant.jpg",
+ "credit": "Paolo Uccello · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Paolo_Uccello_Heiliger_Georg_und_der_Drachen_1_470.jpg",
+ "coverAlt": "Saint George and the Dragon"
 }

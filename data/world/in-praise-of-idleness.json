@@ -6,7 +6,10 @@
  "author": {
   "name": "Bertrand Russell",
   "nameAr": "برتراند راسل",
-  "bio": "فيلسوف وعالم منطق ورياضيات بريطاني (١٨٧٢–١٩٧٠)، من مؤسسي الفلسفة التحليلية، وحائز على جائزة نوبل في الأدب عام ١٩٥٠."
+  "bio": "فيلسوف وعالم منطق ورياضيات بريطاني (١٨٧٢–١٩٧٠)، من مؤسسي الفلسفة التحليلية، وحائز على جائزة نوبل في الأدب عام ١٩٥٠.",
+  "photo": "assets/img/world/authors/bertrand-russell.jpg",
+  "photoCredit": "Bassano Ltd · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Bertrand_Russell_photo.jpg"
  },
  "source": "مجلة Harper's",
  "pubDate": "أكتوبر ١٩٣٢",
@@ -68,5 +71,9 @@
  ],
  "slug": "in-praise-of-idleness",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/in-praise-of-idleness.jpg",
+ "credit": "Designed by Goussier, engraved by Defehrt (1762); file author unknown · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Defehrt_epinglier_pl2.jpg",
+ "coverAlt": "Plate on pin-making, from Diderot's Encyclopédie (1762)"
 }

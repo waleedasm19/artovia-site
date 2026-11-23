@@ -6,7 +6,10 @@
  "author": {
   "name": "Isaac Asimov",
   "nameAr": "إسحاق أسيموف",
-  "bio": "كاتب وعالم كيمياء حيوية أمريكي (١٩٢٠–١٩٩٢)، من أعلام الخيال العلمي، ألّف أو حرّر أكثر من ٥٠٠ كتاب في العلوم والأدب."
+  "bio": "كاتب وعالم كيمياء حيوية أمريكي (١٩٢٠–١٩٩٢)، من أعلام الخيال العلمي، ألّف أو حرّر أكثر من ٥٠٠ كتاب في العلوم والأدب.",
+  "photo": "assets/img/world/authors/isaac-asimov.jpg",
+  "photoCredit": "Phillip Leonian [1] from New York World-Telegram & Sun.[2] · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg"
  },
  "source": "MIT Technology Review",
  "pubDate": "كُتب عام ١٩٥٩، ونُشر أول مرة في ٢٠ أكتوبر ٢٠١٤",
@@ -62,5 +65,9 @@
  ],
  "slug": "asimov-new-ideas",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/asimov-new-ideas.jpg",
+ "credit": "Charles Darwin · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Darwin_Tree_1837_cropped.png",
+ "coverAlt": "Charles Darwin's 1837 sketch, his first diagram of an evolutionary tree from his First Notebook on Transmutation of Spec"
 }
