@@ -28,21 +28,6 @@
  },
  "items": [
   {
-   "slug": "world-awful-much-better",
-   "theme": "progress",
-   "title": "العالم مُروِّع، والعالم أفضل بكثير، والعالم يمكن أن يكون أفضل بكثير",
-   "origTitle": "The world is awful. The world is much better. The world can be much better.",
-   "deck": "يظن أكثرنا أن هذه العبارات الثلاث متناقضة، فيختار واحدة منها ويعيش أسيرًا لها. ماكس روزر يقول إنها صادقة كلها في اللحظة نفسها، وإن رؤيتها معًا هي الشرط الأول لعالم أفضل.",
-   "author": "Max Roser",
-   "authorAr": "ماكس روزر",
-   "photo": "",
-   "cover": "assets/img/world/world-awful-much-better.jpg",
-   "source": "Our World in Data",
-   "year": "٢٠١٨",
-   "mode": "presentation",
-   "added": "2026-11-23"
-  },
-  {
    "slug": "what-you-cant-say",
    "theme": "ideas",
    "title": "ما لا تستطيع قوله",
@@ -69,6 +54,21 @@
    "cover": "assets/img/world/bullshit-jobs.jpg",
    "source": "مجلة Strike!",
    "year": "٢٠١٣",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "dragon-tyrant",
+   "theme": "future",
+   "title": "أسطورة التنّين الطاغية: هل الشيخوخة عدوّ يمكن هزيمته؟",
+   "origTitle": "The Fable of the Dragon-Tyrant",
+   "deck": "تنّين يلتهم عشرة آلاف إنسان كل مساء، والناس تعلّموا أن يعدّوا ذلك جزءًا من نظام الكون. الفيلسوف نِك بوستروم يكتب حكاية رمزية قاسية ليطرح سؤالًا محرجًا: ماذا لو كان قبولنا للشيخوخة عادة نفسية لا حكمة؟",
+   "author": "Nick Bostrom",
+   "authorAr": "نِك بوستروم",
+   "photo": "assets/img/world/authors/nick-bostrom.jpg",
+   "cover": "assets/img/world/dragon-tyrant.jpg",
+   "source": "مجلة Journal of Medical Ethics",
+   "year": "٢٠٠٥",
    "mode": "presentation",
    "added": "2026-11-23"
   },
@@ -103,6 +103,21 @@
    "added": "2026-11-23"
   },
   {
+   "slug": "world-awful-much-better",
+   "theme": "progress",
+   "title": "العالم مُروِّع، والعالم أفضل بكثير، والعالم يمكن أن يكون أفضل بكثير",
+   "origTitle": "The world is awful. The world is much better. The world can be much better.",
+   "deck": "يظن أكثرنا أن هذه العبارات الثلاث متناقضة، فيختار واحدة منها ويعيش أسيرًا لها. ماكس روزر يقول إنها صادقة كلها في اللحظة نفسها، وإن رؤيتها معًا هي الشرط الأول لعالم أفضل.",
+   "author": "Max Roser",
+   "authorAr": "ماكس روزر",
+   "photo": "",
+   "cover": "assets/img/world/world-awful-much-better.jpg",
+   "source": "Our World in Data",
+   "year": "٢٠١٨",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
    "slug": "asimov-new-ideas",
    "theme": "ideas",
    "title": "كيف يأتي الناس بأفكار جديدة؟",
@@ -114,21 +129,6 @@
    "cover": "assets/img/world/asimov-new-ideas.jpg",
    "source": "MIT Technology Review",
    "year": "١٩٥٩",
-   "mode": "presentation",
-   "added": "2026-11-23"
-  },
-  {
-   "slug": "dragon-tyrant",
-   "theme": "future",
-   "title": "أسطورة التنّين الطاغية: هل الشيخوخة عدوّ يمكن هزيمته؟",
-   "origTitle": "The Fable of the Dragon-Tyrant",
-   "deck": "تنّين يلتهم عشرة آلاف إنسان كل مساء، والناس تعلّموا أن يعدّوا ذلك جزءًا من نظام الكون. الفيلسوف نِك بوستروم يكتب حكاية رمزية قاسية ليطرح سؤالًا محرجًا: ماذا لو كان قبولنا للشيخوخة عادة نفسية لا حكمة؟",
-   "author": "Nick Bostrom",
-   "authorAr": "نِك بوستروم",
-   "photo": "assets/img/world/authors/nick-bostrom.jpg",
-   "cover": "assets/img/world/dragon-tyrant.jpg",
-   "source": "مجلة Journal of Medical Ethics",
-   "year": "٢٠٠٥",
    "mode": "presentation",
    "added": "2026-11-23"
   },
