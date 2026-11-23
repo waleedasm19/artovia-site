@@ -152,10 +152,10 @@
   "en": "Foundations of Motion and Bodies: Mechanics, Rigid Bodies, Oscillations and Waves",
   "cover": "assets/img/covers/mechanics.jpg?v=1",
   "status": "wip",
-  "progress": 38,
+  "progress": 42,
   "type": "تأليف",
   "field": "physics",
-  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–٨",
+  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–٩",
   "pages": "٢٣ فصلًا في ٦ أجزاء وستة ملاحق (مخطط)",
   "level": "مبتدئ إلى متقدّم",
   "format": "PDF ملوّن 21×28 سم",
@@ -217,10 +217,11 @@
    },
    {
     "t": "الطاقة الكامنة وحفظ الطاقة",
-    "note": "قيد الكتابة"
+    "note": "صدر"
    },
    {
-    "t": "الزخم الخطي والتصادمات"
+    "t": "الزخم الخطي والتصادمات",
+    "note": "قيد الكتابة"
    },
    {
     "t": "الجاذبية الكونية"
