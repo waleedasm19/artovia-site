@@ -1,55 +1,65 @@
 {
- "updated": "2026-11-22T23:53:07Z",
+ "updated": "2026-11-23T04:34:25Z",
  "items": [
   {
    "field": "space",
-   "title": "تشير فجوة غامضة إلى وجود ثقوب سوداء ولدت من نجوم لم تنفجر أبدًا",
-   "summary": "ربما تنهار النجوم الضخمة بهدوء متحولة إلى ثقوب سوداء دون أن تنتج على الإطلاق انفجارات السوبرنوفا المذهلة التي يتوقعها العلماء عادة. يشير نمط مفاجئ في 257 من عمليات اندماج الثقوب السوداء إلى أن حالات الاختفاء الغامضة للنجوم يمكن أن تفسر...",
+   "title": "فجوة غامضة في أوزان الثقوب السوداء تلمّح إلى نجوم ماتت بلا انفجار",
+   "summary": "تحليل ٢٥٧ اندماجًا لثقوب سوداء رصدتها أجهزة موجات الجاذبية يكشف تجمعًا قرب ١٠ كتل شمسية ونقصًا لافتًا بين ١٢ و١٦ كتلة شمسية.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261121221126.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-22",
-   "orig": "A mysterious gap hints at black holes born from stars that never exploded"
+   "orig": "A mysterious gap hints at black holes born from stars that never exploded",
+   "slug": "black-hole-mass-gap-failed-supernova",
+   "cover": "assets/img/news/black-hole-mass-gap-failed-supernova.jpg"
   },
   {
    "field": "physics",
-   "title": "واجهت الأشرعة الشمسية بين النجوم مشكلة غريبة عند 75% من سرعة الضوء",
-   "summary": "اكتشف العلماء عقبة مفاجئة أمام السفر بين النجوم: عند السرعات القصوى، يمكن أن يبدأ الضوء الذي يدفع الأشرعة الشمسية المستقبلية في إبطائها. بمجرد أن تصل المركبة الفضائية إلى 75% من سرعة الضوء، يبدأ بعض الضوء المتناثر…",
+   "title": "أشرعة النجوم تصطدم بعقبة غريبة عند ٧٥٪ من سرعة الضوء",
+   "summary": "حساب نظري من معهد هاربين للتقنية يُظهر أن الضوء المتناثر عن شراع ضوئي فائق السرعة يبدأ في كبحه بدل دفعه، فيتباطأ تسارعه وإن لم يتوقف.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261120071305.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-22",
-   "orig": "Interstellar solar sails hit a bizarre problem at 75% of light speed"
+   "orig": "Interstellar solar sails hit a bizarre problem at 75% of light speed",
+   "slug": "lightsail-relativistic-drag",
+   "cover": "assets/img/news/lightsail-relativistic-drag.jpg"
   },
   {
    "field": "biology",
-   "title": "تمتلك سلحفاة تبلغ من العمر 194 عامًا سرًا رائعًا لمكافحة الشيخوخة مختبئًا في حمضها النووي",
-   "summary": "يعد جوناثان السلحفاة العملاقة، البالغ من العمر 194 عامًا، أكبر حيوان بري حي في العالم، وربما اكتشف العلماء أخيرًا الأسرار الكامنة وراء عمره الاستثنائي. حدد الباحثون 287 متغيرًا جينيًا فريدًا مرتبطًا بـ...",
+   "title": "سلحفاة عمرها ١٩٤ عامًا تحمل في خلاياها سرًّا يقاوم الشيخوخة",
+   "summary": "درس العلماء العلامات الكيميائية على جينات «جوناثان»، أقدم حيوان برّي حيّ معروف، فوجدوا أن منظِّمات إصلاح الحمض النووي وإنتاج الطاقة بقيت مستقرة لديه كأنه سلحفاة شابة.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261121221130.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-22",
-   "orig": "A 194-year-old tortoise has a remarkable anti-aging secret hidden in its DNA"
+   "orig": "A 194-year-old tortoise has a remarkable anti-aging secret hidden in its DNA",
+   "slug": "jonathan-tortoise-epigenome",
+   "cover": "assets/img/news/jonathan-tortoise-epigenome.jpg"
   },
   {
    "field": "biology",
-   "title": "ربما يكون الواقي الشمسي السري للحمض النووي قد ساعد الحياة على البقاء على الأرض المبكرة",
-   "summary": "اكتشف العلماء سببًا مدهشًا وراء نجاة الحياة المبكرة من الأشعة فوق البنفسجية الشديدة للأرض: يبدو أن أحد المكونات الرئيسية للحمض النووي يحول الضرر المدمر المحتمل إلى شيء أسهل في الإصلاح. وقد يساعد هذا الاكتشاف في حل مشكلة…",
+   "title": "«واقٍ شمسي» في حروف الحمض النووي ربما أنقذ الحياة الأولى",
+   "summary": "تجارب في جامعة تكساس إيه آند إم تقترح أن قاعدة الثايمين لا تتجنب ضرر الأشعة فوق البنفسجية، بل توجّهه نحو صورة يسهل إصلاحها، وهذا قد يفسر لماذا اختارتها الحياة.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261121221128.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-22",
-   "orig": "DNA’s secret sunscreen may have helped life survive on early Earth"
+   "orig": "DNA’s secret sunscreen may have helped life survive on early Earth",
+   "slug": "thymine-dna-sunscreen",
+   "cover": "assets/img/news/thymine-dna-sunscreen.jpg"
   },
   {
    "field": "health",
-   "title": "توصلت مراجعة رئيسية إلى أن مرض السكري من النوع الثاني يرتبط بزيادة خطر الإصابة بمرض الزهايمر بنسبة 53٪",
-   "summary": "يواجه الأشخاص المصابون بداء السكري من النوع الثاني خطرًا أعلى بنسبة 53٪ للإصابة بمرض الزهايمر، وفقًا لمراجعة جديدة رئيسية شملت 40 دراسة. يقدر الباحثون أن ما يقرب من خمسة من كل 1000 شخص مصاب بداء السكري من النوع 2 يصابون بمرض الزهايمر كل عام. بواسطة…",
+   "title": "السكري من النوع الثاني يرفع خطر ألزهايمر بنسبة ٥٣٪",
+   "summary": "مراجعة واسعة لأربعين دراسة تفصل لأول مرة بين السكري من النوع الثاني ومرض ألزهايمر تحديدًا، وتقدّر نحو ٤٫٧ إصابات جديدة سنويًّا لكل ألف مصاب بالسكري.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261121221124.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-22",
-   "orig": "Type 2 diabetes linked to 53% higher Alzheimer’s risk, major review finds"
+   "orig": "Type 2 diabetes linked to 53% higher Alzheimer’s risk, major review finds",
+   "slug": "diabetes-alzheimer-risk",
+   "cover": "assets/img/news/diabetes-alzheimer-risk.jpg"
   },
   {
    "field": "health",
@@ -93,6 +103,26 @@
   },
   {
    "field": "space",
+   "url": "https://phys.org/news/2026-11-mercury-visitor-years-pair-spacecraft.html",
+   "source": "Phys.org",
+   "date": "2026-11-22",
+   "title": "عطارد يستقبل أول زائر له منذ سنوات مع دخول مركبتين فضائيتين مداره",
+   "summary": "دخلت مركبتان فضائيتان المدار حول عطارد يوم السبت بعد رحلة استغرقت ثماني سنوات عبر النظام الشمسي الداخلي، لكشف أسرار أصغر كواكبنا.",
+   "orig": "Mercury gets its first visitor in years as a pair of spacecraft loop into orbit",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
+   "url": "https://phys.org/news/2026-11-milky-simulation-resolution-supercomputers.html",
+   "source": "Phys.org",
+   "date": "2026-11-22",
+   "title": "محاكاة لمجرة درب التبانة بدقة قياسية بمساعدة ثلاثة حواسيب عملاقة",
+   "summary": "طوّر فريق من الباحثين، بينهم باحثون من جامعة طوكيو، طريقة جديدة لنمذجة درب التبانة بتفصيل لم يسبق له مثيل، فحاكوا المجرة كلها حتى مستوى النجوم المفردة بجمع قدرات ثلاثة حواسيب عملاقة.",
+   "orig": "Milky Way simulation reaches record resolution with the help of three supercomputers",
+   "lang": "ar"
+  },
+  {
+   "field": "space",
    "url": "https://www.sciencedaily.com/releases/2026/11/261120075554.htm",
    "source": "ScienceDaily",
    "date": "2026-11-21",
@@ -108,10 +138,12 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261120075547.htm",
    "source": "ScienceDaily",
    "date": "2026-11-21",
-   "title": "بعد ٨ سنوات في الفضاء، تلسكوب أشعة سينية رائد يفتح عينيه أخيرًا",
-   "summary": "بعد ثماني سنوات وعشرة مليارات كيلومتر في الفضاء، التقط تلسكوب أشعة سينية رائد متجه إلى عطارد أولى أرصاده الكونية، وأداؤه يفوق توقعات العلماء. وقد يكشف الجهاز قريبًا ما خفي من أسرار عطارد…",
+   "title": "بعد ثماني سنوات من السفر: تلسكوب أشعة سينية يفتح عينيه في طريقه إلى عطارد",
+   "summary": "أول تلسكوب تصوير بالأشعة السينية على متن مهمة لعلوم الكواكب رصد سديم السرطان بدقة فاقت اختباراته الأرضية، فيما دخلت مركبة «بيبي كولومبو» مدار عطارد.",
    "orig": "After 8 years in space, a groundbreaking X-ray telescope finally opens its eyes",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "mixs-xray-telescope-mercury",
+   "cover": "assets/img/news/mixs-xray-telescope-mercury.jpg"
   },
   {
    "field": "physics",
@@ -211,13 +243,15 @@
   },
   {
    "field": "physics",
-   "title": "لقد قلبت نسبية أينشتاين قاعدة أساسية في الكيمياء رأسًا على عقب",
-   "summary": "يمثل الاكتشاف المفاجئ في جامعة براون تحديًا لأحد أهم التفسيرات الأساسية للكتب المدرسية في الكيمياء. وجد الباحثون دليلا مباشرا على أن نظرية النسبية لأينشتاين تغير كيفية تكوين الذرات الثقيلة لروابط ثلاثية، مما يسبب اختلافا طبيعيا...",
+   "title": "نسبية أينشتاين تقلب قاعدة أساسية في كتب الكيمياء",
+   "summary": "في جزيء يجمع الكربون بالبزموت لا تتكون الرابطة الثلاثية من «سيغما واحدة وباي اثنتين» كما ندرّس، بل من رابطة باي واحدة ورابطتين هجينتين تمتزج فيهما الصفتان.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261120075602.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-20",
-   "orig": "Einstein’s relativity just upended a fundamental rule of chemistry"
+   "orig": "Einstein’s relativity just upended a fundamental rule of chemistry",
+   "slug": "bismuth-triple-bond-relativity",
+   "cover": "assets/img/news/bismuth-triple-bond-relativity.jpg"
   },
   {
    "field": "space",
@@ -530,12 +564,14 @@
   },
   {
    "field": "earth",
-   "title": "منحدرات الجليد في القارة القطبية الجنوبية: انهيار أسرع لكن أقل كارثية",
-   "summary": "مسح لأكثر من ١٥ ألف جرف جليدي يشير إلى أنها قد تكون أقل عرضة للانهيار الكارثي مما كان يُخشى.",
+   "title": "جروف الجليد في أنتاركتيكا تنهار أسرع من المتوقع ثم تتوقف",
+   "summary": "بيانات أقمار صناعية لأكثر من ١٥ ألف جرف جليدي تُظهر أن الانهيار المتسلسل الذي تخشاه بعض النماذج المناخية لا يحدث، لكن العوامل التي تكبحه يجب أن تدخل في توقعات ارتفاع البحار.",
    "orig": "Antarctica’s Ice Cliffs Are Collapsing Faster Than Expected, but There’s a Twist",
    "url": "https://www.sciencedaily.com/releases/2026/11/261117033925.htm",
    "source": "ScienceDaily",
-   "date": "2026-11-19"
+   "date": "2026-11-19",
+   "slug": "antarctic-ice-cliffs-stabilize",
+   "cover": "assets/img/news/antarctic-ice-cliffs-stabilize.jpg"
   },
   {
    "field": "health",
@@ -622,10 +658,12 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261117033914.htm",
    "source": "ScienceDaily",
    "date": "2026-11-19",
-   "title": "لغز «ستونهنج» البالغ وزنه ستة أطنان يزداد غموضًا مع تضييق العلماء نطاق بحثهم",
-   "summary": "كشفت دراسة جديدة واسعة النطاق حول «حجر المذبح» الغامض في ستونهنج، الذي يزن ستة أطنان، عن أدلة جديدة، في الوقت الذي استبعدت فيه عدة مصادر محتملة. فبعد أن كان يُعتقد في السابق أن هذا اللوح الضخم المصنوع من الحجر الرملي قد جاء من ويلز، يُعتقد الآن أنه قد جاء من...",
+   "title": "لغز «حجر المذبح» في ستونهنج يضيق: أماكن كثيرة استُبعدت",
+   "summary": "أشمل فحص جيولوجي لحجر وزنه ستة أطنان في قلب ستونهنج يرسم «بصمة» صخرية دقيقة، لكنه لم يجد بعد المكان الذي اقتُلع منه.",
    "orig": "Stonehenge’s six-ton mystery deepens as scientists narrow their search",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "stonehenge-altar-stone-search",
+   "cover": "assets/img/news/stonehenge-altar-stone-search.jpg"
   },
   {
    "field": "physics",
@@ -751,10 +789,12 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261116023405.htm",
    "source": "ScienceDaily",
    "date": "2026-11-17",
-   "title": "قد تساهم هذه المادة الجديدة الرائعة في حل مشكلة رئيسية تتعلق باحتجاز الكربون",
-   "summary": "طور العلماء مادة جديدة لالتقاط الكربون تحول الرطوبة من عائق إلى ميزة، مما قد يحل مشكلة كبيرة تتعلق بإزالة ثاني أكسيد الكربون من الانبعاثات الصناعية. تعمل هذه المادة حتى في الظروف شديدة الرطوبة ويمكنها…",
+   "title": "مادة جديدة تلتقط ثاني أكسيد الكربون حتى في الهواء المشبع بالرطوبة",
+   "summary": "طوّرت جامعة ولاية أوريغون إطارًا معدنيًّا عضويًّا يفصل الماء عن ثاني أكسيد الكربون داخل مسامه الدقيقة، فيبقى يعمل حيث تفشل معظم المواد المشابهة.",
    "orig": "This remarkable new material could solve a major carbon capture problem",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "mof-humid-carbon-capture",
+   "cover": "assets/img/news/mof-humid-carbon-capture.jpg"
   },
   {
    "field": "tech",

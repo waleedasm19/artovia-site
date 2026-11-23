@@ -13,7 +13,7 @@
   root.innerHTML = `
     <nav class="crumbs" aria-label="مسار التصفح" style="max-width:1100px;margin:0 auto 18px"><a href="./">الرئيسية</a><span>/</span><a href="news.html">الأخبار العلمية</a><span>/</span><span>${esc(f.name || "")}</span></nav>
     ${a.cover ? `<figure class="article-hero reveal in"><img src="${esc(a.cover)}" alt="${esc(a.coverAlt || a.title)}" width="1600" height="900"></figure>
-      <p class="credit">رسم: مؤسسة إرتوفيا الخيرية</p>` : ""}
+      <p class="credit">${a.credit ? `الصورة: ${a.creditUrl ? `<a href="${esc(a.creditUrl)}" target="_blank" rel="noopener">${esc(a.credit)}</a>` : esc(a.credit)}` : "رسم: مؤسسة إرتوفيا الخيرية"}</p>` : ""}
     <article class="reader">
       <span class="chip" style="--c:${f.color}">${esc(f.name || "")}</span>
       <h1 style="margin-top:14px">${esc(a.title)}</h1>
