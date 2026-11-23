@@ -152,10 +152,10 @@
   "en": "Foundations of Motion and Bodies: Mechanics, Rigid Bodies, Oscillations and Waves",
   "cover": "assets/img/covers/mechanics.jpg?v=1",
   "status": "wip",
-  "progress": 14,
+  "progress": 17,
   "type": "تأليف",
   "field": "physics",
-  "edition": "قيد الكتابة: صدر منه التمهيد والفصلان الأول والثاني",
+  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–٣",
   "pages": "٢٣ فصلًا في ٦ أجزاء وستة ملاحق (مخطط)",
   "level": "مبتدئ إلى متقدّم",
   "format": "PDF ملوّن 21×28 سم",
@@ -190,13 +190,14 @@
    },
    {
     "t": "التكامل: لغة التراكم",
-    "note": "قيد الكتابة"
+    "note": "صدر"
    },
    {
     "part": "الجزء الثاني: الحركة والقوة"
    },
    {
-    "t": "الحركة في بعد واحد"
+    "t": "الحركة في بعد واحد",
+    "note": "قيد الكتابة"
    },
    {
     "t": "الحركة في بعدين وثلاثة"
