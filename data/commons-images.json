@@ -85,7 +85,7 @@
   },
   {
     "out": "assets/img/world/the-empty-brain.jpg",
-    "query": "human brain specimen",
+    "query": "human brain specimen photograph lateral",
     "width": 1280,
     "json": "data/world/the-empty-brain.json",
     "field": "cover"
