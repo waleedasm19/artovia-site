@@ -21,7 +21,7 @@
       <p class="meta-line"><span>${arDate(a.date)}</span><span>تحرير: أخبار إرتوفيا</span>${a.readMin ? `<span>${esc(a.readMin)}</span>` : ""}</p>
       <div class="body">${a.body.map(block).join("")}</div>
       ${a.facts?.length ? `<aside class="keyfacts"><h3>في سطور</h3><ul>${a.facts.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></aside>` : ""}
-      <div class="source-box"><p>المصدر الأصلي: <b>${esc(a.source)}</b>${a.study ? `<br><small>${esc(a.study)}</small>` : ""}</p>
+      <div class="source-box"><p>المصدر الأصلي: <b>${esc(a.source)}</b>${a.study ? `<br><small>${esc(a.study)}</small>` : ""}${a.license ? `<br><small class="lic">الترخيص: ${a.licenseUrl ? `<a href="${esc(a.licenseUrl)}" target="_blank" rel="noopener">${esc(a.license)}</a>` : esc(a.license)}</small>` : ""}</p>
         <a class="btn btn-ghost" href="${esc(a.url)}" target="_blank" rel="noopener">اقرأ الخبر بلغته الأصلية ${ICON.ext || ""}</a></div>
       <p style="font-size:.78rem;color:var(--ink-3);margin-top:18px">صاغت هذا المقال أسرة تحرير إرتوفيا بالعربية اعتمادًا على المصدر المذكور، مع الحفاظ على دقة المعلومات. <a class="link-arrow" href="news.html">← المزيد من الأخبار</a></p>
     </article>`;
