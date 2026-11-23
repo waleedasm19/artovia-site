@@ -1,4 +1,4 @@
-/* المشهد العلوي يتنقّل بين مجالات العلم: يبدأ بالمجموعة الشمسية، ثم كل دقيقة ينتقل بتلاشٍ
+/* المشهد العلوي يتنقّل بين مجالات العلم: يبدأ بالمجموعة الشمسية، ثم كل 15 ثانية ينتقل بتلاشٍ
    ناعم إلى صورة حقيقية مرخّصة لمجال آخر، ثم يعود للمجموعة الشمسية. البيانات: data/hero-fields.json */
 (async () => {
   const { $, getJSON, esc } = window.ACF;
@@ -14,6 +14,7 @@
   let idx = -1, timer = null, onScreen = true;     // ‎-1 = المجموعة الشمسية
   function go(k) {
     idx = k >= F.length ? -1 : k;
+    try { localStorage.setItem("acf-hero-scene", String(idx)); } catch {}
     figs.forEach((f, i) => f.classList.toggle("on", i === idx));
     hero.classList.toggle("field-on", idx >= 0);
     canvas?.classList.toggle("away", idx >= 0);
@@ -27,5 +28,9 @@
   function plan() { clearTimeout(timer); if (onScreen && !document.hidden) timer = setTimeout(() => go(idx + 1), every); }
   new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; plan(); }, { threshold: .1 }).observe(hero);
   document.addEventListener("visibilitychange", plan);
-  load(0); plan();
+  // يفتح الموقع على آخر مشهد شاهده الزائر بدل البدء من جديد
+  let last = -1; try { last = parseInt(localStorage.getItem("acf-hero-scene") ?? "-1", 10); } catch {}
+  if (!(last >= -1 && last < F.length)) last = -1;
+  if (last >= 0) { hero.classList.add("instant"); load(last); go(last); requestAnimationFrame(() => requestAnimationFrame(() => hero.classList.remove("instant"))); }
+  else { load(0); plan(); }
 })();

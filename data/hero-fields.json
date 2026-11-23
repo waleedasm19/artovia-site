@@ -1,4 +1,4 @@
-{"interval":60,"fields":[
+{"interval":15,"fields":[
  {"id":"physics","name":"الفيزياء والذرّة","img":"assets/img/hero/physics.jpg","credit":"كاشف CMS في مصادم الهادرونات الكبير، سيرن · SimonWaldherr · CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:CERN_LHC_CMS_02.jpg"},
  {"id":"engineering","name":"الهندسة","img":"assets/img/hero/engineering.jpg","credit":"جسر ميو المعلّق، فرنسا · Richard Leeming · CC BY-SA 2.0","url":"https://commons.wikimedia.org/wiki/File:Millau_Viaduct_(2724128971).jpg"},
  {"id":"aviation","name":"الطيران","img":"assets/img/hero/aviation.jpg","credit":"طائرة إيرباص A380 عند الغروب · Chad Ajamian · CC BY 3.0","url":"https://commons.wikimedia.org/wiki/File:Airbus_A380_with_sunset_(175372547).jpg"},

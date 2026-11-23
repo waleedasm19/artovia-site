@@ -510,11 +510,12 @@ p{margin:0 0 1em}
 /* ===== المشهد العلوي المتنقّل بين المجالات ===== */
 #globe{transition:opacity 2.4s ease}
 #globe.away{opacity:0!important}
+.hero.instant #globe,.hero.instant .hero-scene,.hero.instant .field-tag{transition:none!important}
 .hero-scenes{position:absolute;inset:0;z-index:-1;pointer-events:none}
 .hero-scene{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 2.4s ease;overflow:hidden}
 .hero-scene img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.12)}
 .hero-scene.on{opacity:1}
-.hero-scene.on img{animation:herodrift 62s linear forwards}
+.hero-scene.on img{animation:herodrift 18s linear forwards}
 @keyframes herodrift{from{transform:scale(1.14) translate(1.5%,.8%)}to{transform:scale(1.02) translate(-1%,-.5%)}}
 .hero-scene::after{content:"";position:absolute;inset:0;background:linear-gradient(to left,rgba(2,4,10,.92) 0%,rgba(2,4,10,.72) 34%,rgba(2,4,10,.18) 68%,rgba(2,4,10,.35) 100%),linear-gradient(to bottom,rgba(2,4,10,.45),transparent 30%)}
 .hero .planet-label{transition:opacity 1.2s}
