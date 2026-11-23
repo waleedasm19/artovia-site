@@ -533,7 +533,7 @@ p{margin:0 0 1em}
 @media (prefers-reduced-motion:reduce){.hero-scene.on img{animation:none}}
 :root[data-motion="reduce"] .hero-scene.on img,:root[data-motion="off"] .hero-scene.on img{animation:none}
 /* ===== مقالات عالمية ===== */
-.essays{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.essays{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
 .essay-card{display:flex;flex-direction:column;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);overflow:hidden;transition:border-color .3s,transform .4s var(--ease),background .3s}
 .essay-card:hover{border-color:color-mix(in srgb,var(--c) 55%,transparent);background:var(--surface-2);transform:translateY(-3px)}
 .essay-card .cover{aspect-ratio:16/9;overflow:hidden;background:#0b1020}
@@ -542,14 +542,13 @@ p{margin:0 0 1em}
 .essay-card .in{display:flex;flex-direction:column;flex:1;padding:18px 22px 20px}
 .essay-card .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;font-size:.76rem;color:var(--ink-3)}
 .essay-card .chip{--c:inherit}
-.essay-card h3{font-family:var(--serif);font-size:1.4rem;line-height:1.5;margin-bottom:8px}
+.essay-card h3{font-size:1.15rem;line-height:1.6;margin-bottom:8px}
 .essay-card p{color:var(--ink-2);font-size:.9rem;margin-bottom:16px}
 .essay-card .author{margin-top:auto;display:flex;align-items:center;gap:12px;padding-top:14px;border-top:1px dashed var(--line)}
 .essay-card .author img,.essay-card .author .ph{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:2px solid color-mix(in srgb,var(--c) 60%,transparent);flex:none}
 .essay-card .author .ph{display:grid;place-items:center;background:var(--surface-2);font-weight:700}
 .essay-card .author b{display:block;font-size:.9rem}
 .essay-card .author small{color:var(--ink-3);font-size:.76rem}
-@media (min-width:980px){.essay-feature{grid-column:span 2;flex-direction:row}.essay-feature .cover{flex:1.15;aspect-ratio:auto;min-height:340px}.essay-feature .in{flex:1;padding:28px}.essay-feature h3{font-size:1.9rem}}
 .essay .chip{--c:inherit}.essay .chip.mode{color:var(--ink-2);background:var(--surface);border-color:var(--line-2)}
 .essay .orig-title{font-size:.9rem;color:var(--ink-3);font-style:italic;text-align:right;margin:-4px 0 6px}
 .essay .byline{display:flex;gap:18px;align-items:flex-start;margin:6px 0 18px;padding:18px 20px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line)}

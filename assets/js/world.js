@@ -28,7 +28,7 @@
     const items = W.items.filter((i) => (theme === "all" || i.theme === theme) &&
       (!q || [i.title, i.deck, i.authorAr, i.author, i.origTitle, i.source].join(" ").toLowerCase().includes(q)));
     $("#world-count").textContent = `${arNum(items.length)} مقالًا`;
-    list.innerHTML = items.length ? items.slice(0, shown).map((i, k) => card(i, k === 0 && !q && theme === "all")).join("")
+    list.innerHTML = items.length ? items.slice(0, shown).map((i, k) => card(i, false)).join("")
       : '<div class="empty" style="grid-column:1/-1">لا توجد مقالات مطابقة الآن.</div>';
     more.hidden = items.length <= shown;
     observe(list);

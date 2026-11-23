@@ -3,7 +3,7 @@
 كل قالب يبدأ بسطر تعليق JSON:  <!--{"title":"...","desc":"...","nav":"library","scripts":["library.js"]}-->
 التشغيل: python3 tools/build.py   (يكتب الصفحات في جذر الموقع)
 """
-import json, os, re, glob
+import json, os, re, glob, hashlib
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "مؤسسة إرتوفيا الخيرية"
 NAV = [("index", "الرئيسية", "./"), ("library", "المكتبة", "library.html"), ("magazine", "مجلة المدار", "magazine.html"),
@@ -51,6 +51,7 @@ FOOTER = f'''<footer class="site-footer"><div class="wrap">
 
 def build():
     out = []
+    CSSV = hashlib.md5(open(os.path.join(ROOT, "assets", "css", "main.css"), "rb").read()).hexdigest()[:8]
     for path in sorted(glob.glob(os.path.join(ROOT, "tools", "pages", "*.html"))):
         src = open(path, encoding="utf-8").read()
         m = re.match(r"<!--(\{.*?\})-->\s*", src, re.S)
@@ -73,7 +74,7 @@ def build():
 <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png?v=2"><link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v=2"><link rel="shortcut icon" href="assets/img/favicon.ico?v=2"><link rel="apple-touch-icon" href="assets/img/icon-512.png?v=2">
 <link rel="preload" href="assets/fonts/Amiri-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/IBMPlexSansArabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/main.css?v={CSSV}">
 <script>try{{var s=JSON.parse(localStorage.getItem("acf-settings")||"{{}}");if(s.theme)document.documentElement.dataset.theme=s.theme;if(s.fontsize)document.documentElement.dataset.fontsize=s.fontsize}}catch(e){{}}</script>
 {scripts}
 </head>
