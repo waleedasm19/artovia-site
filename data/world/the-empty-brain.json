@@ -66,5 +66,9 @@
  ],
  "slug": "the-empty-brain",
  "added": "2026-11-23",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/the-empty-brain.jpg",
+ "credit": "Department of Radiology, Uppsala University Hospital. Uploaded by Mikael Häggström. · CC0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Computed_tomography_of_human_brain_-_large.png",
+ "coverAlt": "Computer tomography of human brain, from base of the skull to top. Taken with intravenous contrast medium. It was taken "
 }
