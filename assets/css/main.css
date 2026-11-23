@@ -584,3 +584,6 @@ p{margin:0 0 1em}
 .src-body small{color:var(--teal);font-size:.78rem}
 .src-note{max-width:820px;padding:22px 24px;border:1px dashed var(--line-2);border-radius:var(--radius);color:var(--ink-2)}
 .src-note p{margin:.4em 0}
+.src-mark.logo{background:#fff;padding:10px}
+.src-mark.logo img{max-width:100%;max-height:100%;object-fit:contain}
+.src-body em{font-style:normal;color:var(--gold);font-size:.82rem}
