@@ -1,6 +1,26 @@
 {
- "updated": "2026-11-23T23:12:29Z",
+ "updated": "2026-11-23T23:28:36Z",
  "items": [
+  {
+   "field": "physics",
+   "title": "يقوم الذكاء الاصطناعي الموجه بالفيزياء بإعادة بناء تدفق السوائل من البيانات المتفرقة والصاخبة",
+   "summary": "لقد غيرت تقنيات التصوير الطبي الطريقة التي يتصور بها العلماء والأطباء تدفق الدم عبر قلب الإنسان، ولكن حتى تقنيات التصوير الأكثر تقدمًا لا يمكنها التقاط كل تفاصيل حركة السوائل. باحثون في جامعة…",
+   "url": "https://phys.org/news/2026-11-physics-ai-reconstructs-fluid-sparse.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "Physics-guided AI reconstructs fluid flow from sparse, noisy data"
+  },
+  {
+   "field": "space",
+   "title": "تكشف بيانات المركبة الفضائية لوكالة ناسا كيف يتغير ذيل النظام الشمسي على مدار 14 عامًا",
+   "summary": "تعد الدراسة التي أجراها معهد أبحاث الجنوب الغربي هي الأولى التي ترسم مسارات الحركة المميزة لفصوص الذيل الشمسي على مدار فترة 14 عامًا باستخدام بيانات من المركبة الفضائية Interstellar Boundary Explorer (IBEX) التابعة لناسا. ومن خلال تحديد المسارات التي تتبعها هذه…",
+   "url": "https://phys.org/news/2026-11-nasa-spacecraft-reveal-solar-tail.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "NASA spacecraft data reveal how solar system's tail shifts over 14 years"
+  },
   {
    "field": "physics",
    "title": "تقدم مجموعة التناظر المهملة مخططًا هندسيًا جديدًا للنموذج القياسي والفراغات المحمية طوبولوجيًا",
