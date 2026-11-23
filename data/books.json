@@ -152,10 +152,10 @@
   "en": "Foundations of Motion and Bodies: Mechanics, Rigid Bodies, Oscillations and Waves",
   "cover": "assets/img/covers/mechanics.jpg?v=1",
   "status": "wip",
-  "progress": 30,
+  "progress": 34,
   "type": "تأليف",
   "field": "physics",
-  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–٦",
+  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–٧",
   "pages": "٢٣ فصلًا في ٦ أجزاء وستة ملاحق (مخطط)",
   "level": "مبتدئ إلى متقدّم",
   "format": "PDF ملوّن 21×28 سم",
@@ -209,10 +209,11 @@
    },
    {
     "t": "تطبيقات قوانين نيوتن",
-    "note": "قيد الكتابة"
+    "note": "صدر"
    },
    {
-    "t": "الشغل والطاقة الحركية"
+    "t": "الشغل والطاقة الحركية",
+    "note": "قيد الكتابة"
    },
    {
     "t": "الطاقة الكامنة وحفظ الطاقة"
