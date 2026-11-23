@@ -152,10 +152,10 @@
   "en": "Foundations of Motion and Bodies: Mechanics, Rigid Bodies, Oscillations and Waves",
   "cover": "assets/img/covers/mechanics.jpg?v=1",
   "status": "wip",
-  "progress": 55,
+  "progress": 59,
   "type": "تأليف",
   "field": "physics",
-  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–١٢",
+  "edition": "قيد الكتابة: صدر منه التمهيد والفصول ١–١٣",
   "pages": "٢٣ فصلًا في ٦ أجزاء وستة ملاحق (مخطط)",
   "level": "مبتدئ إلى متقدّم",
   "format": "PDF ملوّن 21×28 سم",
@@ -233,10 +233,10 @@
     "t": "حركة الجسم الصلب الدورانية", "note": "صدر"
    },
    {
-    "t": "العزم وديناميكا الدوران", "note": "قيد الكتابة"
+    "t": "العزم وديناميكا الدوران", "note": "صدر"
    },
    {
-    "t": "الزخم الزاوي"
+    "t": "الزخم الزاوي", "note": "قيد الكتابة"
    },
    {
     "t": "الاتزان السكوني والمرونة"
