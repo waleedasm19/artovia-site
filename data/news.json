@@ -1,6 +1,56 @@
 {
- "updated": "2026-11-23T20:47:20Z",
+ "updated": "2026-11-23T22:30:18Z",
  "items": [
+  {
+   "field": "space",
+   "title": "ناسا تمنح عقدًا لبرنامج شبكة المدار الأرضي القريب التابع لـ NOAA",
+   "summary": "منحت وكالة ناسا، نيابة عن الإدارة الوطنية للمحيطات والغلاف الجوي (NOAA)، عقدًا لشركة Northrop Grumman Systems Corporation لأدوات Sounder للتطبيقات المعتمدة على الموجات الدقيقة (SMBA) على شبكة مدار الأرض القريبة (NEON) التابعة لـ NOAA.",
+   "url": "https://www.nasa.gov/news-release/nasa-awards-contract-for-noaas-near-earth-orbit-network-program/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "NASA Awards Contract for NOAA’s Near Earth Orbit Network Program"
+  },
+  {
+   "field": "space",
+   "title": "يجد ويب دليلاً على أن طبقات النجم قد اندمجت قبل ساعات فقط من انفجار المستعر الأعظم Cas A",
+   "summary": "رسم تلسكوب جيمس ويب الفضائي التابع لناسا نسيجًا نابضًا بالحياة من بقايا المستعر الأعظم الأسطوري Cassiopeia A (Cas A). مثل هذه البقايا هي سحب الغاز والغبار التي تبقى بعد انفجار نجم ضخم وستؤدي في النهاية إلى ظهور نجم جديد.",
+   "url": "https://phys.org/news/2026-11-webb-evidence-star-layers-merged.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "Webb finds evidence star's layers may have merged just hours before Cas A supernova"
+  },
+  {
+   "field": "space",
+   "title": "يمكن للبكتيريا والطاقة النووية إنشاء منازل جاهزة على المريخ قبل وصول رواد الفضاء",
+   "summary": "وبينما نستعد لإنزال إنسان على المريخ في نهاية المطاف، تظهر المزيد والمزيد من الأفكار حول كيفية الاستعداد لذلك. واحدة حديثة من Pioneer Labs، وهو معهد أبحاث أسسته المهندسة الحيوية إريكا ديبينديكتيس لتطوير التقنيات البيولوجية للفضاء...",
+   "url": "https://phys.org/news/2026-11-bacteria-nuclear-power-ready-homes.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "Bacteria and nuclear power could grow ready-made homes on Mars before astronauts arrive"
+  },
+  {
+   "field": "space",
+   "title": "تقوم هيرا بمسح الكويكبات برؤية خارقة",
+   "summary": "تقوم مهمة هيرا التابعة لوكالة الفضاء الأوروبية للدفاع الكوكبي بمسح الكويكبات المستهدفة باستخدام مجموعة من الأدوات، التي تتجاوز حدود العين البشرية. يُرى هنا كويكب ديديموس الأكبر حجمًا، والذي تهيمن عليه سلسلة التلال الاستوائية المثيرة، من…",
+   "url": "https://phys.org/news/2026-11-hera-surveys-asteroids-superhuman-vision.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "Hera surveys asteroids with superhuman vision"
+  },
+  {
+   "field": "space",
+   "title": "تكشف النبضات النجمية عن ثنائي مخفي في عينة نجوم معايرة JWST",
+   "summary": "النجوم المستخدمة لمعايرة تلسكوب جيمس ويب الفضائي (JWST) يجب أن يكون لها أطياف محددة بدقة بحيث يمكن قياس تدفقاتها بدقة. ومع ذلك، فإن بعض النجوم التي تبدو منفردة قد تحتوي في الواقع على رفاق لم يتم حلهم مما يغير توقعاتهم.",
+   "url": "https://phys.org/news/2026-11-stellar-pulses-reveal-hidden-binary.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "Stellar pulses reveal hidden binary in JWST calibration star sample"
+  },
   {
    "field": "space",
    "title": "يُظهر الثوران القياسي للنجم كيف يمكن للعناصر الأساسية أن تنتشر عبر الفضاء",
