@@ -1,6 +1,36 @@
 {
- "updated": "2026-11-23T17:29:49Z",
+ "updated": "2026-11-23T18:53:40Z",
  "items": [
+  {
+   "field": "space",
+   "title": "دراسة الخلايا السرطانية في الجاذبية الصغرى",
+   "summary": "تُظهر هذه الصورة الملتقطة في 19 نوفمبر 2026 أورامًا دقيقة في المعدة نمت داخل شريحة حيوية مغلفة. يدرس التحقيق Encapsulate-1 عينات الورم المشتقة من المريض على متن محطة الفضاء الدولية لفهم كيفية تحرك الخلايا السرطانية وتفاعلها بشكل أفضل...",
+   "url": "https://www.nasa.gov/image-article/studying-cancer-cells-in-microgravity/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "Studying Cancer Cells in Microgravity"
+  },
+  {
+   "field": "physics",
+   "title": "يجمع ليزر الألياف الجديد بين النبضات فائقة القصر مع طيف واسع وإخراج مستقر",
+   "summary": "ينتج ليزر الفيمتو ثانية نبضات تدوم فقط كوادريليون جزء من الثانية. سرعتها تجعلها مفيدة لتصوير العمليات السريعة، وأخذ عينات من الإشارات عالية التردد وقياس المسافة أو الوقت بدقة عالية. ولهذه التطبيقات، يجب أن يستخدم الليزر...",
+   "url": "https://phys.org/news/2026-11-fiber-laser-combines-ultrashort-pulses.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "New fiber laser combines ultrashort pulses with broad spectrum and stable output"
+  },
+  {
+   "field": "tech",
+   "title": "الفيلسوف الأسطوري لا يقتنع بحجة الوعي الأنثروبي",
+   "summary": "ظهرت هذه القصة في الأصل في The Algorithm، رسالتنا الإخبارية الأسبوعية حول الذكاء الاصطناعي. للحصول على قصص مثل هذه في بريدك الوارد أولاً، قم بالتسجيل هنا. قبل طرحها للعامة الأسبوع الماضي، ذكرت أنثروبيك احتمال أن يكون الذكاء الاصطناعي واعيًا أو واعيًا كعامل خطر...",
+   "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+   "source": "MIT Technology Review",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "orig": "A legendary philosopher isn’t buying Anthropic’s consciousness argument"
+  },
   {
    "field": "space",
    "title": "ناسا تبحث عن شركاء لتصميم أول مفاعل نووي للقمر",
