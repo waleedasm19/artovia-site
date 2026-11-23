@@ -7,7 +7,7 @@ import json, os, re, glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "مؤسسة إرتوفيا الخيرية"
 NAV = [("index", "الرئيسية", "./"), ("library", "المكتبة", "library.html"), ("magazine", "مجلة المدار", "magazine.html"),
-       ("rawaq", "الرواق", "rawaq.html"), ("news", "الأخبار العلمية", "news.html"), ("knowledge", "معلومات عامة", "knowledge.html"), ("about", "عن المؤسسة", "about.html")]
+       ("rawaq", "الرواق", "rawaq.html"), ("news", "الأخبار العلمية", "news.html"), ("world", "مقالات عالمية", "world.html"), ("knowledge", "معلومات عامة", "knowledge.html"), ("about", "عن المؤسسة", "about.html")]
 
 ICONS = {
  "moon": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>',
@@ -42,7 +42,7 @@ FOOTER = f'''<footer class="site-footer"><div class="wrap">
   <div class="foot-brand"><a class="brand" href="./"><img src="assets/img/emblem-sm.png?v=2" alt="" width="46" height="46"><span><b>{SITE}</b><small>ACF · Artovia Charitable Foundation</small></span></a>
    <p>منصة عربية للعلم والمعرفة: نؤلّف الكتب العلمية ونترجمها ونراجعها، وننشرها مجانًا لكل قارئ.</p>
    <span class="free-seal">إصدار خيري مجاني، لا يُباع ولا يُشترى</span></div>
-  <div><h4>المنصة</h4><ul><li><a href="library.html">المكتبة</a></li><li><a href="magazine.html">مجلة المدار</a></li><li><a href="rawaq.html">الرواق</a></li><li><a href="news.html">الأخبار العلمية</a></li><li><a href="knowledge.html">معلومات عامة</a></li><li><a href="account.html">حسابي</a></li><li><a href="settings.html">الإعدادات</a></li></ul></div>
+  <div><h4>المنصة</h4><ul><li><a href="library.html">المكتبة</a></li><li><a href="magazine.html">مجلة المدار</a></li><li><a href="rawaq.html">الرواق</a></li><li><a href="news.html">الأخبار العلمية</a></li><li><a href="world.html">مقالات عالمية</a></li><li><a href="knowledge.html">معلومات عامة</a></li><li><a href="account.html">حسابي</a></li><li><a href="settings.html">الإعدادات</a></li></ul></div>
   <div><h4>الحقوق</h4><ul><li><a href="rights.html">حقوق النشر والترخيص</a></li><li><a href="terms.html">شروط الاستخدام</a></li><li><a href="privacy.html">سياسة الخصوصية</a></li></ul></div>
   <div><h4>تواصل معنا</h4><ul><li><a href="mailto:artoviacentr@gmail.com" class="mail-link">{ICONS["mail"]}<span class="en">artoviacentr@gmail.com</span></a></li><li><a href="about.html">عن المؤسسة</a></li><li class="insta" hidden><a href="#" target="_blank" rel="noopener">إنستغرام</a></li></ul></div>
  </div>

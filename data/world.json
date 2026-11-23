@@ -1,0 +1,181 @@
+{
+ "updated": "2026-11-23T14:30:00Z",
+ "themes": {
+  "ideas": {
+   "name": "أفكار وإبداع",
+   "color": "#F2C14E"
+  },
+  "mind": {
+   "name": "العقل والعلم",
+   "color": "#3FB6C8"
+  },
+  "society": {
+   "name": "العمل والمجتمع",
+   "color": "#E4774E"
+  },
+  "ethics": {
+   "name": "أخلاق وفلسفة",
+   "color": "#C792EA"
+  },
+  "future": {
+   "name": "المستقبل والتقنية",
+   "color": "#7C9CFF"
+  },
+  "progress": {
+   "name": "التقدّم والعالم",
+   "color": "#5BBF7A"
+  }
+ },
+ "items": [
+  {
+   "slug": "what-you-cant-say",
+   "theme": "ideas",
+   "title": "ما لا تستطيع قوله",
+   "origTitle": "What You Can't Say",
+   "deck": "كل عصر آمن بأشياء سيضحك منها أحفاده، وعصرنا ليس استثناءً. بول غراهام يقترح أدوات عملية لاكتشاف «المسلّمات» التي لا نجرؤ على مساءلتها، ويسأل: هل لديك رأي واحد تخجل من قوله أمام أصدقائك؟",
+   "author": "Paul Graham",
+   "authorAr": "بول غراهام",
+   "photo": "assets/img/world/authors/paul-graham.jpg",
+   "cover": "assets/img/world/what-you-cant-say.jpg",
+   "source": "مدوّنة paulgraham.com",
+   "year": "٢٠٠٤",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "bullshit-jobs",
+   "theme": "society",
+   "title": "ظاهرة الوظائف التافهة",
+   "origTitle": "On the Phenomenon of Bullshit Jobs: A Work Rant",
+   "deck": "تنبّأ كينز عام ١٩٣٠ بأننا سنعمل ١٥ ساعة في الأسبوع بحلول نهاية القرن. التقنية حقّقت الشرط، لكن الساعات لم تنقص. عالم الأنثروبولوجيا ديفيد غريبر يتّهم الاقتصاد الحديث بأنه اخترع ملايين الوظائف التي يعرف أصحابها أنفسهم أنها بلا معنى.",
+   "author": "David Graeber",
+   "authorAr": "ديفيد غريبر",
+   "photo": "assets/img/world/authors/david-graeber.jpg",
+   "cover": "assets/img/world/bullshit-jobs.jpg",
+   "source": "مجلة Strike!",
+   "year": "٢٠١٣",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "dragon-tyrant",
+   "theme": "future",
+   "title": "أسطورة التنّين الطاغية: هل الشيخوخة عدوّ يمكن هزيمته؟",
+   "origTitle": "The Fable of the Dragon-Tyrant",
+   "deck": "تنّين يلتهم عشرة آلاف إنسان كل مساء، والناس تعلّموا أن يعدّوا ذلك جزءًا من نظام الكون. الفيلسوف نِك بوستروم يكتب حكاية رمزية قاسية ليطرح سؤالًا محرجًا: ماذا لو كان قبولنا للشيخوخة عادة نفسية لا حكمة؟",
+   "author": "Nick Bostrom",
+   "authorAr": "نِك بوستروم",
+   "photo": "assets/img/world/authors/nick-bostrom.jpg",
+   "cover": "assets/img/world/dragon-tyrant.jpg",
+   "source": "مجلة Journal of Medical Ethics",
+   "year": "٢٠٠٥",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "the-empty-brain",
+   "theme": "mind",
+   "title": "الدماغ الفارغ: عقلك ليس حاسوبًا",
+   "origTitle": "The empty brain",
+   "deck": "نقول إن الدماغ «يخزّن» الذكريات و«يعالج» المعلومات و«يسترجعها»، كأنه حاسوب من لحم. عالم النفس روبرت إبستين يقول إن هذا مجرد تشبيه عابر صدّقناه أكثر مما يجب، وإنك لن تجد سيمفونية بيتهوفن الخامسة في أي مكان داخل رأسك.",
+   "author": "Robert Epstein",
+   "authorAr": "روبرت إبستين",
+   "photo": "assets/img/world/authors/robert-epstein.jpg",
+   "cover": "assets/img/world/the-empty-brain.jpg",
+   "source": "مجلة Aeon",
+   "year": "٢٠١٦",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "cargo-cult-science",
+   "theme": "mind",
+   "title": "علم الطقوس الفارغة: درس فاينمان في الأمانة العلمية",
+   "origTitle": "Cargo Cult Science",
+   "deck": "بنى سكّان جزر المحيط الهادئ مدارج من القش وبرج مراقبة وسمّاعات من الخشب، وانتظروا الطائرات أن تهبط. لم تهبط. الفيزيائي ريتشارد فاينمان يرى أن كثيرًا مما نسمّيه علمًا اليوم يشبه ذلك تمامًا: الشكل كامل، والجوهر غائب.",
+   "author": "Richard Feynman",
+   "authorAr": "ريتشارد فاينمان",
+   "photo": "assets/img/world/authors/richard-feynman.jpg",
+   "cover": "assets/img/world/cargo-cult-science.jpg",
+   "source": "خطاب تخرّج معهد كالتك",
+   "year": "١٩٧٤",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "world-awful-much-better",
+   "theme": "progress",
+   "title": "العالم مُروِّع، والعالم أفضل بكثير، والعالم يمكن أن يكون أفضل بكثير",
+   "origTitle": "The world is awful. The world is much better. The world can be much better.",
+   "deck": "يظن أكثرنا أن هذه العبارات الثلاث متناقضة، فيختار واحدة منها ويعيش أسيرًا لها. ماكس روزر يقول إنها صادقة كلها في اللحظة نفسها، وإن رؤيتها معًا هي الشرط الأول لعالم أفضل.",
+   "author": "Max Roser",
+   "authorAr": "ماكس روزر",
+   "photo": "",
+   "cover": "assets/img/world/world-awful-much-better.jpg",
+   "source": "Our World in Data",
+   "year": "٢٠١٨",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "asimov-new-ideas",
+   "theme": "ideas",
+   "title": "كيف يأتي الناس بأفكار جديدة؟",
+   "origTitle": "How Do People Get New Ideas? (On Creativity)",
+   "deck": "مقال كتبه إسحاق أسيموف عام ١٩٥٩ لمشروع حكومي سري، وبقي حبيس الأدراج خمسة وخمسين عامًا. خلاصته صادمة لكل مؤسسة تحبّ الاجتماعات: الإبداع يحتاج إلى الجرأة على أن تبدو أحمق، والوحدة، وغياب الإحساس بالمسؤولية.",
+   "author": "Isaac Asimov",
+   "authorAr": "إسحاق أسيموف",
+   "photo": "assets/img/world/authors/isaac-asimov.jpg",
+   "cover": "assets/img/world/asimov-new-ideas.jpg",
+   "source": "MIT Technology Review",
+   "year": "١٩٥٩",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "in-praise-of-idleness",
+   "theme": "society",
+   "title": "في مديح الكسل",
+   "origTitle": "In Praise of Idleness",
+   "deck": "«أخلاق العمل هي أخلاق العبيد». بهذه العبارة الصادمة يهاجم الفيلسوف برتراند راسل عام ١٩٣٢ واحدة من أقدس قيم العصر الحديث، ويقترح أن يكفي الإنسانَ أربعُ ساعات عمل في اليوم.",
+   "author": "Bertrand Russell",
+   "authorAr": "برتراند راسل",
+   "photo": "assets/img/world/authors/bertrand-russell.jpg",
+   "cover": "assets/img/world/in-praise-of-idleness.jpg",
+   "source": "مجلة Harper's",
+   "year": "١٩٣٢",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "singer-solution-poverty",
+   "theme": "ethics",
+   "title": "حلّ سينغر للفقر العالمي: هل أنت أفضل من بائعة الطفل؟",
+   "origTitle": "The Singer Solution to World Poverty",
+   "deck": "امرأة تبيع طفلًا مشرّدًا لعصابة مقابل ألف دولار، فيستنكر الجميع فعلتها. الفيلسوف بيتر سينغر يسأل: ما الفرق الأخلاقي بينها وبين من يشتري تلفازًا جديدًا بدل أن يتبرّع بثمنه لإنقاذ طفل يموت جوعًا؟",
+   "author": "Peter Singer",
+   "authorAr": "بيتر سينغر",
+   "photo": "assets/img/world/authors/peter-singer.jpg",
+   "cover": "assets/img/world/singer-solution-poverty.jpg",
+   "source": "مجلة نيويورك تايمز",
+   "year": "١٩٩٩",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  },
+  {
+   "slug": "myth-of-freedom",
+   "theme": "future",
+   "title": "أسطورة الحرية: حين يعرفك الحاسوب أكثر مما تعرف نفسك",
+   "origTitle": "The myth of freedom",
+   "deck": "نعتقد أن رغباتنا واختياراتنا تنبع منّا بحرية. يوفال نوح هراري يحذّر من أن هذا الاعتقاد بالذات هو ما يجعلنا الأسهل اختراقًا في عصر الخوارزميات وأجهزة الاستشعار الحيوية.",
+   "author": "Yuval Noah Harari",
+   "authorAr": "يوفال نوح هراري",
+   "photo": "assets/img/world/authors/yuval-noah-harari.jpg",
+   "cover": "assets/img/world/myth-of-freedom.jpg",
+   "source": "صحيفة الغارديان (عبر inkl)",
+   "year": "٢٠١٨",
+   "mode": "presentation",
+   "added": "2026-11-23"
+  }
+ ]
+}
