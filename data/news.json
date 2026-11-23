@@ -23,43 +23,51 @@
   },
   {
    "field": "biology",
-   "title": "هذا العنكبوت الصغير الذي سمي على اسم ستيفن كولبيرت لديه جينوم أكبر بنسبة 50٪ من جينوم الإنسان",
-   "summary": "يمتلك عنكبوت الباب المسحور الصغير في كاليفورنيا والذي سمي على اسم ستيفن كولبيرت جينومًا أكبر بنسبة 50٪ تقريبًا من جينوم الإنسان، على الرغم من أن حجمه لا يتجاوز الربع تقريبًا. اكتشف العلماء أن الجينوم الهائل يحتوي على 4.6 مليار زوج من قواعد الحمض النووي و52…",
+   "title": "عنكبوت صغير جينومه أكبر من جينوم الإنسان بنحو ٥٠٪",
+   "summary": "علماء جامعة كاليفورنيا في ديفيس فكّوا جينوم عنكبوت الباب المسحور Aptostichus stephencolberti، فوجدوه ٤٫٦ مليار حرف وراثي موزعة على ٥٢ كروموسومًا.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261122060343.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "This tiny spider named after Stephen Colbert has a genome 50% larger than a human’s"
+   "orig": "This tiny spider named after Stephen Colbert has a genome 50% larger than a human’s",
+   "slug": "colbert-spider-genome",
+   "cover": "assets/img/news/colbert-spider-genome.jpg"
   },
   {
    "field": "biology",
-   "title": "فيروسات جديدة غامضة تكشف عن الحلقة المفقودة في التطور",
-   "summary": "اكتشف العلماء فيروسات لم تكن معروفة من قبل، والتي يمكن أن تساعد في تفسير كيفية تطور بعض الهياكل البيولوجية المبكرة للحياة. تتحدى النتائج المفاجئة نظرية تطورية طويلة الأمد وتشير إلى أن الفيروسات ربما تمتلك قدرات مخفية...",
+   "title": "فيروسات صغيرة مجهولة تكشف «حلقة مفقودة» بين الفيروسات والخلايا",
+   "summary": "بالتنقيب في مليارات التسلسلات الوراثية والاستعانة بالذكاء الاصطناعي، وجد فريق من جامعة ميامي فيروسات تحمل صفات مشتركة بين الفيروسات و«الإنكابسولينات» داخل البكتيريا.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261122060334.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "Mysterious new viruses reveal a missing link in evolution"
+   "orig": "Mysterious new viruses reveal a missing link in evolution",
+   "slug": "viruses-encapsulins-missing-link",
+   "cover": "assets/img/news/viruses-encapsulins-missing-link.jpg"
   },
   {
    "field": "health",
-   "title": "علاج جديد لأمراض اللثة يقتل البكتيريا السيئة ويحافظ على البكتيريا الجيدة",
-   "summary": "طور باحثون في اليابان علاجًا مبتكرًا لأمراض اللثة يستخدم الأجسام المضادة لصفار البيض والأشعة تحت الحمراء القريبة لتدمير البكتيريا الضارة دون الإضرار بالميكروبات المفيدة. على عكس العلاجات التقليدية، يحافظ هذا النهج على صحة الفم.",
+   "title": "ضوء وأجسام مضادة من صفار البيض: علاج للثة يقتل البكتيريا الضارة وحدها",
+   "summary": "باحثون في جامعة ناغويا اليابانية طوّروا علاجًا ضوئيًّا موجّهًا يستهدف البكتيريا المسببة لالتهاب دواعم السن، ويترك بكتيريا الفم النافعة سليمة.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261123005356.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "New gum disease treatment kills bad bacteria while sparing the good"
+   "orig": "New gum disease treatment kills bad bacteria while sparing the good",
+   "slug": "gum-disease-light-therapy",
+   "cover": "assets/img/news/gum-disease-light-therapy.jpg"
   },
   {
    "field": "health",
-   "title": "نامت الفئران بنسبة 70% أقل بعد أن قام العلماء بإيقاف خلايا الدماغ هذه",
-   "summary": "اكتشف العلماء خلايا دماغية تولد بشكل فعال رغبة لا تقاوم في النوم، وسمح إغلاقها للفئران بالنوم أقل بنسبة 70% من المعتاد. ومن اللافت للنظر أن العديد من الحيوانات تجنبت العواقب السلوكية الوخيمة للحرمان من النوم،...",
+   "title": "خلايا في جذع الدماغ «تعدّ» ساعات اليقظة وتدفعنا إلى النوم",
+   "summary": "دراسة في مجلة Nature من جامعة بازل: حين أوقف العلماء مجموعتين من الخلايا العصبية في الفئران، قلّ نومها بنحو ٧٠٪.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261122060336.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "Mice slept 70% less after scientists switched off these brain cells"
+   "orig": "Mice slept 70% less after scientists switched off these brain cells",
+   "slug": "sleep-pressure-neurons",
+   "cover": "assets/img/news/sleep-pressure-neurons.jpg"
   },
   {
    "field": "health",
@@ -72,24 +80,28 @@
    "orig": "U.S. loses measles elimination status after 25 years as vaccine myths persist"
   },
   {
-   "field": "tech",
-   "title": "لماذا استخدام الصخور لإزالة الكربون يمكن أن يقلل في النهاية من نمو المحاصيل",
-   "summary": "تستثمر شركات التكنولوجيا الكثير من الأمل والمال في الصخور. خصصت شركات جوجل ومايكروسوفت وغيرها مئات الملايين من الدولارات لدفع الشركات الناشئة إلى نشر البازلت المسحوق أو الزبرجد الزيتوني أو غيرها من المواد القلوية عبر المزارع، في محاولة لالتقاط…",
+   "field": "earth",
+   "title": "نثر الصخور لامتصاص الكربون قد يضرّ المحاصيل إذا زاد عن حدّه",
+   "summary": "دراستان أوليتان من مؤسسة كاربون بلان تقدّران أن «التجوية المعزّزة للصخور» لا تستطيع إزالة أكثر من نحو ٦٠٠ مليون طن من ثاني أكسيد الكربون سنويًّا دون أن تفسد التربة.",
    "url": "https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/",
    "source": "MIT Technology Review",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "Why using rocks for carbon removal could eventually reduce crop growth"
+   "orig": "Why using rocks for carbon removal could eventually reduce crop growth",
+   "slug": "rock-weathering-crop-limit",
+   "cover": "assets/img/news/rock-weathering-crop-limit.jpg"
   },
   {
    "field": "biology",
-   "title": "يكشف علماء الآثار أن أحد ملوك العصر الحديدي ربما كان امرأة",
-   "summary": "اكتشف علماء الآثار أدلة على أن فيريكا، حاكمة العصر الحديدي التي ساعد منفاها في إطلاق غزو روما لبريطانيا عام 43 بعد الميلاد، كانت في الواقع امرأة. يتحدى هذا الاكتشاف قرونًا من الافتراضات التاريخية، ويشير إلى أن...",
+   "title": "هل كان «الملك» فيريكا امرأة؟ قراءة جديدة لعملات بريطانيا القديمة",
+   "summary": "عالم آثار من جامعة بورنموث يرى أن حاكم قبيلة الأتريبات، الذي استنجد بروما فمهّد لغزو بريطانيا عام ٤٣م، ربما كان ملكة لا ملكًا.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261122060338.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "Archaeologists reveal a powerful Iron Age king may have been a woman"
+   "orig": "Archaeologists reveal a powerful Iron Age king may have been a woman",
+   "slug": "verica-iron-age-queen",
+   "cover": "assets/img/news/verica-iron-age-queen.jpg"
   },
   {
    "field": "space",
@@ -153,13 +165,15 @@
   },
   {
    "field": "health",
-   "title": "يكشف الذكاء الاصطناعي عن العلامات التحذيرية الخفية لسرطان المثانة قبل سنوات من التشخيص",
-   "summary": "طور العلماء أداة ذكاء اصطناعي يمكنها الكشف عن العلامات التحذيرية الخفية لسرطان المثانة لمدة تصل إلى خمس سنوات قبل التشخيص، وحددوا 85% من الحالات في دراسة رئيسية شملت ما يقرب من 70 ألف مريض. من خلال الكشف عن الأنماط الدقيقة التي التقليدية ...",
+   "title": "ذكاء اصطناعي يلتقط إنذارات سرطان المثانة قبل التشخيص بسنوات",
+   "summary": "نموذج من جامعة بليموث قرأ السجلات الصحية لنحو ٧٠ ألف مريض، فتعرّف على ٨٥٪ من المصابين بسرطان المثانة، وظهرت بعض إشاراته قبل التشخيص بخمس سنوات.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261120075604.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-22",
-   "orig": "AI uncovers hidden bladder cancer warning signs years before diagnosis"
+   "orig": "AI uncovers hidden bladder cancer warning signs years before diagnosis",
+   "slug": "bladder-cancer-ai-early",
+   "cover": "assets/img/news/bladder-cancer-ai-early.jpg"
   },
   {
    "field": "health",
@@ -258,24 +272,28 @@
    "cover": "assets/img/news/barium-titanate-light.jpg"
   },
   {
-   "field": "space",
+   "field": "physics",
    "url": "https://www.sciencedaily.com/releases/2026/11/261120075558.htm",
    "source": "ScienceDaily",
    "date": "2026-11-21",
-   "title": "قد يكون الزمن أغرب مما نتصور، والعلماء يقترحون طريقة لاختباره",
-   "summary": "قد يكون الزمن أغرب بكثير مما ندرك، واقترح العلماء طريقة لرصد ساعات تعيش أكثر من مسار زمني في آن واحد. وباستعمال ساعات ذرية فائقة الحساسية يأمل الباحثون أن يكشفوا ظاهرة لم تُرصد من قبل…",
+   "title": "ساعة ذرية قد تعيش زمنين في آن واحد، واقتراح جديد لاختبار ذلك",
+   "summary": "فريق دولي بقيادة جامعة كيوشو يقترح طريقة تكشف بها ساعات الأيونات الحديثة «تراكب الأزمنة»، وهو أثر يجمع ميكانيكا الكم ونسبية أينشتاين.",
    "orig": "Time may be far stranger than we realize. Scientists have a way to test it",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "quantum-clock-proper-time",
+   "cover": "assets/img/news/quantum-clock-proper-time.jpg"
   },
   {
    "field": "space",
    "url": "https://www.sciencedaily.com/releases/2026/11/261120075556.htm",
    "source": "ScienceDaily",
    "date": "2026-11-21",
-   "title": "نجم عملاق ابتلع نجمًا آخر، و«جيمس ويب» يكشف ما بعد الحادثة",
-   "summary": "شهد الفلكيون اصطدامًا كونيًّا مذهلًا في مجرة المرأة المسلسلة (أندروميدا)، إذ انجرف نجم صغير في مسار حلزوني نحو نجم عملاق أسطع من الشمس بـ١٨ ألف مرة، فأطلق ثورانًا عنيفًا. والتقط تلسكوب جيمس ويب آثار الحادثة…",
+   "title": "نجم عملاق ابتلع جاره في مجرة أندروميدا، و«جيمس ويب» يرصد ما بعد الحادثة",
+   "summary": "لأول مرة يتابع الفلكيون اندماج نجمين داخل «غلاف مشترك» لحظة بلحظة، في حدث سمّوه «باو» بمجرة المرأة المسلسلة، ثم رصد تلسكوب جيمس ويب الغبار المتبقي.",
    "orig": "A giant star swallowed another star. James Webb reveals the aftermath",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "andromeda-star-merger-bao",
+   "cover": "assets/img/news/andromeda-star-merger-bao.jpg"
   },
   {
    "field": "biology",
@@ -316,10 +334,12 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261120075701.htm",
    "source": "ScienceDaily",
    "date": "2026-11-21",
-   "title": "الذكاء الاصطناعي قد لا يعمل مثل الدماغ البشري في النهاية",
-   "summary": "قد لا يفكر الذكاء الاصطناعي مثل الدماغ البشري، بحسب اكتشاف جديد لافت. فقد وجد الباحثون أن نماذج الذكاء الاصطناعي التي تتنبأ بدقة بنشاط الدماغ قد تعتمد على عمليات داخلية مختلفة…",
+   "title": "الذكاء الاصطناعي يشبه الدماغ من جهة واحدة فقط",
+   "summary": "اختبار جديد من جامعة يورك الكندية يقلب السؤال: بدل أن نسأل هل يتنبأ النموذج بنشاط الدماغ، نسأل هل يتنبأ الدماغ بما يجري داخل النموذج. والجواب غالبًا: لا.",
    "orig": "AI may not work like the human brain after all, scientists discover",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "ai-brain-reverse-predictivity",
+   "cover": "assets/img/news/ai-brain-reverse-predictivity.jpg"
   },
   {
    "field": "space",
