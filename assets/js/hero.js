@@ -195,7 +195,7 @@ if (canvas && ok()) {
   const camPos = new THREE.Vector3(), look = new THREE.Vector3();
   function tick() {
     requestAnimationFrame(tick);
-    if (!visible || document.hidden) return;
+    if (!visible || document.hidden || canvas.classList.contains("away")) return;
     const dt = Math.min(clock.getDelta(), .05);
     const still = root.dataset.motion === "reduce" || root.dataset.motion === "off";
     if (!still) t += dt;

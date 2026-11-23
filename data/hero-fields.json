@@ -1,0 +1,9 @@
+{"interval":60,"fields":[
+ {"id":"physics","name":"الفيزياء والذرّة","img":"assets/img/hero/physics.jpg","credit":"كاشف CMS في مصادم الهادرونات الكبير، سيرن · SimonWaldherr · CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:CERN_LHC_CMS_02.jpg"},
+ {"id":"engineering","name":"الهندسة","img":"assets/img/hero/engineering.jpg","credit":"جسر ميو المعلّق، فرنسا · Richard Leeming · CC BY-SA 2.0","url":"https://commons.wikimedia.org/wiki/File:Millau_Viaduct_(2724128971).jpg"},
+ {"id":"aviation","name":"الطيران","img":"assets/img/hero/aviation.jpg","credit":"طائرة إيرباص A380 عند الغروب · Chad Ajamian · CC BY 3.0","url":"https://commons.wikimedia.org/wiki/File:Airbus_A380_with_sunset_(175372547).jpg"},
+ {"id":"medicine","name":"الطب","img":"assets/img/hero/medicine.jpg","credit":"جهاز تصوير بالرنين المغناطيسي · Jan Ainali · CC BY 3.0","url":"https://commons.wikimedia.org/wiki/File:MRI-Philips.JPG"},
+ {"id":"space","name":"الفضاء","img":"assets/img/hero/space.jpg","credit":"صاروخ فالكون 9 ليلة الإطلاق · SpaceX · CC0","url":"https://commons.wikimedia.org/wiki/File:Falcon_9_Dragon_Night_Before_Launch.jpg"},
+ {"id":"biology","name":"علوم الحياة","img":"assets/img/hero/biology.jpg","credit":"خلايا هيلا حيّة تحت المجهر الفلوري · 8x57is · CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Multicolor_fluorescence_image_of_living_HeLa_cells.jpg"},
+ {"id":"earth","name":"الأرض والمناخ","img":"assets/img/hero/earth.jpg","credit":"الرخامة الزرقاء · NASA / Reto Stöckli · ملكية عامة","url":"https://commons.wikimedia.org/wiki/File:Blue_Marble_Eastern_Hemisphere.jpg"}
+]}

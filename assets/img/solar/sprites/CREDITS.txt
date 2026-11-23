@@ -10,3 +10,12 @@ streak.jpg 2016 Meteor — Jacek Halicki — CC BY-SA 4.0 — https://commons.wi
 corona.jpg Total solar eclipse corona 2009 — Miloslav Druckmüller, Peter Aniol, Vojtech Rušin, Ľubomír Klocok, Karel Martišek, Martin Dietzel / NOIRLab — CC BY 4.0
            https://commons.wikimedia.org/wiki/File:The_Sun%E2%80%99s_corona_shining_brightly_during_a_total_solar_eclipse_(noirlab1902a).jpg
 التعديل: قصّ وتدوير وتعتيم الخلفية فقط.
+
+صور المجالات في المشهد العلوي (assets/img/hero/) — Wikimedia Commons:
+physics.jpg: CERN LHC CMS 02 — SimonWaldherr — CC BY-SA 4.0
+engineering.jpg: Millau Viaduct (2724128971) — Richard Leeming — CC BY-SA 2.0
+aviation.jpg: Airbus A380 with sunset (175372547) — Chad Ajamian — CC BY 3.0
+medicine.jpg: MRI-Philips — Jan Ainali — CC BY 3.0
+space.jpg: Falcon 9 Dragon Night Before Launch — SpaceX — CC0
+biology.jpg: Multicolor fluorescence image of living HeLa cells — 8x57is — CC BY-SA 4.0
+earth.jpg: Blue Marble Eastern Hemisphere — NASA / Reto Stöckli — Public domain

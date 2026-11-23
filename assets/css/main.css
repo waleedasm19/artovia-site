@@ -506,3 +506,28 @@ p{margin:0 0 1em}
 .news-card .src svg{width:16px;height:16px;flex:none;transition:transform .3s var(--ease)}
 .news-card:hover .src svg{transform:translateX(-4px)}
 .news-card .src span{white-space:nowrap}
+
+/* ===== المشهد العلوي المتنقّل بين المجالات ===== */
+#globe{transition:opacity 2.4s ease}
+#globe.away{opacity:0!important}
+.hero-scenes{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero-scene{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 2.4s ease;overflow:hidden}
+.hero-scene img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.12)}
+.hero-scene.on{opacity:1}
+.hero-scene.on img{animation:herodrift 62s linear forwards}
+@keyframes herodrift{from{transform:scale(1.14) translate(1.5%,.8%)}to{transform:scale(1.02) translate(-1%,-.5%)}}
+.hero-scene::after{content:"";position:absolute;inset:0;background:linear-gradient(to left,rgba(2,4,10,.92) 0%,rgba(2,4,10,.72) 34%,rgba(2,4,10,.18) 68%,rgba(2,4,10,.35) 100%),linear-gradient(to bottom,rgba(2,4,10,.45),transparent 30%)}
+.hero .planet-label{transition:opacity 1.2s}
+.hero.field-on .planet-label{opacity:0}
+.field-tag{position:absolute;z-index:2;inset-inline-end:4%;top:12%;display:flex;flex-direction:column;align-items:flex-start;gap:4px;color:var(--ink-2);text-decoration:none;opacity:0;transform:translateY(8px);transition:opacity 1.2s .9s,transform 1.2s .9s;pointer-events:none;max-width:min(360px,60vw)}
+.field-tag b{font-size:.9rem;font-weight:600;color:#fff;display:flex;align-items:center;gap:10px}
+.field-tag b::before{content:"";width:28px;height:2px;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+.field-tag small{font-size:.68rem;color:var(--ink-3);line-height:1.5}
+.hero.field-on .field-tag{opacity:1;transform:none;pointer-events:auto}
+@media (max-width:860px){
+  .hero-scene::after{background:linear-gradient(to bottom,rgba(2,4,10,.3),rgba(2,4,10,.6) 45%,rgba(2,4,10,.9))}
+  .field-tag{top:auto;bottom:86px;inset-inline-end:16px}
+  .field-tag small{display:none}
+}
+@media (prefers-reduced-motion:reduce){.hero-scene.on img{animation:none}}
+:root[data-motion="reduce"] .hero-scene.on img,:root[data-motion="off"] .hero-scene.on img{animation:none}
