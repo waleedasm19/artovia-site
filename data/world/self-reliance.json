@@ -6,7 +6,10 @@
  "author": {
   "name": "Ralph Waldo Emerson",
   "nameAr": "رالف والدو إمرسون",
-  "bio": "كاتب وفيلسوف أمريكي (١٨٠٣–١٨٨٢)، من أبرز أصوات الحركة المتعالية في القرن التاسع عشر، وأثّرت مقالاته في أجيال من الكتّاب والمفكرين."
+  "bio": "كاتب وفيلسوف أمريكي (١٨٠٣–١٨٨٢)، من أبرز أصوات الحركة المتعالية في القرن التاسع عشر، وأثّرت مقالاته في أجيال من الكتّاب والمفكرين.",
+  "photo": "assets/img/world/authors/ralph-waldo-emerson.jpg",
+  "photoCredit": "User:Scewing derivative work: 2009 · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Ralph_Waldo_Emerson_ca1857_retouched.jpg"
  },
  "source": "ضمن «مقالات: السلسلة الأولى» (١٨٤١)، مشروع غوتنبرغ",
  "pubDate": "١٨٤١",
@@ -73,5 +76,9 @@
  ],
  "slug": "self-reliance",
  "added": "2026-11-24",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/self-reliance.jpg",
+ "credit": "John Phelan · CC BY 3.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Walden_Pond_in_October,_Concord_MA.jpg",
+ "coverAlt": "Walden Pond in October, Concord Massachusetts"
 }

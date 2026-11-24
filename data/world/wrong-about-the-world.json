@@ -6,7 +6,10 @@
  "author": {
   "name": "Max Roser",
   "nameAr": "ماكس روزر",
-  "bio": "اقتصادي ألماني في جامعة أكسفورد، مؤسس موقع Our World in Data الذي يجمع بيانات التاريخ البشري الطويل في الصحة والفقر والتعليم ويتيحها للجميع مجانًا."
+  "bio": "اقتصادي ألماني في جامعة أكسفورد، مؤسس موقع Our World in Data الذي يجمع بيانات التاريخ البشري الطويل في الصحة والفقر والتعليم ويتيحها للجميع مجانًا.",
+  "photo": "assets/img/world/authors/max-roser.jpg",
+  "photoCredit": "Unknown authorUnknown author · CC BY-SA 4.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Max_Roser_in_blue_suit.jpg"
  },
  "source": "Our World in Data",
  "pubDate": "٢٧ يوليو ٢٠١٨",
@@ -73,5 +76,9 @@
  ],
  "slug": "wrong-about-the-world",
  "added": "2026-11-24",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/wrong-about-the-world.jpg",
+ "credit": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+ "coverAlt": "\"The Blue Marble\" is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft"
 }

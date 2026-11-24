@@ -6,7 +6,10 @@
  "author": {
   "name": "Mark Twain",
   "nameAr": "مارك توين",
-  "bio": "الكاتب الأمريكي الساخر صامويل كليمنس (١٨٣٥–١٩١٠)، صاحب «مغامرات توم سوير» و«مغامرات هكلبري فِن»، ومن أشهر نقّاد النفاق الاجتماعي في عصره."
+  "bio": "الكاتب الأمريكي الساخر صامويل كليمنس (١٨٣٥–١٩١٠)، صاحب «مغامرات توم سوير» و«مغامرات هكلبري فِن»، ومن أشهر نقّاد النفاق الاجتماعي في عصره.",
+  "photo": "assets/img/world/authors/mark-twain.jpg",
+  "photoCredit": "A.F. Bradley, New York · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Mark_Twain_by_AF_Bradley.jpg"
  },
  "source": "مقال كتبه توين عام ١٩٠١ ونُشر بعد وفاته عام ١٩٢٣ (النص على موقع paulgraham.com)",
  "pubDate": "كُتب عام ١٩٠١",
@@ -73,5 +76,9 @@
  ],
  "slug": "corn-pone-opinions",
  "added": "2026-11-24",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/corn-pone-opinions.jpg",
+ "credit": "Chris Light · CC BY-SA 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Mark_Twain_Mem_Bridge_Mississippi_R_at_Hannibal.jpg",
+ "coverAlt": "Mark Twain Memorial Bridge (I-72) over the Mississippi River, Hannibal Missouri."
 }

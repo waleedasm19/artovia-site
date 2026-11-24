@@ -6,7 +6,10 @@
  "author": {
   "name": "John Stuart Mill",
   "nameAr": "جون ستيوارت مل",
-  "bio": "فيلسوف واقتصادي بريطاني (١٨٠٦–١٨٧٣)، من أهم مفكري الليبرالية الكلاسيكية، صاحب «عن الحرية» و«النفعية» و«استعباد النساء»."
+  "bio": "فيلسوف واقتصادي بريطاني (١٨٠٦–١٨٧٣)، من أهم مفكري الليبرالية الكلاسيكية، صاحب «عن الحرية» و«النفعية» و«استعباد النساء».",
+  "photo": "assets/img/world/authors/john-stuart-mill.jpg",
+  "photoCredit": "London Stereoscopic Company · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:John_Stuart_Mill_by_London_Stereoscopic_Company,_c1870.jpg"
  },
  "source": "«عن الحرية» (١٨٥٩)، الفصل الثاني، مشروع غوتنبرغ",
  "pubDate": "١٨٥٩",
@@ -66,5 +69,9 @@
  ],
  "slug": "on-liberty-ch2",
  "added": "2026-11-24",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/on-liberty-ch2.jpg",
+ "credit": "Fry72 · CC BY-SA 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Speakers%27_Corner,_Hyde_Park,_Westminster,_Lond%C3%BDn,_Anglie.jpg",
+ "coverAlt": "Informační panel, Speakers' Corner, Hyde Park, Westminster, Londýn, Anglie"
 }

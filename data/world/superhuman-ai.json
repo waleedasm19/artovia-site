@@ -6,7 +6,10 @@
  "author": {
   "name": "Shannon Vallor",
   "nameAr": "شانون فالور",
-  "bio": "فيلسوفة أمريكية تشغل كرسي أخلاقيات البيانات والذكاء الاصطناعي في جامعة إدنبرة وتدير مركز «المستقبلات التقنية الأخلاقية»، ومؤلفة كتاب «مرآة الذكاء الاصطناعي»."
+  "bio": "فيلسوفة أمريكية تشغل كرسي أخلاقيات البيانات والذكاء الاصطناعي في جامعة إدنبرة وتدير مركز «المستقبلات التقنية الأخلاقية»، ومؤلفة كتاب «مرآة الذكاء الاصطناعي».",
+  "photo": "assets/img/world/authors/shannon-vallor.jpg",
+  "photoCredit": "Ainali · CC BY-SA 4.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Shannon_Vallor_(cropped).jpg"
  },
  "source": "Noema",
  "pubDate": "٢٣ مايو ٢٠٢٤",

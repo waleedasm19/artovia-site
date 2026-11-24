@@ -6,7 +6,10 @@
  "author": {
   "name": "Björn Brembs",
   "nameAr": "بيورن بريمبس",
-  "bio": "عالم أعصاب ألماني وأستاذ في جامعة ريغنسبورغ، يدرس سلوك ذباب الفاكهة، ومن أبرز الداعين إلى إصلاح النشر العلمي والوصول المفتوح."
+  "bio": "عالم أعصاب ألماني وأستاذ في جامعة ريغنسبورغ، يدرس سلوك ذباب الفاكهة، ومن أبرز الداعين إلى إصلاح النشر العلمي والوصول المفتوح.",
+  "photo": "assets/img/world/authors/bjorn-brembs.jpg",
+  "photoCredit": "Dasaptaerwin · CC0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:The-brief-history-of-scientific-publishing-bjornbrembs.jpg"
  },
  "source": "PLOS Biology",
  "pubDate": "١٢ فبراير ٢٠١٩",
@@ -71,5 +74,9 @@
  ],
  "slug": "reliable-novelty",
  "added": "2026-11-24",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/reliable-novelty.jpg",
+ "credit": "Vmenkov · CC BY-SA 3.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Vitoria-University-Library-food-science-journals-4489.jpg",
+ "coverAlt": "The library of the University of the Basque Country (Vitoria-Gasteiz) receives an impressive selection of scientific jou"
 }
