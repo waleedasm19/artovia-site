@@ -1,11 +1,11 @@
-/* صفحة التطبيق: زر التثبيت (تطبيق ويب يُثبَّت من المتصفح)، وتعليمات الآيفون والأندرويد، ومشاركة الرابط. */
+/* صفحة التطبيق: زر التثبيت (تطبيق ويب يُثبَّت من المتصفح)، وتعليمات التثبيت لكل جهاز، ومشاركة الرابط. */
 (() => {
   "use strict";
   const button = document.querySelector("#install-app");
   const status = document.querySelector("#download-status");
   const share = document.querySelector("#share-app");
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-  const android = /android/i.test(navigator.userAgent);
+  const mobile = /android|mobile/i.test(navigator.userAgent);
   const installed = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
   const steps = (id) => document.getElementById(id)?.classList.add("on");
   let prompt = null;
@@ -38,8 +38,8 @@
       prompt = null;
       return;
     }
-    steps("steps-android");
-    status.textContent = android ? "اتبع الخطوات أدناه للتثبيت من متصفحك." : "في متصفح الحاسوب: اضغط أيقونة التثبيت في شريط العنوان.";
+    steps("steps-chrome");
+    status.textContent = mobile ? "اتبع الخطوات أدناه للتثبيت من متصفحك." : "في متصفح الحاسوب: اضغط أيقونة التثبيت في شريط العنوان، أو اتبع الخطوات أدناه.";
   });
 
   share?.addEventListener("click", async () => {
@@ -52,13 +52,4 @@
     }
   });
 
-  // نسخة APK التجريبية تبقى رابطًا ثانويًا لمن يريدها
-  if (android) fetch("https://api.github.com/repos/waleedasm19/artovia-site/releases?per_page=15", { headers: { Accept: "application/vnd.github+json" } })
-    .then((r) => (r.ok ? r.json() : [])).then((items) => {
-      const asset = items.find((i) => /^artovia-android-preview-/.test(i?.tag_name))?.assets?.find((a) => a?.name === "artovia-preview.apk");
-      const link = document.getElementById("apk-link");
-      if (asset && link && /^https:\/\/github\.com\/waleedasm19\/artovia-site\/releases\/download\//.test(asset.browser_download_url)) {
-        link.href = asset.browser_download_url; link.hidden = false;
-      }
-    }).catch(() => {});
 })();
