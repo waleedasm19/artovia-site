@@ -148,14 +148,6 @@
     "title": "File:Mark Twain by AF Bradley.jpg"
   },
   {
-    "out": "assets/img/world/authors/bjorn-brembs.jpg",
-    "width": 500,
-    "json": "data/world/reliable-novelty.json",
-    "field": "author",
-    "query": "Björn Brembs",
-    "minw": 300
-  },
-  {
     "out": "assets/img/world/authors/shannon-vallor.jpg",
     "width": 500,
     "json": "data/world/superhuman-ai.json",
@@ -189,14 +181,14 @@
     "width": 1280,
     "json": "data/world/problems-and-progress.json",
     "field": "cover",
-    "query": "insecticide treated mosquito bed net"
+    "query": "long-lasting insecticidal net malaria"
   },
   {
     "out": "assets/img/world/corn-pone-opinions.jpg",
     "width": 1280,
     "json": "data/world/corn-pone-opinions.json",
     "field": "cover",
-    "query": "Hannibal Missouri Mississippi River"
+    "query": "Mark Twain Boyhood Home Hannibal"
   },
   {
     "out": "assets/img/world/reliable-novelty.jpg",
@@ -224,7 +216,7 @@
     "width": 1280,
     "json": "data/world/superhuman-ai.json",
     "field": "cover",
-    "query": "Colossus computer Bletchley"
+    "query": "Colossus rebuild National Museum of Computing"
   },
   {
     "out": "assets/img/world/how-ai-will-change-us.jpg",
@@ -245,6 +237,6 @@
     "width": 1280,
     "json": "data/world/on-liberty-ch2.json",
     "field": "cover",
-    "query": "Speakers' Corner Hyde Park London"
+    "query": "Speakers' Corner speaker crowd"
   }
 ]

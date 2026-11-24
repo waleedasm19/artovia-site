@@ -6,7 +6,10 @@
  "author": {
   "name": "Max Roser",
   "nameAr": "ماكس روزر",
-  "bio": "اقتصادي ألماني في جامعة أكسفورد، مؤسس موقع Our World in Data الذي يجمع بيانات التاريخ البشري الطويل في الصحة والفقر والتعليم ويتيحها للجميع مجانًا."
+  "bio": "اقتصادي ألماني في جامعة أكسفورد، مؤسس موقع Our World in Data الذي يجمع بيانات التاريخ البشري الطويل في الصحة والفقر والتعليم ويتيحها للجميع مجانًا.",
+  "photo": "assets/img/world/authors/max-roser.jpg",
+  "photoCredit": "مؤلف غير معروف · CC BY-SA 4.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Max_Roser_in_blue_suit.jpg"
  },
  "source": "Our World in Data",
  "pubDate": "٧ يونيو ٢٠٢١ (البيانات محدّثة في فبراير ٢٠٢٤)",
@@ -73,9 +76,5 @@
  ],
  "slug": "problems-and-progress",
  "added": "2026-11-24",
- "mode": "presentation",
- "cover": "assets/img/world/problems-and-progress.jpg",
- "credit": "John Bradley · CC BY-SA 3.0 · ويكيميديا كومنز",
- "creditUrl": "https://commons.wikimedia.org/wiki/File:ITN_OB_Van.jpg",
- "coverAlt": "ITN OB Van in Liverpool"
+ "mode": "presentation"
 }
