@@ -1,0 +1,124 @@
+name: Artovia Android preview
+
+'on':
+  push:
+    branches:
+      - main
+      - codex/artovia-app-preview
+    paths:
+      - native-app/**
+      - .github/workflows/android-build.yml
+  workflow_dispatch:
+    inputs:
+      publish_preview:
+        description: Publish a public Android test release from main
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: artovia-android-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      CI: 'true'
+      EXPO_NO_TELEMETRY: '1'
+      ARTOVIA_ANDROID_PREVIEW: '1'
+    defaults:
+      run:
+        working-directory: native-app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+          cache-dependency-path: native-app/pnpm-lock.yaml
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Expo app dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Android project
+        run: npx --no-install expo prebuild --platform android --no-install
+
+      - name: Assemble self-contained test APK
+        working-directory: native-app/android
+        # Expo's generated release variant bundles JavaScript and uses the debug key for testing.
+        run: bash ./gradlew --no-daemon :app:assembleRelease
+
+      - name: Verify package and prepare artifact
+        run: |
+          apk=android/app/build/outputs/apk/release/app-release.apk
+          unzip -tq "$apk"
+          unzip -Z1 "$apk" assets/index.android.bundle
+          apksigner=$(find "$ANDROID_HOME/build-tools" -name apksigner | sort -V | tail -n 1)
+          "$apksigner" verify --verbose "$apk"
+          mkdir -p build-results
+          cp "$apk" build-results/artovia-preview.apk
+          cd build-results
+          sha256sum artovia-preview.apk > artovia-preview.apk.sha256
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artovia-android-preview
+          path: native-app/build-results/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+
+  publish-preview:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' ||
+       (github.event_name == 'workflow_dispatch' && inputs.publish_preview))
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: artovia-android-preview
+          path: build-results
+
+      - name: Publish versioned test download
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          tag="artovia-android-preview-${GITHUB_SHA:0:12}"
+          if gh release view "$tag" --json isDraft,isPrerelease,assets,url > release.json; then
+            jq -e '
+              (.isDraft | not) and .isPrerelease
+              and any(.assets[]; .name == "artovia-preview.apk")
+              and any(.assets[]; .name == "artovia-preview.apk.sha256")
+            ' release.json > /dev/null
+            jq -r '.url' release.json
+          else
+            gh release create "$tag" \
+              build-results/artovia-preview.apk \
+              build-results/artovia-preview.apk.sha256 \
+              --target "$GITHUB_SHA" \
+              --title "Artovia Android test build (${GITHUB_SHA:0:12})" \
+              --notes "Standalone Android test APK signed with the Expo debug key." \
+              --prerelease --latest=false
+          fi

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تطبيق إرتوفيا للجوال</title>
+<meta name="description" content="نزّل تطبيق مؤسسة إرتوفيا الخيرية للأجهزة المحمولة وشارك رابط التطبيق.">
+<meta name="theme-color" content="#0c0e11">
+<link rel="icon" href="assets/img/favicon.png?v=2">
+<link rel="apple-touch-icon" href="assets/img/icon-512.png?v=2">
+<link rel="stylesheet" href="assets/css/main.css?v=94d7bd52">
+<link rel="stylesheet" href="assets/css/editorial.css">
+<style>
+  body{min-height:100dvh;background:#0c0e11;color:#f6f5f2}
+  .app-download{min-height:100dvh;display:grid;grid-template-rows:auto 1fr auto;background:radial-gradient(circle at 20% 35%,#222933 0,transparent 30%),#0c0e11}
+  .app-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px clamp(18px,5vw,70px);border-bottom:1px solid #30343a}
+  .app-brand{display:flex;align-items:center;gap:11px;color:inherit}.app-brand img{width:42px;height:42px;object-fit:contain}.app-brand b{display:block;font-size:1.02rem}.app-brand small{color:#aeb2ba}
+  .app-back{color:#f6f5f2;text-decoration:none;border-bottom:1px solid #ffd529;padding-block:4px}
+  .app-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,460px);align-items:center;gap:clamp(32px,8vw,120px);width:min(1180px,calc(100% - 36px));margin:auto;padding-block:clamp(52px,8vw,110px)}
+  .app-moon{width:100%;aspect-ratio:1.35;background:url('assets/img/artovia-orbit.jpg') 39% center/cover no-repeat;border:1px solid #30343a;box-shadow:0 28px 70px #0008}
+  .app-copy{max-width:490px}.app-kicker{display:flex;align-items:center;gap:10px;color:#ffd529;font-size:.76rem;font-weight:800;letter-spacing:.06em}.app-kicker::before{content:"";width:28px;height:2px;background:#ffd529}
+  h1{font-size:clamp(2.5rem,6vw,5.5rem);line-height:1.05;margin:18px 0 20px}.app-lead{color:#c2c5cb;font-size:1.04rem;line-height:1.9;margin:0 0 26px}.app-actions{display:flex;flex-wrap:wrap;gap:10px}.app-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;border:1px solid #464b53;border-radius:3px;color:#fff;background:#17191e;text-decoration:none;font-weight:800}.app-button.primary{background:#ffd529;border-color:#ffd529;color:#171306}.app-button[aria-disabled="true"]{opacity:.55;pointer-events:none}.app-status{min-height:26px;margin-top:15px;color:#adb1b9;font-size:.88rem}.app-points{display:grid;gap:11px;margin:26px 0 0;padding:0;list-style:none}.app-points li{border-inline-start:2px solid #ffd529;padding-inline-start:12px;color:#d9dbe0}.app-footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:18px clamp(18px,5vw,70px);border-top:1px solid #30343a;color:#9fa3ab;font-size:.82rem}.app-footer a{color:#e9eaed}
+  @media(max-width:800px){.app-main{grid-template-columns:1fr;padding-block:34px}.app-moon{order:-1;aspect-ratio:1.7}.app-copy{max-width:none}h1{font-size:clamp(2.8rem,14vw,4.4rem)}.app-back{font-size:.86rem}}
+</style>
+<script src="assets/js/app-download.js" defer></script>
+</head>
+<body>
+<div class="app-download">
+ <header class="app-top">
+  <a class="app-brand" href="./"><img src="assets/img/emblem-sm.png?v=2" alt=""><span><b>مؤسسة إرتوفيا الخيرية</b><small>ACF</small></span></a>
+  <a class="app-back" href="./">العودة إلى الموقع</a>
+ </header>
+ <main class="app-main">
+  <div class="app-copy">
+   <span class="app-kicker">تطبيق إرتوفيا</span>
+   <h1>العلم<br>أقرب إليك.</h1>
+   <p class="app-lead">واجهة مستقلة للجوال والآيباد تعرض مكتبة إرتوفيا وأخبارها العلمية ومجلة المدار، وتتحدّث من مصادر الموقع نفسها.</p>
+   <div class="app-actions">
+    <a class="app-button primary" id="android-download" href="https://github.com/waleedasm19/artovia-site/releases" aria-disabled="true">جارٍ تجهيز نسخة Android</a>
+    <button class="app-button" id="share-app" type="button">مشاركة التطبيق</button>
+   </div>
+   <p class="app-status" id="download-status" role="status" aria-live="polite">نتحقق من أحدث نسخة متاحة…</p>
+   <ul class="app-points"><li>مصمم لشاشات الهاتف والآيباد</li><li>مشاركة المقالات والكتب من داخل التطبيق</li><li>تحديث المحتوى من موقع المؤسسة</li></ul>
+  </div>
+  <div class="app-moon" role="img" aria-label="القمر في ظلام الفضاء"></div>
+ </main>
+ <footer class="app-footer"><span>نسخة iPhone وiPad في مرحلة التوقيع والاختبار.</span><a href="https://github.com/waleedasm19/artovia-site/releases">كل إصدارات التطبيق</a></footer>
+</div>
+</body>
+</html>

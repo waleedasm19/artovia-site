@@ -1,33 +1,69 @@
-<!--{"title":"مؤسسة إرتوفيا الخيرية | منصة عربية للعلم والمعرفة","desc":"مؤسسة إرتوفيا الخيرية (ACF): كتب علمية عربية مؤلَّفة ومترجمة تُنشر مجانًا، وأخبار العلم والتقنية لحظة بلحظة.","nav":"index","scripts":["hero.js","hero-scenes.js","fields-icons.js","home.js","showcase.js"]}-->
-<section class="hero" aria-labelledby="hero-title">
- <canvas id="globe" aria-label="مشهد متحرك للمجموعة الشمسية يمكن تدويره بالسحب" role="img"></canvas>
- <div class="hero-fallback" aria-hidden="true"></div>
- <div class="planet-label" aria-hidden="true">المجموعة الشمسية · اسحب لتدويرها</div>
- <div class="wrap hero-inner">
-  <div class="hero-copy reveal">
-   <span class="eyebrow">ARTOVIA CHARITABLE FOUNDATION</span>
-   <h1 id="hero-title">المعرفة<br><em>بلغتنا</em></h1>
-   <div class="hero-rule"></div>
-   <p class="lead">منصة عربية مفتوحة للعلم: نؤلّف الكتب العلمية ونترجمها ونراجعها بعناية، ثم نضعها بين يديك مجانًا. ومعها نافذة يومية على أحدث ما توصّل إليه العلم والتقنية.</p>
+<!--{"title":"مؤسسة إرتوفيا الخيرية | منصة عربية للعلم والمعرفة","desc":"مؤسسة إرتوفيا الخيرية (ACF): كتب علمية عربية مؤلَّفة ومترجمة تُنشر مجانًا، وأخبار العلم والتقنية لحظة بلحظة.","nav":"index","scripts":["editorial-home.js","fields-icons.js","home.js","showcase.js"]}-->
+
+<section class="front-hero" aria-labelledby="hero-title">
+ <img class="front-hero-image" src="assets/img/artovia-orbit.jpg" alt="" fetchpriority="high">
+ <div class="wrap front-hero-inner">
+  <div class="front-hero-copy">
+   <span class="front-hero-label" lang="en">ARTOVIA CHARITABLE FOUNDATION</span>
+   <h1 id="hero-title">المعرفة <em>بلغتنا</em></h1>
+   <p>منصة عربية مفتوحة للعلم: نؤلّف الكتب العلمية ونترجمها ونراجعها بعناية، ثم نضعها بين يديك مجانًا. ومعها نافذة يومية على أحدث ما توصّل إليه العلم والتقنية.</p>
    <div class="hero-actions">
-    <a class="btn btn-primary" href="library.html">تصفّح المكتبة
-     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+    <a class="btn btn-primary" href="library.html">تصفّح المكتبة</a>
     <a class="btn btn-ghost" href="news.html">أخبار العلم اليوم</a>
+    <a class="btn btn-ghost" href="app.html">تطبيق إرتوفيا</a>
    </div>
+   <a class="front-hero-explore" href="#solar-explorer">استكشف المجموعة الشمسية</a>
   </div>
+  <p class="front-hero-note">إصدارات خيرية مجانية · لا تُباع ولا تُشترى</p>
  </div>
- <div class="hero-meta"><div class="wrap"><div class="scroll-cue"><span></span>مرّر لتكتشف</div><div>إصدارات خيرية مجانية · لا تُباع ولا تُشترى</div></div></div>
 </section>
 
-<section class="screen-band" aria-label="شاشة المعرفة">
+<section class="section front-section front-news" aria-labelledby="news-title">
+ <div class="wrap">
+  <div class="section-head reveal">
+   <div><span class="kicker">العلم الآن</span><h2 id="news-title">أحدث الاكتشافات</h2><p class="updated" id="home-updated"></p></div>
+   <a class="link-arrow" href="news.html">كل الأخبار <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+  </div>
+  <div class="news-grid" id="home-news"></div>
+ </div>
+</section>
+
+<section class="section front-section front-library" aria-labelledby="lib-title">
+ <div class="wrap">
+  <div class="section-head reveal">
+   <div><span class="kicker">المكتبة</span><h2 id="lib-title">كتب تُكتب لتُفهم</h2><p>كل كتاب يمرّ بالتأليف أو الترجمة، ثم المراجعة العلمية واللغوية، ثم التحرير والإخراج. رسوم أصلية، وأمثلة محلولة، ومسائل متدرّجة.</p></div>
+   <a class="link-arrow" href="library.html">كل الكتب <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+  </div>
+  <div class="books" id="home-books"></div>
+ </div>
+</section>
+
+<section class="section front-section front-fields" aria-labelledby="fields-title">
+ <div class="wrap">
+  <div class="section-head reveal"><div><span class="kicker">آفاق المعرفة</span><h2 id="fields-title">تسعة مجالات، نافذة واحدة</h2><p>نتابع كل يوم أحدث ما ينشره العلماء ووكالات الفضاء والمختبرات، ونصنّفه لتصل إلى ما يهمّك بسرعة.</p></div></div>
+  <div class="fields" id="fields"></div>
+ </div>
+</section>
+
+<section class="screen-band front-screen" aria-label="شاشة المعرفة">
  <div class="screen" id="showcase">
   <div class="screen-slides"></div>
   <div class="screen-text" aria-live="polite"></div>
  </div>
 </section>
 
+<section class="wrap front-explorer" aria-label="المجموعة الشمسية">
+ <details id="solar-explorer">
+  <summary>استكشف المجموعة الشمسية</summary>
+  <div class="hero hero-explorer">
+   <canvas id="globe" aria-label="مشهد متحرك للمجموعة الشمسية يمكن تدويره بالسحب" role="img"></canvas>
+   <div class="hero-fallback" aria-hidden="true"></div>
+   <div class="planet-label" aria-hidden="true">المجموعة الشمسية · اسحب لتدويرها</div>
+  </div>
+ </details>
+</section>
 
-<section class="section" style="padding-top:40px">
+<section class="section front-stats" aria-label="إرتوفيا بالأرقام">
  <div class="wrap">
   <div class="stats reveal">
    <div class="stat"><b data-count="2">٢</b><span>كتابان في المكتبة حتى الآن</span></div>
@@ -38,38 +74,7 @@
  </div>
 </section>
 
-
-
-<section class="section" aria-labelledby="lib-title">
- <div class="wrap">
-  <div class="section-head reveal">
-   <div><span class="kicker">المكتبة</span><h2 id="lib-title">كتب تُكتب لتُفهم</h2><p>كل كتاب يمرّ بالتأليف أو الترجمة، ثم المراجعة العلمية واللغوية، ثم التحرير والإخراج. رسوم أصلية، وأمثلة محلولة، ومسائل متدرّجة.</p></div>
-   <a class="link-arrow" href="library.html">كل الكتب <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
-  </div>
-  <div class="books" id="home-books"></div>
- </div>
-</section>
-
-<hr class="divider">
-
-<section class="section" aria-labelledby="fields-title">
- <div class="wrap">
-  <div class="section-head reveal"><div><span class="kicker">آفاق المعرفة</span><h2 id="fields-title">تسعة مجالات، نافذة واحدة</h2><p>نتابع كل يوم أحدث ما ينشره العلماء ووكالات الفضاء والمختبرات، ونصنّفه لتصل إلى ما يهمّك بسرعة.</p></div></div>
-  <div class="fields" id="fields"></div>
- </div>
-</section>
-
-<section class="section" aria-labelledby="news-title" style="padding-top:0">
- <div class="wrap">
-  <div class="section-head reveal">
-   <div><span class="kicker">العلم الآن</span><h2 id="news-title">أحدث الاكتشافات</h2><p class="updated" id="home-updated"></p></div>
-   <a class="link-arrow" href="news.html">كل الأخبار <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
-  </div>
-  <div class="news-grid" id="home-news"></div>
- </div>
-</section>
-
-<section class="section" aria-labelledby="mission-title">
+<section class="section front-section front-mission" aria-labelledby="mission-title">
  <div class="wrap mission">
   <div class="emblem-stage reveal" aria-hidden="true"><div class="orbit"><i></i></div><div class="orbit"><i></i></div><img src="assets/img/emblem.png" alt=""></div>
   <div class="reveal" data-delay="1">
@@ -87,7 +92,7 @@
  </div>
 </section>
 
-<section class="section" style="padding-top:0">
+<section class="section front-section front-rights">
  <div class="wrap">
   <div class="band reveal">
    <div class="tri-strip" aria-hidden="true"><i style="--c:var(--teal)"></i><i style="--c:var(--gold)"></i><i style="--c:var(--red)"></i><i style="--c:var(--blue)"></i><i style="--c:var(--teal)"></i><i style="--c:var(--gold)"></i></div>

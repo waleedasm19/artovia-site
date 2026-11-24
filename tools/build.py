@@ -42,7 +42,7 @@ FOOTER = f'''<footer class="site-footer"><div class="wrap">
   <div class="foot-brand"><a class="brand" href="./"><img src="assets/img/emblem-sm.png?v=2" alt="" width="46" height="46"><span><b>{SITE}</b><small>ACF · Artovia Charitable Foundation</small></span></a>
    <p>منصة عربية للعلم والمعرفة: نؤلّف الكتب العلمية ونترجمها ونراجعها، وننشرها مجانًا لكل قارئ.</p>
    <span class="free-seal">إصدار خيري مجاني، لا يُباع ولا يُشترى</span></div>
-  <div><h4>المنصة</h4><ul><li><a href="library.html">المكتبة</a></li><li><a href="magazine.html">مجلة المدار</a></li><li><a href="rawaq.html">الرواق</a></li><li><a href="news.html">الأخبار العلمية</a></li><li><a href="world.html">مقالات عالمية</a></li><li><a href="knowledge.html">معلومات عامة</a></li><li><a href="sources.html">مصادرنا وشكرنا</a></li><li><a href="account.html">حسابي</a></li><li><a href="settings.html">الإعدادات</a></li></ul></div>
+  <div><h4>المنصة</h4><ul><li><a href="library.html">المكتبة</a></li><li><a href="magazine.html">مجلة المدار</a></li><li><a href="rawaq.html">الرواق</a></li><li><a href="news.html">الأخبار العلمية</a></li><li><a href="world.html">مقالات عالمية</a></li><li><a href="knowledge.html">معلومات عامة</a></li><li><a href="app.html">تطبيق إرتوفيا</a></li><li><a href="sources.html">مصادرنا وشكرنا</a></li><li><a href="account.html">حسابي</a></li><li><a href="settings.html">الإعدادات</a></li></ul></div>
   <div><h4>الحقوق</h4><ul><li><a href="rights.html">حقوق النشر والترخيص</a></li><li><a href="terms.html">شروط الاستخدام</a></li><li><a href="privacy.html">سياسة الخصوصية</a></li></ul></div>
   <div><h4>تواصل معنا</h4><ul><li><a href="mailto:artoviacentr@gmail.com" class="mail-link">{ICONS["mail"]}<span class="en">artoviacentr@gmail.com</span></a></li><li><a href="about.html">عن المؤسسة</a></li><li class="insta" hidden><a href="#" target="_blank" rel="noopener">إنستغرام</a></li></ul></div>
  </div>
@@ -52,6 +52,7 @@ FOOTER = f'''<footer class="site-footer"><div class="wrap">
 def build():
     out = []
     CSSV = hashlib.md5(open(os.path.join(ROOT, "assets", "css", "main.css"), "rb").read()).hexdigest()[:8]
+    EDITORIALV = hashlib.md5(open(os.path.join(ROOT, "assets", "css", "editorial.css"), "rb").read()).hexdigest()[:8]
     for path in sorted(glob.glob(os.path.join(ROOT, "tools", "pages", "*.html"))):
         src = open(path, encoding="utf-8").read()
         m = re.match(r"<!--(\{.*?\})-->\s*", src, re.S)
@@ -75,6 +76,7 @@ def build():
 <link rel="preload" href="assets/fonts/Amiri-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/IBMPlexSansArabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css?v={CSSV}">
+<link rel="stylesheet" href="assets/css/editorial.css?v={EDITORIALV}">
 <script>try{{var s=JSON.parse(localStorage.getItem("acf-settings")||"{{}}");if(s.theme)document.documentElement.dataset.theme=s.theme;if(s.fontsize)document.documentElement.dataset.fontsize=s.fontsize}}catch(e){{}}</script>
 {scripts}
 </head>
@@ -87,7 +89,7 @@ def build():
 </body>
 </html>
 '''
-        open(os.path.join(ROOT, name), "w", encoding="utf-8").write(html); out.append(name)
+        open(os.path.join(ROOT, name), "w", encoding="utf-8", newline="\n").write(html); out.append(name)
     print("built:", " ".join(out))
 
 if __name__ == "__main__":

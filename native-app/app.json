@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "إرتوفيا",
+    "slug": "artovia",
+    "version": "1.0.0",
+    "orientation": "default",
+    "scheme": "artovia",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0b0c0f",
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "org.artovia.foundation",
+      "supportsTablet": true,
+      "infoPlist": { "CFBundleDevelopmentRegion": "ar", "ITSAppUsesNonExemptEncryption": false }
+    },
+    "android": {
+      "package": "org.artovia.foundation",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/emblem.png",
+        "backgroundColor": "#0b0c0f"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    }
+  }
+}
