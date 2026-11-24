@@ -1,6 +1,26 @@
 {
- "updated": "2026-11-24T07:56:23Z",
+ "updated": "2026-11-24T10:00:36Z",
  "items": [
+  {
+   "field": "space",
+   "title": "كشفت الصين النقاب عن طاقم مهمة فضائية جديد، ومن المقرر أن يصعد رائد فضاء باكستاني إلى محطتها الفضائية",
+   "summary": "كشفت الصين اليوم الثلاثاء عن طاقم مركبة الفضاء شنتشو 24 قبل إطلاقها هذا الأسبوع، حيث من المقرر أن يصبح باكستاني أول رائد فضاء أجنبي يصعد إلى محطتها الفضائية.",
+   "url": "https://phys.org/news/2026-11-china-unveils-space-mission-crew.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "orig": "China unveils new space mission crew, with a Pakistani astronaut set to board its space station"
+  },
+  {
+   "field": "space",
+   "title": "سجل الكوازار الجديد يشدد القيود على سيناريوهات تكوين الثقب الأسود",
+   "summary": "اكتشف فريق من علماء الفلك بقيادة جوليان وولف، باحث ما بعد الدكتوراه في معهد ماكس بلانك لعلم الفلك (MPIA) في هايدلبرغ، ألمانيا (الآن في المرصد الأوروبي الجنوبي في جارشينج باي ميونيخ، ألمانيا)، الكوازار الأكثر بعدا عن الأرض.",
+   "url": "https://phys.org/news/2026-11-quasar-tightens-constraints-black-hole.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "orig": "New quasar record tightens constraints on black hole formation scenarios"
+  },
   {
    "field": "space",
    "url": "https://science.nasa.gov/citizen-science/kilonova-catcher/",
