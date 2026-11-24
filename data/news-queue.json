@@ -187,5 +187,14 @@
   "source": "ScienceDaily",
   "lang": "en",
   "date": "2026-11-24"
+ },
+ {
+  "field": "tech",
+  "title": "Raising the stakes for enterprise networks with AI modernization",
+  "summary": "Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an…",
+  "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+  "source": "MIT Technology Review",
+  "lang": "en",
+  "date": "2026-11-24"
  }
 ]
