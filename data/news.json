@@ -2,6 +2,116 @@
  "updated": "2026-11-24T00:58:21Z",
  "items": [
   {
+   "field": "biology",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261119194553.htm",
+   "source": "ScienceDaily / كنيسة وستمنستر",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "westminster-roman-coffin-abbot",
+   "cover": "assets/img/news/westminster-roman-coffin-abbot.jpg",
+   "title": "تابوت روماني في كنيسة وستمنستر يحتضن رئيس دير من القرن الحادي عشر",
+   "summary": "تأريخ بالكربون المشع لهيكل عظمي ظُن أنه مفقود يرجّح أن تابوتًا رومانيًّا أُعيد استعماله لدفن رئيس دير وستمنستر «إلفويغ» نحو عام ١٠٢٠م."
+  },
+  {
+   "field": "health",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261121221122.htm",
+   "source": "ScienceDaily / جامعة كامبريدج",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "leukemia-50-years-early",
+   "cover": "assets/img/news/leukemia-50-years-early.jpg",
+   "title": "سرطان الدم قد يبدأ رحلته قبل التشخيص بخمسين عامًا",
+   "summary": "عينات دم محفوظة على مدى سنوات كشفت لباحثي جامعة كامبريدج أن أول طفرة في ابيضاض الدم النقوي الحاد تظهر غالبًا قبل سن العشرين."
+  },
+  {
+   "field": "biology",
+   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004089",
+   "source": "PLOS Biology / جامعة باث",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "essential-genes-mutation-rate",
+   "cover": "assets/img/news/essential-genes-mutation-rate.jpg",
+   "title": "هل تحمي الكائنات جيناتها المهمة من الطفرات؟ دراسة تهدم فرضية عمرها ٥٠ عامًا",
+   "summary": "باحثان من جامعة باث حللا أكبر عينة نظيفة من الطفرات في البكتيريا والخميرة، فلم يجدا أي دليل على أن الجينات الأساسية تتحور بمعدل أقل."
+  },
+  {
+   "field": "earth",
+   "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0357475",
+   "source": "PLOS ONE",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "pollinator-hotels-parasites",
+   "cover": "assets/img/news/pollinator-hotels-parasites.jpg",
+   "title": "«فنادق النحل» قد تصبح مخابئ للطفيليات: كيف نديرها بذكاء؟",
+   "summary": "دراسة من كارولاينا الشمالية تجد أن الأنابيب الورقية في فنادق الملقِّحات تجذب دبابير طفيلية أكثر بست مرات من القصب والخيزران، وتختبر صناديق تسهّل التنظيف."
+  },
+  {
+   "field": "tech",
+   "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0351352",
+   "source": "PLOS ONE",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "library-referendums-voters",
+   "cover": "assets/img/news/library-referendums-voters.jpg",
+   "title": "المكتبة القريبة تكسب الأصوات: ماذا يقول الناخبون الأمريكيون عن قيمة المكتبات العامة؟",
+   "summary": "دراسة في PLOS ONE حللت استفتاءات تمويل المكتبات العامة في الولايات المتحدة، فوجدت أن القرب من مبنى المكتبة أقوى ما يدفع الناس إلى التصويت لصالحها."
+  },
+  {
+   "field": "biology",
+   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004044",
+   "source": "PLOS Biology",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "oxytocin-mice-food-learning",
+   "cover": "assets/img/news/oxytocin-mice-food-learning.jpg",
+   "title": "كيف تتعلّم الفئران من رائحة فم صديقها أيّ طعام آمن؟ الأوكسيتوسين يجيب",
+   "summary": "دراسة في مجلة PLOS Biology تكشف أن منطقة صغيرة في الدماغ تسمى الحاجز الجانبي الظهري، ومستقبلات هرمون الأوكسيتوسين فيها، ضرورية لتعلّم الفئران تفضيلات الطعام من رفاقها."
+  },
+  {
+   "field": "engineering",
+   "url": "https://science.nasa.gov/earth/earth-observatory/laser-focus-at-the-top-of-the-world/",
+   "source": "NASA Earth Observatory",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "svalbard-laser-ranging",
+   "cover": "assets/img/news/svalbard-laser-ranging.jpg",
+   "title": "ليزر في أقصى شمال الأرض يقيس مدارات الأقمار الصناعية بدقة الفوتون الواحد",
+   "summary": "أول نظام من الجيل الجديد لتحديد مدى الأقمار الصناعية بالليزر من ناسا بدأ العمل في سفالبارد بالنرويج، ليصبح أقصى محطة من نوعها شمالًا على الكوكب."
+  },
+  {
+   "field": "space",
+   "url": "https://science.nasa.gov/citizen-science/kilonova-catcher/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "kilonova-catcher-citizen-science",
+   "cover": "assets/img/news/kilonova-catcher-citizen-science.jpg",
+   "title": "«صائد الكيلونوفا»: هواة الفلك يرصدون اصطدام النجوم النيوترونية من حدائق بيوتهم",
+   "summary": "مشروع علمي تشاركي تدعمه ناسا يدعو أصحاب التلسكوبات المنزلية إلى رصد ومضات «الكيلونوفا» التي تولد من اصطدام النجوم النيوترونية، وتوثيق كيف تخفت يومًا بعد يوم."
+  },
+  {
+   "field": "engineering",
+   "url": "https://www.nasa.gov/technology/joining-demonstrations-in-space/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "joins-welding-in-space",
+   "cover": "assets/img/news/joins-welding-in-space.jpg",
+   "title": "اللحام في الفضاء: تجربة جديدة على محطة الفضاء الدولية تمهّد لبناء الهياكل العملاقة هناك",
+   "summary": "تجربة JOINS من ناسا ولوكهيد مارتن ستختبر لحام الألومنيوم والفولاذ بالليزر وبالاحتكاك داخل محطة الفضاء الدولية، استعدادًا لتجميع الهوائيات والألواح الشمسية الكبيرة في المدار."
+  },
+  {
+   "field": "space",
+   "url": "https://science.nasa.gov/blogs/science-news/2026/11/18/nasa-scientists-find-clues-to-ancient-ice-beyond-neptune/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "kuiper-belt-ancient-ice-dust",
+   "cover": "assets/img/news/kuiper-belt-ancient-ice-dust.jpg",
+   "title": "ذرات غبار جمعتها طائرة على حافة الفضاء تحمل أثر جليد قديم وراء نبتون",
+   "summary": "حللت ناسا ١٢ حبة غبار من طبقة الستراتوسفير، فوجدت فيها معادن تكوّنت من ماء غني بنظائر الأكسجين الثقيلة، في دليل قوي على خزان جليد قديم في حزام كايبر."
+  },
+  {
    "field": "physics",
    "title": "يقوم الذكاء الاصطناعي الموجه بالفيزياء بإعادة بناء تدفق السوائل من البيانات المتفرقة والصاخبة",
    "summary": "لقد غيرت تقنيات التصوير الطبي الطريقة التي يتصور بها العلماء والأطباء تدفق الدم عبر قلب الإنسان، ولكن حتى تقنيات التصوير الأكثر تقدمًا لا يمكنها التقاط كل تفاصيل حركة السوائل. باحثون في جامعة…",
@@ -102,14 +212,16 @@
    "orig": "No magnets needed: Extreme voltage drives completely new kind of Hall effect"
   },
   {
-   "field": "space",
-   "title": "دراسة الخلايا السرطانية في الجاذبية الصغرى",
-   "summary": "تُظهر هذه الصورة الملتقطة في 19 نوفمبر 2026 أورامًا دقيقة في المعدة نمت داخل شريحة حيوية مغلفة. يدرس التحقيق Encapsulate-1 عينات الورم المشتقة من المريض على متن محطة الفضاء الدولية لفهم كيفية تحرك الخلايا السرطانية وتفاعلها بشكل أفضل...",
+   "field": "health",
+   "title": "أورام صغيرة من مرضى حقيقيين تُدرَس في انعدام الوزن على محطة الفضاء",
+   "summary": "تجربة «Encapsulate-1» تزرع أورامًا مصغرة من سرطان المعدة داخل رقاقة حيوية على محطة الفضاء الدولية، لفهم كيف تتحرك الخلايا السرطانية وتنتشر.",
    "url": "https://www.nasa.gov/image-article/studying-cancer-cells-in-microgravity/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "Studying Cancer Cells in Microgravity"
+   "orig": "Studying Cancer Cells in Microgravity",
+   "slug": "cancer-microtumors-iss",
+   "cover": "assets/img/news/cancer-microtumors-iss.jpg"
   },
   {
    "field": "physics",
@@ -132,14 +244,16 @@
    "orig": "A legendary philosopher isn’t buying Anthropic’s consciousness argument"
   },
   {
-   "field": "space",
-   "title": "ناسا تبحث عن شركاء لتصميم أول مفاعل نووي للقمر",
-   "summary": "تبحث ناسا عن شركاء في الصناعة لتطوير واختبار أول مفاعل نووي مصمم لتوفير الكهرباء على القمر، وهي خطوة رئيسية نحو تأسيس وجود بشري مستدام على سطح القمر. سيكون المفاعل القمري-1 (LR-1) عبارة عن طاقة انشطارية صغيرة...",
+   "field": "engineering",
+   "title": "ناسا تبحث عن شركاء لبناء أول مفاعل نووي يعمل على سطح القمر",
+   "summary": "مفاعل «LR-1» الصغير سيولّد ٢٠ كيلوواط من الكهرباء، ويعمل خمس سنوات على الأقل، ويضيء قاعدة قمرية خلال لياليها الطويلة التي تمتد أسبوعين.",
    "url": "https://www.nasa.gov/directorates/rtmd/nasa-seeks-partners-to-design-first-nuclear-reactor-for-the-moon/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "NASA Seeks Partners to Design First Nuclear Reactor for the Moon"
+   "orig": "NASA Seeks Partners to Design First Nuclear Reactor for the Moon",
+   "slug": "lunar-reactor-lr1",
+   "cover": "assets/img/news/lunar-reactor-lr1.jpg"
   },
   {
    "field": "space",
@@ -183,13 +297,15 @@
   },
   {
    "field": "space",
-   "title": "يوضح ويب التابع لناسا كيف يؤرخ غبار المستعرات الأعظم تطور النجوم",
-   "summary": "رسم تلسكوب جيمس ويب الفضائي التابع لناسا نسيجًا نابضًا بالحياة من بقايا المستعر الأعظم الأسطوري Cassiopeia A (Cas A). مثل هذه البقايا هي سحب الغاز والغبار التي تبقى بعد انفجار نجم ضخم وستؤدي في النهاية إلى ظهور نجم جديد.",
+   "title": "غبار مستعر أعظم يروي ساعات النجم الأخيرة: «جيمس ويب» يقرأ بقايا كاسيوبيا أ",
+   "summary": "خريطة جديدة للغبار في بقايا المستعر الأعظم «كاسيوبيا أ» تكشف أن طبقتين داخل النجم اندمجتا قبل انفجاره، ربما قبل ساعات فقط من انهيار قلبه.",
    "url": "https://science.nasa.gov/missions/webb/nasas-webb-shows-how-supernova-dust-chronicles-star-evolution/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "NASA’s Webb Shows How Supernova Dust Chronicles Star Evolution"
+   "orig": "NASA’s Webb Shows How Supernova Dust Chronicles Star Evolution",
+   "slug": "webb-cas-a-dust-shell-merger",
+   "cover": "assets/img/news/webb-cas-a-dust-shell-merger.jpg"
   },
   {
    "field": "space",
@@ -233,13 +349,15 @@
   },
   {
    "field": "space",
-   "title": "يمكن لموجة صادمة مجرية أن تعيد كتابة خريطة درب التبانة",
-   "summary": "يشير اكتشاف مفاجئ إلى أن مجرة درب التبانة ربما تصنع النجوم في أماكن لا تستطيع معظم المجرات صنعها. وجد العلماء دليلاً على أن هيكلًا دوارًا ضخمًا بالقرب من مركز المجرة يخلق موجات صدمية قوية تؤدي إلى تكوين النجوم بدلاً من ذلك.",
+   "title": "موجة صدمية من قضيب المجرة قد تعيد رسم خريطة درب التبانة",
+   "summary": "محاكاة حاسوبية وأرصاد لمصادر «المازر» تقترح أن جزءًا من ذراع «النعامة» الحلزوني ليس ذراعًا أصلًا، بل منطقة ولادة نجوم على حافة قضيب المجرة.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261122060329.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "A galactic shock wave could rewrite the map of the Milky Way"
+   "orig": "A galactic shock wave could rewrite the map of the Milky Way",
+   "slug": "milky-way-bar-shock-norma",
+   "cover": "assets/img/news/milky-way-bar-shock-norma.jpg"
   },
   {
    "field": "biology",
@@ -397,13 +515,15 @@
   },
   {
    "field": "health",
-   "title": "يكشف اكتشاف مرض الزهايمر عن خلل خفي في نظام تنظيف الدماغ",
-   "summary": "حدد العلماء جينًا يساعد الخلايا المناعية في الدماغ على احتواء لويحات ضارة مرتبطة بمرض الزهايمر، مما قد يكشف عن طريقة جديدة لمحاربة المرض. عندما تعطل الجين في الفئران، تسارع تراكم السموم وضعف القدرات الإدراكية.",
+   "title": "جين مرتبط بألزهايمر يعمل عبر «عمّال النظافة» في الدماغ لا عبر الخلايا العصبية",
+   "summary": "باحثو جامعة فيرجينيا وجدوا أن الجين CASS4 يساعد الخلايا الدبقية الصغيرة على تطويق لويحات الأميلويد، وأن تعطيله في الفئران يسرّع تراكمها ويضرّ بالذاكرة.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261120075600.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-22",
-   "orig": "Alzheimer’s breakthrough exposes a hidden flaw in the brain’s cleanup system"
+   "orig": "Alzheimer’s breakthrough exposes a hidden flaw in the brain’s cleanup system",
+   "slug": "cass4-alzheimer-microglia",
+   "cover": "assets/img/news/cass4-alzheimer-microglia.jpg"
   },
   {
    "field": "space",
@@ -585,13 +705,15 @@
   },
   {
    "field": "space",
-   "title": "بقع الفضول تنجرف غيوم الشفق",
-   "summary": "التقطت المركبة الفضائية Curiosity Mars التابعة لناسا هذه السحب المنجرفة في 31 أكتوبر 2026، وهو اليوم المريخي رقم 5061 أو اليوم المريخي للمهمة. تستخدم المركبة كاميرات الملاحة الخاصة بها لالتقاط سحب ما بعد غروب الشمس، والتي تسمى سحب الشفق، والتي تظهر لمدة…",
+   "title": "كيوريوسيتي بعد ١٤ عامًا على المريخ: ٤٩ ثقبًا في الصخور وغيوم شفق عابرة",
+   "summary": "صورتان جديدتان من ناسا تلخصان رحلة المركبة الجوالة: لوحة تجمع كل الثقوب التي حفرتها لأخذ العينات، وغيوم رقيقة تتوهج بعد غروب الشمس فوق فوهة غيل.",
    "url": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-20",
-   "orig": "Curiosity Spots Drifting Twilight Clouds"
+   "orig": "Curiosity Spots Drifting Twilight Clouds",
+   "slug": "curiosity-49-holes-twilight-clouds",
+   "cover": "assets/img/news/curiosity-49-holes-twilight-clouds.jpg"
   },
   {
    "field": "space",
@@ -704,14 +826,16 @@
    "orig": "Venus-like conditions reveal how minerals could preserve traces of ancient water"
   },
   {
-   "field": "space",
+   "field": "earth",
    "url": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
    "source": "NASA",
    "date": "2026-11-20",
-   "title": "عواصف جنوب غرب المحيط الهادئ من الفضاء",
-   "summary": "أطلق الإعصار الاستوائي «كزافييه» موسم العواصف في الحوض بقوة.",
+   "title": "الإعصار «زافيير»: أقوى إعصار نوفمبري يُسجَّل شرق خط التاريخ الدولي",
+   "summary": "صورة من القمر الصناعي «أكوا» تُظهر إعصارًا اشتد بسرعة فوق مياه دافئة مرتبطة بظاهرة النينيو، وافتتح موسم الأعاصير في جنوب غرب المحيط الهادئ بقوة غير معتادة.",
    "orig": "The Stormy Southwest Pacific",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "cyclone-xavier-southwest-pacific",
+   "cover": "assets/img/news/cyclone-xavier-southwest-pacific.jpg"
   },
   {
    "field": "space",
@@ -794,10 +918,12 @@
    "url": "https://www.sciencedaily.com/releases/2026/11/261120070904.htm",
    "source": "ScienceDaily",
    "date": "2026-11-20",
-   "title": "حمية الكيتو تقلل الدهون في الكبد بنسبة ٦٧% في غضون ٤ أشهر فقط",
-   "summary": "أظهرت تجربة سريرية جديدة أن النظام الغذائي الكيتوني تفوق بشكل كبير على النظام الغذائي المتوسطي والنظام الغذائي قليل الدهون في تقليل الدهون في الكبد وتحسين الصحة الأيضية، حتى عندما فقد المشاركون كميات مماثلة من الوزن. وبعد أربعة إلى خمسة أشهر فقط، حوالي…",
+   "title": "نفس الوزن المفقود ونتائج مختلفة: حمية الكيتو تخفض دهون الكبد ٦٧٪",
+   "summary": "تجربة عشوائية في جامعة واشنطن في سانت لويس قارنت ثلاث حميات أفقدت أصحابها الوزن نفسه، فكان تركيب الغذاء هو ما صنع الفرق في الكبد والسكر.",
    "orig": "Keto diet slashes liver fat by 67% in just 4 months",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "keto-liver-fat-trial",
+   "cover": "assets/img/news/keto-liver-fat-trial.jpg"
   },
   {
    "field": "health",
@@ -936,10 +1062,12 @@
    "url": "https://science.nasa.gov/open-science/fermi-data-pulsar-discovery/",
    "source": "NASA",
    "date": "2026-11-19",
-   "title": "البيانات العلمية لوكالة ناسا تدعم طريقة جديدة لاكتشاف النجوم النابضة التي يصعب العثور عليها",
-   "summary": "ساعدت البيانات المفتوحة المستمدة من بعثة «فيرمي» التابعة لوكالة ناسا فريقًا دوليًا من العلماء على تطوير طريقة لاكتشاف النجوم النابضة بسرعة تفوق السرعة السابقة بحوالي مليون مرة.",
+   "title": "طريقة أسرع مليون مرة تكشف نجومًا نابضة مختبئة في بيانات ناسا",
+   "summary": "بفكرة مستعارة من رياضيات التشفير، عثر فريق دولي على نجم نابض يدور ٢٦١ مرة في الثانية، في ١٠ ساعات بدل ٦٠٠ سنة من الحساب.",
    "orig": "NASA Science Data Powers New Method to Discover Hard-to-Find Pulsars",
-   "lang": "ar"
+   "lang": "ar",
+   "slug": "fermi-pulsar-lattice-search",
+   "cover": "assets/img/news/fermi-pulsar-lattice-search.jpg"
   },
   {
    "field": "physics",
@@ -1070,12 +1198,14 @@
   },
   {
    "field": "space",
-   "title": "تلسكوب «رومان» الفضائي يستعد لكشف صوره الأولى للعالم",
-   "summary": "دعت ناسا وسائل الإعلام والجمهور إلى متابعة الكشف عن أولى صور تلسكوب نانسي غريس رومان الفضائي.",
+   "title": "تلسكوب «رومان» يكشف صوره الأولى في ٧ ديسمبر",
+   "summary": "بعد إطلاقه في أغسطس ورحلة طولها مليون ميل إلى نقطة لاغرانج الثانية، تستعد ناسا لعرض أولى صور التلسكوب الذي صُمم لدراسة الطاقة المظلمة والمادة المظلمة والكواكب البعيدة.",
    "orig": "NASA Invites Media, Public to View Roman Telescope’s First Images",
    "url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-view-roman-telescopes-first-images/",
    "source": "NASA",
-   "date": "2026-11-17"
+   "date": "2026-11-17",
+   "slug": "roman-first-images-dec7",
+   "cover": "assets/img/news/roman-first-images-dec7.jpg"
   },
   {
    "field": "physics",
