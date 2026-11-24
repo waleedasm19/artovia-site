@@ -32,7 +32,7 @@
     button.removeAttribute("aria-disabled");
     button.textContent = "تنزيل تطبيق Android";
     button.setAttribute("download", "");
-    status.textContent = `نسخة اختبارية · ${(asset.size / 1048576).toFixed(1)} م.ب`;
+    status.textContent = `نسخة اختبارية · ${(asset.size / 1048576).toFixed(1)} ميغابايت`;
   }).catch(() => {
     button.href = releases;
     status.textContent = "ستظهر نسخة Android هنا بعد اكتمال البناء.";
