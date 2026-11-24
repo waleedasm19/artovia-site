@@ -7,7 +7,7 @@
   if (!b) { $("#book").innerHTML = '<div class="empty">لم نجد هذا الكتاب. <a class="link-arrow" href="library.html">عودة إلى المكتبة</a></div>'; return; }
   document.title = `${b.title} | مؤسسة إرتوفيا الخيرية`;
   $("#crumb").textContent = b.title;
-  const f = F[b.field] || {};
+  const f = F[b.field] || { name: b.fieldName, color: b.fieldColor };
   const dl = b.review ? `<span class="btn btn-ghost" aria-disabled="true" style="cursor:default">يُتاح للتنزيل بعد اعتماده رسميًا</span>` : b.pdf ? `<button class="btn btn-primary" id="dl">تنزيل الكتاب PDF ${ICON.arrow}</button>`
     : `<span class="btn btn-ghost" aria-disabled="true" style="cursor:default">${b.status === "done" ? "رابط التنزيل يُضاف قريبًا" : "يُتاح عند اكتماله"}</span>`;
   const sample = b.sample ? `<a class="btn btn-ghost" href="${esc(b.sample)}" target="_blank" rel="noopener">اقرأ عيّنة</a>` : "";
