@@ -60,7 +60,8 @@ def build():
         name = os.path.basename(path)
         title = meta["title"] if name == "index.html" else f'{meta["title"]} | {SITE}'
         scripts = ('<script src="assets/vendor/supabase.js" defer></script><script src="assets/js/config.js" defer></script>'
-                   '<script src="assets/js/auth.js" defer></script><script src="assets/js/site.js" defer></script>') + "".join(
+                   '<script src="assets/js/auth.js" defer></script><script src="assets/js/site.js" defer></script>'
+                   '<script src="assets/js/editorial-interactions.js" defer></script>') + "".join(
             f'<script {"type=\"module\"" if s.endswith(".mjs") or s == "hero.js" else "defer"} src="assets/js/{s}"></script>' for s in meta.get("scripts", []))
         html = f'''<!doctype html>
 <html lang="ar" dir="rtl" data-theme="dark">

@@ -346,3 +346,403 @@
   .front-news .news-card.has-cover:not(.news-feature) .src { margin-bottom: 0; }
   .front-news .news-card:not(.news-feature) p { -webkit-line-clamp: 1; margin-bottom: 6px; }
 }
+
+/* ========================================================================
+   الهوية التحريرية الداخلية — موحّدة لكل صفحات المنصة
+   ======================================================================== */
+body:not(.page-index) {
+  --bg: #0c0e11;
+  --bg-2: #111419;
+  --surface: #14171c;
+  --surface-2: #191d23;
+  --line: #2d3138;
+  --line-2: #484d56;
+  --ink: #f5f4f0;
+  --ink-2: #c5c8ce;
+  --ink-3: #9297a0;
+  --accent: var(--editorial-yellow);
+  --radius: 3px;
+  --radius-sm: 2px;
+  background: var(--bg);
+}
+body:not(.page-index) .nebula {
+  background:
+    linear-gradient(#0c0e11f5, #0c0e11f5),
+    radial-gradient(circle at 14% 18%, #ffd52916, transparent 25%),
+    var(--bg);
+}
+body:not(.page-index) #stars { opacity: .3; }
+body:not(.page-index) main { position: relative; }
+
+.editorial-progress {
+  position: fixed;
+  z-index: 100;
+  inset: 0 0 auto;
+  height: 3px;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--editorial-yellow) var(--read, 0%), transparent 0);
+}
+
+/* Page mastheads */
+body:not(.page-index) .page-hero {
+  min-height: clamp(330px, 42vw, 560px);
+  display: grid;
+  align-items: end;
+  padding-block: clamp(70px, 10vw, 140px) clamp(42px, 6vw, 76px);
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, #0c0e11 0 36%, #0c0e11c9 56%, #0c0e1150 100%),
+    linear-gradient(0deg, #0c0e11 0%, transparent 45%),
+    url("../img/artovia-orbit.jpg") 16% 49% / cover no-repeat;
+  isolation: isolate;
+}
+body:not(.page-index) .page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .2;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg, transparent calc(25% - 1px), #ffffff1a 25%, transparent calc(25% + 1px)),
+    linear-gradient(90deg, transparent calc(50% - 1px), #ffffff12 50%, transparent calc(50% + 1px)),
+    linear-gradient(90deg, transparent calc(75% - 1px), #ffffff12 75%, transparent calc(75% + 1px));
+}
+body:not(.page-index) .page-hero .orb { display: none; }
+body:not(.page-index) .page-hero .wrap {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, .55fr);
+  align-items: end;
+  column-gap: clamp(28px, 7vw, 110px);
+}
+body:not(.page-index) .page-hero .wrap::before {
+  content: "ARTOVIA / المعرفة";
+  grid-column: 1 / -1;
+  direction: ltr;
+  justify-self: start;
+  margin-bottom: clamp(24px, 5vw, 54px);
+  padding-inline-start: 42px;
+  color: #e7e7e3;
+  font: 700 .69rem/1.2 var(--sans);
+  letter-spacing: .17em;
+  background: linear-gradient(var(--editorial-yellow), var(--editorial-yellow)) left center / 30px 2px no-repeat;
+}
+.page-library .page-hero .wrap::before { content: "ARTOVIA / LIBRARY"; }
+.page-news .page-hero .wrap::before { content: "ARTOVIA / SCIENCE NOW"; }
+.page-magazine .page-hero .wrap::before { content: "AL MADAR / MAGAZINE"; }
+.page-world .page-hero .wrap::before { content: "ARTOVIA / WORLD IDEAS"; }
+.page-knowledge .page-hero .wrap::before { content: "ARTOVIA / EXPLORE"; }
+.page-about .page-hero .wrap::before { content: "ACF / OUR STORY"; }
+.page-settings .page-hero .wrap::before { content: "ARTOVIA / PREFERENCES"; }
+.page-account .page-hero .wrap::before { content: "ARTOVIA / MEMBERS"; }
+.page-rawaq .page-hero .wrap::before { content: "AL RAWAQ / COMMUNITY"; }
+body:not(.page-index) .page-hero .crumbs {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin-bottom: 18px;
+  color: #b7bbc2;
+}
+body:not(.page-index) .page-hero h1 {
+  grid-column: 1;
+  grid-row: 3;
+  max-width: 10ch;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(3.2rem, 8.4vw, 7.5rem);
+  line-height: .98;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+body:not(.page-index) .page-hero p {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: end;
+  margin: 0;
+  padding: 20px 0 2px;
+  border-top: 3px solid var(--editorial-yellow);
+  color: #e0e2e6;
+  font-size: clamp(.94rem, 1.35vw, 1.08rem);
+  line-height: 1.85;
+}
+body:not(.page-index) .page-hero .updated {
+  grid-column: 2;
+  grid-row: 4;
+  margin-top: 12px;
+  padding: 0;
+  border: 0;
+  color: #b4b8c0;
+  font-size: .78rem;
+}
+
+/* Shared sections and controls */
+body:not(.page-index) .section { padding-block: clamp(48px, 7vw, 92px); }
+body:not(.page-index) .section::before {
+  content: "";
+  position: absolute;
+  inset: 0 var(--gutter) auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line) 10% 90%, transparent);
+}
+body:not(.page-index) .page-hero + .section::before { display: none; }
+body:not(.page-index) .section-head h2,
+body:not(.page-index) .mission h2,
+body:not(.page-index) .band h2 {
+  padding-inline-start: 14px;
+  border-inline-start: 4px solid var(--editorial-yellow);
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.15;
+}
+body:not(.page-index) .kicker {
+  color: var(--editorial-yellow);
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+body:not(.page-index) :is(.search, .filter, .seg, .tabs) { border-radius: 2px; }
+body:not(.page-index) .search {
+  min-height: 50px;
+  background: #111419e8;
+  border-color: var(--line-2);
+}
+body:not(.page-index) .search:focus-within { border-color: var(--editorial-yellow); }
+body:not(.page-index) .filter {
+  min-height: 42px;
+  padding-inline: 18px;
+  background: #14171c;
+  border-color: var(--line);
+  font-size: .86rem;
+}
+body:not(.page-index) .filter[aria-pressed="true"] {
+  color: #151205;
+  background: var(--c, var(--editorial-yellow));
+}
+body:not(.page-index) .btn svg,
+body:not(.page-index) .link-arrow svg { display: none; }
+.page-library .section-head,
+.page-news #news-filters,
+.page-world #world-filters {
+  position: sticky;
+  z-index: 12;
+  top: calc(var(--masthead-height) + 8px);
+  padding-block: 12px;
+  background: #0c0e11ed;
+  backdrop-filter: blur(14px);
+}
+.page-news #news-filters,
+.page-world #world-filters { margin-inline: calc(var(--gutter) * -0.25); padding-inline: calc(var(--gutter) * .25); }
+
+/* Editorial cards */
+body:not(.page-index) :is(.book, .news-card, .issue, .know-card, .essay-card, .article-card, .field, .src-card, .setting, .panel, .review-item, .auth-card, .profile-card) {
+  --mx: 50%;
+  --my: 50%;
+  border-radius: 3px;
+  border-color: var(--line);
+  background:
+    radial-gradient(420px circle at var(--mx) var(--my), #ffd52912, transparent 42%),
+    var(--surface);
+  box-shadow: none;
+  transition: transform .3s var(--ease), border-color .3s, background-color .3s;
+}
+body:not(.page-index) :is(.book, .news-card, .issue, .know-card, .essay-card, .article-card, .field, .src-card, .setting, .panel):hover {
+  transform: translateY(-4px);
+  border-color: #ffd52970;
+}
+
+/* Library */
+.page-library .books { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 2vw, 24px); }
+.page-library .book-cover::after { display: none; }
+.page-library .book-badge { border-radius: 2px; }
+.page-library .book-body { border-top: 1px solid var(--line); }
+.page-library .book:first-child {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+}
+.page-library .book:first-child .book-cover { aspect-ratio: auto; min-height: 410px; }
+.page-library .book:first-child .book-body { justify-content: end; padding: clamp(24px, 4vw, 48px); border-top: 0; border-inline-start: 1px solid var(--line); }
+.page-library .book:first-child h3 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.1; }
+
+/* News and international essays */
+.page-news .news-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px; }
+.page-news .news-card { grid-column: span 4; min-height: 280px; border-radius: 3px; }
+.page-news .news-feature { grid-column: span 8; grid-row: span 2; }
+.page-news .news-feature h3 { font-size: clamp(1.8rem, 4vw, 3.25rem); line-height: 1.25; }
+.page-news .news-feature .cover { aspect-ratio: 2 / 1; }
+.page-news .news-card .chip { border-radius: 1px; }
+.page-news .news-card .src { padding-top: 10px; border-top: 1px solid var(--line); }
+.page-world .essays { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px; }
+.page-world .essay-card { grid-column: span 4; }
+.page-world .essay-card:first-child { grid-column: span 8; grid-row: span 2; }
+.page-world .essay-card:first-child h3 { font-size: clamp(1.65rem, 3.8vw, 3rem); }
+.page-world .essay-card:first-child .cover { aspect-ratio: 2 / 1; }
+.page-world .essay-card .in { border-top: 1px solid var(--line); }
+
+/* Magazine, knowledge and community */
+.page-magazine .issue-feature {
+  padding: clamp(24px, 5vw, 58px);
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, #171a1f, #0f1115);
+}
+.page-magazine .issue-feature .issue-cover { box-shadow: 20px 24px 0 #ffd529 !important; }
+.page-magazine .issues { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.page-magazine .issue-body { border-top: 1px solid var(--line); }
+.page-knowledge .know-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.page-knowledge .know-card:first-child { grid-column: span 2; grid-row: span 2; }
+.page-knowledge .know-card:first-child h3 { font-size: clamp(1.8rem, 4vw, 3rem); }
+.page-knowledge .know-card:first-child img { aspect-ratio: 2 / 1; }
+.page-rawaq .articles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.page-rawaq .article-card:first-child { grid-column: span 2; }
+.page-rawaq .article-card:first-child h3 { font-size: clamp(1.8rem, 4vw, 3rem); }
+
+/* About, sources and general panels */
+.page-about .emblem-stage { filter: grayscale(.3); }
+.page-about .fields { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: var(--line); }
+.page-about .field { min-height: 280px; border: 0; border-inline-start: 3px solid var(--c); border-radius: 0; }
+.page-about .field::before { display: none; }
+.page-about .field h3 { margin-top: auto; font-size: 1.2rem; }
+.page-about .band { border-radius: 3px; background: #15181c; border-color: var(--line-2); }
+.page-sources .src-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); }
+.page-sources .src-card { border: 0; border-radius: 0; min-height: 150px; }
+.page-sources .src-mark { border-radius: 2px; }
+.page-sources .src-note { border-radius: 2px; }
+
+/* Book, article and essay reading experiences */
+.page-book .book-detail { position: relative; }
+.page-book .cover-3d .inner { border-radius: 2px; box-shadow: 22px 26px 0 #ffd529; }
+.page-book .fact { border-radius: 2px; background: #14171c; }
+.page-book .toc-book li { border-radius: 2px; }
+.page-article .article-hero,
+.page-essay .article-hero { max-width: 1280px; border-radius: 0; box-shadow: none; }
+.page-article .article-hero::after,
+.page-essay .article-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 35%;
+  background: linear-gradient(transparent, #0c0e11b8);
+}
+:is(.page-article, .page-essay) .reader { max-width: 820px; }
+:is(.page-article, .page-essay) .reader h1 {
+  font-size: clamp(2.55rem, 6vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -.025em;
+}
+:is(.page-article, .page-essay) .reader .deck {
+  margin-block: 22px;
+  padding-inline-start: 20px;
+  border-inline-start: 4px solid var(--editorial-yellow);
+  color: #d8dbe0;
+  font-size: 1.18rem;
+}
+:is(.page-article, .page-essay, .page-rawaq) .reader .body {
+  font-size: clamp(1.16rem, 2vw, 1.34rem);
+  line-height: 2.15;
+}
+:is(.page-article, .page-essay) :is(.keyfacts, .think, .source-box) { border-radius: 2px; background: #14171c; }
+:is(.page-article, .page-essay) .more-list a { border-radius: 2px; }
+
+/* Account, settings, review and legal */
+.page-account .auth-card { border-top: 4px solid var(--editorial-yellow); }
+.page-account .tabs button { border-radius: 1px; }
+body:not(.page-index) .form :is(input, textarea, select) { border-radius: 2px; background: #0f1216; }
+.page-settings .settings { max-width: 980px; }
+.page-settings .setting { min-height: 112px; border-inline-start: 3px solid transparent; }
+.page-settings .setting:hover { border-inline-start-color: var(--editorial-yellow); }
+.page-settings .seg button { border-radius: 1px; }
+.prose-layout { grid-template-columns: minmax(220px, 280px) minmax(0, 820px); justify-content: center; }
+body:not(.page-index) .toc { top: calc(var(--masthead-height) + 24px); border-radius: 2px; border-top: 3px solid var(--editorial-yellow); background: #14171c; }
+body:not(.page-index) .prose h2 {
+  padding: 28px 18px 8px 0;
+  border-top: 1px solid var(--line);
+  border-inline-start: 3px solid var(--editorial-yellow);
+}
+body:not(.page-index) .note { border-radius: 2px; }
+.page-404 .lost b { color: var(--editorial-yellow); text-shadow: none; }
+
+/* Footer follows the same visual system */
+body:not(.page-index) .site-footer { border-top: 1px solid var(--line); background: #090b0e; }
+body:not(.page-index) .foot-grid { border-top: 4px solid var(--editorial-yellow); padding-top: 42px; }
+body:not(.page-index) .site-footer h4 { color: #fff; }
+body:not(.page-index) .free-seal { border-radius: 2px; }
+
+/* Light theme retains structure without losing readability */
+:root[data-theme="light"] body:not(.page-index) {
+  --bg: #f4f2ec;
+  --bg-2: #ebe8df;
+  --surface: #fbfaf6;
+  --surface-2: #fff;
+  --line: #d8d4ca;
+  --line-2: #b9b4a9;
+  --ink: #17181b;
+  --ink-2: #4d5056;
+  --ink-3: #6e727a;
+}
+:root[data-theme="light"] body:not(.page-index) .nebula { background: #f4f2ec; }
+:root[data-theme="light"] body:not(.page-index) :is(.search, .filter) { background: #fbfaf6; }
+:root[data-theme="light"] .page-library .section-head,
+:root[data-theme="light"] .page-news #news-filters,
+:root[data-theme="light"] .page-world #world-filters { background: #f4f2ecef; }
+:root[data-theme="light"] body:not(.page-index) :is(.book, .news-card, .issue, .know-card, .essay-card, .article-card, .field, .src-card, .setting, .panel, .review-item, .auth-card, .profile-card) {
+  background: radial-gradient(420px circle at var(--mx) var(--my), #ffd52920, transparent 42%), var(--surface);
+}
+:root[data-theme="light"] body:not(.page-index) .form :is(input, textarea, select),
+:root[data-theme="light"] body:not(.page-index) .toc { background: #fbfaf6; }
+
+@media (max-width: 1050px) {
+  .page-library .books { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .page-news .news-card { grid-column: span 6; }
+  .page-news .news-feature { grid-column: span 12; grid-row: auto; }
+  .page-world .essay-card { grid-column: span 6; }
+  .page-world .essay-card:first-child { grid-column: span 12; grid-row: auto; }
+  .page-magazine .issues { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .page-about .fields { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; }
+}
+
+@media (max-width: 760px) {
+  body:not(.page-index) .page-hero { min-height: 470px; background-position: 37% center; }
+  body:not(.page-index) .page-hero .wrap { grid-template-columns: 1fr; }
+  body:not(.page-index) .page-hero .wrap::before { margin-bottom: 36px; }
+  body:not(.page-index) .page-hero h1,
+  body:not(.page-index) .page-hero p,
+  body:not(.page-index) .page-hero .updated { grid-column: 1; }
+  body:not(.page-index) .page-hero h1 { font-size: clamp(3rem, 16vw, 5.4rem); max-width: 100%; }
+  body:not(.page-index) .page-hero p { grid-row: 4; margin-top: 24px; padding-top: 14px; }
+  body:not(.page-index) .page-hero .updated { grid-row: 5; }
+  .page-library .section-head,
+  .page-news #news-filters,
+  .page-world #world-filters { position: static; backdrop-filter: none; }
+  .page-library .books { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .page-library .book:first-child { grid-column: span 2; grid-template-columns: 1fr 1fr; }
+  .page-library .book:first-child .book-cover { min-height: 330px; }
+  .page-library .book:first-child .book-body { padding: 20px; }
+  .page-news .news-grid, .page-world .essays { gap: 12px; }
+  .page-news .news-card, .page-world .essay-card { grid-column: span 12; }
+  .page-magazine .issues, .page-knowledge .know-grid, .page-rawaq .articles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .page-about .fields, .page-sources .src-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-about .field { min-height: 230px; }
+  :is(.page-article, .page-essay) .reader h1 { font-size: clamp(2.35rem, 10vw, 4.2rem); }
+}
+
+@media (max-width: 520px) {
+  body:not(.page-index) .page-hero { min-height: 520px; padding-bottom: 46px; }
+  body:not(.page-index) .page-hero::after { opacity: .1; }
+  body:not(.page-index) .page-hero h1 { font-size: clamp(2.8rem, 15vw, 4.3rem); }
+  body:not(.page-index) .page-hero p { font-size: .94rem; line-height: 1.75; }
+  .page-library .book:first-child { display: flex; grid-column: span 2; }
+  .page-library .book:first-child .book-cover { min-height: 0; aspect-ratio: 3 / 4; }
+  .page-library .book:first-child .book-body { border-inline-start: 0; border-top: 1px solid var(--line); }
+  .page-library .book:first-child h3 { font-size: 1.35rem; }
+  .page-magazine .issues, .page-knowledge .know-grid, .page-rawaq .articles { grid-template-columns: 1fr; }
+  .page-knowledge .know-card:first-child, .page-rawaq .article-card:first-child { grid-column: auto; grid-row: auto; }
+  .page-about .fields, .page-sources .src-grid { grid-template-columns: 1fr; }
+  .page-about .field { min-height: 190px; }
+  .page-magazine .issue-feature { padding: 18px; }
+  .page-magazine .issue-feature .issue-cover { box-shadow: 10px 12px 0 #ffd529 !important; }
+  body:not(.page-index) .prose h2 { padding-inline-start: 12px; }
+  .editorial-progress { height: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:not(.page-index) :is(.book, .news-card, .issue, .know-card, .essay-card, .article-card, .field, .src-card, .setting, .panel) { transition: none; }
+}
