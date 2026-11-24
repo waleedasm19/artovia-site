@@ -237,6 +237,7 @@
     "width": 1280,
     "json": "data/world/on-liberty-ch2.json",
     "field": "cover",
-    "query": "Speakers' Corner speaker crowd"
+    "query": "John Stuart Mill statue Victoria Embankment",
+    "minw": 600
   }
 ]
