@@ -45,7 +45,7 @@
     async submit(a) { const { error } = await sb.from("articles").insert({ title: a.title, field: a.field, body: a.body }); if (error) throw new Error(arErr(error)); },
     async pending() { const { data } = await sb.from("articles_admin").select("*").eq("status", "pending").order("created_at"); return data || []; },
     async review(id, status, note) { const { error } = await sb.from("articles").update({ status, review_note: note || null, reviewed_at: new Date().toISOString() }).eq("id", id); if (error) throw new Error(arErr(error)); },
-    async fileUrl(bucket, path) { const { data, error } = await sb.storage.from(bucket).createSignedUrl(path, 600, { download: true }); if (error) throw new Error("الملف غير متاح الآن."); return data.signedUrl; }
+    async fileUrl(bucket, path, view) { const { data, error } = await sb.storage.from(bucket).createSignedUrl(path, view ? 6 * 3600 : 600, view ? {} : { download: true }); if (error) throw new Error("الملف غير متاح الآن."); return data.signedUrl; }
   };
 
   /* ============ demo: داخل المتصفح فقط ============ */

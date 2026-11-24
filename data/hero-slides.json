@@ -1,0 +1,167 @@
+{
+ "interval": 5,
+ "slides": [
+  {
+   "id": "moon",
+   "name": "القمر",
+   "credit": "بدر التمام · Gregory H. Revera · CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:FullMoon2010.jpg",
+   "img": "assets/img/hero/moon.jpg",
+   "small": "assets/img/hero/moon-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "cosmic-cliffs",
+   "name": "الفضاء والفلك",
+   "credit": "«المنحدرات الكونية» في سديم القاعدة بعدسة جيمس ويب · NASA, ESA, CSA, STScI · ملكية عامة",
+   "url": "https://commons.wikimedia.org/wiki/File:NASA%E2%80%99s_Webb_Reveals_Cosmic_Cliffs,_Glittering_Landscape_of_Star_Birth.jpg",
+   "img": "assets/img/hero/cosmic-cliffs.jpg",
+   "small": "assets/img/hero/cosmic-cliffs-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "space",
+   "name": "رحلات الفضاء",
+   "credit": "صاروخ فالكون 9 ليلة الإطلاق · SpaceX · CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Falcon_9_Dragon_Night_Before_Launch.jpg",
+   "img": "assets/img/hero/space.jpg",
+   "small": "assets/img/hero/space-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "aurora",
+   "name": "الأرض والسماء",
+   "credit": "الشفق القطبي فوق بحيرة ميفاتن، آيسلندا · Giles Laurent · CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:039_Northern_lights_over_M%C3%BDvatn_(Iceland)_Photo_by_Giles_Laurent.jpg",
+   "img": "assets/img/hero/aurora.jpg",
+   "small": "assets/img/hero/aurora-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "physics",
+   "name": "الفيزياء والذرّة",
+   "credit": "كاشف CMS في مصادم الهادرونات الكبير، سيرن · SimonWaldherr · CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:CERN_LHC_CMS_02.jpg",
+   "img": "assets/img/hero/physics.jpg",
+   "small": "assets/img/hero/physics-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "volcano",
+   "name": "الجيولوجيا",
+   "credit": "ثوران بركان ليتلي-هروتور، آيسلندا 2023 · Giles Laurent · CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:001_Volcano_eruption_of_Litli-Hr%C3%BAtur_in_Iceland_in_2023_Photo_by_Giles_Laurent.jpg",
+   "img": "assets/img/hero/volcano.jpg",
+   "small": "assets/img/hero/volcano-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "milky-way",
+   "name": "المجرّة",
+   "credit": "درب التبّانة كاملًا كما رصده المرصد الأوروبي الجنوبي · ESO/S. Brunier · CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg",
+   "img": "assets/img/hero/milky-way.jpg",
+   "small": "assets/img/hero/milky-way-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "engineering",
+   "name": "الهندسة",
+   "credit": "جسر ميو المعلّق، فرنسا · Richard Leeming · CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Millau_Viaduct_(2724128971).jpg",
+   "img": "assets/img/hero/engineering.jpg",
+   "small": "assets/img/hero/engineering-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "lightning",
+   "name": "الطقس والكهرباء",
+   "credit": "عاصفة برق فوق منارة بور-لا-نوفيل، فرنسا · Maxime Raynal · CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg",
+   "img": "assets/img/hero/lightning.jpg",
+   "small": "assets/img/hero/lightning-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "biology",
+   "name": "علوم الحياة",
+   "credit": "خلايا هيلا حيّة تحت المجهر الفلوري · 8x57is · CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Multicolor_fluorescence_image_of_living_HeLa_cells.jpg",
+   "img": "assets/img/hero/biology.jpg",
+   "small": "assets/img/hero/biology-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "atlantis",
+   "name": "مكوك الفضاء",
+   "credit": "انطلاق المكوك أتلانتس في رحلته لصيانة هابل · NASA/Scott Andrews · ملكية عامة",
+   "url": "https://commons.wikimedia.org/wiki/File:STS-125_Atlantis_Liftoff_02.jpg",
+   "img": "assets/img/hero/atlantis.jpg",
+   "small": "assets/img/hero/atlantis-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "everest",
+   "name": "الجبال والجليد",
+   "credit": "إيفرست ونوبتسي ونهر خومبو الجليدي، نيبال · Vyacheslav Argenberg · CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Everest,_Nuptse,_Khumbu_Glacier,_Nepal,_Himalayas.jpg",
+   "img": "assets/img/hero/everest.jpg",
+   "small": "assets/img/hero/everest-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "aviation",
+   "name": "الطيران",
+   "credit": "طائرة إيرباص A380 عند الغروب · Chad Ajamian · CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Airbus_A380_with_sunset_(175372547).jpg",
+   "img": "assets/img/hero/aviation.jpg",
+   "small": "assets/img/hero/aviation-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "sombrero",
+   "name": "المجرّات",
+   "credit": "مجرة السمبريرو M104 بعدسة هابل · NASA/ESA, Hubble Heritage Team · ملكية عامة",
+   "url": "https://commons.wikimedia.org/wiki/File:M104_ngc4594_sombrero_galaxy_hi-res.jpg",
+   "img": "assets/img/hero/sombrero.jpg",
+   "small": "assets/img/hero/sombrero-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "gigantic-jet",
+   "name": "الغلاف الجوي",
+   "credit": "«نفّاثة عملاقة» من البرق فوق السحب، من محطة الفضاء الدولية · NASA/Nichole Ayers · ملكية عامة",
+   "url": "https://commons.wikimedia.org/wiki/File:Gigantic_jet_photographed_by_Nichole_Ayers_on_the_International_Space_Station,_some_edits.jpg",
+   "img": "assets/img/hero/gigantic-jet.jpg",
+   "small": "assets/img/hero/gigantic-jet-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "ocean",
+   "name": "المحيطات",
+   "credit": "موجة عملاقة في مسابقة مافريكس، كاليفورنيا · Shalom Jacobovitz · CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:2010_mavericks_competition_edit1.jpg",
+   "img": "assets/img/hero/ocean.jpg",
+   "small": "assets/img/hero/ocean-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "star-trails",
+   "name": "محطة الفضاء",
+   "credit": "مسارات النجوم من محطة الفضاء الدولية · NASA/Don Pettit · ملكية عامة",
+   "url": "https://commons.wikimedia.org/wiki/File:International_Space_Station_star_trails_-_JSC2012E039800.jpg",
+   "img": "assets/img/hero/star-trails.jpg",
+   "small": "assets/img/hero/star-trails-sm.jpg",
+   "pos": "50% 50%"
+  },
+  {
+   "id": "earth",
+   "name": "كوكب الأرض",
+   "credit": "الرخامة الزرقاء · NASA / Reto Stöckli · ملكية عامة",
+   "url": "https://commons.wikimedia.org/wiki/File:Blue_Marble_Eastern_Hemisphere.jpg",
+   "img": "assets/img/hero/earth.jpg",
+   "small": "assets/img/hero/earth-sm.jpg",
+   "pos": "50% 50%"
+  }
+ ]
+}

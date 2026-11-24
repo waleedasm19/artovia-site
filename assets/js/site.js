@@ -159,6 +159,9 @@
       <div class="book-cover">${badge}<img src="${BASE}${b.cover}" alt="غلاف كتاب ${esc(b.title)}" loading="lazy" width="900" height="1200"></div>
       <div class="book-body"><h3>${esc(b.title)}</h3><div class="sub">${esc(b.subtitle)}</div>
       ${b.status !== "done" ? `<div class="progress" aria-label="نسبة الإنجاز"><i style="width:${b.progress}%"></i></div>` : ""}
+      <div class="book-extra"><p>${esc(b.blurb || "")}</p>
+       <ul class="book-facts">${[b.pages, b.format, b.edition].filter(Boolean).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+       <span class="btn btn-primary book-cta">${b.status === "done" && !b.review ? "اقرأ الكتاب الآن" : "تفاصيل الكتاب"}</span></div>
       <div class="book-meta"><span>${esc(b.type)}</span><span style="color:${f.color}">${esc(f.name || "")}</span><span>${esc(b.level)}</span></div></div></a>`;
   }
   function newsCard(i, F, feature = false) {

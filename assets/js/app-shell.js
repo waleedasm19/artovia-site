@@ -2,6 +2,16 @@
 (() => {
   "use strict";
   const root = document.documentElement;
+  let inApp = false; try { inApp = !!sessionStorage.getItem("acf-app"); } catch { /* */ }
+  const appMode = inApp || root.classList.contains("app-mode") || matchMedia("(display-mode: standalone)").matches || !!navigator.standalone;
+  // بعد التثبيت لا نعرض أي دعوة للتثبيت: داخل التطبيق ولا في المتصفح نفسه
+  const markInstalled = () => { try { localStorage.setItem("acf-installed", "1"); } catch { /* */ } };
+  const isInstalled = () => { try { return localStorage.getItem("acf-installed") === "1"; } catch { return false; } };
+  if (appMode) {
+    markInstalled();
+    if (location.pathname.endsWith("/app.html")) { location.replace("./"); return; }
+  }
+  addEventListener("appinstalled", () => { markInstalled(); document.querySelector(".install-nudge")?.remove(); });
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
     addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
   }
@@ -22,9 +32,9 @@
   addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); installEvent = e; });
   const page = location.pathname.split("/").pop();
   const dismissed = () => { try { return Date.now() - (+localStorage.getItem("acf-install-dismissed") || 0) < 30 * 864e5; } catch { return false; } };
-  if (!root.classList.contains("app-mode") && page !== "app.html" && matchMedia("(max-width: 900px)").matches && !dismissed()) {
+  if (!appMode && !isInstalled() && page !== "app.html" && matchMedia("(max-width: 900px)").matches && !dismissed()) {
     setTimeout(() => {
-      if (root.classList.contains("app-mode") || dismissed()) return;
+      if (isInstalled() || dismissed()) return;
       const card = document.createElement("aside");
       card.className = "install-nudge"; card.setAttribute("aria-label", "تثبيت التطبيق");
       card.innerHTML = `<img src="assets/app/icon-192.png" alt="" width="44" height="44"><div><b>ثبّت تطبيق إرتوفيا</b><span>أسرع، ويعمل بلا إنترنت</span></div>
@@ -42,7 +52,7 @@
     }, 9000);
   }
 
-  if (!root.classList.contains("app-mode")) return;
+  if (!appMode) return;
 
   const here = (location.pathname.split("/").pop() || "index.html").replace(/\?.*$/, "");
   const icon = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
