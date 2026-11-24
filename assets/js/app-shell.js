@@ -8,6 +8,40 @@
   // شاشة البداية تختفي من الصفحة بعد انتهاء حركتها
   const splash = document.getElementById("app-splash");
   if (splash) splash.addEventListener("animationend", (e) => { if (e.animationName === "app-splash-out") splash.remove(); });
+
+  // شريط صغير حين ينقطع الاتصال: الصفحات المحفوظة تبقى تعمل
+  const net = document.createElement("div");
+  net.className = "net-note"; net.setAttribute("role", "status");
+  net.textContent = "أنت غير متصل الآن، وتتصفّح النسخة المحفوظة في جهازك.";
+  const syncNet = () => net.classList.toggle("on", !navigator.onLine);
+  document.body.append(net); syncNet();
+  addEventListener("online", syncNet); addEventListener("offline", syncNet);
+
+  // دعوة لطيفة لتثبيت التطبيق في الجوال (تظهر مرة، وتختفي 30 يومًا إن أُغلقت)
+  let installEvent = null;
+  addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); installEvent = e; });
+  const page = location.pathname.split("/").pop();
+  const dismissed = () => { try { return Date.now() - (+localStorage.getItem("acf-install-dismissed") || 0) < 30 * 864e5; } catch { return false; } };
+  if (!root.classList.contains("app-mode") && page !== "app.html" && matchMedia("(max-width: 900px)").matches && !dismissed()) {
+    setTimeout(() => {
+      if (root.classList.contains("app-mode") || dismissed()) return;
+      const card = document.createElement("aside");
+      card.className = "install-nudge"; card.setAttribute("aria-label", "تثبيت التطبيق");
+      card.innerHTML = `<img src="assets/app/icon-192.png" alt="" width="44" height="44"><div><b>ثبّت تطبيق إرتوفيا</b><span>أسرع، ويعمل بلا إنترنت</span></div>
+        <a class="btn btn-primary" href="app.html">ثبّت</a><button type="button" class="install-close" aria-label="إغلاق">×</button>`;
+      card.querySelector("a").addEventListener("click", async (e) => {
+        if (!installEvent) return;
+        e.preventDefault(); installEvent.prompt(); await installEvent.userChoice.catch(() => null); installEvent = null; card.remove();
+      });
+      card.querySelector("button").addEventListener("click", () => {
+        try { localStorage.setItem("acf-install-dismissed", String(Date.now())); } catch { /* */ }
+        card.remove();
+      });
+      document.body.append(card);
+      requestAnimationFrame(() => card.classList.add("on"));
+    }, 9000);
+  }
+
   if (!root.classList.contains("app-mode")) return;
 
   const here = (location.pathname.split("/").pop() || "index.html").replace(/\?.*$/, "");
