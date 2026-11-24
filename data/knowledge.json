@@ -6,7 +6,8 @@
    "cite": "المصدر: نصف قطر بور ونصف قطر البروتون، CODATA",
    "shown": "2026-11-20",
    "img": "assets/img/screen/ion-trap.jpg",
-   "credit": "مصيدة أيونات من المعهد الوطني للمعايير والتقنية NIST (ملكية عامة)"
+   "credit": "مصيدة أيونات من المعهد الوطني للمعايير والتقنية NIST (ملكية عامة)",
+   "field": "physics"
   },
   {
    "title": "",
@@ -22,7 +23,8 @@
    "cite": "المصدر: الوحدة الفلكية وسرعة الضوء، IAU",
    "shown": "2026-11-20",
    "img": "assets/img/screen/sun-sdo.jpg",
-   "credit": "NASA/SDO (ملكية عامة)"
+   "credit": "NASA/SDO (ملكية عامة)",
+   "field": "space"
   }
  ]
 }

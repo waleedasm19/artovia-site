@@ -1,0 +1,30 @@
+<!--{"title":"قارئ الكتب","desc":"اقرأ كتب مؤسسة إرتوفيا الخيرية مباشرة في الموقع والتطبيق، صفحة صفحة، مع الفهرس وحفظ موضع القراءة.","nav":"library","bare":true,"scripts":["reader.mjs"]}-->
+
+<div class="reader" id="reader">
+ <header class="reader-bar">
+  <a class="rb-btn" id="r-back" href="library.html" aria-label="رجوع إلى الكتاب"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></a>
+  <div class="rb-title"><b id="r-title">جارٍ فتح الكتاب…</b><small id="r-sub"></small></div>
+  <button class="rb-btn" id="r-toc" type="button" aria-label="الفهرس" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg></button>
+  <button class="rb-btn" id="r-mode" type="button" aria-label="وضع القراءة الليلية"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+  <button class="rb-btn" id="r-save" type="button" aria-label="حفظ الكتاب للقراءة دون إنترنت" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg></button>
+ </header>
+
+ <div class="reader-load" id="r-load" role="status">
+  <img src="assets/app/emblem-splash.png" alt="" width="84" height="84">
+  <p id="r-msg">جارٍ تحضير الكتاب…</p>
+  <div class="reader-progress"><i id="r-prog"></i></div>
+ </div>
+
+ <div class="reader-pages" id="r-pages" aria-label="صفحات الكتاب"></div>
+
+ <footer class="reader-foot" id="r-foot" hidden>
+  <button class="rb-btn" id="r-zout" type="button" aria-label="تصغير">−</button>
+  <label class="r-jump"><span>صفحة</span><input id="r-page" type="number" inputmode="numeric" min="1" value="1" aria-label="رقم الصفحة"><span>من <b id="r-total">…</b></span></label>
+  <button class="rb-btn" id="r-zin" type="button" aria-label="تكبير">+</button>
+ </footer>
+
+ <aside class="reader-toc" id="r-toc-panel" aria-label="فهرس الكتاب" hidden>
+  <div class="rt-head"><b>الفهرس</b><button class="rb-btn" id="r-toc-close" type="button" aria-label="إغلاق الفهرس">×</button></div>
+  <ol id="r-toc-list"></ol>
+ </aside>
+</div>

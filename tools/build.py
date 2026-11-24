@@ -95,11 +95,11 @@ def build():
 </head>
 <body class="page-{name[:-5]}">
 {SPLASH}
-{header(meta.get("nav", ""))}
+{"" if meta.get("bare") else header(meta.get("nav", ""))}
 <main id="main">
 {body.strip()}
 </main>
-{FOOTER}
+{"" if meta.get("bare") else FOOTER}
 </body>
 </html>
 '''
