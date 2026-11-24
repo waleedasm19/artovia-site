@@ -76,5 +76,9 @@
  ],
  "slug": "superhuman-ai",
  "added": "2026-11-24",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/superhuman-ai.jpg",
+ "credit": "Marcin Wichary from San Francisco, U.S.A. · CC BY 2.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Colossus_rebuild_information_(2189541945).jpg",
+ "coverAlt": "Colossus rebuild information"
 }
