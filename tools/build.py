@@ -4,6 +4,7 @@
 التشغيل: python3 tools/build.py   (يكتب الصفحات في جذر الموقع)
 """
 import json, os, re, glob, hashlib
+APP_STARTUP = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "app", "startup-images.json"), encoding="utf-8"))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "مؤسسة إرتوفيا الخيرية"
 NAV = [("index", "الرئيسية", "./"), ("library", "المكتبة", "library.html"), ("magazine", "مجلة المدار", "magazine.html"),
@@ -49,6 +50,13 @@ FOOTER = f'''<footer class="site-footer"><div class="wrap">
  <div class="foot-bottom"><span>© <span class="yr">٢٠٢٦</span> {SITE} (ACF). جميع الحقوق محفوظة وفق <a href="rights.html" style="text-decoration:underline">شروط الترخيص</a>.</span><span>خامات الكواكب: <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener" class="en" style="text-decoration:underline">Solar System Scope</a> (CC BY 4.0)، وصور الكويكبات والنيازك: NASA وJAXA وNOIRLab · صُنع بعناية للقارئ العربي</span></div>
 </div></footer>'''
 
+STARTUP = "".join(f'<link rel="apple-touch-startup-image" media="{i["media"]}" href="{i["url"]}">' for i in APP_STARTUP)
+# وضع التطبيق: حين يُفتح من الشاشة الرئيسية تظهر شاشة البداية مرة واحدة في كل جلسة، ويظهر الشريط السفلي.
+APP_MODE = ('try{var d=document.documentElement,q=sessionStorage;if(matchMedia("(display-mode: standalone)").matches||navigator.standalone||/[?&]source=app/.test(location.search))q.setItem("acf-app","1");'
+            'if(q.getItem("acf-app")){d.classList.add("app-mode");if(q.getItem("acf-splash"))d.classList.add("splash-seen");else q.setItem("acf-splash","1")}}catch(e){}')
+SPLASH = '''<div id="app-splash" aria-hidden="true"><div class="app-splash-ring"></div><img src="assets/app/emblem-splash.png" alt="" width="180" height="180">
+<b>إرتوفيا الخيرية</b><i></i><small>المعرفة حقٌّ للجميع</small></div>'''
+
 def build():
     out = []
     CSSV = hashlib.md5(open(os.path.join(ROOT, "assets", "css", "main.css"), "rb").read()).hexdigest()[:8]
@@ -61,7 +69,7 @@ def build():
         title = meta["title"] if name == "index.html" else f'{meta["title"]} | {SITE}'
         scripts = ('<script src="assets/vendor/supabase.js" defer></script><script src="assets/js/config.js" defer></script>'
                    '<script src="assets/js/auth.js" defer></script><script src="assets/js/site.js" defer></script>'
-                   '<script src="assets/js/editorial-interactions.js" defer></script>') + "".join(
+                   '<script src="assets/js/editorial-interactions.js" defer></script><script src="assets/js/app-shell.js" defer></script>') + "".join(
             f'<script {"type=\"module\"" if s.endswith(".mjs") or s == "hero.js" else "defer"} src="assets/js/{s}"></script>' for s in meta.get("scripts", []))
         html = f'''<!doctype html>
 <html lang="ar" dir="rtl" data-theme="dark">
@@ -70,18 +78,23 @@ def build():
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content="{meta["desc"]}">
-<meta name="theme-color" content="#04060c">
+<meta name="theme-color" content="#0c0e11">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{meta["desc"]}">
 <meta property="og:type" content="website"><meta property="og:locale" content="ar_AR"><meta property="og:image" content="assets/img/og.jpg?v=2">
-<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png?v=2"><link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v=2"><link rel="shortcut icon" href="assets/img/favicon.ico?v=2"><link rel="apple-touch-icon" href="assets/img/icon-512.png?v=2">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png?v=2"><link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v=2"><link rel="shortcut icon" href="assets/img/favicon.ico?v=2"><link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="إرتوفيا"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+{STARTUP}
 <link rel="preload" href="assets/fonts/Amiri-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/IBMPlexSansArabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css?v={CSSV}">
 <link rel="stylesheet" href="assets/css/editorial.css?v={EDITORIALV}">
-<script>try{{var s=JSON.parse(localStorage.getItem("acf-settings")||"{{}}");if(s.theme)document.documentElement.dataset.theme=s.theme;if(s.fontsize)document.documentElement.dataset.fontsize=s.fontsize}}catch(e){{}}</script>
+<script>try{{var s=JSON.parse(localStorage.getItem("acf-settings")||"{{}}");if(s.theme)document.documentElement.dataset.theme=s.theme;if(s.fontsize)document.documentElement.dataset.fontsize=s.fontsize}}catch(e){{}}{APP_MODE}</script>
 {scripts}
 </head>
 <body class="page-{name[:-5]}">
+{SPLASH}
 {header(meta.get("nav", ""))}
 <main id="main">
 {body.strip()}

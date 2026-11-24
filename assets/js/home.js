@@ -5,6 +5,8 @@
   getJSON("data/books.json").then((books) => {
     const el = $("#home-books"); el.innerHTML = books.slice(0, 4).map((b) => bookCard(b, F)).join("");
     el.querySelectorAll(".book").forEach(tilt); observe(el);
+    const st = $("#stat-books"), n = books.filter((b) => b.status === "done").length;
+    if (st && n) st.dataset.count = n;
   });
   const fe = $("#fields");
   fe.innerHTML = Object.values(F).map((f, i) => `<a class="field reveal" data-delay="${i % 4}" href="news.html?field=${f.id}" style="--c:${f.color}">${(window.FIELD_ICONS || {})[f.id] || ""}<h3>${esc(f.name)}</h3><span class="en">${esc(f.en)}</span></a>`).join("");

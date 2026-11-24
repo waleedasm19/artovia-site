@@ -1,0 +1,25 @@
+{
+ "name": "إرتوفيا الخيرية",
+ "short_name": "إرتوفيا",
+ "description": "المعرفة حقٌّ للجميع: كتب علمية عربية مجانية، وأخبار العلم، ومجلة المدار، ومقالات عالمية.",
+ "id": "./?source=app",
+ "start_url": "./?source=app",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "lang": "ar",
+ "dir": "rtl",
+ "background_color": "#0c0e11",
+ "theme_color": "#0c0e11",
+ "categories": ["education", "books", "news"],
+ "icons": [
+  { "src": "assets/app/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+  { "src": "assets/app/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+  { "src": "assets/app/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+ ],
+ "shortcuts": [
+  { "name": "المكتبة", "url": "library.html?source=app", "icons": [{ "src": "assets/app/icon-192.png", "sizes": "192x192" }] },
+  { "name": "الأخبار العلمية", "url": "news.html?source=app", "icons": [{ "src": "assets/app/icon-192.png", "sizes": "192x192" }] },
+  { "name": "مجلة المدار", "url": "magazine.html?source=app", "icons": [{ "src": "assets/app/icon-192.png", "sizes": "192x192" }] }
+ ]
+}

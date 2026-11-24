@@ -106,8 +106,8 @@
 
   /* ---------- عدّادات ---------- */
   $$("[data-count]").forEach((el) => {
-    const end = +el.dataset.count; let done = false;
-    const run = () => { if (done) return; done = true; const t0 = performance.now();
+    let done = false;
+    const run = () => { if (done) return; done = true; const end = +el.dataset.count, t0 = performance.now();
       const step = (t) => { const p = Math.min(1, (t - t0) / 1400); el.textContent = arNum(Math.round(end * (1 - Math.pow(1 - p, 3)))); if (p < 1) requestAnimationFrame(step); };
       requestAnimationFrame(step); };
     io ? new IntersectionObserver((es, o) => es.forEach((e) => { if (e.isIntersecting) { run(); o.disconnect(); } })).observe(el) : run();

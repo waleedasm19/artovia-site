@@ -4,12 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>تطبيق إرتوفيا للجوال</title>
-<meta name="description" content="نزّل تطبيق مؤسسة إرتوفيا الخيرية للأجهزة المحمولة وشارك رابط التطبيق.">
+<meta name="description" content="ثبّت تطبيق مؤسسة إرتوفيا الخيرية على جوالك أو جهازك اللوحي من المتصفح مباشرة، مجانًا.">
 <meta name="theme-color" content="#0c0e11">
 <link rel="icon" href="assets/img/favicon.png?v=2">
-<link rel="apple-touch-icon" href="assets/img/icon-512.png?v=2">
+<link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="إرتوفيا"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1320x2868.png"><link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1206x2622.png"><link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1290x2796.png"><link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1179x2556.png"><link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1284x2778.png"><link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1170x2532.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1125x2436.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1242x2688.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash/828x1792.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash/750x1334.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash/1242x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash/2048x2732.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash/1668x2388.png"><link rel="apple-touch-startup-image" media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash/1640x2360.png"><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash/1620x2160.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash/1536x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash/1488x2266.png">
 <link rel="stylesheet" href="assets/css/main.css?v=94d7bd52">
-<link rel="stylesheet" href="assets/css/editorial.css">
+<link rel="stylesheet" href="assets/css/editorial.css?v=2">
 <style>
   body{min-height:100dvh;background:#0c0e11;color:#f6f5f2}
   .app-download{min-height:100dvh;display:grid;grid-template-rows:auto 1fr auto;background:radial-gradient(circle at 20% 35%,#222933 0,transparent 30%),#0c0e11}
@@ -19,10 +23,10 @@
   .app-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,460px);align-items:center;gap:clamp(32px,8vw,120px);width:min(1180px,calc(100% - 36px));margin:auto;padding-block:clamp(52px,8vw,110px)}
   .app-moon{width:100%;aspect-ratio:1.35;background:url('assets/img/artovia-orbit.jpg') 39% center/cover no-repeat;border:1px solid #30343a;box-shadow:0 28px 70px #0008}
   .app-copy{max-width:490px}.app-kicker{display:flex;align-items:center;gap:10px;color:#ffd529;font-size:.76rem;font-weight:800;letter-spacing:.06em}.app-kicker::before{content:"";width:28px;height:2px;background:#ffd529}
-  h1{font-size:clamp(2.5rem,6vw,5.5rem);line-height:1.05;margin:18px 0 20px}.app-lead{color:#c2c5cb;font-size:1.04rem;line-height:1.9;margin:0 0 26px}.app-actions{display:flex;flex-wrap:wrap;gap:10px}.app-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;border:1px solid #464b53;border-radius:3px;color:#fff;background:#17191e;text-decoration:none;font-weight:800}.app-button.primary{background:#ffd529;border-color:#ffd529;color:#171306}.app-button[aria-disabled="true"]{opacity:.55;pointer-events:none}.app-status{min-height:26px;margin-top:15px;color:#adb1b9;font-size:.88rem}.app-points{display:grid;gap:11px;margin:26px 0 0;padding:0;list-style:none}.app-points li{border-inline-start:2px solid #ffd529;padding-inline-start:12px;color:#d9dbe0}.app-footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:18px clamp(18px,5vw,70px);border-top:1px solid #30343a;color:#9fa3ab;font-size:.82rem}.app-footer a{color:#e9eaed}
+  h1{font-size:clamp(2.5rem,6vw,5.5rem);line-height:1.05;margin:18px 0 20px}.app-lead{color:#c2c5cb;font-size:1.04rem;line-height:1.9;margin:0 0 26px}.app-actions{display:flex;flex-wrap:wrap;gap:10px}.app-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;border:1px solid #464b53;border-radius:3px;color:#fff;background:#17191e;text-decoration:none;font-weight:800}.app-button.primary{background:#ffd529;border-color:#ffd529;color:#171306}.app-button[aria-disabled="true"]{opacity:.55;pointer-events:none}.app-status{min-height:26px;margin-top:15px;color:#adb1b9;font-size:.88rem}.app-points{display:grid;gap:11px;margin:26px 0 0;padding:0;list-style:none}.app-points li{border-inline-start:2px solid #ffd529;padding-inline-start:12px;color:#d9dbe0}.app-steps{display:none;margin:22px 0 0;padding:16px 18px;border:1px solid #30343a;background:#14171c}.app-steps.on{display:block}.app-steps b{display:block;margin-bottom:8px;color:#ffd529}.app-steps ol{margin:0;padding-inline-start:20px;line-height:2;color:#d9dbe0}.app-steps svg{width:18px;height:18px;vertical-align:-3px;margin-inline:3px}.app-footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:18px clamp(18px,5vw,70px);border-top:1px solid #30343a;color:#9fa3ab;font-size:.82rem}.app-footer a{color:#e9eaed}
   @media(max-width:800px){.app-main{grid-template-columns:1fr;padding-block:34px}.app-moon{order:-1;aspect-ratio:1.7}.app-copy{max-width:none}h1{font-size:clamp(2.8rem,14vw,4.4rem)}.app-back{font-size:.86rem}}
 </style>
-<script src="assets/js/app-download.js" defer></script>
+<script src="assets/js/app-download.js" defer></script><script src="assets/js/app-shell.js" defer></script>
 </head>
 <body>
 <div class="app-download">
@@ -34,17 +38,25 @@
   <div class="app-copy">
    <span class="app-kicker">تطبيق إرتوفيا</span>
    <h1>العلم<br>أقرب إليك.</h1>
-   <p class="app-lead">واجهة مستقلة للجوال والآيباد تعرض مكتبة إرتوفيا وأخبارها العلمية ومجلة المدار، وتتحدّث من مصادر الموقع نفسها.</p>
+   <p class="app-lead">ثبّت إرتوفيا على شاشتك الرئيسية في الآيفون والأندرويد والآيباد، بلا متجر وبلا تنزيل ملفات. يفتح بشعار المؤسسة كأي تطبيق، ويعمل بلا إنترنت في الصفحات التي قرأتها.</p>
    <div class="app-actions">
-    <a class="app-button primary" id="android-download" href="https://github.com/waleedasm19/artovia-site/releases" aria-disabled="true">جارٍ تجهيز نسخة Android</a>
+    <button class="app-button primary" id="install-app" type="button">ثبّت التطبيق</button>
     <button class="app-button" id="share-app" type="button">مشاركة التطبيق</button>
    </div>
-   <p class="app-status" id="download-status" role="status" aria-live="polite">نتحقق من أحدث نسخة متاحة…</p>
-   <ul class="app-points"><li>مصمم لشاشات الهاتف والآيباد</li><li>مشاركة المقالات والكتب من داخل التطبيق</li><li>تحديث المحتوى من موقع المؤسسة</li></ul>
+   <p class="app-status" id="download-status" role="status" aria-live="polite"></p>
+   <div class="app-steps" id="steps-ios"><b>التثبيت على الآيفون والآيباد</b><ol>
+    <li>افتح هذه الصفحة في متصفح <span lang="en">Safari</span>.</li>
+    <li>اضغط زر المشاركة <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 3v12M8 7l4-4 4 4"/><path d="M5 12v8h14v-8"/></svg> أسفل الشاشة.</li>
+    <li>اختر «إضافة إلى الشاشة الرئيسية»، ثم «إضافة».</li></ol></div>
+   <div class="app-steps" id="steps-android"><b>التثبيت على أندرويد</b><ol>
+    <li>افتح هذه الصفحة في متصفح <span lang="en">Chrome</span>.</li>
+    <li>اضغط قائمة النقاط الثلاث ⋮ أعلى الشاشة.</li>
+    <li>اختر «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية».</li></ol></div>
+   <ul class="app-points"><li>يعمل على الآيفون والآيباد والأندرويد والحاسوب</li><li>شاشة بداية بشعار المؤسسة، وشريط تنقل سفلي</li><li>يتحدّث تلقائيًا من موقع المؤسسة، ويعمل بلا إنترنت فيما قرأته</li></ul>
   </div>
   <div class="app-moon" role="img" aria-label="القمر في ظلام الفضاء"></div>
  </main>
- <footer class="app-footer"><span>نسخة iPhone وiPad في مرحلة التوقيع والاختبار.</span><a href="https://github.com/waleedasm19/artovia-site/releases">كل إصدارات التطبيق</a></footer>
+ <footer class="app-footer"><span>إصدار خيري مجاني من مؤسسة إرتوفيا الخيرية.</span><a id="apk-link" href="https://github.com/waleedasm19/artovia-site/releases" hidden>نسخة أندرويد التجريبية (APK)</a></footer>
 </div>
 </body>
 </html>
