@@ -761,3 +761,49 @@ body.page-book .page-hero .wrap::before { content: "ARTOVIA / LIBRARY"; display:
 .page-book .page-hero h1 { color: #fff; line-height: 1.15; letter-spacing: normal; }
 :root[data-theme="light"] .page-book .page-hero { --ink: #f5f4f0; --ink-2: #c5c8ce; --ink-3: #9297a0; color: var(--ink); }
 :root[data-theme="light"] .page-book .page-hero .fact { background: #14171c; border-color: #2d3138; }
+
+/* ===== وضع التطبيق (يُفتح من الشاشة الرئيسية) ===== */
+#app-splash { display: none; }
+.app-mode:not(.splash-seen) #app-splash {
+  position: fixed; inset: 0; z-index: 1000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+  background: #0c0e11; color: #f6f5f2; text-align: center;
+  animation: app-splash-out .5s ease-in 2.1s forwards;
+}
+#app-splash img { width: min(40vw, 190px); height: auto; animation: app-pop .7s cubic-bezier(.2, 1.4, .4, 1) both; }
+#app-splash .app-splash-ring {
+  position: absolute; width: min(40vw, 190px); aspect-ratio: 1; border-radius: 50%; border: 2px solid #ffd52999;
+  top: 50%; left: 50%; translate: -50% calc(-50% - 62px); animation: app-ring 1.3s .35s ease-out both;
+}
+#app-splash b { margin-top: 8px; font: 700 clamp(2rem, 8.5vw, 3.2rem)/1.25 var(--serif, "Amiri"), serif; animation: app-fade .55s .55s both; }
+#app-splash i { width: 44px; height: 2px; background: var(--editorial-yellow); animation: app-grow .5s .85s both; }
+#app-splash small { color: #d9dbe0; font-size: clamp(.95rem, 3.8vw, 1.2rem); font-weight: 600; animation: app-fade .55s 1s both; }
+@keyframes app-pop { from { transform: scale(.55); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes app-ring { from { scale: 1; opacity: 1; } to { scale: 1.8; opacity: 0; } }
+@keyframes app-fade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes app-grow { from { width: 0; } to { width: 44px; } }
+@keyframes app-splash-out { to { opacity: 0; visibility: hidden; transform: scale(1.04); } }
+@media (prefers-reduced-motion: reduce) {
+  #app-splash, #app-splash * { animation-duration: .01s !important; animation-delay: 0s !important; }
+  .app-mode:not(.splash-seen) #app-splash { animation-delay: 1s !important; }
+}
+
+.app-tabbar { display: none; }
+.app-mode .app-tabbar {
+  position: fixed; z-index: 90; inset: auto 0 0; display: grid; grid-template-columns: repeat(5, 1fr);
+  padding: 6px 6px calc(6px + env(safe-area-inset-bottom)); background: #0c0e11f2; border-top: 1px solid #30343a;
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+.app-tabbar a { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 6px 2px; color: #9fa4ad; font-size: .72rem; font-weight: 700; border-radius: 10px; -webkit-tap-highlight-color: transparent; }
+.app-tabbar a svg { width: 23px; height: 23px; }
+.app-tabbar a[aria-current="page"] { color: var(--editorial-yellow); background: #ffd52914; }
+:root[data-theme="light"].app-mode .app-tabbar { background: #fbfaf7f2; border-color: #deddd9; }
+:root[data-theme="light"] .app-tabbar a { color: #5b5e64; }
+:root[data-theme="light"] .app-tabbar a[aria-current="page"] { color: #8f6b00; }
+.app-mode body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+.app-mode .site-header { padding-top: env(safe-area-inset-top); }
+.app-mode .site-footer .foot-grid > div:not(.foot-brand) { display: none; }
+@media (min-width: 1000px) { .app-mode .app-tabbar { display: none; } .app-mode body { padding-bottom: 0; } }
+
+.offline-note { max-width: 640px; text-align: center; display: grid; justify-items: center; gap: 16px; padding-block: 40px; }
+.offline-note h1 { font-size: clamp(2rem, 6vw, 3rem); }
+.offline-note p { color: var(--ink-2); }
