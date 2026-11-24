@@ -137,30 +137,12 @@
    "pos": "50% 50%"
   },
   {
-   "id": "medicine",
-   "name": "الطب",
-   "credit": "جهاز تصوير بالرنين المغناطيسي · Jan Ainali · CC BY 3.0",
-   "url": "https://commons.wikimedia.org/wiki/File:MRI-Philips.JPG",
-   "img": "assets/img/hero/medicine.jpg",
-   "small": "assets/img/hero/medicine-sm.jpg",
-   "pos": "50% 50%"
-  },
-  {
    "id": "ocean",
    "name": "المحيطات",
    "credit": "موجة عملاقة في مسابقة مافريكس، كاليفورنيا · Shalom Jacobovitz · CC BY-SA 2.0",
    "url": "https://commons.wikimedia.org/wiki/File:2010_mavericks_competition_edit1.jpg",
    "img": "assets/img/hero/ocean.jpg",
    "small": "assets/img/hero/ocean-sm.jpg",
-   "pos": "50% 50%"
-  },
-  {
-   "id": "reused-rocket",
-   "name": "التقنية",
-   "credit": "أول إعادة إطلاق لصاروخ مداري مستعمل، SES-10 · SpaceX · CC0",
-   "url": "https://commons.wikimedia.org/wiki/File:SES-10_Launch_-_world%27s_first_reflight_of_an_orbital_class_rocket_(33361035200).jpg",
-   "img": "assets/img/hero/reused-rocket.jpg",
-   "small": "assets/img/hero/reused-rocket-sm.jpg",
    "pos": "50% 50%"
   },
   {
