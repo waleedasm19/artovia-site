@@ -131,5 +131,120 @@
     "width": 1280,
     "json": "data/world/myth-of-freedom.json",
     "field": "cover"
+  },
+  {
+    "out": "assets/img/world/authors/max-roser.jpg",
+    "width": 500,
+    "json": "data/world/wrong-about-the-world.json",
+    "field": "author",
+    "query": "Max Roser economist",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/mark-twain.jpg",
+    "width": 500,
+    "json": "data/world/corn-pone-opinions.json",
+    "field": "author",
+    "title": "File:Mark Twain by AF Bradley.jpg"
+  },
+  {
+    "out": "assets/img/world/authors/bjorn-brembs.jpg",
+    "width": 500,
+    "json": "data/world/reliable-novelty.json",
+    "field": "author",
+    "query": "Björn Brembs",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/shannon-vallor.jpg",
+    "width": 500,
+    "json": "data/world/superhuman-ai.json",
+    "field": "author",
+    "query": "Shannon Vallor",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/ralph-waldo-emerson.jpg",
+    "width": 500,
+    "json": "data/world/self-reliance.json",
+    "field": "author",
+    "title": "File:Ralph Waldo Emerson ca1857 retouched.jpg"
+  },
+  {
+    "out": "assets/img/world/authors/john-stuart-mill.jpg",
+    "width": 500,
+    "json": "data/world/on-liberty-ch2.json",
+    "field": "author",
+    "title": "File:John Stuart Mill by London Stereoscopic Company, c1870.jpg"
+  },
+  {
+    "out": "assets/img/world/wrong-about-the-world.jpg",
+    "width": 1280,
+    "json": "data/world/wrong-about-the-world.json",
+    "field": "cover",
+    "title": "File:The Earth seen from Apollo 17.jpg"
+  },
+  {
+    "out": "assets/img/world/problems-and-progress.jpg",
+    "width": 1280,
+    "json": "data/world/problems-and-progress.json",
+    "field": "cover",
+    "query": "insecticide treated mosquito bed net"
+  },
+  {
+    "out": "assets/img/world/corn-pone-opinions.jpg",
+    "width": 1280,
+    "json": "data/world/corn-pone-opinions.json",
+    "field": "cover",
+    "query": "Hannibal Missouri Mississippi River"
+  },
+  {
+    "out": "assets/img/world/reliable-novelty.jpg",
+    "width": 1280,
+    "json": "data/world/reliable-novelty.json",
+    "field": "cover",
+    "query": "scientific journals library shelves"
+  },
+  {
+    "out": "assets/img/world/illegible-benefits.jpg",
+    "width": 1280,
+    "json": "data/world/illegible-benefits.json",
+    "field": "cover",
+    "query": "First Operation Under Ether Hinckley"
+  },
+  {
+    "out": "assets/img/world/how-selfish-are-we.jpg",
+    "width": 1280,
+    "json": "data/world/how-selfish-are-we.json",
+    "field": "cover",
+    "query": "San people Kalahari hunter-gatherers"
+  },
+  {
+    "out": "assets/img/world/superhuman-ai.jpg",
+    "width": 1280,
+    "json": "data/world/superhuman-ai.json",
+    "field": "cover",
+    "query": "Colossus computer Bletchley"
+  },
+  {
+    "out": "assets/img/world/how-ai-will-change-us.jpg",
+    "width": 1280,
+    "json": "data/world/how-ai-will-change-us.json",
+    "field": "cover",
+    "query": "Marrakech riad courtyard fountain"
+  },
+  {
+    "out": "assets/img/world/self-reliance.jpg",
+    "width": 1280,
+    "json": "data/world/self-reliance.json",
+    "field": "cover",
+    "query": "Walden Pond Concord Massachusetts"
+  },
+  {
+    "out": "assets/img/world/on-liberty-ch2.jpg",
+    "width": 1280,
+    "json": "data/world/on-liberty-ch2.json",
+    "field": "cover",
+    "query": "Speakers' Corner Hyde Park London"
   }
 ]
