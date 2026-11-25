@@ -343,7 +343,8 @@
     "width": 1280,
     "json": "data/world/united-by-feelings.json",
     "field": "cover",
-    "query": "chimpanzee baby"
+    "query": "chimpanzees grooming each other",
+    "minw": 800
   },
   {
     "out": "assets/img/world/digital-star-chamber.jpg",
