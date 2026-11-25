@@ -81,3 +81,29 @@ revoke execute on function public.handle_new_user() from public, anon, authentic
 revoke execute on function public.protect_role() from public, anon, authenticated;
 revoke execute on function public.is_admin() from public, anon;
 grant execute on function public.is_admin() to authenticated;
+
+-- لوحة الإدارة (2026-11-25): قائمة الأعضاء مع البريد للمشرف فقط، وتغيير الصلاحية بأمان (لا يغيّر المشرف صلاحيته هو)
+create or replace function public.admin_members()
+returns table (id uuid, email text, display_name text, role text, created_at timestamptz, last_sign_in_at timestamptz, articles bigint, approved bigint)
+language plpgsql stable security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not authorized' using errcode = '42501'; end if;
+  return query
+    select p.id, u.email::text, p.display_name, p.role, p.created_at, u.last_sign_in_at,
+           (select count(*) from public.articles a where a.author_id = p.id),
+           (select count(*) from public.articles a where a.author_id = p.id and a.status = 'approved')
+    from public.profiles p join auth.users u on u.id = p.id
+    order by p.created_at desc;
+end $$;
+create or replace function public.admin_set_role(target uuid, new_role text)
+returns void language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not authorized' using errcode = '42501'; end if;
+  if new_role not in ('member','admin') then raise exception 'bad role'; end if;
+  if target = auth.uid() then raise exception 'cannot change own role'; end if;
+  update public.profiles set role = new_role where id = target;
+end $$;
+revoke execute on function public.admin_members() from public, anon;
+revoke execute on function public.admin_set_role(uuid, text) from public, anon;
+grant execute on function public.admin_members() to authenticated;
+grant execute on function public.admin_set_role(uuid, text) to authenticated;
