@@ -1,6 +1,86 @@
 {
- "updated": "2026-11-24T22:32:22Z",
+ "updated": "2026-11-25T03:52:16Z",
  "items": [
+  {
+   "field": "physics",
+   "title": "يمكن للبراعة الكمومية تجاوز حدود الرقائق التقليدية، مع استخدام مكونات يمكن الوصول إليها تجاريًا",
+   "summary": "على مدى عقود من الزمن، تطورت أجهزة الكمبيوتر بشكل مطرد بشكل أسرع وأكثر قوة. ويتصور أفيك دوت، الأستاذ المساعد في الهندسة الميكانيكية بجامعة ميريلاند، قفزة دراماتيكية أخرى إلى الأمام، مدفوعة بالخصائص الكمومية للضوء.",
+   "url": "https://phys.org/news/2026-11-quantum-ingenuity-sidestep-limits-conventional.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "orig": "Quantum ingenuity can sidestep limits of conventional chips—while using commercially accessible components"
+  },
+  {
+   "field": "physics",
+   "title": "يكشف ضوء الليزر عن مكان تراكم الإلكترونات في أكوام أشباه الموصلات الرفيعة ذريًا",
+   "summary": "إن تكديس أشباه الموصلات -الرقائق التي تشغل الهواتف وأجهزة الكمبيوتر وغير ذلك الكثير- يتيح حركة إشارة أسرع مع طاقة أقل، ولكن كيف تتم العملية فعليًا؟ تبين أن تسليط ضوء فعلي على المواد شبه الموصلة يمكن أن يساعد في توضيح كيفية…",
+   "url": "https://phys.org/news/2026-11-laser-reveals-electrons-accumulate-atomically.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "orig": "Laser light reveals where electrons accumulate in atomically thin semiconductor stacks"
+  },
+  {
+   "field": "space",
+   "title": "من المحتمل أن يكون لـ \"ميلان\" النجم تأثير ضئيل على قابلية كوكب معين للسكن",
+   "summary": "يُعرف الميل المحوري للنجم من حيث صلته بالقرص المحيط بالنجم بالميل النجمي. يوجد عبر المكان والزمان عدد لا يحصى من النجوم الشبيهة بالشمس والتي تتميز بجميع أنواع الميلان. لكن السؤال الذي كان يطرح نفسه حتى الآن هو: ما هو تأثير...",
+   "url": "https://phys.org/news/2026-11-star-obliquity-impact-planet-habitability.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "orig": "A star's 'obliquity' likely has little impact on a given planet's habitability"
+  },
+  {
+   "field": "space",
+   "title": "يمكن لأشرعة قوس قزح فائقة الرقة أن تمد المركبات الفضائية بالطاقة وتظلل الأرض",
+   "summary": "لسنوات عديدة، كان عشاق الفضاء غريبو الأطوار يحلمون بالإبحار عبر الفراغ الشاسع على أشعة الشمس. لا تزال الفوتونات، وهي الجسيمات عديمة الكتلة التي تشكل أشعة الشمس، تحمل زخمًا، وبالتالي يمكنها نقل ضوء لطيف.",
+   "url": "https://phys.org/news/2026-11-ultrathin-rainbow-power-spacecraft-earth.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "orig": "Ultrathin 'rainbow' sails could power spacecraft and shade the Earth"
+  },
+  {
+   "field": "space",
+   "title": "يمكن لثقب أسود بحجم الذرة أن يدمر نجمًا بأكمله",
+   "summary": "اكتشف علماء معهد ماساتشوستس للتكنولوجيا أن الثقوب السوداء الصغيرة التي خلفها الانفجار الكبير يمكن أن تلتهم النجوم ببطء من الداخل، مما يؤدي في النهاية إلى انفجارات مذهلة مرئية عبر المجرات. الكشف عن هذه الأحداث الكونية غير العادية يمكن أن يكشف عن وجود…",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261122060332.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "orig": "A black hole the size of an atom could destroy an entire star"
+  },
+  {
+   "field": "health",
+   "title": "تعمل قطرات الأنف الجديدة على استعادة ذاكرة الشباب ومحاربة مرض الزهايمر لدى الفئران المسنة",
+   "summary": "نجح علاج ثوري جديد للأنف في استعادة التعلم الشبابي وأداء الذاكرة لدى الفئران المسنة، مع منع التدهور المعرفي الشديد لدى الفئران المصابة بمرض يشبه مرض الزهايمر. تم تطوير الأنف باستخدام تقنية مشابهة للقاحات mRNA لكوفيد-19،…",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261123005337.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "orig": "New nose drops restore youthful memory and fight Alzheimer’s in aging mice"
+  },
+  {
+   "field": "space",
+   "title": "يكشف اختبار العينة العمياء كيف يمكن لـ BepiColombo فك شفرة التركيب المعدني لعطارد",
+   "summary": "أثبت فريق دولي من الباحثين، بما في ذلك علماء من معهد علوم الكواكب (PSI)، أن الأدوات الموجودة على متن المركبة الفضائية BepiColombo يمكن أن تعمل معًا لتحديد المعادن التي تشكل سطح عطارد، ومعالجة مشكلة...",
+   "url": "https://phys.org/news/2026-11-sample-reveals-bepicolombo-decode-mercury.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "orig": "Blind sample test reveals how BepiColombo could decode Mercury's mineral makeup"
+  },
+  {
+   "field": "space",
+   "title": "رؤية ناسا هابل الجديدة لـ NGC 4394 ترفع المستوى",
+   "summary": "تحتل مجرة رائعة ذات شريط مجري مميز مركز الصدارة في صورة تلسكوب هابل الفضائي التابع لناسا ووكالة الفضاء الأوروبية. المجرة، المسماة NGC 4394، تقع في كوكبة برنيس (شعر برنيس). يقع NGC 4394 على بعد حوالي 55 مليون سنة ضوئية.",
+   "url": "https://phys.org/news/2026-11-nasa-hubble-view-ngc-bar.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "orig": "NASA Hubble's new view of NGC 4394 raises the bar"
+  },
   {
    "field": "space",
    "title": "ويب يكشف عن تفاصيل جديدة في بقايا المستعر الأعظم",
