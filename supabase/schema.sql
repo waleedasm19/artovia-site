@@ -141,3 +141,6 @@ begin
 end $$;
 revoke execute on function public.admin_update_writer(uuid, text, text, text, boolean) from public, anon;
 grant execute on function public.admin_update_writer(uuid, text, text, text, boolean) to authenticated;
+-- الرفع (insert ... returning) والحذف يحتاجان صلاحية قراءة على مجلد العضو نفسه
+create policy "avatars: owner reads" on storage.objects for select to authenticated
+  using (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text);
