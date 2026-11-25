@@ -78,5 +78,9 @@
  ],
  "slug": "digital-star-chamber",
  "added": "2026-11-25",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/digital-star-chamber.jpg",
+ "credit": "Indrajit Das · CC BY-SA 3.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:139_Server_Room_01.jpg",
+ "coverAlt": "Indian Railway 139 Server Room."
 }
