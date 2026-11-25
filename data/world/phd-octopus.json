@@ -6,7 +6,10 @@
  "author": {
   "name": "William James",
   "nameAr": "وليام جيمس",
-  "bio": "الفيلسوف وعالم النفس الأمريكي (١٨٤٢–١٩١٠)، مؤسّس علم النفس الحديث في أمريكا وأحد آباء الفلسفة البراغماتية، ودرّس في هارفارد خمسًا وثلاثين سنة."
+  "bio": "الفيلسوف وعالم النفس الأمريكي (١٨٤٢–١٩١٠)، مؤسّس علم النفس الحديث في أمريكا وأحد آباء الفلسفة البراغماتية، ودرّس في هارفارد خمسًا وثلاثين سنة.",
+  "photo": "assets/img/world/authors/william-james.jpg",
+  "photoCredit": "Notman Studios (photographer) · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:William_James_b1842c.jpg"
  },
  "source": "وليام جيمس، «ذكريات ودراسات» (١٩١١)",
  "pubDate": "نُشر في «هارفارد مونثلي»، مارس ١٩٠٣",

@@ -74,5 +74,9 @@
  ],
  "slug": "modest-proposal",
  "added": "2026-11-25",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/modest-proposal.jpg",
+ "credit": "James Malton · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Customs_House_Dublin_1792.jpg",
+ "coverAlt": "Custom House, Dublin 1792"
 }
