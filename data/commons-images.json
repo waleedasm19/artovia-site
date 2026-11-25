@@ -269,16 +269,7 @@
     "width": 500,
     "json": "data/world/phd-octopus.json",
     "field": "author",
-    "query": "William James psychologist photograph",
-    "minw": 300
-  },
-  {
-    "out": "assets/img/world/authors/patrick-mccray.jpg",
-    "width": 500,
-    "json": "data/world/not-all-lightbulbs.json",
-    "field": "author",
-    "query": "W. Patrick McCray historian",
-    "minw": 300
+    "title": "File:William James b1842c.jpg"
   },
   {
     "out": "assets/img/world/authors/frank-pasquale.jpg",
@@ -309,7 +300,7 @@
     "width": 1280,
     "json": "data/world/modest-proposal.json",
     "field": "cover",
-    "query": "Dublin eighteenth century engraving street",
+    "query": "James Malton Dublin Custom House",
     "minw": 600
   },
   {
@@ -324,7 +315,7 @@
     "width": 1280,
     "json": "data/world/apology-for-idlers.json",
     "field": "cover",
-    "query": "Scottish countryside burn stream meadow"
+    "query": "Pentland Hills Scotland landscape"
   },
   {
     "out": "assets/img/world/phd-octopus.jpg",
@@ -352,14 +343,14 @@
     "width": 1280,
     "json": "data/world/united-by-feelings.json",
     "field": "cover",
-    "query": "chimpanzee mother infant"
+    "query": "Pan troglodytes mother with infant"
   },
   {
     "out": "assets/img/world/digital-star-chamber.jpg",
     "width": 1280,
     "json": "data/world/digital-star-chamber.json",
     "field": "cover",
-    "query": "server room data center racks"
+    "query": "data center server racks corridor"
   },
   {
     "out": "assets/img/world/philosophy-was-once-alive.jpg",
