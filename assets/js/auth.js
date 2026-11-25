@@ -13,7 +13,16 @@
     "Email not confirmed": "فعّل حسابك أولًا من الرسالة التي وصلت بريدك.",
     "Password should be at least 6 characters.": "كلمة المرور قصيرة: ستة أحرف على الأقل."
   };
-  const arErr = (e) => ERR[e?.message] || e?.message || "حدث خطأ غير متوقع، حاول مجددًا.";
+  const arErr = (e) => {
+    const m = e?.message || "";
+    if (ERR[m]) return ERR[m];
+    if (/row-level security|JWT|not authorized|permission denied/i.test(m)) return "لا تملك صلاحية النشر الآن. سجّل الخروج ثم الدخول مجددًا وأعد المحاولة.";
+    if (/foreign key/i.test(m)) return "ملفك الشخصي غير مكتمل. افتح صفحة حسابك واحفظ اسمك، ثم أعد الإرسال.";
+    if (/articles_body_check/.test(m)) return "نص المقال يجب أن يكون بين ٣٠٠ و٣٠٠٠٠ حرف.";
+    if (/articles_title_check/.test(m)) return "العنوان يجب أن يكون بين ٥ و١٦٠ حرفًا.";
+    if (/Failed to fetch|NetworkError|Load failed/i.test(m)) return "تعذّر الاتصال بالخادم. تحقّق من الإنترنت وأعد المحاولة.";
+    return m || "حدث خطأ غير متوقع، حاول مجددًا.";
+  };
   const emit = () => listeners.forEach((f) => { try { f(user); } catch {} });
 
   /* ============ live: Supabase ============ */
@@ -28,7 +37,13 @@
       sb = window.supabase.createClient(C.supabaseUrl, C.supabaseKey, { auth: { persistSession: true, detectSessionInUrl: true } });
       const { data } = await sb.auth.getSession();
       user = await liveProfile(data.session?.user);
-      sb.auth.onAuthStateChange(async (_e, s) => { user = await liveProfile(s?.user); emit(); });
+      /* لا نستدعي Supabase داخل المستمع مباشرة: ذلك يقفل جلسة المصادقة فتتجمّد كل الطلبات بعده
+         (ومنها إرسال المقال). نؤجّل العمل خارج المستمع، ونتجاهل تحديث الرمز إن لم يتغيّر المستخدم. */
+      sb.auth.onAuthStateChange((e, s) => {
+        const id = s?.user?.id || null;
+        if (e === "TOKEN_REFRESHED" || (e === "SIGNED_IN" && id && id === user?.id)) return;
+        setTimeout(async () => { user = await liveProfile(s?.user).catch(() => user); emit(); }, 0);
+      });
     },
     async signUp(email, password, name) {
       const { data, error } = await sb.auth.signUp({ email, password, options: { data: { name }, emailRedirectTo: location.origin + location.pathname.replace(/[^/]*$/, "account.html") } });
@@ -42,7 +57,14 @@
     async approved() { const { data, error } = await sb.from("articles_public").select("*").order("reviewed_at", { ascending: false }); if (error) throw new Error(arErr(error)); return data; },
     async article(id) { const { data } = await sb.from("articles_public").select("*").eq("id", id).maybeSingle(); return data; },
     async mine() { const { data } = await sb.from("articles").select("id,title,field,status,review_note,created_at").eq("author_id", user.id).order("created_at", { ascending: false }); return data || []; },
-    async submit(a) { const { error } = await sb.from("articles").insert({ title: a.title, field: a.field, body: a.body }); if (error) throw new Error(arErr(error)); },
+    async submit(a) {
+      const { data: { session } } = await sb.auth.getSession();
+      if (!session) throw new Error("انتهت جلستك. سجّل الدخول مجددًا ثم أعد الإرسال، ونصّك محفوظ.");
+      const req = sb.from("articles").insert({ title: a.title, field: a.field, body: a.body });
+      const late = new Promise((_, rej) => setTimeout(() => rej(new Error("تعذّر الاتصال بالخادم. تحقّق من الإنترنت وأعد المحاولة، ونصّك محفوظ.")), 20000));
+      const { error } = await Promise.race([req, late]);
+      if (error) throw new Error(arErr(error));
+    },
     async pending() { const { data } = await sb.from("articles_admin").select("*").eq("status", "pending").order("created_at"); return data || []; },
     async review(id, status, note) { const { error } = await sb.from("articles").update({ status, review_note: note || null, reviewed_at: new Date().toISOString() }).eq("id", id); if (error) throw new Error(arErr(error)); },
     async fileUrl(bucket, path, view) { const { data, error } = await sb.storage.from(bucket).createSignedUrl(path, view ? 6 * 3600 : 600, view ? {} : { download: true }); if (error) throw new Error("الملف غير متاح الآن."); return data.signedUrl; }

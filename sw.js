@@ -1,7 +1,7 @@
 /* عامل الخدمة لتطبيق إرتوفيا: يجعل الموقع يعمل بلا إنترنت بعد أول زيارة.
    الصفحات والبيانات: الشبكة أولًا ثم النسخة المحفوظة. الملفات الثابتة والصور: المحفوظة فورًا مع تحديثها في الخلفية.
    غيّر VERSION عند تغيير قائمة SHELL. */
-const VERSION = "artovia-v3";
+const VERSION = "artovia-v4";
 const SHELL = [
   "./", "index.html", "library.html", "news.html", "magazine.html", "world.html", "account.html", "app.html", "offline.html",
   "reader.html", "field.html", "book.html", "article.html", "assets/js/reader.mjs", "assets/js/field.js", "assets/js/fields-icons.js",
