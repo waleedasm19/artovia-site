@@ -343,8 +343,7 @@
     "width": 1280,
     "json": "data/world/united-by-feelings.json",
     "field": "cover",
-    "query": "chimpanzees grooming each other",
-    "minw": 800
+    "query": "elephant mother and calf"
   },
   {
     "out": "assets/img/world/digital-star-chamber.jpg",
