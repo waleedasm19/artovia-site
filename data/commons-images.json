@@ -343,14 +343,14 @@
     "width": 1280,
     "json": "data/world/united-by-feelings.json",
     "field": "cover",
-    "query": "Pan troglodytes mother with infant"
+    "query": "chimpanzee baby"
   },
   {
     "out": "assets/img/world/digital-star-chamber.jpg",
     "width": 1280,
     "json": "data/world/digital-star-chamber.json",
     "field": "cover",
-    "query": "data center server racks corridor"
+    "query": "server room"
   },
   {
     "out": "assets/img/world/philosophy-was-once-alive.jpg",
