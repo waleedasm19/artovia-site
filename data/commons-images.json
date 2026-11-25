@@ -239,5 +239,140 @@
     "field": "cover",
     "query": "John Stuart Mill statue Victoria Embankment",
     "minw": 600
+  },
+  {
+    "out": "assets/img/world/authors/jonathan-swift.jpg",
+    "width": 500,
+    "json": "data/world/modest-proposal.json",
+    "field": "author",
+    "query": "Jonathan Swift portrait Charles Jervas",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/arthur-schopenhauer.jpg",
+    "width": 500,
+    "json": "data/world/thinking-for-oneself.json",
+    "field": "author",
+    "query": "Arthur Schopenhauer photograph 1859",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/robert-louis-stevenson.jpg",
+    "width": 500,
+    "json": "data/world/apology-for-idlers.json",
+    "field": "author",
+    "query": "Robert Louis Stevenson portrait photograph",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/william-james.jpg",
+    "width": 500,
+    "json": "data/world/phd-octopus.json",
+    "field": "author",
+    "query": "William James psychologist photograph",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/patrick-mccray.jpg",
+    "width": 500,
+    "json": "data/world/not-all-lightbulbs.json",
+    "field": "author",
+    "query": "W. Patrick McCray historian",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/frank-pasquale.jpg",
+    "width": 500,
+    "json": "data/world/digital-star-chamber.json",
+    "field": "author",
+    "query": "Frank Pasquale law professor",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/stephen-asma.jpg",
+    "width": 500,
+    "json": "data/world/united-by-feelings.json",
+    "field": "author",
+    "query": "Stephen T. Asma philosopher",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/kirk-schneider.jpg",
+    "width": 500,
+    "json": "data/world/we-need-raw-awe.json",
+    "field": "author",
+    "query": "Kirk Schneider psychologist",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/modest-proposal.jpg",
+    "width": 1280,
+    "json": "data/world/modest-proposal.json",
+    "field": "cover",
+    "query": "Dublin eighteenth century engraving street",
+    "minw": 600
+  },
+  {
+    "out": "assets/img/world/thinking-for-oneself.jpg",
+    "width": 1280,
+    "json": "data/world/thinking-for-oneself.json",
+    "field": "cover",
+    "query": "old library reading room books"
+  },
+  {
+    "out": "assets/img/world/apology-for-idlers.jpg",
+    "width": 1280,
+    "json": "data/world/apology-for-idlers.json",
+    "field": "cover",
+    "query": "Scottish countryside burn stream meadow"
+  },
+  {
+    "out": "assets/img/world/phd-octopus.jpg",
+    "width": 1280,
+    "json": "data/world/phd-octopus.json",
+    "field": "cover",
+    "query": "Harvard Yard University Hall"
+  },
+  {
+    "out": "assets/img/world/decay-of-lying.jpg",
+    "width": 1280,
+    "json": "data/world/decay-of-lying.json",
+    "field": "cover",
+    "query": "Mark Twain House Hartford"
+  },
+  {
+    "out": "assets/img/world/not-all-lightbulbs.jpg",
+    "width": 1280,
+    "json": "data/world/not-all-lightbulbs.json",
+    "field": "cover",
+    "query": "shipping containers port stacked"
+  },
+  {
+    "out": "assets/img/world/united-by-feelings.jpg",
+    "width": 1280,
+    "json": "data/world/united-by-feelings.json",
+    "field": "cover",
+    "query": "chimpanzee mother infant"
+  },
+  {
+    "out": "assets/img/world/digital-star-chamber.jpg",
+    "width": 1280,
+    "json": "data/world/digital-star-chamber.json",
+    "field": "cover",
+    "query": "server room data center racks"
+  },
+  {
+    "out": "assets/img/world/philosophy-was-once-alive.jpg",
+    "width": 1280,
+    "json": "data/world/philosophy-was-once-alive.json",
+    "field": "cover",
+    "query": "Stoa of Attalos Athens"
+  },
+  {
+    "out": "assets/img/world/we-need-raw-awe.jpg",
+    "width": 1280,
+    "json": "data/world/we-need-raw-awe.json",
+    "field": "cover",
+    "query": "ocean waves beach sunset surf"
   }
 ]
