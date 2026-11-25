@@ -6,7 +6,10 @@
  "author": {
   "name": "William James",
   "nameAr": "وليام جيمس",
-  "bio": "الفيلسوف وعالم النفس الأمريكي (١٨٤٢–١٩١٠)، مؤسّس علم النفس الحديث في أمريكا وأحد آباء الفلسفة البراغماتية، ودرّس في هارفارد خمسًا وثلاثين سنة."
+  "bio": "الفيلسوف وعالم النفس الأمريكي (١٨٤٢–١٩١٠)، مؤسّس علم النفس الحديث في أمريكا وأحد آباء الفلسفة البراغماتية، ودرّس في هارفارد خمسًا وثلاثين سنة.",
+  "photo": "assets/img/world/authors/william-james.jpg",
+  "photoCredit": "Sailko · CC BY 3.0 · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Libro_dei_soci,_con_abbonamenti_di_william_e_henry_james,_gennaio_1874,_gabbinetto_scientifico_letterario_veiusseux.JPG"
  },
  "source": "وليام جيمس، «ذكريات ودراسات» (١٩١١)",
  "pubDate": "نُشر في «هارفارد مونثلي»، مارس ١٩٠٣",
@@ -66,5 +69,9 @@
  ],
  "slug": "phd-octopus",
  "added": "2026-11-25",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/phd-octopus.jpg",
+ "credit": "Marco Almbauer · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Harvard_Yard_im_Sommer.jpg",
+ "coverAlt": "Der Harvard Yard"
 }

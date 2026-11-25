@@ -6,7 +6,10 @@
  "author": {
   "name": "Robert Louis Stevenson",
   "nameAr": "روبرت لويس ستيفنسون",
-  "bio": "الروائي والشاعر الاسكتلندي (١٨٥٠–١٨٩٤)، صاحب «جزيرة الكنز» و«الدكتور جيكل والسيد هايد»، ومن أبرع كتّاب المقالة في العصر الفيكتوري."
+  "bio": "الروائي والشاعر الاسكتلندي (١٨٥٠–١٨٩٤)، صاحب «جزيرة الكنز» و«الدكتور جيكل والسيد هايد»، ومن أبرع كتّاب المقالة في العصر الفيكتوري.",
+  "photo": "assets/img/world/authors/robert-louis-stevenson.jpg",
+  "photoCredit": "Henry Walter Barnett · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Robert_Louis_Stevenson_by_Henry_Walter_Barnett_bw.jpg"
  },
  "source": "روبرت لويس ستيفنسون، «إلى الفتيات والفتيان» (١٨٨١)",
  "pubDate": "نُشر أول مرة في مجلة «كورنهيل» عام ١٨٧٧",

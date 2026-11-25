@@ -6,7 +6,10 @@
  "author": {
   "name": "W Patrick McCray",
   "nameAr": "باتريك مكراي",
-  "bio": "أستاذ التاريخ في جامعة كاليفورنيا في سانتا باربرا، متخصّص في تاريخ التقنية والعلم في الحرب الباردة، وآخر كتبه «جعل الفن يعمل» (٢٠٢٠)."
+  "bio": "أستاذ التاريخ في جامعة كاليفورنيا في سانتا باربرا، متخصّص في تاريخ التقنية والعلم في الحرب الباردة، وآخر كتبه «جعل الفن يعمل» (٢٠٢٠).",
+  "photo": "assets/img/world/authors/patrick-mccray.jpg",
+  "photoCredit": "NASA Headquarters / NASA/Joel Kowsky · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Beyond_the_Deep_Field-_Hubble%E2%80%99s_Legacy_and_the_Future_of_Cosmi_(NHQ202606040008).jpg"
  },
  "source": "Aeon",
  "pubDate": "١٢ أكتوبر ٢٠١٦",
@@ -72,5 +75,9 @@
  ],
  "slug": "not-all-lightbulbs",
  "added": "2026-11-25",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/not-all-lightbulbs.jpg",
+ "credit": "AgainErick · CC BY-SA 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Shipping_container_stacks_-_Port_of_Rotterdam_-_2017_-_5.jpg",
+ "coverAlt": "Shipping container stacks - Port of Rotterdam - 2017"
 }

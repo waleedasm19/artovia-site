@@ -6,7 +6,10 @@
  "author": {
   "name": "Arthur Schopenhauer",
   "nameAr": "آرثر شوبنهاور",
-  "bio": "الفيلسوف الألماني (١٧٨٨–١٨٦٠)، صاحب «العالم إرادةً وتمثّلًا»، وأحد أكثر الفلاسفة تأثيرًا في الأدب والفن، عُرف بأسلوبه الحادّ وتشاؤمه."
+  "bio": "الفيلسوف الألماني (١٧٨٨–١٨٦٠)، صاحب «العالم إرادةً وتمثّلًا»، وأحد أكثر الفلاسفة تأثيرًا في الأدب والفن، عُرف بأسلوبه الحادّ وتشاؤمه.",
+  "photo": "assets/img/world/authors/arthur-schopenhauer.jpg",
+  "photoCredit": "Johann Schäfer · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Arthur_Schopenhauer_by_J_Sch%C3%A4fer,_1859b.jpg"
  },
  "source": "آرثر شوبنهاور، «حواشٍ وملحقات» (١٨٥١)، ترجمة سوندرز الإنجليزية",
  "pubDate": "نُشر بالألمانية عام ١٨٥١",
@@ -85,5 +88,9 @@
  ],
  "slug": "thinking-for-oneself",
  "added": "2026-11-25",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/thinking-for-oneself.jpg",
+ "credit": "Michael D Beckwith · CC0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:The_Portico_Library_Reading_Room_(161152409).jpeg",
+ "coverAlt": "500px provided description: Here is an hdr photograph taken from the reading room inside The Portico Library. Located in"
 }
