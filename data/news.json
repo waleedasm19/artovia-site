@@ -2,6 +2,160 @@
  "updated": "2026-11-25T03:52:16Z",
  "items": [
   {
+   "field": "engineering",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261123005339.htm",
+   "source": "ScienceDaily / جامعة كارنيغي ميلون",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "us-transmission-lines-gap",
+   "cover": "assets/img/news/us-transmission-lines-gap.jpg",
+   "title": "أمريكا تبني ١٠٪ فقط مما تحتاجه من خطوط نقل الكهرباء",
+   "summary": "باحثون من كارنيغي ميلون وجامعة كاليفورنيا يقولون إن العائق أمام شبكة كهرباء أقوى ليس تقنيًّا بل تشريعي، ويقترحون ثلاثة حلول."
+  },
+  {
+   "field": "earth",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261123005350.htm",
+   "source": "ScienceDaily / جامعة كولومبيا",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "laurentide-ice-age-reversed",
+   "cover": "assets/img/news/laurentide-ice-age-reversed.jpg",
+   "title": "هل بدأ العصر الجليدي القادم قبل ألفي عام ثم أوقفه الاحترار؟",
+   "summary": "نباتات قديمة كشفها ذوبان جليد جزيرة بافن تقول إن الغطاء الجليدي في أمريكا الشمالية عاد يتمدد منذ نحو ٢٠٠٠ عام، حتى انقلب الاتجاه في ستينيات القرن العشرين."
+  },
+  {
+   "field": "chemistry",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261123005336.htm",
+   "source": "ScienceDaily / جامعة كولومبيا",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "core-carbon-kilauea",
+   "cover": "assets/img/news/core-carbon-kilauea.jpg",
+   "title": "هل يتسرّب كربون من لبّ الأرض عبر براكين هاواي؟",
+   "summary": "قطرات صهارة محبوسة في بلورات الأوليفين من بركان كيلاويا تحمل كربونًا «ثقيلًا» غير مألوف، يرجّح العلماء أنه آتٍ من لب الأرض."
+  },
+  {
+   "field": "physics",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261123005341.htm",
+   "source": "ScienceDaily / معهد ماكس بلانك",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "eusi-p-wave-magnetism",
+   "cover": "assets/img/news/eusi-p-wave-magnetism.jpg",
+   "title": "معدن بسيط يخفي نوعًا جديدًا من المغناطيسية",
+   "summary": "علماء معهد ماكس بلانك يقدّمون أدلة على «مغناطيسية الموجة p» في سيليسيد اليوروبيوم: مغناطيسية بلا قطبين ظاهرين، لكنها تشق مسارات الإلكترونات."
+  },
+  {
+   "field": "tech",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261123231244.htm",
+   "source": "ScienceDaily / IBM وجامعة شيكاغو",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "ibm-logical-qubits-advantage",
+   "cover": "assets/img/news/ibm-logical-qubits-advantage.jpg",
+   "title": "حاسوب IBM الكمومي ينجز في ١٥ دقيقة ما يعجز عنه الحاسوب التقليدي",
+   "summary": "تجربة استخدمت ٧٠ كيوبتًا منطقيًّا محميًّا من الأخطاء، وقدّمت طريقة للتحقق من صحة النتيجة، لا مجرد ادعاء التفوق."
+  },
+  {
+   "field": "earth",
+   "url": "https://www.noaa.gov/news/saildrone-research-fleet-to-circle-antarctica-for-5-years",
+   "source": "NOAA",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "saildrone-antarctica-carbon",
+   "cover": "assets/img/news/saildrone-antarctica-carbon.jpg",
+   "title": "قوارب شراعية بلا بحارة تدور حول القارة القطبية الجنوبية خمس سنوات",
+   "summary": "مشروع «COCO2» يرسل أربعة قوارب ذاتية القيادة إلى أعنف بحار الأرض، لقياس كم يمتص المحيط الجنوبي من ثاني أكسيد الكربون في الشتاء."
+  },
+  {
+   "field": "earth",
+   "url": "https://www.usgs.gov/news/featured-story/usgs-study-outlines-scope-and-severity-bat-fatalities-us-wind-energy-facilities",
+   "source": "USGS",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "wind-turbines-bat-deaths",
+   "cover": "assets/img/news/wind-turbines-bat-deaths.jpg",
+   "title": "١٨٫٧ مليون خفاش قتلتها توربينات الرياح الأمريكية في ٤٣ عامًا",
+   "summary": "دراسة لهيئة المسح الجيولوجي الأمريكية جمعت بيانات ٢٧٧ مزرعة رياح، ووجدت أن ثلاثة أنواع مهاجرة تدفع معظم الثمن، واقترحت حلًّا بسيطًا."
+  },
+  {
+   "field": "biology",
+   "url": "https://elifesciences.org/digests/92608/cry-me-to-sleep",
+   "source": "eLife",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "cryptochrome-winter-sleep",
+   "cover": "assets/img/news/cryptochrome-winter-sleep.jpg",
+   "title": "لماذا ننعس أكثر في الشتاء؟ بروتين حسّاس للضوء يبقي ذباب الفاكهة يقظًا",
+   "summary": "بروتين «كريبتوكروم» المعروف بضبط الساعة البيولوجية يتبين أنه يحمي الذباب من النوم المفرط في الأيام القصيرة، عبر خلايا عصبية مثبّطة."
+  },
+  {
+   "field": "tech",
+   "url": "https://elifesciences.org/digests/108442/what-does-it-mean-to-be-ai",
+   "source": "eLife",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "llm-word-order-brain",
+   "cover": "assets/img/news/llm-word-order-brain.jpg",
+   "title": "«الكلب عضّ الرجل» أم «الرجل عضّ الكلب»؟ الدماغ يفرّق أكثر من النماذج اللغوية",
+   "summary": "دراسة قارنت نشاط أدمغة القراء بالتمثيلات الداخلية للنماذج اللغوية الكبيرة، فوجدت أن الآلة تتأثر بترتيب الكلمات أقل كثيرًا من الإنسان."
+  },
+  {
+   "field": "space",
+   "url": "https://science.nasa.gov/blogs/escapade/2026/11/23/nasas-escapade-captures-parting-images-of-earth-on-its-way-to-mars/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "escapade-parting-earth",
+   "cover": "assets/img/news/escapade-parting-earth.jpg",
+   "title": "توأما «إسكابيد» يودّعان الأرض بصورة في الطريق إلى المريخ",
+   "summary": "بعد مناورتين قرب الأرض استعان فيهما المسباران بجاذبيتها، انطلقا في رحلة تستغرق عشرة أشهر لدراسة كيف تسرق الرياح الشمسية هواء المريخ."
+  },
+  {
+   "field": "earth",
+   "url": "https://science.nasa.gov/earth/earth-observatory/eruption-extends-iwo-jimas-beach/",
+   "source": "NASA Earth Observatory",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "iwo-jima-new-land",
+   "cover": "assets/img/news/iwo-jima-new-land.jpg",
+   "title": "بركان تحت البحر يضيف ٥٠ هكتارًا إلى جزيرة إيو جيما",
+   "summary": "رصدت أقمار ناسا وراداراتها ثورانًا بحريًّا قرب الجزيرة اليابانية، صنع أرضًا جديدة وسّعتها نحو ١٫٧٪، لكن العلماء يتوقعون أن يبتلعها البحر خلال أشهر."
+  },
+  {
+   "field": "space",
+   "url": "https://science.nasa.gov/missions/hubble/nasa-hubbles-new-view-of-ngc-4394-raises-the-bar/",
+   "source": "NASA / ESA Hubble",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "hubble-ngc-4394-bar",
+   "cover": "assets/img/news/hubble-ngc-4394-bar.jpg",
+   "title": "هابل يرصد مجرة بقضيب في عنقود العذراء",
+   "summary": "صورة جديدة للمجرة الحلزونية NGC 4394 على بعد ٥٥ مليون سنة ضوئية، ضمن برنامج يدرس كيف يتوقف تكوّن النجوم في العناقيد المزدحمة."
+  },
+  {
+   "field": "space",
+   "url": "https://www.esa.int/articles/about-us/directorates/operations/bepicolombo-safely-in-mercury-orbit-despite-unexpected-challenge",
+   "source": "ESA",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "bepicolombo-mercury-orbit",
+   "cover": "assets/img/news/bepicolombo-mercury-orbit.jpg",
+   "title": "«بيبي كولومبو» في مدار عطارد رغم توقف مفاجئ لمحركاته",
+   "summary": "توقّف الاحتراق قبل أوانه ودخلت المركبة وضع الأمان، لكن تقنية «الالتقاط ضعيف الاستقرار» أنقذت المهمة، وصار للكوكب الأقرب إلى الشمس زائر دائم."
+  },
+  {
+   "field": "space",
+   "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-surveying-asteroids-with-superhuman-vision",
+   "source": "ESA",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "hera-didymos-superhuman-vision",
+   "cover": "assets/img/news/hera-didymos-superhuman-vision.jpg",
+   "title": "مسبار «هيرا» يفحص الكويكبين اللذين صدمتهما ناسا بعيون تفوق البشر",
+   "summary": "بثلاث أدوات، إحداها ترى ٢٥ لونًا وأخرى تقيس الحرارة، يدرس مسبار الدفاع الكوكبي الأوروبي الكويكب «ديديموس» وقمره «ديمورفوس» قبل تحقيق عن قرب في موقع الاصطدام."
+  },
+  {
    "field": "physics",
    "title": "يمكن للبراعة الكمومية تجاوز حدود الرقائق التقليدية، مع استخدام مكونات يمكن الوصول إليها تجاريًا",
    "summary": "على مدى عقود من الزمن، تطورت أجهزة الكمبيوتر بشكل مطرد بشكل أسرع وأكثر قوة. ويتصور أفيك دوت، الأستاذ المساعد في الهندسة الميكانيكية بجامعة ميريلاند، قفزة دراماتيكية أخرى إلى الأمام، مدفوعة بالخصائص الكمومية للضوء.",
@@ -53,13 +207,15 @@
   },
   {
    "field": "health",
-   "title": "تعمل قطرات الأنف الجديدة على استعادة ذاكرة الشباب ومحاربة مرض الزهايمر لدى الفئران المسنة",
-   "summary": "نجح علاج ثوري جديد للأنف في استعادة التعلم الشبابي وأداء الذاكرة لدى الفئران المسنة، مع منع التدهور المعرفي الشديد لدى الفئران المصابة بمرض يشبه مرض الزهايمر. تم تطوير الأنف باستخدام تقنية مشابهة للقاحات mRNA لكوفيد-19،…",
+   "title": "قطرات أنف بتقنية mRNA تعيد ذاكرة الشباب لفئران مسنّة",
+   "summary": "باحثو جامعة سيدني جعلوا بطانة الأنف تنتج بروتينًا يغذي الخلايا العصبية، فتحسّنت ذاكرة الفئران المسنّة وتوقّف التدهور في نموذج لألزهايمر.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261123005337.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-24",
-   "orig": "New nose drops restore youthful memory and fight Alzheimer’s in aging mice"
+   "orig": "New nose drops restore youthful memory and fight Alzheimer’s in aging mice",
+   "slug": "bdnf-nose-drops-memory",
+   "cover": "assets/img/news/bdnf-nose-drops-memory.jpg"
   },
   {
    "field": "space",
@@ -93,13 +249,15 @@
   },
   {
    "field": "space",
-   "title": "طائرة ناسا اليعسوب المنضمة إلى تيتان تستحوذ على أعينها",
-   "summary": "بدأت الأدوات العلمية الخاصة بمركبة Dragonfly التابعة لوكالة ناسا في الوصول إلى مختبر جونز هوبكنز للفيزياء التطبيقية (APL) في لوريل بولاية ميريلاند، حيث تتجمع الطائرة العمودية بحجم السيارة معًا في مهمتها لاستكشاف أكبر أقمار زحل، تيتان. أول من…",
+   "title": "المروحية «دراغونفلاي» المتجهة إلى تيتان تحصل على عيونها السبع",
+   "summary": "ركّب المهندسون منظومة كاميرات «دراغون كام» في المروحية النووية بحجم السيارة، التي ستطير فوق أكبر أقمار زحل بحثًا عن كيمياء الحياة.",
    "url": "https://science.nasa.gov/missions/dragonfly/nasas-titan-bound-dragonfly-rotorcraft-gets-its-eyes/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-24",
-   "orig": "NASA’s Titan-Bound Dragonfly Rotorcraft Gets Its Eyes"
+   "orig": "NASA’s Titan-Bound Dragonfly Rotorcraft Gets Its Eyes",
+   "slug": "dragonfly-gets-its-eyes",
+   "cover": "assets/img/news/dragonfly-gets-its-eyes.jpg"
   },
   {
    "field": "space",
@@ -195,14 +353,16 @@
    "orig": "Overlooked symmetry group offers new geometric blueprint for the Standard Model and topologically protected vacuums"
   },
   {
-   "field": "space",
-   "title": "ناسا تمنح عقدًا لبرنامج شبكة المدار الأرضي القريب التابع لـ NOAA",
-   "summary": "منحت وكالة ناسا، نيابة عن الإدارة الوطنية للمحيطات والغلاف الجوي (NOAA)، عقدًا لشركة Northrop Grumman Systems Corporation لأدوات Sounder للتطبيقات المعتمدة على الموجات الدقيقة (SMBA) على شبكة مدار الأرض القريبة (NEON) التابعة لـ NOAA.",
+   "field": "earth",
+   "title": "عقد بـ ٢٩٠ مليون دولار لأجهزة تستشعر حرارة الجو ورطوبته من الفضاء",
+   "summary": "اختارت ناسا شركة نورثروب غرومان لبناء ثلاثة مسابر ميكروويف للجيل الجديد من أقمار الطقس الأمريكية «نيون»، لتحسين التنبؤات الجوية متوسطة المدى.",
    "url": "https://www.nasa.gov/news-release/nasa-awards-contract-for-noaas-near-earth-orbit-network-program/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "NASA Awards Contract for NOAA’s Near Earth Orbit Network Program"
+   "orig": "NASA Awards Contract for NOAA’s Near Earth Orbit Network Program",
+   "slug": "neon-microwave-sounder-contract",
+   "cover": "assets/img/news/neon-microwave-sounder-contract.jpg"
   },
   {
    "field": "space",
@@ -330,13 +490,15 @@
   },
   {
    "field": "space",
-   "title": "ناسا + فيلم وثائقي يصور رحلة أوروبا كليبر إلى الفضاء السحيق",
-   "summary": "تدعو وكالة ناسا العالم من وراء الكواليس لمشاهدة قصة رحلة أوروبا كليبر من رؤية بعيدة إلى مهمة متطورة لاستكشاف الفضاء السحيق مع إصدار أحدث فيلم وثائقي للوكالة بعنوان \"مفهوم أوروبا\". الفيلم الوثائقي سوف…",
+   "title": "«مفهوم يوروبا»: فيلم يروي قصة أكبر مركبة أرسلتها ناسا إلى الفضاء البعيد",
+   "summary": "وثائقي جديد يتابع «يوروبا كليبر» من فكرة عام ٢٠١٣ إلى رحلة طولها ٢٫٩ مليار كيلومتر نحو قمر المشتري الذي يخفي محيطًا تحت جليده.",
    "url": "https://www.nasa.gov/missions/europa-clipper/nasa-documentary-captures-europa-clippers-journey-into-deep-space/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "NASA+ Documentary Captures Europa Clipper’s Journey Into Deep Space"
+   "orig": "NASA+ Documentary Captures Europa Clipper’s Journey Into Deep Space",
+   "slug": "europa-clipper-documentary",
+   "cover": "assets/img/news/europa-clipper-documentary.jpg"
   },
   {
    "field": "physics",
@@ -580,13 +742,15 @@
   },
   {
    "field": "space",
-   "title": "65 عامًا من رحلات الفضاء البشرية في ناسا جونسون",
-   "summary": "على مدار 65 عامًا، ساعد مركز جونسون للفضاء التابع لناسا في هيوستن في تشكيل رحلات الفضاء البشرية، بدءًا من بعثات جيميني التي أظهرت تقنيات الالتقاء والالتحام اللازمة لأبولو إلى الأبحاث التي أجريت على متن محطة الفضاء الدولية، والتي...",
+   "title": "٦٥ عامًا من رحلات البشر إلى الفضاء: قصة مركز جونسون في هيوستن",
+   "summary": "من «جيميني» و«أبولو» إلى المكوك ومحطة الفضاء وأرتميس: المركز الذي قاد الرحلات المأهولة الأمريكية يحتفل بعيده الخامس والستين.",
    "url": "https://www.nasa.gov/centers-and-facilities/johnson/65-years-of-human-spaceflight-at-nasa-johnson/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-22",
-   "orig": "65 Years of Human Spaceflight at NASA Johnson"
+   "orig": "65 Years of Human Spaceflight at NASA Johnson",
+   "slug": "johnson-65-years-spaceflight",
+   "cover": "assets/img/news/johnson-65-years-spaceflight.jpg"
   },
   {
    "field": "space",
@@ -769,14 +933,16 @@
    "cover": "assets/img/news/curiosity-49-holes-twilight-clouds.jpg"
   },
   {
-   "field": "space",
-   "title": "تمويل ناسا الأولي الجديد يهيئ الشركات الصغيرة للابتكار",
-   "summary": "تعالج الجوائز المقدمة للشركات الصغيرة في جميع أنحاء البلاد بعضًا من أهم احتياجات ناسا التكنولوجية لاستكشاف القمر والمريخ أثناء تغذية اقتصاد الفضاء الأمريكي. أبحاث ابتكارات الأعمال الصغيرة التابعة لناسا/نقل تكنولوجيا الأعمال الصغيرة...",
+   "field": "engineering",
+   "title": "ناسا تموّل ٣٠٢ مشروع لشركات صغيرة تبني تقنيات قاعدة القمر",
+   "summary": "حتى ١٧١ مليون دولار لبطاريات تعمل في البرد القارس، وأذرع آلية تحسّ باللمس، وألواح شمسية تُلف كالسجادة، ومهابط تتحمل هبوطًا متكررًا.",
    "url": "https://www.nasa.gov/directorates/rtmd/new-nasa-seed-funding-primes-small-businesses-for-innovation/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-20",
-   "orig": "New NASA Seed Funding Primes Small Businesses for Innovation"
+   "orig": "New NASA Seed Funding Primes Small Businesses for Innovation",
+   "slug": "nasa-sbir-moon-base-seed",
+   "cover": "assets/img/news/nasa-sbir-moon-base-seed.jpg"
   },
   {
    "field": "physics",

@@ -855,7 +855,7 @@ body.page-reader { overflow: hidden; background: #0c0e11; }
 body.page-reader .nebula, body.page-reader #stars, body.page-reader .app-tabbar,
 body.page-reader .install-nudge { display: none !important; }
 body.page-reader main { position: fixed; inset: 0; }
-.reader { position: absolute; inset: 0; display: flex; flex-direction: column; color: #f5f4f0; }
+body.page-reader .reader { position: absolute; inset: 0; display: flex; flex-direction: column; color: #f5f4f0; }
 .reader-bar {
   display: flex; align-items: center; gap: 6px; flex-shrink: 0;
   padding: calc(env(safe-area-inset-top) + 8px) 10px 8px;
