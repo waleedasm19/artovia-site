@@ -594,3 +594,22 @@ p{margin:0 0 1em}
 .adm-table th,.adm-table td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:start;vertical-align:middle}
 .adm-table th{color:var(--ink-3);font-weight:600;font-size:.8rem}
 .page-admin .tabs button{flex:1 1 auto}
+/* الكتّاب */
+.writers{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:18px}
+.writer-card{display:flex;gap:18px;padding:22px;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface)}
+.w-photo{flex:none;width:92px;height:92px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,#f6d27a,var(--gold) 45%,#b9862a);color:#1a1205;font:700 2.2rem var(--serif);box-shadow:0 0 0 3px var(--surface-2)}
+.w-photo img{width:100%;height:100%;object-fit:cover}
+.w-main{min-width:0;flex:1}
+.w-main h3{margin:0;font-size:1.2rem}
+.w-en{color:var(--ink-3);font-size:.8rem;margin-top:2px}
+.w-flags{display:flex;flex-wrap:wrap;gap:6px 12px;margin:8px 0}
+.w-country{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;color:var(--ink-2)}
+.flag{display:inline-block;vertical-align:middle;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.25);object-fit:cover}
+.w-bio{font-size:.9rem;color:var(--ink-2);margin:6px 0 10px;line-height:1.8}
+.w-works{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:.86rem}
+.w-works a{color:var(--accent)}
+.w-works small{color:var(--ink-3);font-size:.74rem}
+@media (max-width:480px){.writer-card{flex-direction:column;align-items:center;text-align:center}.w-flags{justify-content:center}}
+.profile-card .big-avatar{overflow:hidden}
+.profile-card .big-avatar img,.account-btn img.avatar{width:100%;height:100%;object-fit:cover}
+.account-btn img.avatar{width:30px;height:30px;border-radius:50%}

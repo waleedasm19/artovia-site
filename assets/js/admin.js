@@ -60,10 +60,11 @@
 
   function membersView() {
     if (!members.length) return '<div class="empty">لا يوجد أعضاء بعد.</div>';
-    return `<div class="panel" style="overflow-x:auto"><table class="adm-table"><thead><tr><th>العضو</th><th>البريد</th><th>انضم</th><th>آخر دخول</th><th>المقالات</th><th>الصلاحية</th><th></th></tr></thead><tbody>
-      ${members.map((m) => `<tr data-uid="${m.id}"><td>${esc(m.display_name || "—")}</td><td class="en">${esc(m.email || "")}</td><td>${day(m.created_at)}</td><td>${day(m.last_sign_in_at)}</td>
+    return `<div class="panel" style="overflow-x:auto"><table class="adm-table"><thead><tr><th>العضو</th><th>البريد</th><th>انضم</th><th>آخر دخول</th><th>المقالات</th><th>الصلاحية</th><th>إجراءات</th></tr></thead><tbody>
+      ${members.map((m) => `<tr data-uid="${m.id}"><td><span style="display:inline-flex;align-items:center;gap:8px">${m.avatar_url ? `<img src="${esc(m.avatar_url)}" alt="" width="28" height="28" style="border-radius:50%;object-fit:cover">` : ""}${esc(m.display_name || "—")} ${A.flag(m.country, 13)}</span></td><td class="en">${esc(m.email || "")}</td><td>${day(m.created_at)}</td><td>${day(m.last_sign_in_at)}</td>
         <td>${arNum(m.articles)} (${arNum(m.approved)} منشور)</td><td><span class="status ${m.role === "admin" ? "approved" : "pending"}">${m.role === "admin" ? "مشرف" : "عضو"}</span></td>
-        <td>${m.id === me ? '<span style="color:var(--ink-3);font-size:.8rem">أنت</span>' : `<button class="btn btn-ghost" data-role="${m.role === "admin" ? "member" : "admin"}" style="padding:6px 14px;font-size:.82rem">${m.role === "admin" ? "إزالة الإشراف" : "ترقية إلى مشرف"}</button>`}</td></tr>`).join("")}
+        <td>${m.id === me ? '<span style="color:var(--ink-3);font-size:.8rem">أنت</span>' : `<button class="btn btn-ghost" data-role="${m.role === "admin" ? "member" : "admin"}" style="padding:6px 14px;font-size:.82rem">${m.role === "admin" ? "إزالة الإشراف" : "ترقية إلى مشرف"}</button>`}
+          <button class="btn btn-ghost" data-wedit style="padding:6px 14px;font-size:.82rem;margin-top:4px">بيانات الكاتب</button></td></tr>`).join("")}
       </tbody></table></div>
       <p style="color:var(--ink-3);font-size:.84rem;margin-top:12px">المشرف يملك الصلاحيات نفسها التي لديك. لا يمكنك تغيير صلاحيتك أنت حتى لا تفقد الإدارة بالخطأ.</p>`;
   }
@@ -93,6 +94,16 @@
     if (e.target.closest("[data-edit]") && a) return editor(card, a);
     if (e.target.closest("[data-cancel]")) return render();
     if ((b = e.target.closest("[data-del]")) && a) { if (!confirmTwice(b, "اضغط مجددًا للحذف النهائي")) return; return act(b, () => A.deleteArticle(a.id), "حُذف المقال"); }
+    if ((b = e.target.closest("[data-wedit]"))) {
+      const tr = b.closest("tr"), m = members.find((x) => x.id === tr.dataset.uid); if (!m || tr.nextElementSibling?.classList.contains("w-edit")) return;
+      tr.insertAdjacentHTML("afterend", `<tr class="w-edit"><td colspan="7"><form class="form" data-wsave="${m.id}" style="padding:8px 0">
+        <label>الاسم الظاهر<input name="name" maxlength="40" value="${esc(m.display_name || "")}"></label>
+        <label>الدولة<select name="country">${A.countryOptions(m.country)}</select></label>
+        <label>النبذة<textarea name="bio" maxlength="600" style="min-height:80px">${esc(m.bio || "")}</textarea></label>
+        ${m.avatar_url ? '<label style="flex-direction:row;align-items:center;gap:8px;display:flex"><input type="checkbox" name="clear" style="width:auto"> إزالة صورته</label>' : ""}
+        <div class="hero-actions"><button class="btn btn-primary" type="submit">حفظ</button><button class="btn btn-ghost" type="button" data-cancel>إلغاء</button></div></form></td></tr>`);
+      return;
+    }
     if ((b = e.target.closest("[data-role]"))) {
       const uid = b.closest("tr").dataset.uid, role = b.dataset.role;
       if (role === "admin" && !confirmTwice(b, "اضغط مجددًا للتأكيد")) return;
@@ -100,6 +111,9 @@
     }
   });
   root.addEventListener("submit", (e) => {
+    const wf = e.target.closest("[data-wsave]");
+    if (wf) { e.preventDefault(); const d = Object.fromEntries(new FormData(wf));
+      return act(wf.querySelector("[type=submit]"), () => A.adminUpdateWriter(wf.dataset.wsave, { name: d.name.trim(), bio: d.bio.trim(), country: d.country, clearAvatar: !!d.clear }), "حُفظت بيانات الكاتب"); }
     const f = e.target.closest("[data-save]"); if (!f) return; e.preventDefault();
     const id = f.closest(".review-item").dataset.id, d = Object.fromEntries(new FormData(f));
     if (d.title.trim().length < 5) return toast("العنوان قصير: خمسة أحرف على الأقل.");

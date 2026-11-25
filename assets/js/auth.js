@@ -31,8 +31,9 @@
   let sb;
   async function liveProfile(u) {
     if (!u) return null;
-    const { data } = await sb.from("profiles").select("display_name,bio,role,created_at").eq("id", u.id).maybeSingle();
-    return { id: u.id, email: u.email, name: data?.display_name || u.user_metadata?.name || u.email.split("@")[0], bio: data?.bio || "", role: data?.role || "member", since: data?.created_at || u.created_at };
+    let { data, error } = await sb.from("profiles").select("display_name,bio,role,created_at,country,avatar_url").eq("id", u.id).maybeSingle();
+    if (error) ({ data } = await sb.from("profiles").select("display_name,bio,role,created_at").eq("id", u.id).maybeSingle()); // قبل إضافة الحقول الجديدة
+    return { id: u.id, email: u.email, name: data?.display_name || u.user_metadata?.name || u.email.split("@")[0], bio: data?.bio || "", role: data?.role || "member", since: data?.created_at || u.created_at, country: data?.country || "", avatar: data?.avatar_url || "" };
   }
   const L = {
     async init() {
@@ -55,7 +56,23 @@
     async signIn(email, password) { const { error } = await sb.auth.signInWithPassword({ email, password }); if (error) throw new Error(arErr(error)); },
     async signOut() { await sb.auth.signOut(); user = null; emit(); },
     async reset(email) { const { error } = await sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname.replace(/[^/]*$/, "account.html") }); if (error) throw new Error(arErr(error)); },
-    async saveProfile({ name, bio }) { const { error } = await sb.from("profiles").update({ display_name: name, bio }).eq("id", user.id); if (error) throw new Error(arErr(error)); user = { ...user, name, bio }; emit(); },
+    async saveProfile({ name, bio, country }) {
+      const row = { display_name: name, bio }; if (country !== undefined) row.country = country || null;
+      const { error } = await sb.from("profiles").update(row).eq("id", user.id); if (error) throw new Error(arErr(error));
+      user = { ...user, name, bio, ...(country !== undefined ? { country } : {}) }; emit();
+    },
+    async uploadAvatar(blob) {
+      const path = `${user.id}/avatar-${Date.now()}.jpg`;
+      const { error } = await sb.storage.from("avatars").upload(path, blob, { contentType: "image/jpeg", upsert: true });
+      if (error) throw new Error("تعذّر رفع الصورة: " + arErr(error));
+      const url = sb.storage.from("avatars").getPublicUrl(path).data.publicUrl;
+      const { error: e2 } = await sb.from("profiles").update({ avatar_url: url }).eq("id", user.id); if (e2) throw new Error(arErr(e2));
+      const old = (user.avatar || "").split("/avatars/")[1]; if (old) sb.storage.from("avatars").remove([decodeURIComponent(old)]).catch(() => {});
+      user = { ...user, avatar: url }; emit(); return url;
+    },
+    async removeAvatar() { const { error } = await sb.from("profiles").update({ avatar_url: null }).eq("id", user.id); if (error) throw new Error(arErr(error)); user = { ...user, avatar: "" }; emit(); },
+    async publicWriters() { const { data, error } = await sb.rpc("public_writers"); if (error) throw new Error(arErr(error)); return data || []; },
+    async adminUpdateWriter(id, w) { const { error } = await sb.rpc("admin_update_writer", { target: id, new_name: w.name, new_bio: w.bio, new_country: w.country || "", clear_avatar: !!w.clearAvatar }); if (error) throw new Error(arErr(error)); },
     async approved() { const { data, error } = await sb.from("articles_public").select("*").order("reviewed_at", { ascending: false }); if (error) throw new Error(arErr(error)); return data; },
     async article(id) { const { data } = await sb.from("articles_public").select("*").eq("id", id).maybeSingle(); return data; },
     async mine() { const { data } = await sb.from("articles").select("id,title,field,status,review_note,created_at").eq("author_id", user.id).order("created_at", { ascending: false }); return data || []; },
@@ -73,7 +90,12 @@
     async adminArticles() { const { data, error } = await sb.from("articles_admin").select("*").order("created_at", { ascending: false }); if (error) throw new Error(arErr(error)); return data || []; },
     async editArticle(id, a) { const { error } = await sb.from("articles").update({ title: a.title, field: a.field, body: a.body }).eq("id", id); if (error) throw new Error(arErr(error)); },
     async deleteArticle(id) { const { error } = await sb.from("articles").delete().eq("id", id); if (error) throw new Error(arErr(error)); },
-    async adminMembers() { const { data, error } = await sb.rpc("admin_members"); if (error) throw new Error(arErr(error)); return data || []; },
+    async adminMembers() {
+      const [{ data, error }, { data: extra }] = await Promise.all([sb.rpc("admin_members"), sb.from("profiles").select("id,bio,country,avatar_url")]);
+      if (error) throw new Error(arErr(error));
+      const x = Object.fromEntries((extra || []).map((p) => [p.id, p]));
+      return (data || []).map((m) => ({ ...m, bio: x[m.id]?.bio || "", country: x[m.id]?.country || "", avatar_url: x[m.id]?.avatar_url || "" }));
+    },
     async setRole(id, role) { const { error } = await sb.rpc("admin_set_role", { target: id, new_role: role }); if (error) throw new Error(arErr(error)); },
     async fileUrl(bucket, path, view) { const { data, error } = await sb.storage.from(bucket).createSignedUrl(path, view ? 6 * 3600 : 600, view ? {} : { download: true }); if (error) throw new Error("الملف غير متاح الآن."); return data.signedUrl; }
   };
@@ -92,7 +114,7 @@
   });
   const db = { get() { try { return JSON.parse(localStorage.getItem(KEY)) || seed(); } catch { return seed(); } }, set(d) { try { localStorage.setItem(KEY, JSON.stringify(d)); } catch {} } };
   async function hash(s) { try { const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s)); return [...new Uint8Array(b)].map((x) => x.toString(16).padStart(2, "0")).join(""); } catch { return s; } }
-  const pub = (u) => u && { id: u.id, email: u.email, name: u.name, bio: u.bio || "", role: u.role, since: u.since };
+  const pub = (u) => u && { id: u.id, email: u.email, name: u.name, bio: u.bio || "", role: u.role, since: u.since, country: u.country || "", avatar: u.avatar || "" };
   const D = {
     async init() { const d = db.get(); user = pub(d.users.find((u) => u.id === d.session)); },
     async signUp(email, password, name) {
@@ -109,7 +131,11 @@
     },
     async signOut() { const d = db.get(); d.session = null; db.set(d); user = null; emit(); },
     async reset() { throw new Error("استعادة كلمة المرور تعمل بعد ربط الموقع بقاعدة البيانات."); },
-    async saveProfile({ name, bio }) { const d = db.get(); const u = d.users.find((x) => x.id === user.id); Object.assign(u, { name, bio }); db.set(d); user = pub(u); emit(); },
+    async saveProfile({ name, bio, country }) { const d = db.get(); const u = d.users.find((x) => x.id === user.id); Object.assign(u, { name, bio }, country !== undefined ? { country } : {}); db.set(d); user = pub(u); emit(); },
+    async uploadAvatar(blob) { const url = await new Promise((r) => { const f = new FileReader(); f.onload = () => r(f.result); f.readAsDataURL(blob); }); const d = db.get(); d.users.find((x) => x.id === user.id).avatar = url; db.set(d); user = pub(d.users.find((x) => x.id === user.id)); emit(); return url; },
+    async removeAvatar() { const d = db.get(); d.users.find((x) => x.id === user.id).avatar = ""; db.set(d); user = pub(d.users.find((x) => x.id === user.id)); emit(); },
+    async publicWriters() { const d = db.get(); return d.users.map((u) => { const arts = d.articles.filter((a) => a.author_id === u.id && a.status === "approved"); return arts.length ? { id: u.id, name: u.name, bio: u.bio || "", country: u.country || "", avatar_url: u.avatar || "", articles: arts.map((a) => ({ id: a.id, title: a.title, field: a.field })), last_published: arts.map((a) => a.reviewed_at).sort().pop() } : null; }).filter(Boolean); },
+    async adminUpdateWriter(id, w) { const d = db.get(); const u = d.users.find((x) => x.id === id); Object.assign(u, { name: w.name, bio: w.bio, country: w.country }); if (w.clearAvatar) u.avatar = ""; db.set(d); },
     async approved() { return db.get().articles.filter((a) => a.status === "approved").sort((a, b) => b.reviewed_at.localeCompare(a.reviewed_at)); },
     async article(id) { return db.get().articles.find((a) => a.id == id && a.status === "approved") || null; },
     async mine() { return db.get().articles.filter((a) => a.author_id === user.id).sort((a, b) => b.created_at.localeCompare(a.created_at)); },
@@ -119,7 +145,7 @@
     async adminArticles() { return db.get().articles.slice().sort((a, b) => b.created_at.localeCompare(a.created_at)); },
     async editArticle(id, x) { const d = db.get(); Object.assign(d.articles.find((a) => a.id == id), { title: x.title, field: x.field, body: x.body }); db.set(d); },
     async deleteArticle(id) { const d = db.get(); d.articles = d.articles.filter((a) => a.id != id); db.set(d); },
-    async adminMembers() { const d = db.get(); return d.users.map((u) => ({ id: u.id, email: u.email, display_name: u.name, role: u.role, created_at: u.since, last_sign_in_at: null, articles: d.articles.filter((a) => a.author_id === u.id).length, approved: d.articles.filter((a) => a.author_id === u.id && a.status === "approved").length })); },
+    async adminMembers() { const d = db.get(); return d.users.map((u) => ({ id: u.id, email: u.email, display_name: u.name, role: u.role, created_at: u.since, last_sign_in_at: null, bio: u.bio || "", country: u.country || "", avatar_url: u.avatar || "", articles: d.articles.filter((a) => a.author_id === u.id).length, approved: d.articles.filter((a) => a.author_id === u.id && a.status === "approved").length })); },
     async setRole(id, role) { if (id === user.id) throw new Error("لا يمكنك تغيير صلاحيتك أنت."); const d = db.get(); d.users.find((u) => u.id === id).role = role; db.set(d); },
     async fileUrl(bucket, path) { const u = `${bucket}/${path}`; const r = await fetch(u, { method: "HEAD" }).catch(() => null); if (!r || !r.ok) throw new Error("سيُتاح التنزيل بعد رفع الملف إلى المخزن."); return u; }
   };
@@ -132,6 +158,18 @@
     live, get user() { return user; }, ready,
     onChange(f) { listeners.add(f); ready.then(() => f(user)); return () => listeners.delete(f); },
     isAdmin: () => user?.role === "admin",
+    /* أعلام الدول (flag-icons، رخصة MIT) وأسماؤها بالعربية من المتصفح نفسه */
+    FLAGS: "ad ae af ag ai al am ao aq ar as at au aw ax az ba bb bd be bf bg bh bi bj bl bm bn bo bq br bs bt bv bw by bz ca cc cd cf cg ch ci ck cl cm cn co cp cr cu cv cw cx cy cz de dg dj dk dm do dz ec ee eg eh er es et fi fj fk fm fo fr ga gb gb-eng gb-sct gb-wls gd ge gf gg gh gi gl gm gn gp gq gr gs gt gu gw gy hk hm hn hr ht hu ic id ie il im in io iq ir is it je jm jo jp ke kg kh ki km kn kp kr kw ky kz la lb lc li lk lr ls lt lu lv ly ma mc md me mf mg mh mk ml mm mn mo mp mq mr ms mt mu mv mw mx my mz na nc ne nf ng ni nl no np nr nu nz om pa pe pf pg ph pk pl pm pn pr ps pt pw py qa re ro rs ru rw sa sb sc sd se sg sh si sj sk sl sm sn so sr ss st sv sx sy sz tc td tf tg th tj tk tl tm tn to tr tt tv tw tz ua ug um us uy uz va vc ve vg vi vn vu wf ws xk ye yt za zm zw".split(" "),
+    countryName(cc) { if (!cc) return ""; const sub = { "gb-sct": "اسكتلندا", "gb-eng": "إنجلترا", "gb-wls": "ويلز" }; if (sub[cc]) return sub[cc]; try { return new Intl.DisplayNames(["ar"], { type: "region" }).of(cc.toUpperCase()) || cc; } catch { return cc; } },
+    flag(cc, h = 18) { return cc && A.FLAGS.includes(cc) ? `<img class="flag" src="assets/vendor/flags/${cc}.svg" alt="${A.countryName(cc)}" title="${A.countryName(cc)}" width="${Math.round(h * 4 / 3)}" height="${h}" loading="lazy">` : ""; },
+    countryOptions(sel) { return '<option value="">— اختر دولتك —</option>' + A.FLAGS.filter((c) => c.length === 2).map((c) => [c, A.countryName(c)]).sort((a, b) => a[1].localeCompare(b[1], "ar")).map(([c, n]) => `<option value="${c}"${c === sel ? " selected" : ""}>${n}</option>`).join(""); },
+    /* تصغير الصورة إلى مربع ٤٠٠×٤٠٠ قبل رفعها */
+    async squareJpeg(file, size = 400) {
+      const img = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => rej(new Error("الملف ليس صورة صالحة.")); i.src = URL.createObjectURL(file); });
+      const s = Math.min(img.naturalWidth, img.naturalHeight), c = document.createElement("canvas"); c.width = c.height = size;
+      c.getContext("2d").drawImage(img, (img.naturalWidth - s) / 2, (img.naturalHeight - s) / 2, s, s, 0, 0, size, size);
+      return new Promise((r) => c.toBlob(r, "image/jpeg", 0.88));
+    },
     ...Object.fromEntries(Object.keys(impl).filter((k) => k !== "init").map((k) => [k, (...a) => impl[k](...a)])),
     /* بطاقة «للمسجّلين فقط» */
     gate(title, text) {
@@ -154,7 +192,7 @@
   /* زر الحساب في الترويسة */
   A.onChange((u) => {
     const b = document.querySelector(".account-btn"); if (!b) return;
-    b.innerHTML = u ? `<span class="avatar">${(u.name || "؟").trim().charAt(0)}</span>` : b.dataset.icon;
+    b.innerHTML = u ? (u.avatar ? `<img class="avatar" src="${u.avatar}" alt="">` : `<span class="avatar">${(u.name || "؟").trim().charAt(0)}</span>`) : b.dataset.icon;
     b.setAttribute("aria-label", u ? `حسابي: ${u.name}` : "تسجيل الدخول");
     b.classList.toggle("signed", !!u);
     /* زر «لوحة الإدارة» يظهر للمشرف وحده بجانب زر الحساب */

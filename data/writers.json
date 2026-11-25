@@ -1,0 +1,476 @@
+{
+ "updated": "2026-11-25",
+ "note": "كتّاب المقالات العالمية والكتب المترجمة. تُضاف أسماء جديدة هنا مع كل كاتب جديد.",
+ "items": [
+  {
+   "id": "jonathan-swift",
+   "name": "جوناثان سويفت",
+   "en": "Jonathan Swift",
+   "countries": [
+    "ie"
+   ],
+   "bio": "كاتب وهجّاء أيرلندي (١٦٦٧–١٧٤٥)، عميد كاتدرائية القديس باتريك في دبلن، وصاحب «رحلات غليفر». يُعدّ أعظم من كتب الهجاء السياسي بالإنجليزية.",
+   "photo": "assets/img/world/authors/jonathan-swift.jpg",
+   "works": [
+    {
+     "title": "اقتراح متواضع",
+     "href": "essay.html?id=modest-proposal",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "w-patrick-mccray",
+   "name": "باتريك مكراي",
+   "en": "W Patrick McCray",
+   "countries": [
+    "us"
+   ],
+   "bio": "مؤرّخ أمريكي للعلم والتقنية، أستاذ في جامعة كاليفورنيا بسانتا باربرا، يكتب عن الوجه الخفيّ للابتكار: الصيانة والمعايير والعاملين المنسيّين.",
+   "photo": "",
+   "works": [
+    {
+     "title": "ليست كلها مصابيح: أسطورة المخترع العبقري",
+     "href": "essay.html?id=not-all-lightbulbs",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "arthur-schopenhauer",
+   "name": "آرثر شوبنهاور",
+   "en": "Arthur Schopenhauer",
+   "countries": [
+    "de"
+   ],
+   "bio": "فيلسوف ألماني (١٧٨٨–١٨٦٠)، صاحب «العالم إرادةً وتمثّلًا». اشتهر بتشاؤمه الفلسفي وبأسلوبه النثري الحادّ الواضح، وأثّر في نيتشه وفرويد وكثير من الأدباء.",
+   "photo": "assets/img/world/authors/arthur-schopenhauer.jpg",
+   "works": [
+    {
+     "title": "في التفكير بالنفس",
+     "href": "essay.html?id=thinking-for-oneself",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "asma-gabriel",
+   "name": "ستيفن أسما ورامي جبرائيل",
+   "en": "Stephen T Asma & Rami Gabriel",
+   "countries": [],
+   "bio": "ستيفن أسما فيلسوف أمريكي، ورامي جبرائيل عالم نفس، وكلاهما أستاذ في كلية كولومبيا بشيكاغو. ألّفا معًا «العقل العاطفي» عن جذور المشاعر في تطوّر الثدييات.",
+   "photo": "",
+   "works": [
+    {
+     "title": "العاطفة هي المحرّك الخفي للعقل",
+     "href": "essay.html?id=united-by-feelings",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "robert-louis-stevenson",
+   "name": "روبرت لويس ستيفنسون",
+   "en": "Robert Louis Stevenson",
+   "countries": [
+    "gb-sct"
+   ],
+   "bio": "روائي وكاتب مقالات اسكتلندي (١٨٥٠–١٨٩٤)، صاحب «جزيرة الكنز» و«دكتور جيكل ومستر هايد». قضى سنواته الأخيرة في ساموا.",
+   "photo": "assets/img/world/authors/robert-louis-stevenson.jpg",
+   "works": [
+    {
+     "title": "دفاع عن الكسالى",
+     "href": "essay.html?id=apology-for-idlers",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "frank-pasquale",
+   "name": "فرانك باسكوال",
+   "en": "Frank Pasquale",
+   "countries": [
+    "us"
+   ],
+   "bio": "أستاذ قانون أمريكي في جامعة كورنيل، متخصص في قانون الذكاء الاصطناعي والخوارزميات، ومؤلف «مجتمع الصندوق الأسود».",
+   "photo": "assets/img/world/authors/frank-pasquale.jpg",
+   "works": [
+    {
+     "title": "محكمة رقمية سرّية: الخوارزمية قاضيًا وجلّادًا",
+     "href": "essay.html?id=digital-star-chamber",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "william-james",
+   "name": "وليام جيمس",
+   "en": "William James",
+   "countries": [
+    "us"
+   ],
+   "bio": "فيلسوف وعالم نفس أمريكي (١٨٤٢–١٩١٠)، أستاذ في هارفارد، يُلقَّب بأبي علم النفس الأمريكي، ومن مؤسسي الفلسفة البراغماتية.",
+   "photo": "assets/img/world/authors/william-james.jpg",
+   "works": [
+    {
+     "title": "أخطبوط الدكتوراه",
+     "href": "essay.html?id=phd-octopus",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "pranay-sanklecha",
+   "name": "برناي سانكليشا",
+   "en": "Pranay Sanklecha",
+   "countries": [],
+   "bio": "كاتب وفيلسوف درس الفلسفة ودرّسها في الجامعات الأوروبية، ثم تركها ليكتب للقرّاء خارج الأسوار الأكاديمية.",
+   "photo": "",
+   "works": [
+    {
+     "title": "كانت الفلسفة حيّة يومًا",
+     "href": "essay.html?id=philosophy-was-once-alive",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "mark-twain",
+   "name": "مارك توين",
+   "en": "Mark Twain",
+   "countries": [
+    "us"
+   ],
+   "bio": "الاسم الأدبي لصامويل كليمنس (١٨٣٥–١٩١٠)، أشهر ساخر في الأدب الأمريكي، وصاحب «مغامرات توم سوير» و«مغامرات هكلبري فين».",
+   "photo": "assets/img/world/authors/mark-twain.jpg",
+   "works": [
+    {
+     "title": "في انحطاط فن الكذب",
+     "href": "essay.html?id=decay-of-lying",
+     "kind": "مقال"
+    },
+    {
+     "title": "قل لي من أين يأتي خبزك، أقل لك ما رأيك",
+     "href": "essay.html?id=corn-pone-opinions",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "kirk-schneider",
+   "name": "كيرك شنايدر",
+   "en": "Kirk Schneider",
+   "countries": [
+    "us"
+   ],
+   "bio": "عالم نفس أمريكي من روّاد علم النفس الوجودي الإنساني، كتب كثيرًا عن الدهشة ودورها في الصحة النفسية.",
+   "photo": "",
+   "works": [
+    {
+     "title": "نحتاج إلى الدهشة الخام",
+     "href": "essay.html?id=we-need-raw-awe",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "max-roser",
+   "name": "ماكس روزر",
+   "en": "Max Roser",
+   "countries": [
+    "de"
+   ],
+   "bio": "اقتصادي ألماني، مؤسس موقع «عالمنا في بيانات» (Our World in Data) في جامعة أكسفورد، الذي يعرض بالأرقام كيف تغيّرت أحوال البشر عبر القرون.",
+   "photo": "assets/img/world/authors/max-roser.jpg",
+   "works": [
+    {
+     "title": "أكثرنا مخطئ في فهم كيف تغيّر العالم، والمتشائمون أكثر",
+     "href": "essay.html?id=wrong-about-the-world",
+     "kind": "مقال"
+    },
+    {
+     "title": "لماذا نحتاج إلى معرفة التقدّم إن كنّا قلقين من مشكلات العالم الكبرى؟",
+     "href": "essay.html?id=problems-and-progress",
+     "kind": "مقال"
+    },
+    {
+     "title": "العالم مُروِّع، والعالم أفضل بكثير، والعالم يمكن أن يكون أفضل بكثير",
+     "href": "essay.html?id=world-awful-much-better",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "bjorn-brembs",
+   "name": "بيورن بريمبس",
+   "en": "Björn Brembs",
+   "countries": [
+    "de"
+   ],
+   "bio": "عالم أعصاب ألماني، أستاذ في جامعة ريغنسبورغ، يدرس السلوك والتعلّم عند ذبابة الفاكهة، ومن أبرز المطالبين بإصلاح النشر العلمي.",
+   "photo": "",
+   "works": [
+    {
+     "title": "الجديد لا ينبغي أن يغلب الصحيح: هل تنشر أشهر المجلات العلمية أضعف الأبحاث؟",
+     "href": "essay.html?id=reliable-novelty",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "carlo-cordasco",
+   "name": "كارلو كورداسكو",
+   "en": "Carlo Cordasco",
+   "countries": [],
+   "bio": "باحث في الفلسفة السياسية والاقتصاد السياسي بجامعة مانشستر، يكتب عن الابتكار وحدود التخطيط والتنظيم.",
+   "photo": "",
+   "works": [
+    {
+     "title": "ما لا نستطيع قياسه بعد في الذكاء الاصطناعي",
+     "href": "essay.html?id=illegible-benefits",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "jonathan-r-goodman",
+   "name": "جوناثان غودمان",
+   "en": "Jonathan R Goodman",
+   "countries": [],
+   "bio": "باحث في التطوّر البشري والسلوك الاجتماعي بجامعة كامبريدج، ومؤلف كتاب عن قدرة البشر على التعاون والاستغلال معًا.",
+   "photo": "",
+   "works": [
+    {
+     "title": "كم نحن أنانيون؟ نتعاون لنبقى، ونتنافس حين لا يرانا أحد",
+     "href": "essay.html?id=how-selfish-are-we",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "shannon-vallor",
+   "name": "شانون فالور",
+   "en": "Shannon Vallor",
+   "countries": [
+    "us"
+   ],
+   "bio": "فيلسوفة أمريكية متخصصة في أخلاقيات التقنية، تشغل كرسي أخلاقيات البيانات والذكاء الاصطناعي في جامعة إدنبرة، ومؤلفة «مرآة الذكاء الاصطناعي».",
+   "photo": "assets/img/world/authors/shannon-vallor.jpg",
+   "works": [
+    {
+     "title": "خطر الذكاء الاصطناعي «الخارق للبشر» ليس ما تظن",
+     "href": "essay.html?id=superhuman-ai",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "houda-nait-el-barj",
+   "name": "هدى نايت البرج",
+   "en": "Houda Nait El Barj",
+   "countries": [],
+   "bio": "باحثة تعمل في شركة OpenAI، تكتب عن أثر الذكاء الاصطناعي في طريقة تفكيرنا وتواصلنا.",
+   "photo": "",
+   "works": [
+    {
+     "title": "كيف سيغيّرنا الذكاء الاصطناعي؟ ما الذي سنظل نحتاجه من بعضنا",
+     "href": "essay.html?id=how-ai-will-change-us",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "ralph-waldo-emerson",
+   "name": "رالف والدو إمرسون",
+   "en": "Ralph Waldo Emerson",
+   "countries": [
+    "us"
+   ],
+   "bio": "فيلسوف وشاعر وكاتب مقالات أمريكي (١٨٠٣–١٨٨٢)، رائد الحركة «المتعالية»، ومقاله «الاعتماد على النفس» من أشهر ما كُتب في الدفاع عن الفرد.",
+   "photo": "assets/img/world/authors/ralph-waldo-emerson.jpg",
+   "works": [
+    {
+     "title": "الثقة بالنفس: من أراد أن يكون إنسانًا فليكن غير مُجارٍ",
+     "href": "essay.html?id=self-reliance",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "john-stuart-mill",
+   "name": "جون ستيوارت مل",
+   "en": "John Stuart Mill",
+   "countries": [
+    "gb"
+   ],
+   "bio": "فيلسوف واقتصادي بريطاني (١٨٠٦–١٨٧٣)، من أعمدة الفكر الليبرالي، وصاحب «عن الحرية» و«النفعية».",
+   "photo": "assets/img/world/authors/john-stuart-mill.jpg",
+   "works": [
+    {
+     "title": "لو اجتمع الناس كلهم على رأي إلا واحدًا: دفاع جون ستيوارت مل عن حرية الفكر",
+     "href": "essay.html?id=on-liberty-ch2",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "paul-graham",
+   "name": "بول غراهام",
+   "en": "Paul Graham",
+   "countries": [
+    "gb",
+    "us"
+   ],
+   "bio": "مبرمج وكاتب مقالات بريطاني المولد يعيش في أمريكا، شارك في تأسيس حاضنة الشركات الناشئة Y Combinator، ومقالاته من أكثر ما يُقرأ في عالم التقنية.",
+   "photo": "assets/img/world/authors/paul-graham.jpg",
+   "works": [
+    {
+     "title": "ما لا تستطيع قوله",
+     "href": "essay.html?id=what-you-cant-say",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "david-graeber",
+   "name": "ديفيد غريبر",
+   "en": "David Graeber",
+   "countries": [
+    "us"
+   ],
+   "bio": "عالم أنثروبولوجيا أمريكي (١٩٦١–٢٠٢٠)، أستاذ في كلية لندن للاقتصاد، ومؤلف «الدَّين: أول خمسة آلاف عام» و«وظائف تافهة».",
+   "photo": "assets/img/world/authors/david-graeber.jpg",
+   "works": [
+    {
+     "title": "ظاهرة الوظائف التافهة",
+     "href": "essay.html?id=bullshit-jobs",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "nick-bostrom",
+   "name": "نِك بوستروم",
+   "en": "Nick Bostrom",
+   "countries": [
+    "se"
+   ],
+   "bio": "فيلسوف سويدي، أسّس معهد مستقبل الإنسانية في جامعة أكسفورد، ومؤلف «الذكاء الخارق»، ويُعدّ من أبرز من كتبوا عن مخاطر المستقبل.",
+   "photo": "assets/img/world/authors/nick-bostrom.jpg",
+   "works": [
+    {
+     "title": "أسطورة التنّين الطاغية: هل الشيخوخة عدوّ يمكن هزيمته؟",
+     "href": "essay.html?id=dragon-tyrant",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "robert-epstein",
+   "name": "روبرت إبستين",
+   "en": "Robert Epstein",
+   "countries": [
+    "us"
+   ],
+   "bio": "عالم نفس أمريكي، رئيس تحرير سابق لمجلة Psychology Today، يكتب عن الدماغ والسلوك وأثر محركات البحث في آراء الناس.",
+   "photo": "assets/img/world/authors/robert-epstein.jpg",
+   "works": [
+    {
+     "title": "الدماغ الفارغ: عقلك ليس حاسوبًا",
+     "href": "essay.html?id=the-empty-brain",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "richard-feynman",
+   "name": "ريتشارد فاينمان",
+   "en": "Richard Feynman",
+   "countries": [
+    "us"
+   ],
+   "bio": "فيزيائي أمريكي (١٩١٨–١٩٨٨)، حائز جائزة نوبل في الفيزياء عام ١٩٦٥، واشتهر بقدرته الفريدة على شرح العلم وبروحه المرحة الناقدة.",
+   "photo": "assets/img/world/authors/richard-feynman.jpg",
+   "works": [
+    {
+     "title": "علم الطقوس الفارغة: درس فاينمان في الأمانة العلمية",
+     "href": "essay.html?id=cargo-cult-science",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "isaac-asimov",
+   "name": "إسحاق أسيموف",
+   "en": "Isaac Asimov",
+   "countries": [
+    "us"
+   ],
+   "bio": "كاتب أمريكي روسي المولد (١٩٢٠–١٩٩٢)، أستاذ في الكيمياء الحيوية، ومن أعظم كتّاب الخيال العلمي وتبسيط العلوم، ألّف أو حرّر نحو خمسمئة كتاب.",
+   "photo": "assets/img/world/authors/isaac-asimov.jpg",
+   "works": [
+    {
+     "title": "كيف يأتي الناس بأفكار جديدة؟",
+     "href": "essay.html?id=asimov-new-ideas",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "bertrand-russell",
+   "name": "برتراند راسل",
+   "en": "Bertrand Russell",
+   "countries": [
+    "gb"
+   ],
+   "bio": "فيلسوف ومنطقي بريطاني (١٨٧٢–١٩٧٠)، حائز جائزة نوبل في الأدب عام ١٩٥٠، ومن مؤسسي الفلسفة التحليلية. ترجمنا له كتاب «تحليل العقل».",
+   "photo": "assets/img/world/authors/bertrand-russell.jpg",
+   "works": [
+    {
+     "title": "تحليل العقل",
+     "href": "book.html?id=analysis-of-mind",
+     "kind": "كتاب مترجم"
+    },
+    {
+     "title": "في مديح الكسل",
+     "href": "essay.html?id=in-praise-of-idleness",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "peter-singer",
+   "name": "بيتر سينغر",
+   "en": "Peter Singer",
+   "countries": [
+    "au"
+   ],
+   "bio": "فيلسوف أسترالي متخصص في الأخلاق التطبيقية، أستاذ سابق في جامعة برينستون، ومؤلف «تحرير الحيوان» و«الحياة التي يمكنك إنقاذها».",
+   "photo": "assets/img/world/authors/peter-singer.jpg",
+   "works": [
+    {
+     "title": "حلّ سينغر للفقر العالمي: هل أنت أفضل من بائعة الطفل؟",
+     "href": "essay.html?id=singer-solution-poverty",
+     "kind": "مقال"
+    }
+   ]
+  },
+  {
+   "id": "yuval-noah-harari",
+   "name": "يوفال نوح هراري",
+   "en": "Yuval Noah Harari",
+   "countries": [
+    "il"
+   ],
+   "bio": "مؤرّخ وأستاذ في الجامعة العبرية بالقدس، مؤلف «العاقل: تاريخ مختصر للجنس البشري» و«الإنسان الإله».",
+   "photo": "assets/img/world/authors/yuval-noah-harari.jpg",
+   "works": [
+    {
+     "title": "أسطورة الحرية: حين يعرفك الحاسوب أكثر مما تعرف نفسك",
+     "href": "essay.html?id=myth-of-freedom",
+     "kind": "مقال"
+    }
+   ]
+  }
+ ]
+}
