@@ -107,3 +107,37 @@ revoke execute on function public.admin_members() from public, anon;
 revoke execute on function public.admin_set_role(uuid, text) from public, anon;
 grant execute on function public.admin_members() to authenticated;
 grant execute on function public.admin_set_role(uuid, text) to authenticated;
+
+-- الكتّاب (2026-11-25): صورة ودولة لكل عضو، مخزن صور عام القراءة يكتب فيه كل عضو في مجلده فقط، وقائمة عامة بمن نُشر له
+alter table public.profiles add column if not exists country text check (country is null or country ~ '^[a-z]{2}(-[a-z]{3})?$');
+alter table public.profiles add column if not exists avatar_url text check (avatar_url is null or char_length(avatar_url) <= 500);
+insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
+values ('avatars', 'avatars', true, 2097152, array['image/jpeg','image/png','image/webp'])
+on conflict (id) do update set public = true, file_size_limit = 2097152, allowed_mime_types = array['image/jpeg','image/png','image/webp'];
+create policy "avatars: owner uploads" on storage.objects for insert to authenticated
+  with check (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text);
+create policy "avatars: owner updates" on storage.objects for update to authenticated
+  using (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text)
+  with check (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text);
+create policy "avatars: owner or admin deletes" on storage.objects for delete to authenticated
+  using (bucket_id = 'avatars' and ((storage.foldername(name))[1] = auth.uid()::text or public.is_admin()));
+create or replace function public.public_writers()
+returns table (id uuid, name text, bio text, country text, avatar_url text, articles jsonb, last_published timestamptz)
+language sql stable security definer set search_path = public as $$
+  select p.id, p.display_name, p.bio, p.country, p.avatar_url,
+         jsonb_agg(jsonb_build_object('id', a.id, 'title', a.title, 'field', a.field) order by a.reviewed_at desc),
+         max(a.reviewed_at)
+  from public.profiles p join public.articles a on a.author_id = p.id and a.status = 'approved'
+  group by p.id order by max(a.reviewed_at) desc;
+$$;
+revoke execute on function public.public_writers() from public;
+grant execute on function public.public_writers() to anon, authenticated;
+create or replace function public.admin_update_writer(target uuid, new_name text, new_bio text, new_country text, clear_avatar boolean default false)
+returns void language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'not authorized' using errcode = '42501'; end if;
+  update public.profiles set display_name = left(coalesce(new_name, display_name), 40), bio = left(coalesce(new_bio, ''), 600),
+    country = nullif(new_country, ''), avatar_url = case when clear_avatar then null else avatar_url end where id = target;
+end $$;
+revoke execute on function public.admin_update_writer(uuid, text, text, text, boolean) from public, anon;
+grant execute on function public.admin_update_writer(uuid, text, text, text, boolean) to authenticated;
