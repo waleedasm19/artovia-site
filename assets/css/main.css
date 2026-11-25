@@ -588,3 +588,9 @@ p{margin:0 0 1em}
 .src-mark.logo{background:#fff;padding:10px}
 .src-mark.logo img{max-width:100%;max-height:100%;object-fit:contain}
 .src-body em{font-style:normal;color:var(--gold);font-size:.82rem}
+/* لوحة الإدارة */
+.adm-stats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.adm-table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+.adm-table th,.adm-table td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:start;vertical-align:middle}
+.adm-table th{color:var(--ink-3);font-weight:600;font-size:.8rem}
+.page-admin .tabs button{flex:1 1 auto}

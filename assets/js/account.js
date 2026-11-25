@@ -59,7 +59,7 @@
         <p style="color:var(--ink-3);font-size:.8rem">عضو منذ ${arDate((u.since || "").slice(0, 10))}</p>
         <div style="display:grid;gap:10px;margin-top:18px">
           <a class="btn btn-primary" style="justify-content:center" href="rawaq.html#write">اكتب مقالًا في الرواق</a>
-          ${u.role === "admin" ? `<a class="btn btn-ghost" style="justify-content:center" href="review.html">مراجعة المقالات</a>` : ""}
+          ${u.role === "admin" ? `<a class="btn btn-ghost" style="justify-content:center" href="admin.html">لوحة الإدارة</a>` : ""}
           <button class="btn btn-ghost" style="justify-content:center" id="out">تسجيل الخروج</button></div></aside>
       <div>
         <div class="panel reveal in"><h3>ما يتاح لك</h3><div class="fields" style="margin-top:14px">

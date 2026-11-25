@@ -17,6 +17,8 @@
     const m = e?.message || "";
     if (ERR[m]) return ERR[m];
     if (/row-level security|JWT|not authorized|permission denied/i.test(m)) return "لا تملك صلاحية النشر الآن. سجّل الخروج ثم الدخول مجددًا وأعد المحاولة.";
+    if (/cannot change own role/.test(m)) return "لا يمكنك تغيير صلاحيتك أنت.";
+    if (/not authorized/.test(m)) return "هذه العملية للمشرفين فقط.";
     if (/foreign key/i.test(m)) return "ملفك الشخصي غير مكتمل. افتح صفحة حسابك واحفظ اسمك، ثم أعد الإرسال.";
     if (/articles_body_check/.test(m)) return "نص المقال يجب أن يكون بين ٣٠٠ و٣٠٠٠٠ حرف.";
     if (/articles_title_check/.test(m)) return "العنوان يجب أن يكون بين ٥ و١٦٠ حرفًا.";
@@ -66,7 +68,13 @@
       if (error) throw new Error(arErr(error));
     },
     async pending() { const { data } = await sb.from("articles_admin").select("*").eq("status", "pending").order("created_at"); return data || []; },
-    async review(id, status, note) { const { error } = await sb.from("articles").update({ status, review_note: note || null, reviewed_at: new Date().toISOString() }).eq("id", id); if (error) throw new Error(arErr(error)); },
+    async review(id, status, note) { const { error } = await sb.from("articles").update({ status, review_note: note || null, reviewed_at: status === "pending" ? null : new Date().toISOString() }).eq("id", id); if (error) throw new Error(arErr(error)); },
+    /* لوحة الإدارة: كل الصلاحيات محميّة في قاعدة البيانات (is_admin)، والواجهة تعرضها فقط */
+    async adminArticles() { const { data, error } = await sb.from("articles_admin").select("*").order("created_at", { ascending: false }); if (error) throw new Error(arErr(error)); return data || []; },
+    async editArticle(id, a) { const { error } = await sb.from("articles").update({ title: a.title, field: a.field, body: a.body }).eq("id", id); if (error) throw new Error(arErr(error)); },
+    async deleteArticle(id) { const { error } = await sb.from("articles").delete().eq("id", id); if (error) throw new Error(arErr(error)); },
+    async adminMembers() { const { data, error } = await sb.rpc("admin_members"); if (error) throw new Error(arErr(error)); return data || []; },
+    async setRole(id, role) { const { error } = await sb.rpc("admin_set_role", { target: id, new_role: role }); if (error) throw new Error(arErr(error)); },
     async fileUrl(bucket, path, view) { const { data, error } = await sb.storage.from(bucket).createSignedUrl(path, view ? 6 * 3600 : 600, view ? {} : { download: true }); if (error) throw new Error("الملف غير متاح الآن."); return data.signedUrl; }
   };
 
@@ -107,7 +115,12 @@
     async mine() { return db.get().articles.filter((a) => a.author_id === user.id).sort((a, b) => b.created_at.localeCompare(a.created_at)); },
     async submit(a) { const d = db.get(); d.articles.push({ id: d.nextId++, author_id: user.id, author: user.name, ...a, status: "pending", created_at: now() }); db.set(d); },
     async pending() { return db.get().articles.filter((a) => a.status === "pending"); },
-    async review(id, status, note) { const d = db.get(); const a = d.articles.find((x) => x.id == id); Object.assign(a, { status, review_note: note || "", reviewed_at: now() }); db.set(d); },
+    async review(id, status, note) { const d = db.get(); const a = d.articles.find((x) => x.id == id); Object.assign(a, { status, review_note: note || "", reviewed_at: status === "pending" ? null : now() }); db.set(d); },
+    async adminArticles() { return db.get().articles.slice().sort((a, b) => b.created_at.localeCompare(a.created_at)); },
+    async editArticle(id, x) { const d = db.get(); Object.assign(d.articles.find((a) => a.id == id), { title: x.title, field: x.field, body: x.body }); db.set(d); },
+    async deleteArticle(id) { const d = db.get(); d.articles = d.articles.filter((a) => a.id != id); db.set(d); },
+    async adminMembers() { const d = db.get(); return d.users.map((u) => ({ id: u.id, email: u.email, display_name: u.name, role: u.role, created_at: u.since, last_sign_in_at: null, articles: d.articles.filter((a) => a.author_id === u.id).length, approved: d.articles.filter((a) => a.author_id === u.id && a.status === "approved").length })); },
+    async setRole(id, role) { if (id === user.id) throw new Error("لا يمكنك تغيير صلاحيتك أنت."); const d = db.get(); d.users.find((u) => u.id === id).role = role; db.set(d); },
     async fileUrl(bucket, path) { const u = `${bucket}/${path}`; const r = await fetch(u, { method: "HEAD" }).catch(() => null); if (!r || !r.ok) throw new Error("سيُتاح التنزيل بعد رفع الملف إلى المخزن."); return u; }
   };
 
@@ -144,6 +157,13 @@
     b.innerHTML = u ? `<span class="avatar">${(u.name || "؟").trim().charAt(0)}</span>` : b.dataset.icon;
     b.setAttribute("aria-label", u ? `حسابي: ${u.name}` : "تسجيل الدخول");
     b.classList.toggle("signed", !!u);
+    /* زر «لوحة الإدارة» يظهر للمشرف وحده بجانب زر الحساب */
+    let ad = document.querySelector(".admin-btn");
+    if (u?.role === "admin" && !ad) {
+      ad = document.createElement("a"); ad.className = "icon-btn admin-btn"; ad.href = "admin.html"; ad.title = "لوحة الإدارة"; ad.setAttribute("aria-label", "لوحة الإدارة");
+      ad.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>';
+      b.before(ad);
+    } else if (u?.role !== "admin" && ad) ad.remove();
   });
   if (!live) document.addEventListener("DOMContentLoaded", () => {
     const n = document.createElement("div"); n.className = "demo-ribbon"; n.textContent = "وضع المعاينة: الحسابات والمقالات محفوظة في متصفحك فقط حتى يُربط الموقع بقاعدة البيانات";
