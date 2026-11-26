@@ -17,9 +17,9 @@
 <link rel="preload" href="assets/fonts/Amiri-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/IBMPlexSansArabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css?v=c811f471">
-<link rel="stylesheet" href="assets/css/editorial.css?v=f5a07d72">
+<link rel="stylesheet" href="assets/css/editorial.css?v=ac8aaa1d">
 <script>try{var s=JSON.parse(localStorage.getItem("acf-settings")||"{}");if(s.theme)document.documentElement.dataset.theme=s.theme;if(s.fontsize)document.documentElement.dataset.fontsize=s.fontsize}catch(e){}try{var d=document.documentElement,q=sessionStorage;if(matchMedia("(display-mode: standalone)").matches||navigator.standalone||/[?&]source=app/.test(location.search))q.setItem("acf-app","1");if(q.getItem("acf-app")){d.classList.add("app-mode");if(q.getItem("acf-splash"))d.classList.add("splash-seen");else q.setItem("acf-splash","1")}}catch(e){}</script>
-<script src="assets/vendor/supabase.js" defer></script><script src="assets/js/config.js" defer></script><script src="assets/js/auth.js" defer></script><script src="assets/js/site.js" defer></script><script src="assets/js/editorial-interactions.js" defer></script><script src="assets/js/app-shell.js" defer></script><script src="assets/js/quotes.js" defer></script><script defer src="assets/js/editorial-home.js"></script><script defer src="assets/js/fields-icons.js"></script><script defer src="assets/js/home.js"></script><script defer src="assets/js/showcase.js"></script><script defer src="assets/js/hero-slides.js"></script>
+<script src="assets/vendor/supabase.js" defer></script><script src="assets/js/config.js" defer></script><script src="assets/js/auth.js" defer></script><script src="assets/js/site.js" defer></script><script src="assets/js/editorial-interactions.js" defer></script><script src="assets/js/app-shell.js" defer></script><script src="assets/js/quotes.js" defer></script><script defer src="assets/js/editorial-home.js"></script><script defer src="assets/js/fields-icons.js"></script><script defer src="assets/js/home.js"></script><script defer src="assets/js/showcase.js"></script><script defer src="assets/js/hero-slides.js"></script><script defer src="assets/js/explorers.js"></script>
 </head>
 <body class="page-index">
 <div id="app-splash" aria-hidden="true"><div class="app-splash-ring"></div><img src="assets/app/emblem-splash.png" alt="" width="180" height="180">
@@ -97,7 +97,7 @@
  </div>
 </section>
 
-<section class="wrap front-explorer" aria-label="المجموعة الشمسية">
+<section class="wrap front-explorer" aria-label="مستكشفات تفاعلية">
  <details id="solar-explorer">
   <summary>استكشف المجموعة الشمسية</summary>
   <div class="hero hero-explorer">
@@ -105,6 +105,26 @@
    <div class="hero-fallback" aria-hidden="true"></div>
    <div class="planet-label" aria-hidden="true">المجموعة الشمسية · اسحب لتدويرها</div>
   </div>
+ </details>
+ <details id="xp-periodic" class="xp">
+  <summary>استكشف الجدول الدوري للعناصر <small>١١٨ عنصرًا بصور حقيقية</small></summary>
+  <div class="xp-body"></div>
+ </details>
+ <details id="xp-iss" class="xp">
+  <summary>أين محطة الفضاء الدولية الآن؟ <small class="xp-live-tag">مباشر</small></summary>
+  <div class="xp-body"></div>
+ </details>
+ <details id="xp-quakes" class="xp">
+  <summary>نبض الأرض: الزلازل حول العالم <small class="xp-live-tag">مباشر</small></summary>
+  <div class="xp-body"></div>
+ </details>
+ <details id="xp-ocean" class="xp">
+  <summary>انزل إلى أعماق المحيط <small>من السطح إلى ١١ كيلومترًا</small></summary>
+  <div class="xp-body"></div>
+ </details>
+ <details id="xp-scale" class="xp">
+  <summary>من الذرّة إلى الكون <small>رحلة عبر الأحجام</small></summary>
+  <div class="xp-body"></div>
  </details>
 </section>
 

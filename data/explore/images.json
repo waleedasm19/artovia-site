@@ -1,0 +1,278 @@
+[
+ {
+  "id": "iss",
+  "out": "assets/img/explore/space/iss.jpg",
+  "title": "File:International Space Station after undocking of STS-132.jpg",
+  "width": 1280
+ },
+ {
+  "id": "sc-atom",
+  "out": "assets/img/explore/scale/atoms.jpg",
+  "title": "File:Atomic resolution Au100.JPG",
+  "width": 960
+ },
+ {
+  "id": "sc-virus",
+  "out": "assets/img/explore/scale/virus.jpg",
+  "title": "File:Novel Coronavirus SARS-CoV-2.jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-rbc",
+  "out": "assets/img/explore/scale/rbc.jpg",
+  "title": "File:Redbloodcells.jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-pollen",
+  "out": "assets/img/explore/scale/pollen.jpg",
+  "title": "File:Misc pollen.jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-ant",
+  "out": "assets/img/explore/scale/ant.jpg",
+  "query": "Formica rufa worker",
+  "width": 960
+ },
+ {
+  "id": "sc-whale",
+  "out": "assets/img/explore/scale/whale.jpg",
+  "title": "File:Anim1754 - Flickr - NOAA Photo Library.jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-pyramid",
+  "out": "assets/img/explore/scale/pyramid.jpg",
+  "title": "File:Kheops-Pyramid.jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-burj",
+  "out": "assets/img/explore/scale/burj.jpg",
+  "width": 960,
+  "query": "Burj Khalifa Dubai tower"
+ },
+ {
+  "id": "sc-everest",
+  "out": "assets/img/explore/scale/everest.jpg",
+  "title": "File:Everest North Face toward Base Camp Tibet Luca Galuzzi 2006.jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-earth",
+  "out": "assets/img/explore/scale/earth.jpg",
+  "title": "File:The Earth seen from Apollo 17.jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-sun",
+  "out": "assets/img/explore/scale/sun.jpg",
+  "title": "File:The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819.jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-pbd",
+  "out": "assets/img/explore/scale/pale-blue-dot.jpg",
+  "title": "File:Pale Blue Dot.png",
+  "width": 960
+ },
+ {
+  "id": "sc-andromeda",
+  "out": "assets/img/explore/scale/andromeda.jpg",
+  "title": "File:Andromeda Galaxy (with h-alpha).jpg",
+  "width": 960
+ },
+ {
+  "id": "sc-hudf",
+  "out": "assets/img/explore/scale/hudf.jpg",
+  "title": "File:Hubble ultra deep field high rez edit1.jpg",
+  "width": 960
+ },
+ {
+  "id": "oc-surface",
+  "out": "assets/img/explore/ocean/surface.jpg",
+  "query": "sardine run school of fish",
+  "width": 960
+ },
+ {
+  "id": "oc-penguin",
+  "out": "assets/img/explore/ocean/penguin.jpg",
+  "query": "Aptenodytes forsteri underwater",
+  "width": 960
+ },
+ {
+  "id": "oc-twilight",
+  "out": "assets/img/explore/ocean/twilight.jpg",
+  "query": "siphonophore NOAA",
+  "width": 960
+ },
+ {
+  "id": "oc-sperm",
+  "out": "assets/img/explore/ocean/sperm-whale.jpg",
+  "title": "File:Mother and baby sperm whale.jpg",
+  "width": 960
+ },
+ {
+  "id": "oc-titanic",
+  "out": "assets/img/explore/ocean/titanic.jpg",
+  "title": "File:Titanic wreck bow.jpg",
+  "width": 960
+ },
+ {
+  "id": "oc-dumbo",
+  "out": "assets/img/explore/ocean/dumbo.jpg",
+  "query": "Grimpoteuthis",
+  "width": 960
+ },
+ {
+  "id": "oc-vent",
+  "out": "assets/img/explore/ocean/vent.jpg",
+  "title": "File:Riftia tube worm colony Galapagos 2011.jpg",
+  "width": 960
+ },
+ {
+  "id": "oc-trieste",
+  "out": "assets/img/explore/ocean/trieste.jpg",
+  "title": "File:Bathyscaphe Trieste.jpg",
+  "width": 960
+ },
+ {
+  "id": "el-H",
+  "out": "assets/img/explore/elements/h.jpg",
+  "width": 500,
+  "title": "File:Hydrogen discharge tube.jpg"
+ },
+ {
+  "id": "el-He",
+  "out": "assets/img/explore/elements/he.jpg",
+  "width": 500,
+  "title": "File:Helium discharge tube.jpg"
+ },
+ {
+  "id": "el-Ne",
+  "out": "assets/img/explore/elements/ne.jpg",
+  "width": 500,
+  "title": "File:Neon discharge tube.jpg"
+ },
+ {
+  "id": "el-Li",
+  "out": "assets/img/explore/elements/li.jpg",
+  "width": 500,
+  "title": "File:Lithium paraffin.jpg"
+ },
+ {
+  "id": "el-C",
+  "out": "assets/img/explore/elements/c.jpg",
+  "width": 500,
+  "title": "File:Graphite-and-diamond-with-scale.jpg"
+ },
+ {
+  "id": "el-Na",
+  "out": "assets/img/explore/elements/na.jpg",
+  "width": 500,
+  "title": "File:Na (Sodium).jpg"
+ },
+ {
+  "id": "el-Mg",
+  "out": "assets/img/explore/elements/mg.jpg",
+  "width": 500,
+  "title": "File:CSIRO ScienceImage 2893 Crystalised magnesium.jpg"
+ },
+ {
+  "id": "el-Al",
+  "out": "assets/img/explore/elements/al.jpg",
+  "width": 500,
+  "title": "File:Aluminium-4.jpg"
+ },
+ {
+  "id": "el-Si",
+  "out": "assets/img/explore/elements/si.jpg",
+  "width": 500,
+  "title": "File:SiliconCroda.jpg"
+ },
+ {
+  "id": "el-S",
+  "out": "assets/img/explore/elements/s.jpg",
+  "width": 500,
+  "title": "File:Sulfur-sample.jpg"
+ },
+ {
+  "id": "el-Cl",
+  "out": "assets/img/explore/elements/cl.jpg",
+  "width": 500,
+  "title": "File:Chlorine ampoule.jpg"
+ },
+ {
+  "id": "el-Ti",
+  "out": "assets/img/explore/elements/ti.jpg",
+  "width": 500,
+  "title": "File:Titan-crystal bar.JPG"
+ },
+ {
+  "id": "el-Fe",
+  "out": "assets/img/explore/elements/fe.jpg",
+  "width": 500,
+  "title": "File:Iron electrolytic and 1cm3 cube.jpg"
+ },
+ {
+  "id": "el-Cu",
+  "out": "assets/img/explore/elements/cu.jpg",
+  "width": 500,
+  "title": "File:NatCopper.jpg"
+ },
+ {
+  "id": "el-Ga",
+  "out": "assets/img/explore/elements/ga.jpg",
+  "width": 500,
+  "title": "File:Gallium crystals.jpg"
+ },
+ {
+  "id": "el-Br",
+  "out": "assets/img/explore/elements/br.jpg",
+  "width": 500,
+  "title": "File:Bromine vial in acrylic cube.jpg"
+ },
+ {
+  "id": "el-Ag",
+  "out": "assets/img/explore/elements/ag.jpg",
+  "width": 500,
+  "title": "File:Silver crystal.jpg"
+ },
+ {
+  "id": "el-I",
+  "out": "assets/img/explore/elements/i.jpg",
+  "width": 500,
+  "title": "File:Iodine-sample.png"
+ },
+ {
+  "id": "el-Cs",
+  "out": "assets/img/explore/elements/cs.jpg",
+  "width": 500,
+  "title": "File:Cesium.jpg"
+ },
+ {
+  "id": "el-Au",
+  "out": "assets/img/explore/elements/au.jpg",
+  "width": 500,
+  "title": "File:Gold-crystals.jpg"
+ },
+ {
+  "id": "el-Hg",
+  "out": "assets/img/explore/elements/hg.jpg",
+  "width": 500,
+  "title": "File:Pouring liquid mercury bionerd.jpg"
+ },
+ {
+  "id": "el-Pb",
+  "out": "assets/img/explore/elements/pb.jpg",
+  "width": 500,
+  "title": "File:Lead electrolytic and 1cm3 cube.jpg"
+ },
+ {
+  "id": "el-Bi",
+  "out": "assets/img/explore/elements/bi.jpg",
+  "width": 500,
+  "title": "File:Bismuth crystals and 1cm3 cube.jpg"
+ }
+]

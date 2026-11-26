@@ -1,9 +1,10 @@
-# ينزّل الصور المرخّصة المطلوبة في data/commons-images.json على فروع العمل (للمعاينة قبل الدمج).
+# ينزّل الصور المرخّصة المطلوبة في data/commons-images.json و data/explore/images.json على فروع العمل (للمعاينة قبل الدمج).
 name: جلب الصور المرخّصة
 on:
-  push: { branches: ["claude/**"], paths: ["data/commons-images.json"] }
+  push: { branches: ["claude/**"], paths: ["data/commons-images.json", "data/explore/images.json"] }
   workflow_dispatch:
 permissions: { contents: write }
+concurrency: { group: "fetch-images-${{ github.ref }}", cancel-in-progress: true }
 jobs:
   fetch:
     runs-on: ubuntu-latest
@@ -12,8 +13,10 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python3 tools/fetch_commons.py
+      - name: صور مستكشفات الصفحة الرئيسية
+        run: python3 tools/explore_images.py || true
       - run: |
           git config user.name "artovia-news-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/world.json data/world assets/img/world
+          git add data/world.json data/world assets/img/world data/explore/credits.json assets/img/explore
           git diff --cached --quiet || (git commit -m "صور مرخّصة من ويكيميديا كومنز" && git push)

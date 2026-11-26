@@ -1,0 +1,236 @@
+{
+ "iss": {
+  "src": "assets/img/explore/space/iss.jpg",
+  "credit": "NASA/Crew of STS-132 · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg",
+  "title": "File:International Space Station after undocking of STS-132.jpg"
+ },
+ "sc-atom": {
+  "src": "assets/img/explore/scale/atoms.jpg",
+  "credit": "Erwinrossen · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Atomic_resolution_Au100.JPG",
+  "title": "File:Atomic resolution Au100.JPG"
+ },
+ "sc-virus": {
+  "src": "assets/img/explore/scale/virus.jpg",
+  "credit": "NIAID-RML (https://www.niaid.nih.gov/ & https://www.niaid.nih.gov/about/rocky-mountain-lab · CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Novel_Coronavirus_SARS-CoV-2.jpg",
+  "title": "File:Novel Coronavirus SARS-CoV-2.jpg"
+ },
+ "sc-rbc": {
+  "src": "assets/img/explore/scale/rbc.jpg",
+  "credit": "مجهول · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Redbloodcells.jpg",
+  "title": "File:Redbloodcells.jpg"
+ },
+ "sc-pollen": {
+  "src": "assets/img/explore/scale/pollen.jpg",
+  "credit": "Dartmouth College Electron Microscope Facility · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Misc_pollen.jpg",
+  "title": "File:Misc pollen.jpg"
+ },
+ "sc-ant": {
+  "src": "assets/img/explore/scale/ant.jpg",
+  "credit": "Richard Bartz, Munich Makro Freak · CC BY-SA 2.5",
+  "url": "https://commons.wikimedia.org/wiki/File:A_Formica_rufa_worker.jpg",
+  "title": "File:A Formica rufa worker.jpg"
+ },
+ "sc-whale": {
+  "src": "assets/img/explore/scale/whale.jpg",
+  "credit": "NOAA Photo Library · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
+  "title": "File:Anim1754 - Flickr - NOAA Photo Library.jpg"
+ },
+ "sc-pyramid": {
+  "src": "assets/img/explore/scale/pyramid.jpg",
+  "credit": "Nina · CC BY 2.5",
+  "url": "https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg",
+  "title": "File:Kheops-Pyramid.jpg"
+ },
+ "sc-burj": {
+  "src": "assets/img/explore/scale/burj.jpg",
+  "credit": "Laika ac · CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(16260269606).jpg",
+  "title": "File:Burj Khalifa (16260269606).jpg"
+ },
+ "sc-everest": {
+  "src": "assets/img/explore/scale/everest.jpg",
+  "credit": "Luca Galuzzi (Lucag) · CC BY-SA 2.5",
+  "url": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+  "title": "File:Everest North Face toward Base Camp Tibet Luca Galuzzi 2006.jpg"
+ },
+ "sc-earth": {
+  "src": "assets/img/explore/scale/earth.jpg",
+  "credit": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+  "title": "File:The Earth seen from Apollo 17.jpg"
+ },
+ "sc-sun": {
+  "src": "assets/img/explore/scale/sun.jpg",
+  "credit": "NASA/SDO (AIA) · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+  "title": "File:The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819.jpg"
+ },
+ "sc-pbd": {
+  "src": "assets/img/explore/scale/pale-blue-dot.jpg",
+  "credit": "Voyager 1 · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Pale_Blue_Dot.png",
+  "title": "File:Pale Blue Dot.png"
+ },
+ "sc-andromeda": {
+  "src": "assets/img/explore/scale/andromeda.jpg",
+  "credit": "Adam Evans · CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Andromeda_Galaxy_(with_h-alpha).jpg",
+  "title": "File:Andromeda Galaxy (with h-alpha).jpg"
+ },
+ "sc-hudf": {
+  "src": "assets/img/explore/scale/hudf.jpg",
+  "credit": "NASA and the European Space Agency. Edited by Noodle snacks · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field_high_rez_edit1.jpg",
+  "title": "File:Hubble ultra deep field high rez edit1.jpg"
+ },
+ "oc-surface": {
+  "src": "assets/img/explore/ocean/surface.jpg",
+  "credit": "Stanislav Stelmakhovich · CC0",
+  "url": "https://commons.wikimedia.org/wiki/File:Underwater_view_of_the_sardine_run_as_a_dolphin_hunts_within_dense_schools_of_sardines.jpg",
+  "title": "File:Underwater view of the sardine run as a dolphin hunts within dense schools of sardines.jpg"
+ },
+ "oc-penguin": {
+  "src": "assets/img/explore/ocean/penguin.jpg",
+  "credit": "Robert L. Dale · CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:1968-penguin-underwater.jpg",
+  "title": "File:1968-penguin-underwater.jpg"
+ },
+ "oc-twilight": {
+  "src": "assets/img/explore/ocean/twilight.jpg",
+  "credit": "NOAA Office of Ocean Exploration and Research, Exploring Puerto Rico’s Seamounts, Trenches · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Physonect_siphonophore_Puerto_Rico_April_2015.png",
+  "title": "File:Physonect siphonophore Puerto Rico April 2015.png"
+ },
+ "oc-sperm": {
+  "src": "assets/img/explore/ocean/sperm-whale.jpg",
+  "credit": "Gabriel Barathieu · CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg",
+  "title": "File:Mother and baby sperm whale.jpg"
+ },
+ "oc-titanic": {
+  "src": "assets/img/explore/ocean/titanic.jpg",
+  "credit": "Courtesy of NOAA/Institute for Exploration/University of Rhode Island (NOAA/IFE/URI). · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Titanic_wreck_bow.jpg",
+  "title": "File:Titanic wreck bow.jpg"
+ },
+ "oc-dumbo": {
+  "src": "assets/img/explore/ocean/dumbo.jpg",
+  "credit": "Renaud.marbet · CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Grimpoteuthis_2108m.jpg",
+  "title": "File:Grimpoteuthis 2108m.jpg"
+ },
+ "oc-vent": {
+  "src": "assets/img/explore/ocean/vent.jpg",
+  "credit": "NOAA Okeanos Explorer Program, Galapagos Rift Expedition 2011 · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Riftia_tube_worm_colony_Galapagos_2011.jpg",
+  "title": "File:Riftia tube worm colony Galapagos 2011.jpg"
+ },
+ "oc-trieste": {
+  "src": "assets/img/explore/ocean/trieste.jpg",
+  "credit": "Unknown authorUnknown author · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Bathyscaphe_Trieste.jpg",
+  "title": "File:Bathyscaphe Trieste.jpg"
+ },
+ "el-Li": {
+  "src": "assets/img/explore/elements/li.jpg",
+  "credit": "Tomihahndorf at German Wikipedia · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Lithium_paraffin.jpg",
+  "title": "File:Lithium paraffin.jpg"
+ },
+ "el-C": {
+  "src": "assets/img/explore/elements/c.jpg",
+  "credit": "Robert M. Lavinsky · CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Graphite-and-diamond-with-scale.jpg",
+  "title": "File:Graphite-and-diamond-with-scale.jpg"
+ },
+ "el-Na": {
+  "src": "assets/img/explore/elements/na.jpg",
+  "credit": "The original uploader was Dnn87 at English Wikipedia. · CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Na_(Sodium).jpg",
+  "title": "File:Na (Sodium).jpg"
+ },
+ "el-Mg": {
+  "src": "assets/img/explore/elements/mg.jpg",
+  "credit": "Mark Fergus, CSIRO · CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_2893_Crystalised_magnesium.jpg",
+  "title": "File:CSIRO ScienceImage 2893 Crystalised magnesium.jpg"
+ },
+ "el-Al": {
+  "src": "assets/img/explore/elements/al.jpg",
+  "credit": "Unknown authorUnknown author · CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Aluminium-4.jpg",
+  "title": "File:Aluminium-4.jpg"
+ },
+ "el-Si": {
+  "src": "assets/img/explore/elements/si.jpg",
+  "credit": "Enricoros at English Wikipedia · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:SiliconCroda.jpg",
+  "title": "File:SiliconCroda.jpg"
+ },
+ "el-S": {
+  "src": "assets/img/explore/elements/s.jpg",
+  "credit": "Ben Mills · Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File:Sulfur-sample.jpg",
+  "title": "File:Sulfur-sample.jpg"
+ },
+ "el-Cl": {
+  "src": "assets/img/explore/elements/cl.jpg",
+  "credit": "W. Oelen · CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Chlorine_ampoule.jpg",
+  "title": "File:Chlorine ampoule.jpg"
+ },
+ "el-Ti": {
+  "src": "assets/img/explore/elements/ti.jpg",
+  "credit": "Alchemist-hp (pse-mendelejew.de) · CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Titan-crystal_bar.JPG",
+  "title": "File:Titan-crystal bar.JPG"
+ },
+ "el-Cu": {
+  "src": "assets/img/explore/elements/cu.jpg",
+  "credit": "Native_Copper_Macro_Digon3.jpg: “Jonathan Zander (Digon3)\" derivative work: Materialscient · CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:NatCopper.jpg",
+  "title": "File:NatCopper.jpg"
+ },
+ "el-Ga": {
+  "src": "assets/img/explore/elements/ga.jpg",
+  "credit": "en:user:foobar · CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Gallium_crystals.jpg",
+  "title": "File:Gallium crystals.jpg"
+ },
+ "el-Br": {
+  "src": "assets/img/explore/elements/br.jpg",
+  "credit": "Alchemist-hp (pse-mendelejew.de) · CC BY-SA 3.0 de",
+  "url": "https://commons.wikimedia.org/wiki/File:Bromine_vial_in_acrylic_cube.jpg",
+  "title": "File:Bromine vial in acrylic cube.jpg"
+ },
+ "el-Ag": {
+  "src": "assets/img/explore/elements/ag.jpg",
+  "credit": "Alchemist-hp (talk) (www.pse-mendelejew.de) · CC BY-SA 3.0 de",
+  "url": "https://commons.wikimedia.org/wiki/File:Silver_crystal.jpg",
+  "title": "File:Silver crystal.jpg"
+ },
+ "el-Cs": {
+  "src": "assets/img/explore/elements/cs.jpg",
+  "credit": "Dnn87 · CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Cesium.jpg",
+  "title": "File:Cesium.jpg"
+ },
+ "el-Au": {
+  "src": "assets/img/explore/elements/au.jpg",
+  "credit": "Alchemist-hp (talk) www.pse-mendelejew.de · CC BY-SA 3.0 de",
+  "url": "https://commons.wikimedia.org/wiki/File:Gold-crystals.jpg",
+  "title": "File:Gold-crystals.jpg"
+ },
+ "el-Hg": {
+  "src": "assets/img/explore/elements/hg.jpg",
+  "credit": "Bionerd · CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File:Pouring_liquid_mercury_bionerd.jpg",
+  "title": "File:Pouring liquid mercury bionerd.jpg"
+ }
+}
