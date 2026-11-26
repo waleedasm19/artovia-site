@@ -6,7 +6,10 @@
  "author": {
   "name": "Michel de Montaigne",
   "nameAr": "ميشيل دي مونتين",
-  "bio": "الفيلسوف والكاتب الفرنسي (١٥٣٣–١٥٩٢)، مبتكر فنّ «المقالة» نفسه، وصاحب «المقالات» التي جعلت الشكّ والتأمل في النفس أسلوبًا في الكتابة والتفكير."
+  "bio": "الفيلسوف والكاتب الفرنسي (١٥٣٣–١٥٩٢)، مبتكر فنّ «المقالة» نفسه، وصاحب «المقالات» التي جعلت الشكّ والتأمل في النفس أسلوبًا في الكتابة والتفكير.",
+  "photo": "assets/img/world/authors/michel-de-montaigne.jpg",
+  "photoCredit": "anonymous · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Montaigne-Dumonstier.jpg"
  },
  "source": "ميشيل دي مونتين، «المقالات»، الكتاب الأول، الفصل ٣٠ (نحو ١٥٨٠)",
  "pubDate": "نُشر عام ١٥٨٠، وبالإنجليزية في ترجمة تشارلز كوتون (١٦٨٥–١٦٨٦)",
@@ -114,5 +117,9 @@
  ],
  "slug": "of-cannibals",
  "added": "2026-11-26",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/of-cannibals.jpg",
+ "credit": "Theodor de Bry · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Tupinamb%C3%A1_cannibals_(de_Bry,_1593).jpg",
+ "coverAlt": "An illustration for the German edition of the History of a Voyage to the Land of Brazil, depicting Tupinambá people cook"
 }

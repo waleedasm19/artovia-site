@@ -48,5 +48,9 @@
  ],
  "slug": "on-noise",
  "added": "2026-11-26",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/on-noise.jpg",
+ "credit": "Dietmar Rabich · CC BY-SA 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Frankfurt_am_Main,_Paulskirche_--_2015_--_6701.jpg",
+ "coverAlt": "Paulskirche, Frankfurt am Main, Hesse, Germany"
 }
