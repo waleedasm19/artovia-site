@@ -1,0 +1,1009 @@
+{
+ "electronics": {
+  "intro": "هذا الكتاب تأليف عربي أصيل وليس ترجمة. استرشدنا في اختيار الموضوعات وترتيبها بكتاب واحد، أما الشرح والتجارب والمسائل والرسوم فمن إعداد المؤسسة. وهذه كل المصادر التي رجعنا إليها في بنائه، كما في الملحق ز من الكتاب، مع الأدوات ومصادر الصور.",
+  "groups": [
+   {
+    "title": "المرجع الذي استرشدنا به",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Charles Platt, Make: Electronics: Learning by Discovery, O'Reilly, 2009",
+      "note": "في اختيار الموضوعات وترتيب تعلّمها فقط، من غير ترجمة ولا نقل لتجاربه أو صوره",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "كتب ومقرّرات",
+    "kind": "book",
+    "items": [
+     {
+      "t": "P. Horowitz and W. Hill, The Art of Electronics, 3rd ed., Cambridge University Press, 2015",
+      "lang": "en"
+     },
+     {
+      "t": "OpenStax, University Physics, Volume 2, Rice University",
+      "url": "https://openstax.org/details/books/university-physics-volume-2",
+      "lang": "en"
+     },
+     {
+      "t": "MIT OpenCourseWare: 8.02 Electricity and Magnetism; 8.04 Quantum Physics; 18.03 Differential Equations; 3.091 and 5.60",
+      "url": "https://ocw.mit.edu",
+      "lang": "en"
+     },
+     {
+      "t": "IUPAC, Compendium of Chemical Terminology (the Gold Book)",
+      "url": "https://goldbook.iupac.org",
+      "lang": "en"
+     },
+     {
+      "t": "ABB, Distribution Handbook: synchronous machines and generator speed",
+      "lang": "en"
+     },
+     {
+      "t": "NASA, investigation board report on the TSS-1R tethered satellite mission (1996)",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "الوحدات والثوابت والمعايير",
+    "kind": "book",
+    "items": [
+     {
+      "t": "BIPM, The International System of Units (SI Brochure), 9th ed., 2019 (updated 2022)",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "lang": "en"
+     },
+     {
+      "t": "BIPM / CODATA, recommended values of the fundamental physical constants (2018 and 2022)",
+      "url": "https://physics.nist.gov/cuu/Constants/",
+      "lang": "en"
+     },
+     {
+      "t": "IEC 61140 and IEC 60364-4-41: protection against electric shock (ELV, SELV, PELV)",
+      "lang": "en"
+     },
+     {
+      "t": "IEC 60062: marking codes for resistors and capacitors (colour bands, E-series)",
+      "lang": "en"
+     },
+     {
+      "t": "IEC 60617: graphical symbols for diagrams",
+      "note": "رموز المخطّطات في الكتاب",
+      "lang": "en"
+     },
+     {
+      "t": "Regulation (EU) 2023/1542 on batteries; Directive (EU) 2024/1799 on the repair of goods",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "السلامة في المختبر",
+    "kind": "book",
+    "items": [
+     {
+      "t": "U.S. OSHA, electrical hazards and eye and face protection (29 CFR 1910.133)",
+      "url": "https://www.osha.gov",
+      "lang": "en"
+     },
+     {
+      "t": "UK HSE, rosin-based solder fume and local exhaust ventilation",
+      "url": "https://www.hse.gov.uk",
+      "lang": "en"
+     },
+     {
+      "t": "U.S. EPA, handling and recycling used and damaged household lithium batteries (2026)",
+      "url": "https://www.epa.gov",
+      "lang": "en"
+     },
+     {
+      "t": "Weller and other manufacturers, operating instructions for soldering stations",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "أوراق بيانات الصانعين وملاحظات التطبيق",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Texas Instruments: NE555/SA555/SE555, TLC555, TLC3555, LM7805; application notes on line transients, op-amp bandwidth and noise gain, OLED drivers",
+      "lang": "en"
+     },
+     {
+      "t": "Allegro MicroSystems: A4988 microstepping driver",
+      "lang": "en"
+     },
+     {
+      "t": "Microchip: ATmega328P",
+      "lang": "en"
+     },
+     {
+      "t": "Raspberry Pi Ltd: RP2040 and Raspberry Pi Pico datasheets; MicroPython documentation",
+      "url": "https://docs.micropython.org",
+      "lang": "en"
+     },
+     {
+      "t": "Nexperia and Texas Instruments: 74HC00, 74HC04, 74HC14, 74HC161, 74HC393, 74HC4017, 74HC4511, 74HC4518",
+      "lang": "en"
+     },
+     {
+      "t": "onsemi and Nexperia: 2N3904, 2N2222, BC547",
+      "lang": "en"
+     },
+     {
+      "t": "Infineon and Vishay: logic-level MOSFETs, 1N4148, 1N4007, LEDs, resistor derating notes",
+      "lang": "en"
+     },
+     {
+      "t": "Nichicon: application guidelines for aluminium electrolytic capacitors",
+      "lang": "en"
+     },
+     {
+      "t": "Coilcraft: inductor specifications",
+      "lang": "en"
+     },
+     {
+      "t": "Maxon: DC motor constants",
+      "lang": "en"
+     },
+     {
+      "t": "Omron: switch and relay ratings",
+      "lang": "en"
+     },
+     {
+      "t": "Micron: DRAM refresh technical notes",
+      "lang": "en"
+     },
+     {
+      "t": "Keysight: true-RMS measurement application notes",
+      "lang": "en"
+     },
+     {
+      "t": "Analog Devices: MT-012 tutorial on intermodulation distortion",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "مواقع ومحاكيات تفاعلية (ومنها روابط رموز QR)",
+    "kind": "web",
+    "items": [
+     {
+      "t": "PhET Interactive Simulations, University of Colorado Boulder",
+      "url": "https://phet.colorado.edu",
+      "lang": "en"
+     },
+     {
+      "t": "Falstad circuit simulator and Fourier series applet",
+      "url": "https://www.falstad.com/circuit/",
+      "lang": "en"
+     },
+     {
+      "t": "Wokwi online simulator",
+      "url": "https://wokwi.com",
+      "lang": "en"
+     },
+     {
+      "t": "Electronics Tutorials",
+      "url": "https://www.electronics-tutorials.ws",
+      "lang": "en"
+     },
+     {
+      "t": "SparkFun Learn",
+      "url": "https://learn.sparkfun.com",
+      "lang": "en"
+     },
+     {
+      "t": "Adafruit Learning System",
+      "url": "https://learn.adafruit.com",
+      "lang": "en"
+     },
+     {
+      "t": "All About Circuits",
+      "url": "https://www.allaboutcircuits.com",
+      "lang": "en"
+     },
+     {
+      "t": "Hackaday",
+      "url": "https://hackaday.com",
+      "lang": "en"
+     },
+     {
+      "t": "Computer History Museum",
+      "url": "https://computerhistory.org",
+      "lang": "en"
+     },
+     {
+      "t": "CircuitVerse",
+      "url": "https://circuitverse.org",
+      "lang": "en"
+     },
+     {
+      "t": "EveryCircuit",
+      "url": "https://everycircuit.com",
+      "lang": "en"
+     },
+     {
+      "t": "Battery University",
+      "url": "https://batteryuniversity.com",
+      "lang": "en"
+     },
+     {
+      "t": "Omni Calculator",
+      "url": "https://www.omnicalculator.com",
+      "lang": "en"
+     },
+     {
+      "t": "Academo",
+      "url": "https://academo.org",
+      "lang": "en"
+     },
+     {
+      "t": "Circuit Digest",
+      "url": "https://circuitdigest.com",
+      "lang": "en"
+     },
+     {
+      "t": "element14 Community",
+      "url": "https://community.element14.com",
+      "lang": "en"
+     },
+     {
+      "t": "DigiKey",
+      "url": "https://www.digikey.com",
+      "lang": "en"
+     },
+     {
+      "t": "Fritzing",
+      "url": "https://fritzing.org",
+      "lang": "en"
+     },
+     {
+      "t": "KiCad EDA and its documentation",
+      "url": "https://www.kicad.org",
+      "lang": "en"
+     },
+     {
+      "t": "Thonny IDE; Arduino IDE",
+      "url": "https://thonny.org",
+      "lang": "en"
+     },
+     {
+      "t": "MIT DSpace; Ganssle Group; Wikipedia; YouTube (selected videos)",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "مصادر الأخبار (٢٠٢٥ و٢٠٢٦)",
+    "kind": "web",
+    "note": "كلّ صندوق «آخر الأخبار» يذكر مصدره وتاريخه في نصّه.",
+    "items": [
+     {
+      "t": "Journals: Nature, Science, Science Advances, Nature Energy, Nature Communications, Nature Chemical Biology, ACS Photonics, Journal of Materials Science, Energies, arXiv",
+      "lang": "en"
+     },
+     {
+      "t": "Technical press: EDN, Elektor, Electronic Design, Hackaday, All About Circuits, Power Electronics News, Electropages, Semiconductor Today, CNX Software, Electrek, electrive, Design News, TechInsights, KnowMade, TrendForce, designboom",
+      "lang": "en"
+     },
+     {
+      "t": "General press: Associated Press, PBS, Fortune, TechCrunch, ScienceAlert, The Conversation, Environmental Health News, The Korea Herald, Seoul Economic Daily, Irish Examiner, Echo Live, Chicago Sun-Times, RadioToday",
+      "lang": "en"
+     },
+     {
+      "t": "Organisations and manufacturers: CERN, Fermilab, ICAO, IEEE, IPC, Open Compute Project, Texas Instruments, Infineon, Vishay, Murata, Toshiba, Analog Devices, Espressif, Raspberry Pi, Nexperia, TCL CSOT, BOE, electronica 2026",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "برامج الرسم والتصميم والإخراج",
+    "kind": "tool",
+    "items": [
+     {
+      "t": "Blender",
+      "url": "https://www.blender.org",
+      "note": "مشاهد ثلاثية الأبعاد بأبعاد القطع الحقيقية، ومجسّم الغلاف",
+      "lang": "en"
+     },
+     {
+      "t": "Canva",
+      "url": "https://www.canva.com",
+      "note": "رسوم توضيحية مسطّحة رُسمت باليد، وتصميم الغلاف",
+      "lang": "en"
+     },
+     {
+      "t": "Figma",
+      "url": "https://www.figma.com",
+      "note": "رسوم أشباه الموصلات والثنائي",
+      "lang": "en"
+     },
+     {
+      "t": "CircuiTikZ and PGFPlots",
+      "url": "https://ctan.org/pkg/circuitikz",
+      "note": "مخطّطات الدارات والرسوم البيانية",
+      "lang": "en"
+     },
+     {
+      "t": "XeLaTeX (TeX Live) with polyglossia, tcolorbox, siunitx, TikZ",
+      "url": "https://www.tug.org/texlive/",
+      "note": "تنضيد الكتاب وصناديقه ووحداته",
+      "lang": "en"
+     },
+     {
+      "t": "Scheherazade New (SIL International); IBM Plex Sans Arabic, IBM Plex Serif, IBM Plex Sans, IBM Plex Mono (IBM); STIX Two Math",
+      "note": "خطوط حرّة بترخيص SIL Open Font License",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "مصادر الصور المرخّصة",
+    "kind": "images",
+    "note": "صور من ويكيميديا كومنز، نسبنا كل صورة إلى صاحبها وترخيصها تحت الشكل نفسه في الكتاب. وكل ما سواها من رسوم فهو أصلي من إعداد المؤسسة.",
+    "items": [
+     {
+      "t": "Glühwendel brennt durch",
+      "by": "Stefan Krause",
+      "license": "Free Art License (FAL)",
+      "url": "https://commons.wikimedia.org/wiki/File:Gl%C3%BChwendel_brennt_durch.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Die galvanische Kette (IA diegalvanischeke00ohmg)",
+      "by": "G. S. Ohm (1827), Internet Archive scan",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Die_galvanische_Kette_(IA_diegalvanischeke00ohmg).pdf",
+      "lang": "en"
+     },
+     {
+      "t": "Stromzaehler-01 hg",
+      "by": "Hannes Grobe",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Stromzaehler-01_hg.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Resistor warming thermal video.webm",
+      "by": "Laserlicht",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Resistor_warming_thermal_video.webm",
+      "lang": "en"
+     },
+     {
+      "t": "Electronic-Axial-Lead-Resistors-Array",
+      "by": "Evan-Amos",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "100 ohm SMD 1206 resistor",
+      "by": "oomlout",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:100_ohm_SMD_1206_resistor.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Trimmpot inside",
+      "by": "Dake",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Trimmpot_inside.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Potentiometer transparent",
+      "by": "Iainf",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Potentiometer_transparent.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Gustav Robert Kirchhoff",
+      "by": "Unknown author",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Gustav_Robert_Kirchhoff.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Wago 221-413 splicing connector with stranded wire",
+      "by": "Lucasbosch",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Wago_221-413_splicing_connector_with_stranded_wire.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Blown 10A 250V fuse",
+      "by": "TheresNothingOutThere",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Blown_10A_250V_fuse.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "20250807 200849 Swollen Samsung battery, side",
+      "by": "Saimmx",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:20250807_200849_Swollen_Samsung_battery,_side.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Pila di Volta presso il Tempio Voltiano a Como",
+      "by": "Dario Crespi",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Pila_di_Volta_presso_il_Tempio_Voltiano_a_Como.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "NMAH-Daniell cell batteries 1836",
+      "by": "Daderot, derivative work: Wdwd",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:NMAH-Daniell_cell_batteries_1836.JPG",
+      "lang": "en"
+     },
+     {
+      "t": "Batteries comparison 4,5 D C AA AAA AAAA A23 9V CR2032 LR44 matchstick-1",
+      "by": "Lead holder",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Batteries_comparison_4,5_D_C_AA_AAA_AAAA_A23_9V_CR2032_LR44_matchstick-1.jpeg",
+      "lang": "en"
+     },
+     {
+      "t": "18650 and 21700 lithium ion battery cell",
+      "by": "Sevenethics",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:18650_and_21700_lithium_ion_battery_cell.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Cutaway view of a 1953 automotive lead-acid battery",
+      "by": "National Institute of Standards and Technology",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Cutaway_view_of_a_1953_automotive_lead-acid_battery.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Batteries (LX20 laptop)",
+      "by": "",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Batteries_(LX20_laptop).jpg",
+      "lang": "en"
+     },
+     {
+      "t": "4-AA Battery Holder, Enclosed with Switch",
+      "by": "",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:4-AA_Battery_Holder,_Enclosed_with_Switch.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "40VA toroid transformer (Торэл ТТП-40) 03(DXO)",
+      "by": "",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File%3A40VA_toroid_transformer_%28%D0%A2%D0%BE%D1%80%D1%8D%D0%BB_%D0%A2%D0%A2%D0%9F-40%29_03%28DXO%29.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "7809 (OnSemi) 01",
+      "by": "",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File%3A7809_%28OnSemi%29_01.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Philips 12 V Plug-in AC Adapter opened",
+      "by": "",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File%3APhilips_12_V_Plug-in_AC_Adapter_opened.JPG",
+      "lang": "en"
+     },
+     {
+      "t": "Monocrystalline silicon ingot",
+      "by": "",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Monocrystalline_silicon_ingot.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "12-inch silicon wafer",
+      "by": "",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:12-inch_silicon_wafer.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Silicon diode cross section",
+      "by": "",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Silicon_diode_cross_section.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "1N4007 Diode 1480378 79 80 HDR Enhancer cr",
+      "by": "",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:1N4007_Diode_1480378_79_80_HDR_Enhancer_cr.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Silicon diodes on a paper reel (14456399146)",
+      "by": "",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Silicon_diodes_on_a_paper_reel_(14456399146).jpg",
+      "lang": "en"
+     },
+     {
+      "t": "КЦ405A diode bridge (1992) 01",
+      "by": "",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:КЦ405A_diode_bridge_(1992)_01.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "SMD-LED-comparison-5050-2835-3528-3014-Flexfireleds",
+      "by": "",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:SMD-LED-comparison-5050-2835-3528-3014-Flexfireleds.jpg",
+      "lang": "en"
+     },
+     {
+      "t": "2007-07-24 High-power light emitting diodes (Luxeon, Lumiled)",
+      "by": "",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:2007-07-24_High-power_light_emitting_diodes_(Luxeon,_Lumiled).jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Stanley BR5064X Illuminated at 20mA.",
+      "by": "",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Stanley_BR5064X_Illuminated_at_20mA..jpg",
+      "lang": "en"
+     },
+     {
+      "t": "Dell Professional P2212H - power supply board - Diodes Incorporated MBRF2060CT-2151",
+      "by": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Dell_Professional_P2212H_-_power_supply_board_-_Diodes_Incorporated_MBRF2060CT-2151.jpg",
+      "lang": "en"
+     }
+    ]
+   }
+  ]
+ },
+ "mechanics": {
+  "intro": "هذا كتاب تأليف لا ترجمة: الشرح والأمثلة والمسائل والرسوم من إعداد المؤسسة. استرشدنا في اختيار الموضوعات وترتيبها وعمقها بالمراجع الجامعية التالية، كما في الملحق و من الكتاب، ونوصي بها من يريد التوسّع.",
+  "groups": [
+   {
+    "title": "كتب جامعية في الميكانيكا العامة",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Serway, R. A., & Jewett, J. W. Physics for Scientists and Engineers, 10th ed. Cengage Learning, 2018",
+      "note": "المرجع الرئيسي في ترتيب الموضوعات",
+      "lang": "en"
+     },
+     {
+      "t": "Young, H. D., & Freedman, R. A. University Physics with Modern Physics, 15th ed. Pearson, 2019",
+      "lang": "en"
+     },
+     {
+      "t": "Halliday, D., Resnick, R., & Walker, J. Fundamentals of Physics, 12th ed. Wiley, 2021",
+      "lang": "en"
+     },
+     {
+      "t": "Ling, S. J., Sanny, J., & Moebs, W. University Physics, Vols. 1–2. OpenStax, 2016",
+      "url": "https://openstax.org/details/books/university-physics-volume-1",
+      "lang": "en"
+     },
+     {
+      "t": "Feynman, R. P., Leighton, R. B., & Sands, M. The Feynman Lectures on Physics, Vols. I–II",
+      "url": "https://www.feynmanlectures.caltech.edu",
+      "lang": "en"
+     },
+     {
+      "t": "Kleppner, D., & Kolenkow, R. An Introduction to Mechanics, 2nd ed. Cambridge University Press, 2014",
+      "lang": "en"
+     },
+     {
+      "t": "Morin, D. Introduction to Classical Mechanics: With Problems and Solutions. Cambridge University Press, 2008",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "الميكانيكا المتقدّمة والتحليلية",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Taylor, J. R. Classical Mechanics. University Science Books, 2005",
+      "lang": "en"
+     },
+     {
+      "t": "Thornton, S. T., & Marion, J. B. Classical Dynamics of Particles and Systems, 5th ed. Brooks/Cole, 2004",
+      "lang": "en"
+     },
+     {
+      "t": "Goldstein, H., Poole, C., & Safko, J. Classical Mechanics, 3rd ed. Addison-Wesley, 2002",
+      "lang": "en"
+     },
+     {
+      "t": "Landau, L. D., & Lifshitz, E. M. Mechanics, 3rd ed. Butterworth-Heinemann, 1976",
+      "lang": "en"
+     },
+     {
+      "t": "Susskind, L., & Hrabovsky, G. The Theoretical Minimum. Basic Books, 2013",
+      "url": "https://theoreticalminimum.com",
+      "lang": "en"
+     },
+     {
+      "t": "Lanczos, C. The Variational Principles of Mechanics, 4th ed. Dover, 1986",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "الاهتزازات والموجات والصوت",
+    "kind": "book",
+    "items": [
+     {
+      "t": "French, A. P. Vibrations and Waves. W. W. Norton, 1971",
+      "lang": "en"
+     },
+     {
+      "t": "Crawford, F. S. Waves (Berkeley Physics Course, Vol. 3). McGraw-Hill, 1968",
+      "lang": "en"
+     },
+     {
+      "t": "Main, I. G. Vibrations and Waves in Physics, 3rd ed. Cambridge University Press, 1993",
+      "lang": "en"
+     },
+     {
+      "t": "Fletcher, N. H., & Rossing, T. D. The Physics of Musical Instruments, 2nd ed. Springer, 1998",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "الديناميكا اللاخطية والفوضى والحساب العددي",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Strogatz, S. H. Nonlinear Dynamics and Chaos, 2nd ed. Westview Press, 2015",
+      "lang": "en"
+     },
+     {
+      "t": "Baker, G. L., & Gollub, J. P. Chaotic Dynamics: An Introduction, 2nd ed. Cambridge University Press, 1996",
+      "lang": "en"
+     },
+     {
+      "t": "Giordano, N. J., & Nakanishi, H. Computational Physics, 2nd ed. Pearson Prentice Hall, 2006",
+      "lang": "en"
+     },
+     {
+      "t": "Hairer, E., Lubich, C., & Wanner, G. Geometric Numerical Integration, 2nd ed. Springer, 2006",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "الرياضيات المرافقة",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Stewart, J. Calculus: Early Transcendentals, 9th ed. Cengage Learning, 2020",
+      "lang": "en"
+     },
+     {
+      "t": "Boas, M. L. Mathematical Methods in the Physical Sciences, 3rd ed. Wiley, 2006",
+      "lang": "en"
+     },
+     {
+      "t": "Riley, K. F., Hobson, M. P., & Bence, S. J. Mathematical Methods for Physics and Engineering, 3rd ed. Cambridge University Press, 2006",
+      "lang": "en"
+     },
+     {
+      "t": "Boyce, W. E., & DiPrima, R. C. Elementary Differential Equations and Boundary Value Problems, 11th ed. Wiley, 2017",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "تاريخ العلم",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Dugas, R. A History of Mechanics. Dover, 1988",
+      "lang": "en"
+     },
+     {
+      "t": "Cohen, I. B. The Birth of a New Physics, revised ed. W. W. Norton, 1985",
+      "lang": "en"
+     },
+     {
+      "t": "Gleick, J. Chaos: Making a New Science. Viking, 1987",
+      "lang": "en"
+     },
+     {
+      "t": "Neuenschwander, D. E. Emmy Noether's Wonderful Theorem, revised ed. Johns Hopkins University Press, 2017",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "علم التعلّم وحلّ المسائل",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Brown, P. C., Roediger, H. L., & McDaniel, M. A. Make It Stick. Harvard University Press, 2014",
+      "lang": "en"
+     },
+     {
+      "t": "Pólya, G. How to Solve It, 2nd ed. Princeton University Press, 1957",
+      "lang": "en"
+     },
+     {
+      "t": "Sweller, J., Ayres, P., & Kalyuga, S. Cognitive Load Theory. Springer, 2011",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "المعايير والبيانات",
+    "kind": "book",
+    "items": [
+     {
+      "t": "BIPM, The International System of Units (SI Brochure), 9th ed., 2019 (updated 2024)",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "lang": "en"
+     },
+     {
+      "t": "Mohr, P. J., et al. CODATA recommended values of the fundamental physical constants: 2022. Reviews of Modern Physics, 2025",
+      "url": "https://physics.nist.gov/constants",
+      "lang": "en"
+     },
+     {
+      "t": "ISO 80000: Quantities and Units (parts 1–13)",
+      "lang": "en"
+     },
+     {
+      "t": "NASA Goddard, Planetary Fact Sheets, NSSDC",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "مصادر مفتوحة على الإنترنت (ومنها روابط رموز QR)",
+    "kind": "web",
+    "items": [
+     {
+      "t": "OpenStax, Rice University: University Physics and Calculus",
+      "url": "https://openstax.org",
+      "lang": "en"
+     },
+     {
+      "t": "PhET Interactive Simulations, University of Colorado Boulder",
+      "url": "https://phet.colorado.edu",
+      "lang": "en"
+     },
+     {
+      "t": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu",
+      "lang": "en"
+     },
+     {
+      "t": "The Feynman Lectures on Physics, online edition",
+      "url": "https://www.feynmanlectures.caltech.edu",
+      "lang": "en"
+     },
+     {
+      "t": "myPhysicsLab",
+      "url": "https://www.myphysicslab.com",
+      "lang": "en"
+     },
+     {
+      "t": "Web VPython (GlowScript)",
+      "url": "https://www.glowscript.org",
+      "lang": "en"
+     },
+     {
+      "t": "3Blue1Brown",
+      "url": "https://www.3blue1brown.com",
+      "lang": "en"
+     },
+     {
+      "t": "Coursera; YouTube (selected videos); Wikipedia",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "مصادر الأخبار",
+    "kind": "web",
+    "items": [
+     {
+      "t": "كل صندوق «أحدث ما في الميدان» يذكر في متنه مصدره (المجلة العلمية أو الجهة الناشرة) وتاريخ النشر، وقد تحقّقنا منه من مصدره الأصلي."
+     }
+    ]
+   },
+   {
+    "title": "برامج الرسم والتصميم والإخراج",
+    "kind": "tool",
+    "items": [
+     {
+      "t": "TikZ and PGFPlots",
+      "url": "https://ctan.org/pkg/pgf",
+      "note": "كل رسوم الكتاب ومخطّطاته البيانية مرسومة بها",
+      "lang": "en"
+     },
+     {
+      "t": "Blender",
+      "url": "https://www.blender.org",
+      "note": "مجسّم الغلاف: مهد نيوتن",
+      "lang": "en"
+     },
+     {
+      "t": "Canva",
+      "url": "https://www.canva.com",
+      "note": "تصميم الغلاف",
+      "lang": "en"
+     },
+     {
+      "t": "XeLaTeX (TeX Live) with polyglossia, tcolorbox, siunitx, TikZ",
+      "url": "https://www.tug.org/texlive/",
+      "note": "تنضيد الكتاب وصناديقه ووحداته",
+      "lang": "en"
+     },
+     {
+      "t": "Scheherazade New (SIL International); IBM Plex Sans Arabic, IBM Plex Serif, IBM Plex Sans, IBM Plex Mono (IBM); STIX Two Math",
+      "note": "خطوط حرّة بترخيص SIL Open Font License",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "مصادر الصور",
+    "kind": "images",
+    "items": [
+     {
+      "t": "لا يحوي الكتاب صورًا مأخوذة من مصادر خارجية: كل رسومه أصلية من إعداد المؤسسة."
+     }
+    ]
+   }
+  ]
+ },
+ "analysis-of-mind": {
+  "intro": "هذا الكتاب ترجمة عربية كاملة، بلا حذف ولا اختصار، لنصّ في الملك العام. وهذه مصادر النصّ والأدوات التي بُني بها.",
+  "groups": [
+   {
+    "title": "النص الأصلي",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Bertrand Russell, The Analysis of Mind, London: George Allen & Unwin, 1921",
+      "note": "الطبعة الأولى الإنجليزية، وهي اليوم في الملك العام",
+      "lang": "en"
+     },
+     {
+      "t": "Project Gutenberg, plain-text edition of The Analysis of Mind",
+      "url": "https://www.gutenberg.org",
+      "note": "النسخة الرقمية التي نُقلت عنها الترجمة",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "الإضافات التعليمية",
+    "kind": "book",
+    "items": [
+     {
+      "t": "الدراسة التمهيدية، وصناديق «بين يدي المحاضرة» و«إضاءة» و«بعد قرن من راسل» و«خلاصة المحاضرة»، والمسرد وفهرس الأعلام: من إعداد المؤسسة، ومفصولة عن نصّ راسل."
+     }
+    ]
+   },
+   {
+    "title": "برامج التصميم والإخراج",
+    "kind": "tool",
+    "items": [
+     {
+      "t": "Blender (Cycles)",
+      "url": "https://www.blender.org",
+      "note": "مجسّم الغلاف: عدسة مكبّرة نحاسية",
+      "lang": "en"
+     },
+     {
+      "t": "XeLaTeX (TeX Live) with polyglossia, tcolorbox, siunitx, TikZ",
+      "url": "https://www.tug.org/texlive/",
+      "note": "تنضيد الكتاب وصناديقه ووحداته",
+      "lang": "en"
+     },
+     {
+      "t": "Scheherazade New (SIL International); IBM Plex Sans Arabic, IBM Plex Serif, IBM Plex Sans, IBM Plex Mono (IBM); STIX Two Math",
+      "note": "خطوط حرّة بترخيص SIL Open Font License",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "مصادر الصور",
+    "kind": "images",
+    "items": [
+     {
+      "t": "لا يحوي الكتاب صورًا من مصادر خارجية، وغلافه أصلي من إعداد المؤسسة."
+     }
+    ]
+   }
+  ]
+ },
+ "riddle-universe": {
+  "intro": "هذا الكتاب ترجمة عربية كاملة، بلا حذف ولا اختصار، لنصّ في الملك العام، مع دراسة وحواشٍ تصحّح ما تجاوزه العلم. وهذه مصادر النصّ والأدوات التي بُني بها.",
+  "groups": [
+   {
+    "title": "النص الأصلي",
+    "kind": "book",
+    "items": [
+     {
+      "t": "Ernst Haeckel, Die Welträtsel, 1899",
+      "note": "الأصل الألماني، ورجعنا إلى عناوينه الأصلية للمصطلحات والكتب",
+      "lang": "en"
+     },
+     {
+      "t": "Ernst Haeckel, The Riddle of the Universe, translated by Joseph McCabe, London, 1900",
+      "note": "الترجمة الإنجليزية التي نقلنا عنها في طبعتها الشعبية، مع مقدّمة المترجم ومسرده",
+      "lang": "en"
+     },
+     {
+      "t": "Muriwai Books, 2017 reprint of McCabe's translation",
+      "note": "النسخة الرقمية التي اعتمدناها في النقل",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "الإضافات التعليمية",
+    "kind": "book",
+    "items": [
+     {
+      "t": "الدراسة التمهيدية، وصناديق «ماذا يقول العلم اليوم»، وحواشي المترجم، والمسرد وفهرس الأعلام: من إعداد المؤسسة، ومفصولة عن نصّ هيكل."
+     }
+    ]
+   },
+   {
+    "title": "برامج التصميم والإخراج",
+    "kind": "tool",
+    "items": [
+     {
+      "t": "Blender (Cycles)",
+      "url": "https://www.blender.org",
+      "note": "مجسّم الغلاف: كائن شعاعي (راديولاريا) على طريقة رسوم هيكل",
+      "lang": "en"
+     },
+     {
+      "t": "XeLaTeX (TeX Live) with polyglossia, tcolorbox, siunitx, TikZ",
+      "url": "https://www.tug.org/texlive/",
+      "note": "تنضيد الكتاب وصناديقه ووحداته",
+      "lang": "en"
+     },
+     {
+      "t": "Scheherazade New (SIL International); IBM Plex Sans Arabic, IBM Plex Serif, IBM Plex Sans, IBM Plex Mono (IBM); STIX Two Math",
+      "note": "خطوط حرّة بترخيص SIL Open Font License",
+      "lang": "en"
+     }
+    ]
+   },
+   {
+    "title": "مصادر الصور",
+    "kind": "images",
+    "items": [
+     {
+      "t": "لا يحوي الكتاب صورًا من مصادر خارجية، وغلافه أصلي من إعداد المؤسسة."
+     }
+    ]
+   }
+  ]
+ }
+}
