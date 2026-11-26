@@ -40,15 +40,8 @@ def header(nav):
  <button class="ticker-pause" type="button" aria-label="إيقاف الشريط">{ICONS["pause"]}</button>
 </div>
 <section class="qbar" aria-roledescription="شريط اقتباسات" aria-label="اقتباس اليوم من مقالات المنصة" hidden>
- <span class="qbar-sweep" aria-hidden="true"></span>
  <div class="qbar-label"><span>اقتباس اليوم</span><small class="qbar-count" aria-hidden="true"></small></div>
  <div class="qbar-stage" aria-live="polite"></div>
- <div class="qbar-ctrl">
-  <button class="qbar-prev" type="button" aria-label="الاقتباس السابق">{ICONS["next"]}</button>
-  <button class="qbar-pause" type="button" aria-label="إيقاف الاقتباسات">{ICONS["pause"]}</button>
-  <button class="qbar-next" type="button" aria-label="الاقتباس التالي">{ICONS["prev"]}</button>
- </div>
- <span class="qbar-progress" aria-hidden="true"><i></i></span>
 </section>'''
 
 FOOTER = f'''<footer class="site-footer"><div class="wrap">

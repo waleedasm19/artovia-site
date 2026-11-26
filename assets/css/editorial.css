@@ -1000,7 +1000,7 @@ body.page-field .books { grid-template-columns: repeat(auto-fill, minmax(220px, 
 .qbar {
   --qy: var(--editorial-yellow);
   position: relative; isolation: isolate; overflow: hidden;
-  display: grid; grid-template-columns: auto 1fr auto; align-items: stretch;
+  display: grid; grid-template-columns: auto 1fr; align-items: stretch;
   width: 100%; min-height: 96px;
   background: #0f1215; color: #f6f5f2;
   border-bottom: 1px solid #2c3036;
@@ -1015,18 +1015,10 @@ body.page-field .books { grid-template-columns: repeat(auto-fill, minmax(220px, 
 }
 .qbar::after {
   content: "”"; position: absolute; z-index: -1; pointer-events: none;
-  inset-inline-end: clamp(70px, 9vw, 150px); top: 50%; transform: translateY(-38%);
+  inset-inline-end: clamp(24px, 4vw, 80px); top: 50%; transform: translateY(-38%);
   font: 700 clamp(120px, 14vw, 190px)/1 "Amiri", serif; color: var(--qy); opacity: .07;
 }
 @keyframes qbar-breathe { from { transform: translateX(-3%) scale(1); } to { transform: translateX(3%) scale(1.08); } }
-/* ومضة ضوء تعبر الشريط عند كل تبديل */
-.qbar-sweep { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
-.qbar-sweep::before {
-  content: ""; position: absolute; top: 0; bottom: 0; width: 38%; inset-inline-start: -40%;
-  background: linear-gradient(90deg, transparent, #ffd5291c, transparent); opacity: 0;
-}
-.qbar.flash .qbar-sweep::before { animation: qbar-sweep 1.5s cubic-bezier(.2,.7,.2,1); }
-@keyframes qbar-sweep { 0% { opacity: 0; transform: translateX(0); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateX(-380%); } }
 
 .qbar-label {
   display: flex; flex-direction: column; justify-content: center; gap: 4px;
@@ -1062,29 +1054,17 @@ body.page-field .books { grid-template-columns: repeat(auto-fill, minmax(220px, 
 .qbar-slide.out :is(.qbar-q span, .qbar-by) { animation: none; opacity: 1; filter: none; transform: none; }
 @keyframes qbar-out { to { opacity: 0; filter: blur(12px); transform: scale(1.04) translateY(-6px); } }
 
-.qbar-ctrl { display: flex; align-items: center; gap: 2px; padding-inline: 8px 12px; border-inline-start: 1px solid #2c3036; }
-:root[data-theme="light"] .qbar-ctrl { border-inline-start-color: #e2ded3; }
-.qbar-ctrl button { width: 34px; height: 34px; display: grid; place-items: center; background: none; border: 0; border-radius: 50%; color: inherit; opacity: .7; cursor: pointer; }
-.qbar-ctrl button:hover, .qbar-ctrl button:focus-visible { opacity: 1; background: #ffffff12; }
-:root[data-theme="light"] .qbar-ctrl button:hover { background: #0000000d; }
-.qbar-ctrl svg { width: 15px; height: 15px; }
-.qbar-progress { position: absolute; inset-inline: 0; bottom: 0; height: 2px; background: #ffffff0d; }
-.qbar-progress i { position: absolute; inset: 0; background: var(--qy); transform-origin: right; transform: scaleX(0); opacity: .85; }
 
 @media (max-width: 720px) {
-  .qbar { grid-template-columns: 1fr auto; grid-template-rows: auto 1fr; min-height: 128px; }
+  .qbar { grid-template-columns: 1fr; grid-template-rows: auto 1fr; min-height: 128px; }
   .qbar-label { grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: space-between; padding: 3px 16px; min-width: 0; font-size: .74rem; clip-path: none; }
   .qbar-by em { display: none; }
-  .qbar-ctrl { grid-row: 2; grid-column: 2; flex-direction: column; justify-content: center; padding: 4px 6px; gap: 0; }
-  .qbar-ctrl button { width: 30px; height: 28px; }
-  .qbar-prev { display: none !important; }
   .qbar-slide { padding: 8px 16px; }
   .qbar-q { font-size: 1rem; line-height: 1.6; }
   .qbar-by { font-size: .76rem; }
-  .qbar::after { inset-inline-end: 54px; font-size: 110px; }
+  .qbar::after { inset-inline-end: 16px; font-size: 110px; }
 }
 :root[data-motion="reduce"] .qbar::before { animation: none; }
-:root[data-motion="reduce"] .qbar.flash .qbar-sweep::before { animation: none; }
 :root[data-motion="reduce"] :is(.qbar-q span, .qbar-by) { animation: qbar-fade .4s ease forwards; filter: none; transform: none; animation-delay: 0s; }
 :root[data-motion="reduce"] .qbar-slide.out { animation: qbar-fadeout .3s ease forwards; }
 @keyframes qbar-fade { to { opacity: 1; } }
