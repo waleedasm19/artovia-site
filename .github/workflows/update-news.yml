@@ -18,12 +18,14 @@ jobs:
         run: python3 tools/fetch_news.py
       - name: جلب الصور المرخّصة من ويكيميديا كومنز (مقالات عالمية)
         run: python3 tools/fetch_commons.py || true
+      - name: اختيار اقتباسات اليوم لشريط الاقتباسات
+        run: python3 tools/pick_quotes.py || true
       - name: حفظ الأخبار في المستودع
         run: |
           git config user.name "artovia-news-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/news.json data/news-queue.json data/world.json data/world assets/img/world
-          git diff --cached --quiet || (git commit -m "تحديث الأخبار والصور" && git push)
+          git add data/news.json data/news-queue.json data/world.json data/world assets/img/world data/quotes.json
+          git diff --cached --quiet || (git commit -m "تحديث الأخبار والصور والاقتباسات" && git push)
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: "." }

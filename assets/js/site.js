@@ -8,7 +8,7 @@
   const BASE = root.dataset.base || "";
 
   /* ---------- الإعدادات (تُحفظ في متصفح الزائر فقط) ---------- */
-  const DEFAULTS = { theme: "dark", fontsize: "md", motion: "auto", ticker: true, fields: [] };
+  const DEFAULTS = { theme: "dark", fontsize: "md", motion: "auto", ticker: true, quotes: true, fields: [] };
   const store = {
     get() { try { return { ...DEFAULTS, ...JSON.parse(localStorage.getItem("acf-settings") || "{}") }; } catch { return { ...DEFAULTS }; } },
     set(patch) { const s = { ...store.get(), ...patch }; try { localStorage.setItem("acf-settings", JSON.stringify(s)); } catch {} apply(s); return s; }
