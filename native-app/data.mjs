@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://waleedasm19.github.io/artovia-site/';
+export const SITE_URL = 'https://artovia.center/';
 
 const string = (value) => typeof value === 'string' ? value : '';
 const strings = (value) => Array.isArray(value) ? value.filter((item) => typeof item === 'string') : [];

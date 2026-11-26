@@ -57,6 +57,9 @@ APP_MODE = ('try{var d=document.documentElement,q=sessionStorage;if(matchMedia("
 SPLASH = '''<div id="app-splash" aria-hidden="true"><div class="app-splash-ring"></div><img src="assets/app/emblem-splash.png" alt="" width="180" height="180">
 <b>إرتوفيا الخيرية</b><i></i><small>المعرفة حقٌّ للجميع</small></div>'''
 
+DOMAIN = "https://artovia.center/"
+PARAM_PAGES = {"article.html", "book.html", "essay.html", "field.html", "reader.html"}
+
 def build():
     out = []
     CSSV = hashlib.md5(open(os.path.join(ROOT, "assets", "css", "main.css"), "rb").read()).hexdigest()[:8]
@@ -80,7 +83,8 @@ def build():
 <meta name="description" content="{meta["desc"]}">
 <meta name="theme-color" content="#0c0e11">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{meta["desc"]}">
-<meta property="og:type" content="website"><meta property="og:locale" content="ar_AR"><meta property="og:image" content="assets/img/og.jpg?v=2">
+{"" if name in PARAM_PAGES else f'<link rel="canonical" href="{DOMAIN}{"" if name == "index.html" else name}"><meta property="og:url" content="{DOMAIN}{"" if name == "index.html" else name}">'}
+<meta property="og:type" content="website"><meta property="og:locale" content="ar_AR"><meta property="og:image" content="{DOMAIN}assets/img/og.jpg?v=2">
 <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png?v=2"><link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v=2"><link rel="shortcut icon" href="assets/img/favicon.ico?v=2"><link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
@@ -104,6 +108,18 @@ def build():
 </html>
 '''
         open(os.path.join(ROOT, name), "w", encoding="utf-8", newline="\n").write(html); out.append(name)
+    skip = {"404.html", "offline.html", "admin.html", "account.html", "settings.html", "reader.html", "review.html"}
+    urls = [DOMAIN + ("" if n == "index.html" else n) for n in out if n not in skip | PARAM_PAGES]
+    try:
+        for it in json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8")).get("items", []):
+            if it.get("slug"): urls.append(DOMAIN + "article.html?id=" + it["slug"])
+    except Exception: pass
+    open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{u.replace('&', '&amp;')}</loc></url>\n" for u in urls) + "</urlset>\n")
+    open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8", newline="\n").write(
+        f"User-agent: *\nAllow: /\nDisallow: /admin.html\nSitemap: {DOMAIN}sitemap.xml\n")
+    open(os.path.join(ROOT, "CNAME"), "w", encoding="utf-8", newline="\n").write("artovia.center\n")
     print("built:", " ".join(out))
 
 if __name__ == "__main__":
