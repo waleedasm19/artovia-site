@@ -371,7 +371,7 @@
     "width": 500,
     "json": "data/world/ignorance-of-the-learned.json",
     "field": "author",
-    "query": "William Hazlitt self-portrait",
+    "query": "William Hazlitt Bewick chalk",
     "minw": 300
   },
   {
@@ -411,14 +411,14 @@
     "width": 1280,
     "json": "data/world/on-noise.json",
     "field": "cover",
-    "query": "Frankfurt am Main historic street old town"
+    "query": "horse-drawn carriage cobblestone street"
   },
   {
     "out": "assets/img/world/ignorance-of-the-learned.jpg",
     "width": 1280,
     "json": "data/world/ignorance-of-the-learned.json",
     "field": "cover",
-    "query": "farmer plowing field horses"
+    "query": "farmer harvesting wheat field"
   },
   {
     "out": "assets/img/world/moral-equivalent-of-war.jpg",
@@ -432,15 +432,14 @@
     "width": 1280,
     "json": "data/world/of-cannibals.json",
     "field": "cover",
-    "query": "Tupinamba Brazil engraving",
-    "minw": 600
+    "query": "Guanabara Bay Rio de Janeiro"
   },
   {
     "out": "assets/img/world/crabbed-age-and-youth.jpg",
     "width": 1280,
     "json": "data/world/crabbed-age-and-youth.json",
     "field": "cover",
-    "query": "old man and child walking"
+    "query": "grandfather grandson fishing"
   },
   {
     "out": "assets/img/world/consciousness-illusion.jpg",
@@ -461,14 +460,14 @@
     "width": 1280,
     "json": "data/world/consciousness-creep.json",
     "field": "cover",
-    "query": "neural network computer server lights"
+    "query": "data center server racks"
   },
   {
     "out": "assets/img/world/what-awaits-us.jpg",
     "width": 1280,
     "json": "data/world/what-awaits-us.json",
     "field": "cover",
-    "query": "Milky Way night sky"
+    "query": "Milky Way over mountains"
   },
   {
     "out": "assets/img/world/after-the-human.jpg",

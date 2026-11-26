@@ -6,10 +6,7 @@
  "author": {
   "name": "William Hazlitt",
   "nameAr": "وليام هازلت",
-  "bio": "الناقد وكاتب المقالة الإنجليزي (١٧٧٨–١٨٣٠)، من أعظم كتّاب المقالة في اللغة الإنجليزية، عُرف بأسلوبه الحادّ المستقل ونقده للسلطة والتقليد.",
-  "photo": "assets/img/world/authors/william-hazlitt.jpg",
-  "photoCredit": "Joseph Ducreux · Public domain · ويكيميديا كومنز",
-  "photoUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Ducreux_(French)_-_Self-Portrait,_Yawning_-_Google_Art_Project.jpg"
+  "bio": "الناقد وكاتب المقالة الإنجليزي (١٧٧٨–١٨٣٠)، من أعظم كتّاب المقالة في اللغة الإنجليزية، عُرف بأسلوبه الحادّ المستقل ونقده للسلطة والتقليد."
  },
  "source": "وليام هازلت، «أحاديث المائدة» (١٨٢١)",
  "pubDate": "نُشر في «أحاديث المائدة» عام ١٨٢١",
@@ -64,9 +61,5 @@
  ],
  "slug": "ignorance-of-the-learned",
  "added": "2026-11-26",
- "mode": "translation",
- "cover": "assets/img/world/ignorance-of-the-learned.jpg",
- "credit": "Edward Hopper · Public domain · ويكيميديا كومنز",
- "creditUrl": "https://commons.wikimedia.org/wiki/File:(Study_of_a_Farmer_and_Horse_Plowing_Fields)_by_Edward_Hopper.jpg",
- "coverAlt": "(Study of a Farmer and Horse Plowing Fields) by Edward Hopper"
+ "mode": "translation"
 }

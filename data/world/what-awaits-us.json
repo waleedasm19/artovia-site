@@ -72,9 +72,5 @@
  ],
  "slug": "what-awaits-us",
  "added": "2026-11-26",
- "mode": "presentation",
- "cover": "assets/img/world/what-awaits-us.jpg",
- "credit": "NOIRLab/NSF/AURA/ P. Horálek (Institute of Physics in Opava), T. Slovinský · CC BY 4.0 · ويكيميديا كومنز",
- "creditUrl": "https://commons.wikimedia.org/wiki/File:Night_Sky_from_Hawai%E2%80%98i_and_Chile_(iotw2225c).jpg",
- "coverAlt": "This is a composite panorama of the entire night sky taken from the platforms of Gemini South in Chile (left) and Gemini"
+ "mode": "presentation"
 }
