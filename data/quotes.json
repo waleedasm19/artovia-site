@@ -1,0 +1,115 @@
+{
+ "date": "2026-11-26",
+ "items": [
+  {
+   "id": "w-after-the-human-1",
+   "q": "من يريد أن يكون المستقبل تكرارًا لا ينتهي للماضي؟",
+   "by": "مارك سي. تايلور",
+   "src": "ما بعد الإنسان",
+   "href": "essay.html?id=after-the-human",
+   "kind": "world"
+  },
+  {
+   "id": "r-1-3",
+   "q": "كل إنسان عربي مسؤول عن المجتمع الذي ينتمي إليه، فلا ينتظر أن يبدأ غيره لكي يبدأ هو.",
+   "by": "وليد الأسمري",
+   "src": "كلمة المؤسس",
+   "href": "rawaq.html?id=1",
+   "kind": "rawaq"
+  },
+  {
+   "id": "w-apology-for-idlers-1",
+   "q": "الانشغال المفرط، في المدرسة أو في السوق، عرَضٌ لنقص في الحيوية.",
+   "by": "روبرت لويس ستيفنسون",
+   "src": "دفاع عن الكسالى",
+   "href": "essay.html?id=apology-for-idlers",
+   "kind": "world"
+  },
+  {
+   "id": "w-on-liberty-ch2-1",
+   "q": "لو كان البشر جميعًا، إلا واحدًا، على رأي واحد، وكان ذلك الواحد على الرأي المخالف، لما كان للبشر حق في إسكاته.",
+   "by": "جون ستيوارت مل",
+   "src": "لو اجتمع الناس كلهم على رأي إلا واحدًا: دفاع جون ستيوارت مل عن حرية الفكر",
+   "href": "essay.html?id=on-liberty-ch2",
+   "kind": "world"
+  },
+  {
+   "id": "w-decay-of-lying-1",
+   "q": "الكذبة الخرقاء غير العلمية كثيرًا ما تكون عديمة الأثر كالحقيقة.",
+   "by": "مارك توين",
+   "src": "في انحطاط فن الكذب",
+   "href": "essay.html?id=decay-of-lying",
+   "kind": "world"
+  },
+  {
+   "id": "w-digital-star-chamber-1",
+   "q": "لن تقدّم الخوارزميات أبدًا مهربًا من المجتمع.",
+   "by": "فرانك باسكوال",
+   "src": "محكمة رقمية سرّية: الخوارزمية قاضيًا وجلّادًا",
+   "href": "essay.html?id=digital-star-chamber",
+   "kind": "world"
+  },
+  {
+   "id": "w-united-by-feelings-1",
+   "q": "المشاعر تكيّفات بيولوجية لا تكتفي باتّباع أوامر العقل أو إفسادها.",
+   "by": "ستيفن أسما ورامي جبرائيل",
+   "src": "العاطفة هي المحرّك الخفي للعقل",
+   "href": "essay.html?id=united-by-feelings",
+   "kind": "world"
+  },
+  {
+   "id": "w-myth-of-freedom-1",
+   "q": "لدى البشر إرادة بالتأكيد، لكنها ليست حرّة.",
+   "by": "يوفال نوح هراري",
+   "src": "أسطورة الحرية: حين يعرفك الحاسوب أكثر مما تعرف نفسك",
+   "href": "essay.html?id=myth-of-freedom",
+   "kind": "world"
+  },
+  {
+   "id": "w-singer-solution-poverty-1",
+   "q": "بذلة بألف دولار كان يمكن أن تنقذ حياة خمسة أطفال.",
+   "by": "بيتر سينغر",
+   "src": "حلّ سينغر للفقر العالمي: هل أنت أفضل من بائعة الطفل؟",
+   "href": "essay.html?id=singer-solution-poverty",
+   "kind": "world"
+  },
+  {
+   "id": "w-consciousness-illusion-1",
+   "q": "لا ينبغي أن نتوقع العثور على خصائص ظاهراتية في أدمغتنا، كما لا نتوقع العثور على سلال مهملات في حواسيبنا.",
+   "by": "كيث فرانكيش",
+   "src": "وهم الوعي",
+   "href": "essay.html?id=consciousness-illusion",
+   "kind": "world"
+  },
+  {
+   "id": "w-the-empty-brain-1",
+   "q": "نحن كائنات حيّة، لا حواسيب. تقبّلوا ذلك.",
+   "by": "روبرت إبستين",
+   "src": "الدماغ الفارغ: عقلك ليس حاسوبًا",
+   "href": "essay.html?id=the-empty-brain",
+   "kind": "world"
+  },
+  {
+   "id": "w-problems-and-progress-1",
+   "q": "التقدّم ليس حتميًّا، وما سيكون عليه المستقبل يتوقّف على ما نفعله اليوم.",
+   "by": "ماكس روزر",
+   "src": "لماذا نحتاج إلى معرفة التقدّم إن كنّا قلقين من مشكلات العالم الكبرى؟",
+   "href": "essay.html?id=problems-and-progress",
+   "kind": "world"
+  }
+ ],
+ "shown": {
+  "r-1-3": "2026-11-26",
+  "w-after-the-human-1": "2026-11-26",
+  "w-apology-for-idlers-1": "2026-11-26",
+  "w-consciousness-illusion-1": "2026-11-26",
+  "w-decay-of-lying-1": "2026-11-26",
+  "w-digital-star-chamber-1": "2026-11-26",
+  "w-myth-of-freedom-1": "2026-11-26",
+  "w-on-liberty-ch2-1": "2026-11-26",
+  "w-problems-and-progress-1": "2026-11-26",
+  "w-singer-solution-poverty-1": "2026-11-26",
+  "w-the-empty-brain-1": "2026-11-26",
+  "w-united-by-feelings-1": "2026-11-26"
+ }
+}

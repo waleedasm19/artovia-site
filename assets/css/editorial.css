@@ -995,3 +995,98 @@ body.page-field .books { grid-template-columns: repeat(auto-fill, minmax(220px, 
 @media (prefers-reduced-motion: reduce) {
   .hero-slides img { transform: none !important; transition: opacity 1.2s ease; }
 }
+
+/* ---------- شريط «اقتباس اليوم» (ثابت، بعرض الصفحة كاملًا، تحت شريط الأخبار) ---------- */
+.qbar {
+  --qy: var(--editorial-yellow);
+  position: relative; isolation: isolate; overflow: hidden;
+  display: grid; grid-template-columns: auto 1fr auto; align-items: stretch;
+  width: 100%; min-height: 96px;
+  background: #0f1215; color: #f6f5f2;
+  border-bottom: 1px solid #2c3036;
+}
+.qbar[hidden] { display: none; }
+:root[data-theme="light"] .qbar { background: #f4f1e8; color: #17181b; border-bottom-color: #e2ded3; }
+/* توهّج خافت يتنفّس، وعلامة اقتباس كبيرة باهتة */
+.qbar::before {
+  content: ""; position: absolute; inset: -40% -10%; z-index: -2; pointer-events: none;
+  background: radial-gradient(40% 120% at 70% 50%, #ffd52914, transparent 70%), radial-gradient(30% 90% at 15% 40%, #7aa2ff0d, transparent 70%);
+  animation: qbar-breathe 14s ease-in-out infinite alternate;
+}
+.qbar::after {
+  content: "”"; position: absolute; z-index: -1; pointer-events: none;
+  inset-inline-end: clamp(70px, 9vw, 150px); top: 50%; transform: translateY(-38%);
+  font: 700 clamp(120px, 14vw, 190px)/1 "Amiri", serif; color: var(--qy); opacity: .07;
+}
+@keyframes qbar-breathe { from { transform: translateX(-3%) scale(1); } to { transform: translateX(3%) scale(1.08); } }
+/* ومضة ضوء تعبر الشريط عند كل تبديل */
+.qbar-sweep { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.qbar-sweep::before {
+  content: ""; position: absolute; top: 0; bottom: 0; width: 38%; inset-inline-start: -40%;
+  background: linear-gradient(90deg, transparent, #ffd5291c, transparent); opacity: 0;
+}
+.qbar.flash .qbar-sweep::before { animation: qbar-sweep 1.5s cubic-bezier(.2,.7,.2,1); }
+@keyframes qbar-sweep { 0% { opacity: 0; transform: translateX(0); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateX(-380%); } }
+
+.qbar-label {
+  display: flex; flex-direction: column; justify-content: center; gap: 4px;
+  padding-inline: 18px 22px; min-width: 128px;
+  background: var(--qy); color: #191a1c; font-weight: 700; font-size: .9rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 50%);
+}
+.qbar-label small { font-weight: 500; font-size: .74rem; opacity: .72; font-variant-numeric: tabular-nums; }
+.qbar-stage { position: relative; min-width: 0; }
+.qbar-slide {
+  position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; gap: 6px;
+  padding: 12px clamp(16px, 3vw, 44px); color: inherit; text-decoration: none;
+}
+.qbar-q {
+  margin: 0; font: 700 clamp(1.02rem, 1.55vw, 1.32rem)/1.55 "Amiri", "IBM Plex Sans Arabic", serif;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.qbar-q span, .qbar-by {
+  display: inline-block; opacity: 0; filter: blur(8px); transform: translateY(12px);
+  animation: qbar-word .9s cubic-bezier(.2,.75,.2,1) forwards; animation-delay: calc(120ms + var(--i) * 70ms);
+}
+.qbar-by { display: flex; flex-wrap: nowrap; align-items: center; gap: 10px; min-width: 0; font-size: .82rem; color: #aeb3bb; white-space: nowrap; }
+.qbar-by > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.qbar-by b, .qbar-by em { flex-shrink: 0; }
+:root[data-theme="light"] .qbar-by { color: #5b5d62; }
+.qbar-by b { color: var(--qy); font-weight: 700; }
+:root[data-theme="light"] .qbar-by b { color: #8a6400; }
+.qbar-by b::before { content: "— "; }
+.qbar-by em { font-style: normal; font-size: .7rem; padding: 1px 8px; border: 1px solid currentColor; border-radius: 999px; opacity: .8; }
+.qbar-slide:hover .qbar-q, .qbar-slide:focus-visible .qbar-q { text-decoration: underline; text-decoration-color: #ffd52966; text-underline-offset: 6px; }
+@keyframes qbar-word { to { opacity: 1; filter: blur(0); transform: none; } }
+.qbar-slide.out { pointer-events: none; animation: qbar-out .85s cubic-bezier(.4,0,.2,1) forwards; }
+.qbar-slide.out :is(.qbar-q span, .qbar-by) { animation: none; opacity: 1; filter: none; transform: none; }
+@keyframes qbar-out { to { opacity: 0; filter: blur(12px); transform: scale(1.04) translateY(-6px); } }
+
+.qbar-ctrl { display: flex; align-items: center; gap: 2px; padding-inline: 8px 12px; border-inline-start: 1px solid #2c3036; }
+:root[data-theme="light"] .qbar-ctrl { border-inline-start-color: #e2ded3; }
+.qbar-ctrl button { width: 34px; height: 34px; display: grid; place-items: center; background: none; border: 0; border-radius: 50%; color: inherit; opacity: .7; cursor: pointer; }
+.qbar-ctrl button:hover, .qbar-ctrl button:focus-visible { opacity: 1; background: #ffffff12; }
+:root[data-theme="light"] .qbar-ctrl button:hover { background: #0000000d; }
+.qbar-ctrl svg { width: 15px; height: 15px; }
+.qbar-progress { position: absolute; inset-inline: 0; bottom: 0; height: 2px; background: #ffffff0d; }
+.qbar-progress i { position: absolute; inset: 0; background: var(--qy); transform-origin: right; transform: scaleX(0); opacity: .85; }
+
+@media (max-width: 720px) {
+  .qbar { grid-template-columns: 1fr auto; grid-template-rows: auto 1fr; min-height: 128px; }
+  .qbar-label { grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: space-between; padding: 3px 16px; min-width: 0; font-size: .74rem; clip-path: none; }
+  .qbar-by em { display: none; }
+  .qbar-ctrl { grid-row: 2; grid-column: 2; flex-direction: column; justify-content: center; padding: 4px 6px; gap: 0; }
+  .qbar-ctrl button { width: 30px; height: 28px; }
+  .qbar-prev { display: none !important; }
+  .qbar-slide { padding: 8px 16px; }
+  .qbar-q { font-size: 1rem; line-height: 1.6; }
+  .qbar-by { font-size: .76rem; }
+  .qbar::after { inset-inline-end: 54px; font-size: 110px; }
+}
+:root[data-motion="reduce"] .qbar::before { animation: none; }
+:root[data-motion="reduce"] .qbar.flash .qbar-sweep::before { animation: none; }
+:root[data-motion="reduce"] :is(.qbar-q span, .qbar-by) { animation: qbar-fade .4s ease forwards; filter: none; transform: none; animation-delay: 0s; }
+:root[data-motion="reduce"] .qbar-slide.out { animation: qbar-fadeout .3s ease forwards; }
+@keyframes qbar-fade { to { opacity: 1; } }
+@keyframes qbar-fadeout { to { opacity: 0; } }
+@media print { .qbar { display: none; } }
