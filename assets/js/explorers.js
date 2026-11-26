@@ -239,7 +239,7 @@
         q("sub").textContent = `${s.zone} · الضغط ≈ ${fmt(1 + depth / 10)} ضغط جوي`;
       } else {
         const e = Math.floor(Math.log10(s.m)), mant = s.m / 10 ** e;
-        q("big").innerHTML = `<span dir="ltr">${mant >= 1.05 ? ar(mant.toFixed(1)) + " × " : ""}10<sup>${ar(e).replace("-", "−")}</sup></span> م`;
+        q("big").innerHTML = `<bdi dir="ltr" lang="en">${mant >= 1.05 ? mant.toFixed(1) + " × " : ""}10<sup>${String(e).replace("-", "−")}</sup></bdi> م`;
         const prev = st[i - 1];
         q("sub").textContent = `${s.human}${prev ? ` · أكبر من سابقه بنحو ${fmt(s.m / prev.m)} مرة` : ""}`;
         wrap.style.setProperty("--zoom", (i / (n - 1)).toFixed(3));

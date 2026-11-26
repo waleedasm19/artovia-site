@@ -113,12 +113,6 @@
   "url": "https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg",
   "title": "File:Mother and baby sperm whale.jpg"
  },
- "oc-angler": {
-  "src": "assets/img/explore/ocean/anglerfish.jpg",
-  "credit": "مجهول · Public domain",
-  "url": "https://commons.wikimedia.org/wiki/File:Melanocetus_murrayi.jpg",
-  "title": "File:Melanocetus murrayi.jpg"
- },
  "oc-titanic": {
   "src": "assets/img/explore/ocean/titanic.jpg",
   "credit": "Courtesy of NOAA/Institute for Exploration/University of Rhode Island (NOAA/IFE/URI). · Public domain",
@@ -136,12 +130,6 @@
   "credit": "NOAA Okeanos Explorer Program, Galapagos Rift Expedition 2011 · Public domain",
   "url": "https://commons.wikimedia.org/wiki/File:Riftia_tube_worm_colony_Galapagos_2011.jpg",
   "title": "File:Riftia tube worm colony Galapagos 2011.jpg"
- },
- "oc-snailfish": {
-  "src": "assets/img/explore/ocean/snailfish.jpg",
-  "credit": "Gerringer et al. (2017) · CC BY 3.0",
-  "url": "https://commons.wikimedia.org/wiki/File:Pseudoliparis_swirei_in_Mariana_Trench_map.jpg",
-  "title": "File:Pseudoliparis swirei in Mariana Trench map.jpg"
  },
  "oc-trieste": {
   "src": "assets/img/explore/ocean/trieste.jpg",
@@ -229,7 +217,7 @@
  },
  "el-Cs": {
   "src": "assets/img/explore/elements/cs.jpg",
-  "credit": "Dnn87 Contact email: Dnn87yahoo.dk · CC BY-SA 3.0",
+  "credit": "Dnn87 · CC BY-SA 3.0",
   "url": "https://commons.wikimedia.org/wiki/File:Cesium.jpg",
   "title": "File:Cesium.jpg"
  },
