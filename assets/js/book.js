@@ -39,6 +39,25 @@
     <div class="reveal" data-delay="1"><span class="kicker">الفهرس المختصر</span><h2>المحتويات</h2>
      <ol class="toc-book">${b.contents.map((c) => c.part ? `<li class="part">${esc(c.part)}</li>` : `<li>${esc(c.t)}${c.note ? `<small>${esc(c.note)}</small>` : ""}</li>`).join("")}</ol></div>
    </div>`;
+  const refs = await getJSON("data/references.json").then((r) => r[b.id]).catch(() => null);
+  if (refs && refs.groups?.length) {
+    const KIND = { book: "📚", web: "🌐", tool: "🛠️", images: "🖼️" };
+    const item = (x) => {
+      const lang = x.lang === "en" ? ' lang="en" dir="ltr"' : "";
+      const t = x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener"${lang}>${esc(x.t)}</a>` : `<span${lang}>${esc(x.t)}</span>`;
+      const meta = x.license ? `<small class="ref-meta"><span lang="en" dir="ltr">${x.by ? esc(x.by) + " · " : ""}${esc(x.license)}</span> · ويكيميديا كومنز</small>`
+        : x.note ? `<small class="ref-meta">${esc(x.note)}</small>` : "";
+      return `<li>${t}${meta}</li>`;
+    };
+    const sec = document.createElement("div");
+    sec.className = "book-refs reveal";
+    sec.id = "references";
+    sec.innerHTML = `<span class="kicker">كل ما ساهم في بناء الكتاب</span><h2>المراجع والمصادر</h2>
+     ${refs.intro ? `<p class="ref-intro">${esc(refs.intro)}</p>` : ""}
+     ${refs.groups.map((g, i) => `<details class="ref-group"${i === 0 ? " open" : ""}><summary><span aria-hidden="true">${KIND[g.kind] || "✦"}</span> ${esc(g.title)} <small>${arNum(g.items.length)}</small></summary>
+       ${g.note ? `<p class="ref-note">${esc(g.note)}</p>` : ""}<ol class="ref-list">${g.items.map(item).join("")}</ol></details>`).join("")}`;
+    $("#book-more").appendChild(sec);
+  }
   observe(document);
   const A = window.ACFAuth;
   if (b.review) { const n = document.createElement("p"); n.style.cssText = "font-size:.84rem;color:var(--ink-2);margin-top:14px"; n.textContent = "اكتمل الكتاب وهو الآن قيد المراجعة لدى الجهات المختصة، وسيُتاح تنزيله مجانًا للأعضاء فور اعتماده."; $(".hero-actions", $("#book"))?.after(n); }
