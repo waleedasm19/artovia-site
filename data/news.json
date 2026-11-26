@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T21:46:49Z",
+ "updated": "2026-11-26T04:49:32Z",
  "items": [
   {
    "field": "engineering",
@@ -11,17 +11,6 @@
    "cover": "assets/img/news/langley-flight-dynamics-tunnel.jpg",
    "title": "أول نفق رياح تبنيه ناسا منذ أكثر من ٤٠ عامًا",
    "summary": "منشأة أبحاث ديناميكيات الطيران في مركز لانغلي تحل محل نفقين عمرهما أكثر من ٨٠ عامًا، وتختبر كيف تدور الطائرات والمركبات وتتعافى من الدوران."
-  },
-  {
-   "field": "space",
-   "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-views-ocean-of-stars-in-groundwork-for-roman/",
-   "source": "NASA / ESA Hubble",
-   "lang": "ar",
-   "date": "2026-11-26",
-   "slug": "hubble-bulge-roman-groundwork",
-   "cover": "assets/img/news/hubble-bulge-roman-groundwork.jpg",
-   "title": "هابل يصوّر «محيطًا من النجوم» في قلب المجرة تمهيدًا لتلسكوب رومان",
-   "summary": "صور جديدة لانتفاخ درب التبانة ستكون مرجعًا لتلسكوب «رومان» حين يبحث هناك عن كواكب وثقوب سوداء بتقنية العدسة الجاذبية الدقيقة."
   },
   {
    "field": "space",
@@ -66,61 +55,6 @@
    "cover": "assets/img/news/x59-nasa-ownership.jpg",
    "title": "ناسا تتسلّم رسميًّا الطائرة X-59 الأسرع من الصوت بلا دويّ مزعج",
    "summary": "انتقلت ملكية الطائرة التجريبية من «لوكهيد مارتن» إلى ناسا، لتواصل اختبارات قد تعيد الطيران التجاري الأسرع من الصوت فوق اليابسة."
-  },
-  {
-   "field": "health",
-   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004060",
-   "source": "PLOS Biology / جامعة نانجينغ",
-   "lang": "ar",
-   "date": "2026-11-26",
-   "slug": "tmem63b-heat-pain",
-   "cover": "assets/img/news/tmem63b-heat-pain.jpg",
-   "title": "قناة جديدة في الأعصاب تساعدنا على الإحساس بالحرارة المؤلمة",
-   "summary": "باحثون صينيون يكشفون أن القناة الأيونية TMEM63B، المعروفة بحساسيتها للضغط، تشارك أيضًا في الإحساس بالسخونة المؤذية لدى الفئران."
-  },
-  {
-   "field": "biology",
-   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004003",
-   "source": "PLOS Biology / جامعة زيورخ",
-   "lang": "ar",
-   "date": "2026-11-26",
-   "slug": "vocal-tract-language-diversity",
-   "cover": "assets/img/news/vocal-tract-language-diversity.jpg",
-   "title": "شكل حلقك قد يكون من أسباب تنوّع لغات العالم",
-   "summary": "صور رنين مغناطيسي لـ ٣٢ متحدثًا تُظهر أن اختلاف شكل القناة الصوتية بين الأفراد يترك أثرًا منتظمًا في نطق الحروف الصائتة، وقد يغذي تفرّع اللغات."
-  },
-  {
-   "field": "biology",
-   "url": "https://elifesciences.org/digests/111072/flying-under-viral-influence",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-26",
-   "slug": "bee-viruses-flight",
-   "cover": "assets/img/news/bee-viruses-flight.jpg",
-   "title": "فيروسان صامتان يغيّران طيران نحل العسل في اتجاهين متعاكسين",
-   "summary": "نحل مصاب بفيروس تشوه الأجنحة يطير أقصر وأبطأ، ونحل مصاب بفيروس آخر يطير أبعد وأسرع، والسبب هرمون «الأوكتوبامين»."
-  },
-  {
-   "field": "health",
-   "url": "https://elifesciences.org/digests/110559/unlocking-the-heart-protective-effects-of-torpor",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-26",
-   "slug": "synthetic-torpor-heart",
-   "cover": "assets/img/news/synthetic-torpor-heart.jpg",
-   "title": "سُبات مصطنع في الجرذان يحمي القلب من أضرار نقص الأكسجين",
-   "summary": "بتشغيل خلايا عصبية محددة في الدماغ، أدخل باحثون جرذانًا في حالة تشبه السبات، فتضررت قلوبها بعد انقطاع الأكسجين أقل بنحو ٤٠٪."
-  },
-  {
-   "field": "biology",
-   "url": "https://elifesciences.org/digests/110082/the-spider-mite-who-came-to-tea",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-26",
-   "slug": "tea-spider-mite-enzyme",
-   "cover": "assets/img/news/tea-spider-mite-enzyme.jpg",
-   "title": "عنكبوت صغير تعلّم أكل الشاي بإنزيم استعاره من فطر",
-   "summary": "عث العنكبوت «كانزاوا» صار آفة لمزارع الشاي لأنه يفكك الكاتيكينات، السموم الطبيعية التي تحمي أوراق الشاي، بإنزيم أصله فطري."
   },
   {
    "field": "space",
