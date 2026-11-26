@@ -365,5 +365,116 @@
     "json": "data/world/we-need-raw-awe.json",
     "field": "cover",
     "query": "ocean waves beach sunset surf"
+  },
+  {
+    "out": "assets/img/world/authors/william-hazlitt.jpg",
+    "width": 500,
+    "json": "data/world/ignorance-of-the-learned.json",
+    "field": "author",
+    "query": "William Hazlitt self-portrait",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/michel-de-montaigne.jpg",
+    "width": 500,
+    "json": "data/world/of-cannibals.json",
+    "field": "author",
+    "query": "Michel de Montaigne portrait",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/keith-frankish.jpg",
+    "width": 500,
+    "json": "data/world/consciousness-illusion.json",
+    "field": "author",
+    "query": "Keith Frankish philosopher",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/george-musser.jpg",
+    "width": 500,
+    "json": "data/world/consciousness-creep.json",
+    "field": "author",
+    "query": "George Musser science writer",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/mark-c-taylor.jpg",
+    "width": 500,
+    "json": "data/world/after-the-human.json",
+    "field": "author",
+    "query": "Mark C. Taylor philosopher Columbia",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/on-noise.jpg",
+    "width": 1280,
+    "json": "data/world/on-noise.json",
+    "field": "cover",
+    "query": "Frankfurt am Main historic street old town"
+  },
+  {
+    "out": "assets/img/world/ignorance-of-the-learned.jpg",
+    "width": 1280,
+    "json": "data/world/ignorance-of-the-learned.json",
+    "field": "cover",
+    "query": "farmer plowing field horses"
+  },
+  {
+    "out": "assets/img/world/moral-equivalent-of-war.jpg",
+    "width": 1280,
+    "json": "data/world/moral-equivalent-of-war.json",
+    "field": "cover",
+    "query": "volunteers planting trees"
+  },
+  {
+    "out": "assets/img/world/of-cannibals.jpg",
+    "width": 1280,
+    "json": "data/world/of-cannibals.json",
+    "field": "cover",
+    "query": "Tupinamba Brazil engraving",
+    "minw": 600
+  },
+  {
+    "out": "assets/img/world/crabbed-age-and-youth.jpg",
+    "width": 1280,
+    "json": "data/world/crabbed-age-and-youth.json",
+    "field": "cover",
+    "query": "old man and child walking"
+  },
+  {
+    "out": "assets/img/world/consciousness-illusion.jpg",
+    "width": 1280,
+    "json": "data/world/consciousness-illusion.json",
+    "field": "cover",
+    "query": "red apple"
+  },
+  {
+    "out": "assets/img/world/examined-life-school.jpg",
+    "width": 1280,
+    "json": "data/world/examined-life-school.json",
+    "field": "cover",
+    "query": "empty classroom desks"
+  },
+  {
+    "out": "assets/img/world/consciousness-creep.jpg",
+    "width": 1280,
+    "json": "data/world/consciousness-creep.json",
+    "field": "cover",
+    "query": "neural network computer server lights"
+  },
+  {
+    "out": "assets/img/world/what-awaits-us.jpg",
+    "width": 1280,
+    "json": "data/world/what-awaits-us.json",
+    "field": "cover",
+    "query": "Milky Way night sky"
+  },
+  {
+    "out": "assets/img/world/after-the-human.jpg",
+    "width": 1280,
+    "json": "data/world/after-the-human.json",
+    "field": "cover",
+    "query": "Xenopus laevis frog"
   }
 ]
