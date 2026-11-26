@@ -613,3 +613,14 @@ p{margin:0 0 1em}
 .profile-card .big-avatar{overflow:hidden}
 .profile-card .big-avatar img,.account-btn img.avatar{width:100%;height:100%;object-fit:cover}
 .account-btn img.avatar{width:30px;height:30px;border-radius:50%}
+
+/* الرواق: صورة الكاتب على البطاقة وفي صفحة المقال */
+.article-card .by{align-items:center;gap:10px}
+.article-card .by-who{display:inline-flex;align-items:center;gap:8px;color:var(--ink-2);font-weight:600}
+.by-face,.author-face{flex:none;border-radius:50%;overflow:hidden;display:grid;place-items:center;font-family:var(--serif);font-weight:700;color:#1a1205;background:linear-gradient(135deg,#f6d27a,var(--gold) 45%,#b9862a)}
+.by-face{width:30px;height:30px;font-size:.95rem}
+.author-face{width:64px;height:64px;font-size:1.7rem;box-shadow:0 0 0 3px var(--surface),0 0 0 4px rgba(255,197,48,.45)}
+.by-face img,.author-face img{width:100%;height:100%;object-fit:cover;display:block}
+.author-line{display:flex;align-items:center;gap:14px;margin:6px 0 2em}
+.author-line b{display:block;font-size:1rem;color:var(--ink)}
+.author-line small{font-size:.82rem;color:var(--ink-3)}

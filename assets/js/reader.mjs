@@ -1,4 +1,4 @@
-/* قارئ الكتب: reader.html?id=<معرّف الكتاب>
+/* قارئ الكتب والمجلة: reader.html?id=<معرّف الكتاب> أو reader.html?mag=<رقم العدد>
    يعرض الكتاب صفحة صفحة داخل الموقع والتطبيق (PDF.js)، مع الفهرس والتكبير والوضع الليلي،
    ويتذكّر آخر صفحة قرأها القارئ، ويحفظ الكتاب في الجهاز للقراءة دون إنترنت عند الطلب. */
 import * as pdfjs from "../vendor/pdfjs/pdf.min.mjs";
@@ -6,7 +6,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL("../vendor/pdfjs/pdf.worker.min.mj
 
 const { $, getJSON, esc, arNum, toast } = window.ACF;
 const A = window.ACFAuth;
-const id = new URLSearchParams(location.search).get("id");
+const qs = new URLSearchParams(location.search);
+const id = qs.get("id"), mag = qs.get("mag");
 const ui = {
   pages: $("#r-pages"), load: $("#r-load"), msg: $("#r-msg"), prog: $("#r-prog"), foot: $("#r-foot"),
   page: $("#r-page"), total: $("#r-total"), toc: $("#r-toc"), tocPanel: $("#r-toc-panel"), tocList: $("#r-toc-list"),
@@ -23,31 +24,46 @@ ui.mode.addEventListener("click", () => { store.set("acf-reader-night", store.ge
 night();
 
 (async () => {
-  const books = await getJSON("data/books.json").catch(() => []);
-  const b = books.find((x) => x.id === id);
-  if (!b) { ui.title.textContent = "كتاب غير موجود"; fail('لم نجد هذا الكتاب. <a href="library.html">عودة إلى المكتبة</a>'); return; }
+  let b, bucket = "books", what = "الكتاب";
+  if (mag) {
+    /* عدد من مجلة المدار: نحوّله إلى الشكل نفسه الذي يفهمه القارئ */
+    bucket = "magazine"; what = "العدد";
+    ui.title.textContent = "جارٍ فتح العدد…"; ui.msg.textContent = "جارٍ تحضير العدد…";
+    $("#r-pages").setAttribute("aria-label", "صفحات العدد");
+    const issues = await getJSON("data/magazine.json").catch(() => []);
+    const i = issues.find((x) => String(x.issue) === mag);
+    if (!i) { ui.title.textContent = "عدد غير موجود"; ui.back.href = "magazine.html"; fail('لم نجد هذا العدد. <a href="magazine.html">عودة إلى المجلة</a>'); return; }
+    b = { id: `mag-${i.issue}`, title: `مجلة المدار · العدد ${arNum(i.issue)}`, pages: i.title, pdf: i.pdf, back: "magazine.html" };
+  } else {
+    const books = await getJSON("data/books.json").catch(() => []);
+    b = books.find((x) => x.id === id);
+    if (!b) { ui.title.textContent = "كتاب غير موجود"; fail('لم نجد هذا الكتاب. <a href="library.html">عودة إلى المكتبة</a>'); return; }
+    b = { ...b, back: `book.html?id=${encodeURIComponent(b.id)}` };
+  }
   document.title = `${b.title} · القارئ | مؤسسة إرتوفيا الخيرية`;
   ui.title.textContent = b.title; ui.sub.textContent = b.pages || "";
-  ui.back.href = `book.html?id=${encodeURIComponent(b.id)}`;
-  if (!b.pdf || b.review) { fail(`هذا الكتاب لم يُتح للقراءة بعد. <a href="${ui.back.href}">صفحة الكتاب</a>`); return; }
+  ui.back.href = b.back; ui.back.setAttribute("aria-label", mag ? "رجوع إلى المجلة" : "رجوع إلى الكتاب");
+  if (!b.pdf || b.review) { fail(`${what} لم يُتح للقراءة بعد. <a href="${ui.back.href}">عودة</a>`); return; }
 
   await A.ready;
-  if (!A.user) { ui.load.innerHTML = A.gate("القراءة مجانية للأعضاء", "أنشئ حسابك المجاني في دقيقة، ثم اقرأ الكتاب كاملًا هنا أو نزّله إلى جهازك."); return; }
+  if (!A.user) { ui.load.innerHTML = mag
+    ? A.gate("القراءة مجانية للأعضاء", "أنشئ حسابك المجاني في دقيقة، ثم اقرأ العدد كاملًا هنا أو نزّله إلى جهازك.")
+    : A.gate("القراءة مجانية للأعضاء", "أنشئ حسابك المجاني في دقيقة، ثم اقرأ الكتاب كاملًا هنا أو نزّله إلى جهازك."); return; }
 
-  const KEY = `books/${b.pdf}`;
+  const KEY = `${bucket}/${b.pdf}`;
   const cache = "caches" in window ? await caches.open("acf-books").catch(() => null) : null;
   let cached = cache ? await cache.match(KEY).catch(() => null) : null;
   let src;
   if (cached) src = { data: new Uint8Array(await cached.arrayBuffer()) };
   else {
-    if (!navigator.onLine) { fail("أنت غير متصل الآن، وهذا الكتاب غير محفوظ في جهازك. اتصل بالإنترنت ثم افتحه، واضغط زر الحفظ لتقرأه لاحقًا دون إنترنت."); return; }
-    try { src = { url: await A.fileUrl("books", b.pdf, true), rangeChunkSize: 262144, disableAutoFetch: true }; }
+    if (!navigator.onLine) { fail(`أنت غير متصل الآن، و${what === "العدد" ? "هذا العدد غير محفوظ" : "هذا الكتاب غير محفوظ"} في جهازك. اتصل بالإنترنت ثم افتحه، واضغط زر الحفظ لتقرأه لاحقًا دون إنترنت.`); return; }
+    try { src = { url: await A.fileUrl(bucket, b.pdf, true), rangeChunkSize: 262144, disableAutoFetch: true }; }
     catch (e) { fail(esc(e.message)); return; }
   }
   const task = pdfjs.getDocument({ ...src, isEvalSupported: false });
   task.onProgress = ({ loaded, total }) => { if (total) ui.prog.style.width = `${Math.min(100, loaded / total * 100)}%`; };
   let doc;
-  try { doc = await task.promise; } catch (e) { console.error(e); fail("تعذّر فتح الكتاب الآن. تحقّق من اتصالك ثم أعد المحاولة."); return; }
+  try { doc = await task.promise; } catch (e) { console.error(e); fail(`تعذّر فتح ${what} الآن. تحقّق من اتصالك ثم أعد المحاولة.`); return; }
 
   /* ---------- الصفحات ---------- */
   ui.load.hidden = true; ui.foot.hidden = false; ui.pages.classList.add("on");
@@ -157,22 +173,22 @@ night();
   $("#r-toc-close").addEventListener("click", closeToc);
 
   /* ---------- الحفظ للقراءة دون إنترنت ---------- */
-  const markSaved = () => { ui.save.hidden = false; ui.save.classList.add("saved"); ui.save.setAttribute("aria-label", "الكتاب محفوظ في جهازك: اضغط لحذفه"); };
+  const markSaved = () => { ui.save.hidden = false; ui.save.classList.add("saved"); ui.save.setAttribute("aria-label", `${what} محفوظ في جهازك: اضغط لحذفه`); };
   if (cache) {
     ui.save.hidden = false;
     if (cached) markSaved();
     ui.save.addEventListener("click", async () => {
       if (ui.save.classList.contains("saved")) {
         await cache.delete(KEY); cached = null; ui.save.classList.remove("saved");
-        ui.save.setAttribute("aria-label", "حفظ الكتاب للقراءة دون إنترنت"); toast("حُذف الكتاب من جهازك."); return;
+        ui.save.setAttribute("aria-label", `حفظ ${what} للقراءة دون إنترنت`); toast(`حُذف ${what} من جهازك.`); return;
       }
       if (ui.save.classList.contains("busy")) return;
-      ui.save.classList.add("busy"); toast("جارٍ حفظ الكتاب في جهازك…");
+      ui.save.classList.add("busy"); toast(`جارٍ حفظ ${what} في جهازك…`);
       try {
-        const url = src.url || await A.fileUrl("books", b.pdf, true);
+        const url = src.url || await A.fileUrl(bucket, b.pdf, true);
         const r = await fetch(url); if (!r.ok) throw new Error();
         await cache.put(KEY, new Response(await r.blob(), { headers: { "Content-Type": "application/pdf" } }));
-        markSaved(); toast("تم الحفظ: يمكنك قراءة الكتاب الآن دون إنترنت.");
+        markSaved(); toast(`تم الحفظ: يمكنك قراءة ${what} الآن دون إنترنت.`);
       } catch { toast("تعذّر الحفظ الآن. تأكّد من الاتصال ومن وجود مساحة كافية."); }
       finally { ui.save.classList.remove("busy"); }
     });

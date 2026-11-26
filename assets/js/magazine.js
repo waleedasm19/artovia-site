@@ -1,12 +1,16 @@
-/* مجلة المدار: الغلاف والملخص للجميع، والتنزيل للأعضاء */
+/* مجلة المدار: الغلاف والملخص للجميع، والقراءة في الموقع والتنزيل للأعضاء */
 (async () => {
   const { $, getJSON, esc, arNum, arDate, observe, ICON } = window.ACF;
   const A = window.ACFAuth;
   const root = $("#mag-root");
   const issues = (await getJSON("data/magazine.json")).sort((a, b) => b.date.localeCompare(a.date));
-  const btn = (i, u) => u
-    ? `<button class="btn btn-primary" data-pdf="${esc(i.pdf)}">نزّل العدد PDF ${ICON.arrow}</button>`
-    : `<button class="btn btn-ghost" data-pdf="${esc(i.pdf)}">سجّل لتقرأ العدد كاملًا</button>`;
+  const read = (i) => `reader.html?mag=${encodeURIComponent(i.issue)}`;
+  const btn = (i, u, small) => {
+    const sz = small ? ' style="padding:10px 16px;font-size:.86rem"' : "";
+    return u
+      ? `<a class="btn btn-primary" href="${read(i)}"${sz}>${small ? "اقرأ" : `اقرأ العدد الآن ${ICON.arrow}`}</a><button class="btn btn-ghost" data-pdf="${esc(i.pdf)}"${sz}>${small ? "تنزيل" : "تنزيل PDF"}</button>`
+      : `<a class="btn btn-ghost" href="${read(i)}"${sz}>سجّل لتقرأ العدد كاملًا</a>`;
+  };
   function render(u) {
     const [last, ...rest] = issues;
     root.innerHTML = `
@@ -19,14 +23,14 @@
           <p style="color:var(--ink-2);font-size:1.04rem">${esc(last.summary)}</p>
           <ul class="toc-book" style="margin:18px 0 22px">${last.highlights.map((h) => `<li class="part" style="font-family:var(--sans);font-size:.96rem;padding:8px 0;border-bottom:1px dashed var(--line);border-radius:0">✦ ${esc(h)}</li>`).join("")}</ul>
           <div class="hero-actions">${btn(last, u)}</div>
-          <p style="font-size:.8rem;color:var(--ink-3);margin-top:14px">${u ? "التنزيل متاح لك لأنك عضو مسجَّل." : "الملخص متاح للجميع، والعدد الكامل للأعضاء المسجّلين مجانًا."} جميع الحقوق محفوظة لمؤسسة إرتوفيا الخيرية. <a href="rights.html" style="color:var(--accent)">شروط الاستخدام</a></p>
+          <p style="font-size:.8rem;color:var(--ink-3);margin-top:14px">${u ? "القراءة في الموقع والتنزيل متاحان لك لأنك عضو مسجَّل." : "الملخص متاح للجميع، والعدد الكامل يُقرأ في الموقع أو يُنزَّل للأعضاء المسجّلين مجانًا."} جميع الحقوق محفوظة لمؤسسة إرتوفيا الخيرية. <a href="rights.html" style="color:var(--accent)">شروط الاستخدام</a></p>
         </div>
       </div>
       <div class="section-head" style="margin-bottom:24px"><div><h2 style="font-size:1.8rem;margin:0">أرشيف الأعداد</h2><p>مرتّبة من الأحدث إلى الأقدم</p></div></div>
       <div class="issues">${issues.map((i) => `<article class="issue reveal">
         <div class="issue-cover"><img src="${i.cover}" alt="غلاف العدد ${arNum(i.issue)}" loading="lazy" width="720" height="1018"></div>
         <div class="issue-body"><span class="date">العدد ${arNum(i.issue)} · ${arDate(i.date)}</span><h3>${esc(i.title)}</h3>
-          <p>${esc(i.summary.slice(0, 150))}…</p>${btn(i, u)}</div></article>`).join("")}
+          <p>${esc(i.summary.slice(0, 150))}…</p><div class="hero-actions" style="margin-top:12px;gap:8px">${btn(i, u, true)}</div></div></article>`).join("")}
         ${rest.length ? "" : `<div class="issue" style="display:grid;place-items:center;text-align:center;padding:30px;border-style:dashed;color:var(--ink-3)"><div><b style="display:block;color:var(--ink-2);font-size:1.1rem;margin-bottom:6px">العدد ${arNum(issues[0].issue + 1)}</b>يصدر الجمعة القادمة</div></div>`}</div>`;
     root.querySelectorAll("[data-pdf]").forEach((b) => b.addEventListener("click", () => A.download("magazine", b.dataset.pdf, b)));
     observe(root);

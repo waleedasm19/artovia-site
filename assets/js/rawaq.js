@@ -3,10 +3,21 @@
   const { $, $$, esc, arDate, toast, fieldsP, observe } = window.ACF;
   const A = window.ACFAuth;
   const root = $("#rawaq-root");
+  /* صورة الكاتب: المقال بلا صورة خاصة به، فتظهر صورة الكاتب التي وضعها في حسابه، وإلا أول حرف من اسمه */
+  let photos = null;
+  const photoMap = () => photos || (photos = A.publicWriters().then((ws) => {
+    const m = {};
+    for (const w of ws || []) for (const a of w.articles || []) if (w.avatar_url) m[String(a.id)] = w.avatar_url;
+    return m;
+  }).catch(() => ({})));
+  const face = (a, m, cls) => {
+    const src = a.author_avatar || m[String(a.id)];
+    return `<span class="${cls}" aria-hidden="true">${src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async">` : esc((a.author || "عضو").trim().charAt(0))}</span>`;
+  };
   const para = (t) => esc(t).split(/\n{2,}/).map((p) => `<p>${p.replace(/\n/g, "<br>")}</p>`).join("");
 
   async function list(F) {
-    const items = await A.approved();
+    const [items, m] = await Promise.all([A.approved(), photoMap()]);
     const id = new URLSearchParams(location.search).get("id");
     if (id) return reader(F, id);
     root.innerHTML = `
@@ -15,7 +26,7 @@
       <div class="articles">${items.length ? items.map((a) => `<a class="article-card reveal" href="rawaq.html?id=${a.id}">
         <span class="chip" style="--c:${F[a.field]?.color}">${esc(F[a.field]?.name || "أفكار")}</span>
         <h3>${esc(a.title)}</h3><p>${esc(a.body.slice(0, 180))}…</p>
-        <div class="by"><span>${esc(a.author || "عضو")}</span><span>${arDate((a.reviewed_at || a.created_at).slice(0, 10))}</span></div></a>`).join("")
+        <div class="by"><span class="by-who">${face(a, m, "by-face")}${esc(a.author || "عضو")}</span><span>${arDate((a.reviewed_at || a.created_at).slice(0, 10))}</span></div></a>`).join("")
         : `<div class="empty" style="grid-column:1/-1">لم يُنشر شيء بعد. كن أول من يكتب في الرواق.</div>`}</div>
       ${writer(F)}`;
     bindWriter();
@@ -24,14 +35,14 @@
   }
 
   async function reader(F, id) {
-    const a = await A.article(id);
+    const [a, m] = await Promise.all([A.article(id), photoMap()]);
     if (!a) { root.innerHTML = '<div class="empty">هذا المقال غير موجود أو لم يُنشر بعد. <a class="link-arrow" href="rawaq.html">عودة إلى الرواق</a></div>'; return; }
     document.title = `${a.title} | الرواق`;
     root.innerHTML = `<article class="reader reveal in">
       <a class="link-arrow" href="rawaq.html" style="margin-bottom:24px">← كل المقالات</a>
       <div style="margin-top:18px"><span class="chip" style="--c:${F[a.field]?.color}">${esc(F[a.field]?.name || "أفكار")}</span></div>
       <h1 style="margin-top:14px">${esc(a.title)}</h1>
-      <p class="meta-line">بقلم ${esc(a.author || "عضو")} · ${arDate((a.reviewed_at || a.created_at).slice(0, 10))}</p>
+      <div class="author-line">${face(a, m, "author-face")}<div><b>بقلم ${esc(a.author || "عضو")}</b><small>${arDate((a.reviewed_at || a.created_at).slice(0, 10))}</small></div></div>
       <div class="body">${para(a.body)}</div>
       <div class="note teal" style="margin-top:40px;font-size:.88rem">آراء الكتّاب في الرواق تعبّر عنهم، وتُنشر بعد مراجعة تتحقق من الأدب والاحترام. للإبلاغ عن مقال راسلنا على <span class="en">artoviacentr@gmail.com</span></div>
     </article>`;
