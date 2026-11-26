@@ -76,5 +76,9 @@
  ],
  "slug": "consciousness-creep",
  "added": "2026-11-26",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/consciousness-creep.jpg",
+ "credit": "Dennis van Zuijlekom · CC BY-SA 2.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Dutch_national_supercomputer_%22Huygens%22_-_8183833489.png",
+ "coverAlt": "Dutch national supercomputer Huygens, an IBM pSeries 575 clustered SMP system. Read more about Huygens at Wikipedia and "
 }

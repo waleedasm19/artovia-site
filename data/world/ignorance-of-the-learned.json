@@ -6,7 +6,10 @@
  "author": {
   "name": "William Hazlitt",
   "nameAr": "وليام هازلت",
-  "bio": "الناقد وكاتب المقالة الإنجليزي (١٧٧٨–١٨٣٠)، من أعظم كتّاب المقالة في اللغة الإنجليزية، عُرف بأسلوبه الحادّ المستقل ونقده للسلطة والتقليد."
+  "bio": "الناقد وكاتب المقالة الإنجليزي (١٧٧٨–١٨٣٠)، من أعظم كتّاب المقالة في اللغة الإنجليزية، عُرف بأسلوبه الحادّ المستقل ونقده للسلطة والتقليد.",
+  "photo": "assets/img/world/authors/william-hazlitt.jpg",
+  "photoCredit": "John Hazlitt · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:John_Hazlitt_Portrait_of_William_Hazlitt.jpg"
  },
  "source": "وليام هازلت، «أحاديث المائدة» (١٨٢١)",
  "pubDate": "نُشر في «أحاديث المائدة» عام ١٨٢١",
