@@ -1,115 +1,127 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "items": [
   {
-   "id": "w-after-the-human-1",
-   "q": "من يريد أن يكون المستقبل تكرارًا لا ينتهي للماضي؟",
-   "by": "مارك سي. تايلور",
-   "src": "ما بعد الإنسان",
-   "href": "essay.html?id=after-the-human",
+   "id": "w-reliable-novelty-1",
+   "q": "الجدة بلا موثوقية تكفّ عن أن تكون علمًا.",
+   "by": "بيورن بريمبس",
+   "src": "الجديد لا ينبغي أن يغلب الصحيح: هل تنشر أشهر المجلات العلمية أضعف الأبحاث؟",
+   "href": "essay.html?id=reliable-novelty",
    "kind": "world"
   },
   {
-   "id": "r-1-3",
-   "q": "كل إنسان عربي مسؤول عن المجتمع الذي ينتمي إليه، فلا ينتظر أن يبدأ غيره لكي يبدأ هو.",
+   "id": "w-asimov-new-ideas-1",
+   "q": "الفكرة الجديدة لا تبدو معقولة إلا بعد ظهورها؛ أما في البداية فتبدو غير معقولة في العادة.",
+   "by": "إسحاق أسيموف",
+   "src": "كيف يأتي الناس بأفكار جديدة؟",
+   "href": "essay.html?id=asimov-new-ideas",
+   "kind": "world"
+  },
+  {
+   "id": "w-moral-equivalent-of-war-1",
+   "q": "«السلام» في أفواه العسكريين اليوم مرادف لـ«الحرب المتوقَّعة».",
+   "by": "وليام جيمس",
+   "src": "البديل الأخلاقي للحرب",
+   "href": "essay.html?id=moral-equivalent-of-war",
+   "kind": "world"
+  },
+  {
+   "id": "w-cargo-cult-science-1",
+   "q": "المبدأ الأول أنه يجب ألّا تخدع نفسك، وأنت أسهل شخص يمكن خداعه.",
+   "by": "ريتشارد فاينمان",
+   "src": "علم الطقوس الفارغة: درس فاينمان في الأمانة العلمية",
+   "href": "essay.html?id=cargo-cult-science",
+   "kind": "world"
+  },
+  {
+   "id": "w-bullshit-jobs-1",
+   "q": "إنها ندبة على روحنا الجماعية.",
+   "by": "ديفيد غريبر",
+   "src": "ظاهرة الوظائف التافهة",
+   "href": "essay.html?id=bullshit-jobs",
+   "kind": "world"
+  },
+  {
+   "id": "w-how-ai-will-change-us-1",
+   "q": "يستطيع الذكاء الاصطناعي أن يفسّر حزني. لكنه لا يستطيع أن يحزن.",
+   "by": "هدى نايت البرج",
+   "src": "كيف سيغيّرنا الذكاء الاصطناعي؟ ما الذي سنظل نحتاجه من بعضنا",
+   "href": "essay.html?id=how-ai-will-change-us",
+   "kind": "world"
+  },
+  {
+   "id": "w-we-need-raw-awe-1",
+   "q": "القلق هو ما يمكّننا من العيش مع عمق الوجود وغموضه، ومن استثماره على أفضل وجه.",
+   "by": "كيرك شنايدر",
+   "src": "نحتاج إلى الدهشة الخام",
+   "href": "essay.html?id=we-need-raw-awe",
+   "kind": "world"
+  },
+  {
+   "id": "w-examined-life-school-1",
+   "q": "التعليم عملية فلسفية. يبدأ بالسؤال، ويمضي بالبحث.",
+   "by": "جون تايلور",
+   "src": "هل تعلّم المدرسة شيئًا غير اجتياز الامتحان؟",
+   "href": "essay.html?id=examined-life-school",
+   "kind": "world"
+  },
+  {
+   "id": "w-illegible-benefits-1",
+   "q": "قابلية القياس والأهمية ليستا الشيء نفسه.",
+   "by": "كارلو كورداسكو",
+   "src": "ما لا نستطيع قياسه بعد في الذكاء الاصطناعي",
+   "href": "essay.html?id=illegible-benefits",
+   "kind": "world"
+  },
+  {
+   "id": "w-superhuman-ai-1",
+   "q": "لكن أداة الذكاء الاصطناعي مظلمة من الداخل.",
+   "by": "شانون فالور",
+   "src": "خطر الذكاء الاصطناعي «الخارق للبشر» ليس ما تظن",
+   "href": "essay.html?id=superhuman-ai",
+   "kind": "world"
+  },
+  {
+   "id": "r-1-1",
+   "q": "الفرد نتيجة مجتمعه، والمجتمع نتيجة أفراده.",
    "by": "وليد الأسمري",
    "src": "كلمة المؤسس",
    "href": "rawaq.html?id=1",
    "kind": "rawaq"
   },
   {
-   "id": "w-apology-for-idlers-1",
-   "q": "الانشغال المفرط، في المدرسة أو في السوق، عرَضٌ لنقص في الحيوية.",
-   "by": "روبرت لويس ستيفنسون",
-   "src": "دفاع عن الكسالى",
-   "href": "essay.html?id=apology-for-idlers",
-   "kind": "world"
-  },
-  {
-   "id": "w-on-liberty-ch2-1",
-   "q": "لو كان البشر جميعًا، إلا واحدًا، على رأي واحد، وكان ذلك الواحد على الرأي المخالف، لما كان للبشر حق في إسكاته.",
-   "by": "جون ستيوارت مل",
-   "src": "لو اجتمع الناس كلهم على رأي إلا واحدًا: دفاع جون ستيوارت مل عن حرية الفكر",
-   "href": "essay.html?id=on-liberty-ch2",
-   "kind": "world"
-  },
-  {
-   "id": "w-decay-of-lying-1",
-   "q": "الكذبة الخرقاء غير العلمية كثيرًا ما تكون عديمة الأثر كالحقيقة.",
-   "by": "مارك توين",
-   "src": "في انحطاط فن الكذب",
-   "href": "essay.html?id=decay-of-lying",
-   "kind": "world"
-  },
-  {
-   "id": "w-digital-star-chamber-1",
-   "q": "لن تقدّم الخوارزميات أبدًا مهربًا من المجتمع.",
-   "by": "فرانك باسكوال",
-   "src": "محكمة رقمية سرّية: الخوارزمية قاضيًا وجلّادًا",
-   "href": "essay.html?id=digital-star-chamber",
-   "kind": "world"
-  },
-  {
-   "id": "w-united-by-feelings-1",
-   "q": "المشاعر تكيّفات بيولوجية لا تكتفي باتّباع أوامر العقل أو إفسادها.",
-   "by": "ستيفن أسما ورامي جبرائيل",
-   "src": "العاطفة هي المحرّك الخفي للعقل",
-   "href": "essay.html?id=united-by-feelings",
-   "kind": "world"
-  },
-  {
-   "id": "w-myth-of-freedom-1",
-   "q": "لدى البشر إرادة بالتأكيد، لكنها ليست حرّة.",
-   "by": "يوفال نوح هراري",
-   "src": "أسطورة الحرية: حين يعرفك الحاسوب أكثر مما تعرف نفسك",
-   "href": "essay.html?id=myth-of-freedom",
-   "kind": "world"
-  },
-  {
-   "id": "w-singer-solution-poverty-1",
-   "q": "بذلة بألف دولار كان يمكن أن تنقذ حياة خمسة أطفال.",
-   "by": "بيتر سينغر",
-   "src": "حلّ سينغر للفقر العالمي: هل أنت أفضل من بائعة الطفل؟",
-   "href": "essay.html?id=singer-solution-poverty",
-   "kind": "world"
-  },
-  {
-   "id": "w-consciousness-illusion-1",
-   "q": "لا ينبغي أن نتوقع العثور على خصائص ظاهراتية في أدمغتنا، كما لا نتوقع العثور على سلال مهملات في حواسيبنا.",
-   "by": "كيث فرانكيش",
-   "src": "وهم الوعي",
-   "href": "essay.html?id=consciousness-illusion",
-   "kind": "world"
-  },
-  {
-   "id": "w-the-empty-brain-1",
-   "q": "نحن كائنات حيّة، لا حواسيب. تقبّلوا ذلك.",
-   "by": "روبرت إبستين",
-   "src": "الدماغ الفارغ: عقلك ليس حاسوبًا",
-   "href": "essay.html?id=the-empty-brain",
-   "kind": "world"
-  },
-  {
-   "id": "w-problems-and-progress-1",
-   "q": "التقدّم ليس حتميًّا، وما سيكون عليه المستقبل يتوقّف على ما نفعله اليوم.",
+   "id": "w-world-awful-much-better-1",
+   "q": "إذا لم نرَ إلا المشكلات ولم نسمع إلا عمّا يسوء، فلن يبقى لنا أمل في أن يكون المستقبل أفضل.",
    "by": "ماكس روزر",
-   "src": "لماذا نحتاج إلى معرفة التقدّم إن كنّا قلقين من مشكلات العالم الكبرى؟",
-   "href": "essay.html?id=problems-and-progress",
+   "src": "العالم مُروِّع، والعالم أفضل بكثير، والعالم يمكن أن يكون أفضل بكثير",
+   "href": "essay.html?id=world-awful-much-better",
    "kind": "world"
   }
  ],
  "shown": {
+  "r-1-1": "2026-11-27",
   "r-1-3": "2026-11-26",
   "w-after-the-human-1": "2026-11-26",
   "w-apology-for-idlers-1": "2026-11-26",
+  "w-asimov-new-ideas-1": "2026-11-27",
+  "w-bullshit-jobs-1": "2026-11-27",
+  "w-cargo-cult-science-1": "2026-11-27",
   "w-consciousness-illusion-1": "2026-11-26",
   "w-decay-of-lying-1": "2026-11-26",
   "w-digital-star-chamber-1": "2026-11-26",
+  "w-examined-life-school-1": "2026-11-27",
+  "w-how-ai-will-change-us-1": "2026-11-27",
+  "w-illegible-benefits-1": "2026-11-27",
+  "w-moral-equivalent-of-war-1": "2026-11-27",
   "w-myth-of-freedom-1": "2026-11-26",
   "w-on-liberty-ch2-1": "2026-11-26",
   "w-problems-and-progress-1": "2026-11-26",
+  "w-reliable-novelty-1": "2026-11-27",
   "w-singer-solution-poverty-1": "2026-11-26",
+  "w-superhuman-ai-1": "2026-11-27",
   "w-the-empty-brain-1": "2026-11-26",
-  "w-united-by-feelings-1": "2026-11-26"
+  "w-united-by-feelings-1": "2026-11-26",
+  "w-we-need-raw-awe-1": "2026-11-27",
+  "w-world-awful-much-better-1": "2026-11-27"
  }
 }
