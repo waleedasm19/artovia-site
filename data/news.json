@@ -2,34 +2,161 @@
  "updated": "2026-11-25T21:46:49Z",
  "items": [
   {
+   "field": "engineering",
+   "url": "https://www.nasa.gov/podcasts/small-steps-giant-leaps/episode-187-nasas-newest-wind-tunnel/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "langley-flight-dynamics-tunnel",
+   "cover": "assets/img/news/langley-flight-dynamics-tunnel.jpg",
+   "title": "أول نفق رياح تبنيه ناسا منذ أكثر من ٤٠ عامًا",
+   "summary": "منشأة أبحاث ديناميكيات الطيران في مركز لانغلي تحل محل نفقين عمرهما أكثر من ٨٠ عامًا، وتختبر كيف تدور الطائرات والمركبات وتتعافى من الدوران."
+  },
+  {
    "field": "space",
-   "title": "اكتشف تلسكوب فضائي يبحث عن المادة المظلمة شيئًا غير متوقع",
-   "summary": "اكتشف تلسكوب إقليدس الفضائي التابع لوكالة الفضاء الأوروبية أول مذنب لم يكن معروفا من قبل، على الرغم من أنه مصمم لدراسة المجرات البعيدة وأسرار الكون المظلم. ويبعد الجسم الجليدي حوالي 1.3 مليار كيلومتر عن الأرض، ويتبع مسارًا غير عادي…",
+   "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-views-ocean-of-stars-in-groundwork-for-roman/",
+   "source": "NASA / ESA Hubble",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "hubble-bulge-roman-groundwork",
+   "cover": "assets/img/news/hubble-bulge-roman-groundwork.jpg",
+   "title": "هابل يصوّر «محيطًا من النجوم» في قلب المجرة تمهيدًا لتلسكوب رومان",
+   "summary": "صور جديدة لانتفاخ درب التبانة ستكون مرجعًا لتلسكوب «رومان» حين يبحث هناك عن كواكب وثقوب سوداء بتقنية العدسة الجاذبية الدقيقة."
+  },
+  {
+   "field": "space",
+   "url": "https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "europa-clipper-earth-flyby",
+   "cover": "assets/img/news/europa-clipper-earth-flyby.jpg",
+   "title": "«يوروبا كليبر» تعود لتحلّق قرب الأرض في ٣ ديسمبر لتكسب سرعة نحو المشتري",
+   "summary": "أكبر مركبة أرسلتها ناسا إلى الفضاء البعيد ستمر على بعد نحو ٣٢٠٠ كيلومتر غرب أفريقيا، وتشغّل أجهزتها التسعة لمعايرتها على كوكبنا."
+  },
+  {
+   "field": "biology",
+   "url": "https://science.nasa.gov/directorates/smd/nasa-eyes-crop-candidates-for-future-menus/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "space-crops-strawberry-cucumber",
+   "cover": "assets/img/news/space-crops-strawberry-cucumber.jpg",
+   "title": "فراولة وخيار وريحان ليموني: ناسا تختار خضار المائدة في القمر والمريخ",
+   "summary": "اختبارات في ظروف تحاكي الفضاء تُبقي صنف الفراولة «ديليز» في الصدارة، وتُظهر أن الخيار يثمر رغم تضخم أوراقه."
+  },
+  {
+   "field": "engineering",
+   "url": "https://www.nasa.gov/general/nasa-locks-in-sr1-freedom-mission-architecture/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "sr1-freedom-architecture",
+   "cover": "assets/img/news/sr1-freedom-architecture.jpg",
+   "title": "ناسا تثبّت تصميم «SR-1 فريدم»: أول مركبة تعمل بالانشطار النووي خارج مدار الأرض",
+   "summary": "مراجعة تصميم كبرى حسمت شكل المركبة التي ستحمل ثلاث مروحيات إلى المريخ عام ٢٠٢٨ بدفع كهربائي نووي."
+  },
+  {
+   "field": "engineering",
+   "url": "https://www.nasa.gov/blogs/quesst/2026/11/23/nasa-officially-takes-ownership-of-x-59-supersonic-aircraft/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "x59-nasa-ownership",
+   "cover": "assets/img/news/x59-nasa-ownership.jpg",
+   "title": "ناسا تتسلّم رسميًّا الطائرة X-59 الأسرع من الصوت بلا دويّ مزعج",
+   "summary": "انتقلت ملكية الطائرة التجريبية من «لوكهيد مارتن» إلى ناسا، لتواصل اختبارات قد تعيد الطيران التجاري الأسرع من الصوت فوق اليابسة."
+  },
+  {
+   "field": "health",
+   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004060",
+   "source": "PLOS Biology / جامعة نانجينغ",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "tmem63b-heat-pain",
+   "cover": "assets/img/news/tmem63b-heat-pain.jpg",
+   "title": "قناة جديدة في الأعصاب تساعدنا على الإحساس بالحرارة المؤلمة",
+   "summary": "باحثون صينيون يكشفون أن القناة الأيونية TMEM63B، المعروفة بحساسيتها للضغط، تشارك أيضًا في الإحساس بالسخونة المؤذية لدى الفئران."
+  },
+  {
+   "field": "biology",
+   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004003",
+   "source": "PLOS Biology / جامعة زيورخ",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "vocal-tract-language-diversity",
+   "cover": "assets/img/news/vocal-tract-language-diversity.jpg",
+   "title": "شكل حلقك قد يكون من أسباب تنوّع لغات العالم",
+   "summary": "صور رنين مغناطيسي لـ ٣٢ متحدثًا تُظهر أن اختلاف شكل القناة الصوتية بين الأفراد يترك أثرًا منتظمًا في نطق الحروف الصائتة، وقد يغذي تفرّع اللغات."
+  },
+  {
+   "field": "biology",
+   "url": "https://elifesciences.org/digests/111072/flying-under-viral-influence",
+   "source": "eLife",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "bee-viruses-flight",
+   "cover": "assets/img/news/bee-viruses-flight.jpg",
+   "title": "فيروسان صامتان يغيّران طيران نحل العسل في اتجاهين متعاكسين",
+   "summary": "نحل مصاب بفيروس تشوه الأجنحة يطير أقصر وأبطأ، ونحل مصاب بفيروس آخر يطير أبعد وأسرع، والسبب هرمون «الأوكتوبامين»."
+  },
+  {
+   "field": "health",
+   "url": "https://elifesciences.org/digests/110559/unlocking-the-heart-protective-effects-of-torpor",
+   "source": "eLife",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "synthetic-torpor-heart",
+   "cover": "assets/img/news/synthetic-torpor-heart.jpg",
+   "title": "سُبات مصطنع في الجرذان يحمي القلب من أضرار نقص الأكسجين",
+   "summary": "بتشغيل خلايا عصبية محددة في الدماغ، أدخل باحثون جرذانًا في حالة تشبه السبات، فتضررت قلوبها بعد انقطاع الأكسجين أقل بنحو ٤٠٪."
+  },
+  {
+   "field": "biology",
+   "url": "https://elifesciences.org/digests/110082/the-spider-mite-who-came-to-tea",
+   "source": "eLife",
+   "lang": "ar",
+   "date": "2026-11-26",
+   "slug": "tea-spider-mite-enzyme",
+   "cover": "assets/img/news/tea-spider-mite-enzyme.jpg",
+   "title": "عنكبوت صغير تعلّم أكل الشاي بإنزيم استعاره من فطر",
+   "summary": "عث العنكبوت «كانزاوا» صار آفة لمزارع الشاي لأنه يفكك الكاتيكينات، السموم الطبيعية التي تحمي أوراق الشاي، بإنزيم أصله فطري."
+  },
+  {
+   "field": "space",
+   "title": "تلسكوب «إقليدس» الباحث عن المادة المظلمة يكتشف أول مذنّب له",
+   "summary": "طالب دكتوراه في هلسنكي كتب برنامجًا يلتقط الأجسام سريعة الحركة في صور التلسكوب، فعثر على مذنب مجهول يدور في مدار يستغرق آلاف السنين.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261124055852.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-25",
-   "orig": "A space telescope hunting for dark matter just discovered something unexpected"
+   "orig": "A space telescope hunting for dark matter just discovered something unexpected",
+   "slug": "euclid-first-comet",
+   "cover": "assets/img/news/euclid-first-comet.jpg"
   },
   {
-   "field": "space",
-   "title": "يحصر الفيزيائيون المادة المضادة في اختراق يمكن أن يفسر سبب وجود الكون",
-   "summary": "البوزيترونات هي نظير المادة المضادة للإلكترون. قام الفيزيائيون بحبس البوزيترون وتبريده إلى درجات حرارة قريبة من الصفر المطلق. يتم تعليق البوزيترون في مصيدة خالية من الجدران، ويتم فصلها بأمان عن المادة العادية. سيقوم الفريق بإجراء أكثر دقة ...",
+   "field": "physics",
+   "title": "بوزيترون واحد في مصيدة بلا جدران: خطوة نحو سر غياب المادة المضادة",
+   "summary": "فيزيائيو جامعة نورثوسترن احتجزوا جسيمًا واحدًا من المادة المضادة شهورًا، وتحكموا في مستويات طاقته الكمية، تمهيدًا لمقارنته بالإلكترون بدقة غير مسبوقة.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261124055849.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-25",
-   "orig": "Physicists trap antimatter in a breakthrough that could explain why the universe exists"
+   "orig": "Physicists trap antimatter in a breakthrough that could explain why the universe exists",
+   "slug": "single-positron-trap",
+   "cover": "assets/img/news/single-positron-trap.jpg"
   },
   {
-   "field": "space",
-   "title": "أرسل الفيزيائيون للتو رسالة غير قابلة للكسر عبر جدار من الطوب باستخدام الجاذبية",
-   "summary": "نجح العلماء في نقل رسالة عبر جدار من الطوب باستخدام الجاذبية، ومصعد قديم، وكاشف حساس بشكل لا يصدق. من خلال تحريك ثقل موازن ضخم بين موقعين، قام الباحثون بتشفير كلمة \"الجاذبية\" في صورة صغيرة.",
+   "field": "physics",
+   "title": "رسالة عبر جدار من الطوب بالجاذبية وحدها",
+   "summary": "فيزيائيون في جامعة كوينزلاند أرسلوا كلمة «Gravity» باستخدام ثقل مصعد يتحرك ومقياس جاذبية في الغرفة المجاورة، بإشارة لا يمكن حجبها.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261123005343.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-25",
-   "orig": "Physicists just sent an unblockable message through a brick wall using gravity"
+   "orig": "Physicists just sent an unblockable message through a brick wall using gravity",
+   "slug": "gravity-message-through-wall",
+   "cover": "assets/img/news/gravity-message-through-wall.jpg"
   },
   {
    "field": "physics",
@@ -53,33 +180,39 @@
   },
   {
    "field": "health",
-   "title": "أدوية النوم والقلق الشائعة يمكن أن تضر أدمغة الشيخوخة",
-   "summary": "يتناول ما يقرب من واحد من كل ثلاثة بالغين كبار السن المصابين بالخرف أو الاضطرابات المعرفية الأخرى أدوية قد تكون ضارة يمكن أن تؤدي إلى تفاقم وظائف المخ وزيادة خطر دخول المستشفى والوفاة المبكرة. وعلى الرغم من التقدم المشجع الذي تحقق خلال العقد الماضي، إلا أن…",
+   "title": "أدوية النوم والقلق ما زالت توصف لثلث كبار السن المصابين بالخرف",
+   "summary": "دراسة من جامعة بافالو تجد تراجعًا في وصف الأدوية غير الملائمة لكبار السن ذوي الاضطرابات المعرفية، لكن واحدًا من كل ثلاثة ما زال يتلقاها.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261124055854.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-25",
-   "orig": "Common sleep and anxiety drugs could be harming aging brains"
+   "orig": "Common sleep and anxiety drugs could be harming aging brains",
+   "slug": "older-adults-risky-medications",
+   "cover": "assets/img/news/older-adults-risky-medications.jpg"
   },
   {
    "field": "health",
-   "title": "اكتشف علماء جامعة ستانفورد ثلاثة أنواع مخفية من الدماغ وراء اضطراب فرط الحركة ونقص الانتباه والقلق",
-   "summary": "كشف تحليل مدعوم بالذكاء الاصطناعي لآلاف من فحوصات أدمغة الأطفال عن ثلاثة أنواع مختلفة من الدماغ تكمن وراء اضطراب فرط الحركة ونقص الانتباه والقلق والتي لا تتناسب بدقة مع التشخيصات التقليدية. يمكن أن تظهر هذه الأنماط البيولوجية المخفية قبل إجراء التشخيص، وربما...",
+   "title": "ثلاثة «أنماط دماغية» خفية وراء فرط الحركة والقلق عند الأطفال",
+   "summary": "نموذج ذكاء اصطناعي حلّل صور الدماغ وسلوك آلاف الأطفال، فوجد ثلاثة أنماط لا تطابق التشخيصات التقليدية تمامًا، وقد تظهر قبل التشخيص.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261124055713.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-25",
-   "orig": "Stanford scientists discover 3 hidden brain types behind ADHD and anxiety"
+   "orig": "Stanford scientists discover 3 hidden brain types behind ADHD and anxiety",
+   "slug": "adhd-anxiety-brain-biotypes",
+   "cover": "assets/img/news/adhd-anxiety-brain-biotypes.jpg"
   },
   {
    "field": "health",
-   "title": "زيت النعناع يخفض ضغط الدم بشكل ملحوظ خلال 20 يومًا فقط",
-   "summary": "قد يكون لزيت النعناع تأثير قوي بشكل مدهش على ضغط الدم. وفي دراسة عشوائية أجريت على 40 شخصًا بالغًا، وجد الباحثون أن تناول جرعات صغيرة مرتين يوميًا لمدة 20 يومًا يخفض ضغط الدم الانقباضي بمعدل 8.5 ملم زئبقي. الحاصلون على…",
+   "title": "زيت النعناع يخفض ضغط الدم في تجربة صغيرة مدتها ٢٠ يومًا",
+   "summary": "تجربة عشوائية على ٤٠ بالغًا وجدت أن جرعة يومية صغيرة من زيت النعناع الغذائي خفضت الضغط الانقباضي ٨٫٥ ملم زئبق مقارنة بالدواء الوهمي.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261123231553.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-25",
-   "orig": "Peppermint oil significantly lowers blood pressure in just 20 days"
+   "orig": "Peppermint oil significantly lowers blood pressure in just 20 days",
+   "slug": "peppermint-oil-blood-pressure",
+   "cover": "assets/img/news/peppermint-oil-blood-pressure.jpg"
   },
   {
    "field": "tech",
@@ -132,14 +265,16 @@
    "orig": "APOD: 2026 November 25 – SPHEREx Seeing Through Dust"
   },
   {
-   "field": "space",
-   "title": "حزام البقان في جورجيا",
-   "summary": "منذ ازدهار الزراعة في أوائل القرن العشرين، أصبحت البساتين على طول نهر فلينت في جنوب غرب جورجيا مركزًا لإنتاج جوز البقان في الولايات المتحدة.",
+   "field": "earth",
+   "title": "حزام البقان في جورجيا كما يراه القمر الصناعي",
+   "summary": "صورة من «لاندسات ٨» تكشف بساتين البقان المصطفة على نهر فلينت، في ولاية تنتج أكثر من ١٠٠ مليون رطل سنويًّا من هذه المكسرات.",
    "url": "https://science.nasa.gov/earth/earth-observatory/georgias-pecan-belt/",
    "source": "NASA",
    "lang": "ar",
    "date": "2026-11-25",
-   "orig": "Georgia’s Pecan Belt"
+   "orig": "Georgia’s Pecan Belt",
+   "slug": "georgia-pecan-belt",
+   "cover": "assets/img/news/georgia-pecan-belt.jpg"
   },
   {
    "field": "space",
@@ -194,13 +329,15 @@
   },
   {
    "field": "space",
-   "title": "يمكن لثقب أسود بحجم الذرة أن يدمر نجمًا بأكمله",
-   "summary": "اكتشف علماء معهد ماساتشوستس للتكنولوجيا أن الثقوب السوداء الصغيرة التي خلفها الانفجار الكبير يمكن أن تلتهم النجوم ببطء من الداخل، مما يؤدي في النهاية إلى انفجارات مذهلة مرئية عبر المجرات. الكشف عن هذه الأحداث الكونية غير العادية يمكن أن يكشف عن وجود…",
+   "title": "ثقب أسود بحجم الذرة قد يلتهم نجمًا من الداخل",
+   "summary": "حسابات ومحاكاة من معهد ماساتشوستس للتقنية تتخيل ثقبًا أسود بدائيًّا محبوسًا في قلب نجم كالشمس: ينمو ببطء ملايين السنين، ثم قد يمزّق النجم في ثوانٍ.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261122060332.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-24",
-   "orig": "A black hole the size of an atom could destroy an entire star"
+   "orig": "A black hole the size of an atom could destroy an entire star",
+   "slug": "primordial-black-hole-star",
+   "cover": "assets/img/news/primordial-black-hole-star.jpg"
   },
   {
    "field": "health",
@@ -551,13 +688,15 @@
   },
   {
    "field": "space",
-   "title": "ثقبان أسودان وحشيان من فجر التاريخ يتحدىان التفسير",
-   "summary": "اكتشف علماء الفلك أقدم زوج مدمج معروف من النجوم الزائفة، مدعومًا بثقبين أسودين هائلين كانا موجودين بعد 900 مليون سنة فقط من الانفجار الكبير. تزن هذه الأجسام الكونية 1.5 مليار و400 مليون مرة كتلة الشمس، وهي مذهلة...",
+   "title": "ثقبان أسودان عملاقان متجاوران من فجر الكون",
+   "summary": "رصد فلكيون أقرب زوج معروف من الكوازارات بعد ٩٠٠ مليون سنة فقط من الانفجار العظيم، كتلة أحدهما ١٫٥ مليار شمس، ولا تفسير بعد لنموهما السريع.",
    "url": "https://www.sciencedaily.com/releases/2026/11/261122060342.htm",
    "source": "ScienceDaily",
    "lang": "ar",
    "date": "2026-11-23",
-   "orig": "Two monster black holes from the dawn of time defy explanation"
+   "orig": "Two monster black holes from the dawn of time defy explanation",
+   "slug": "quasar-pair-cosmic-dawn",
+   "cover": "assets/img/news/quasar-pair-cosmic-dawn.jpg"
   },
   {
    "field": "space",
