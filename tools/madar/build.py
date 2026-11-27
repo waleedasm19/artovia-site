@@ -1,7 +1,7 @@
 import re,json,io,sys,os,qrcode,qrcode.image.svg,asyncio
 D=os.path.abspath(sys.argv[1]) if len(sys.argv)>1 else os.path.expanduser('~/mag/issue')
 import glob
-src='<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>المدار ١</title><link rel="stylesheet" href="style.css"></head><body>'+''.join(open(f,encoding='utf8').read() for f in sorted(glob.glob(f'{D}/pages/p*.html')))+'</body></html>'
+src='<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>المدار</title><link rel="stylesheet" href="style.css"></head><body>'+''.join(open(f,encoding='utf8').read() for f in sorted(glob.glob(f'{D}/pages/p*.html')))+'</body></html>'
 CP=f'{D}/img/credits.json' if os.path.exists(f'{D}/img/credits.json') else os.path.expanduser('~/mag/img/credits.json')
 cr=json.load(open(CP))
 def credit(m):
