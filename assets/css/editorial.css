@@ -655,6 +655,7 @@ body:not(.page-index) .form :is(input, textarea, select) { border-radius: 2px; b
 .page-settings .setting:hover { border-inline-start-color: var(--editorial-yellow); }
 .page-settings .seg button { border-radius: 1px; }
 .prose-layout { grid-template-columns: minmax(220px, 280px) minmax(0, 820px); justify-content: center; }
+@media (max-width: 900px) { .prose-layout { grid-template-columns: 1fr; gap: 28px; } }
 body:not(.page-index) .toc { top: calc(var(--masthead-height) + 24px); border-radius: 2px; border-top: 3px solid var(--editorial-yellow); background: #14171c; }
 body:not(.page-index) .prose h2 {
   padding: 28px 18px 8px 0;
