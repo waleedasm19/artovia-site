@@ -1,92 +1,92 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "items": [
   {
-   "id": "w-pleasure-of-hating-1",
-   "q": "الحب، بقليل من التساهل، ينقلب لامبالاة أو قرفًا: الكراهية وحدها خالدة.",
-   "by": "وليام هازلت",
-   "src": "في لذّة الكراهية",
-   "href": "essay.html?id=pleasure-of-hating",
+   "id": "w-philosophy-was-once-alive-1",
+   "q": "الطريق إلى إحياء الفلسفة، وملئها بالحياة والحيوية والإلحاح، ليس نسخ شكل قديم.",
+   "by": "برناي سانكليشا",
+   "src": "كانت الفلسفة حيّة يومًا",
+   "href": "essay.html?id=philosophy-was-once-alive",
    "kind": "world"
   },
   {
-   "id": "w-certain-blindness-2",
-   "q": "هكذا عشت مع جارك على نحو باهت وبالغريزة، ولم تعرفه لأنك أعمى.",
+   "id": "w-on-noise-2",
+   "q": "الضجيج أوقح أشكال المقاطعة كلها.",
+   "by": "آرثر شوبنهاور",
+   "src": "في الضجيج",
+   "href": "essay.html?id=on-noise",
+   "kind": "world"
+  },
+  {
+   "id": "w-aes-triplex-1",
+   "q": "ليست لدينا أي فكرة عما هو الموت، بعيدًا عن ملابساته وبعض عواقبه على الآخرين.",
+   "by": "روبرت لويس ستيفنسون",
+   "src": "قلبٌ من نحاس مثلّث",
+   "href": "essay.html?id=aes-triplex",
+   "kind": "world"
+  },
+  {
+   "id": "w-attention-economy-1",
+   "q": "كلنا اقتصاديون هواة للانتباه، نكنز لحظاتنا ونقايض بها.",
+   "by": "توم تشاتفيلد",
+   "src": "هل تكلّفنا كل نقرة قطعة من أنفسنا؟",
+   "href": "essay.html?id=attention-economy",
+   "kind": "world"
+  },
+  {
+   "id": "w-certain-blindness-1",
+   "q": "حيثما كان هناك تعارض في الرأي واختلاف في الرؤية، فعلينا أن نعتقد أن الجانب الأصدق هو الجانب الذي يشعر أكثر، لا الجانب الذي يشعر أقل.",
    "by": "وليام جيمس",
    "src": "في نوع من العمى عند البشر",
    "href": "essay.html?id=certain-blindness",
    "kind": "world"
   },
   {
-   "id": "w-meritocracy-is-bad-1",
-   "q": "الجدارة ليست خاطئة فحسب، بل سيئة.",
+   "id": "w-pleasure-of-hating-2",
+   "q": "نكره الأصدقاء القدامى، ونكره الكتب القديمة، ونكره الآراء القديمة، وفي النهاية نصل إلى كراهية أنفسنا.",
+   "by": "وليام هازلت",
+   "src": "في لذّة الكراهية",
+   "href": "essay.html?id=pleasure-of-hating",
+   "kind": "world"
+  },
+  {
+   "id": "w-meritocracy-is-bad-2",
+   "q": "محاولات تطبيق الجدارة تقود إلى نوع اللامساواة نفسه الذي تسعى إلى إزالته.",
    "by": "كليفتون مارك",
    "src": "الإيمان بالجدارة ليس خاطئًا فقط بل مؤذٍ",
    "href": "essay.html?id=meritocracy-is-bad",
    "kind": "world"
   },
   {
-   "id": "w-total-work-2",
-   "q": "العملية التي يتحول بها البشر إلى عمّال ولا شيء غير ذلك.",
-   "by": "أندرو تاغارت",
-   "src": "لو التهم العمل كل لحظة، هل تستحق الحياة أن تُعاش؟",
-   "href": "essay.html?id=total-work",
-   "kind": "world"
-  },
-  {
-   "id": "w-on-men-of-learning-2",
-   "q": "الهاوي يعامل موضوعه غاية، أما المحترف الخالص فيعامله وسيلة فحسب.",
-   "by": "آرثر شوبنهاور",
-   "src": "في أهل العلم",
-   "href": "essay.html?id=on-men-of-learning",
-   "kind": "world"
-  },
-  {
-   "id": "w-consciousness-creep-1",
-   "q": "هل يمكن أن تكون آلاتنا قد أصبحت واعية بذاتها دون أن ندري؟",
-   "by": "جورج موسر",
-   "src": "هل صارت آلاتنا واعية دون أن نعلم؟",
-   "href": "essay.html?id=consciousness-creep",
-   "kind": "world"
-  },
-  {
-   "id": "w-regulate-the-internet-2",
-   "q": "إنه ببساطة نموذج ربح يعمل كما صُمّم.",
+   "id": "w-regulate-the-internet-1",
+   "q": "لا شيء في شبكة حواسيب عالمية يحتّم سلوكًا يشبه الإدمان.",
    "by": "مايكل شولسون",
    "src": "إن كان الإنترنت إدمانًا، فلماذا لا نُخضعه للقانون؟",
    "href": "essay.html?id=regulate-the-internet",
    "kind": "world"
   },
   {
-   "id": "w-wrong-about-the-world-1",
-   "q": "في فرنسا وأستراليا، ٣٪ فقط يرون أن العالم يتحسّن.",
-   "by": "ماكس روزر",
-   "src": "أكثرنا مخطئ في فهم كيف تغيّر العالم، والمتشائمون أكثر",
-   "href": "essay.html?id=wrong-about-the-world",
+   "id": "w-total-work-1",
+   "q": "ما يضيع هو البحث عن سبب وجودنا هنا.",
+   "by": "أندرو تاغارت",
+   "src": "لو التهم العمل كل لحظة، هل تستحق الحياة أن تُعاش؟",
+   "href": "essay.html?id=total-work",
    "kind": "world"
   },
   {
-   "id": "w-philosophy-of-composition-1",
-   "q": "الأصالة (إلا في عقول ذات قوة غير عادية) ليست أبدًا، كما يظن بعضهم، مسألة دافع أو حدس.",
-   "by": "إدغار آلان بو",
-   "src": "فلسفة التأليف",
-   "href": "essay.html?id=philosophy-of-composition",
+   "id": "w-dragon-tyrant-1",
+   "q": "في هذه المسألة، الوقت يساوي حياة، بمعدّل نحو سبعين حياة في الدقيقة.",
+   "by": "نِك بوستروم",
+   "src": "أسطورة التنّين الطاغية: هل الشيخوخة عدوّ يمكن هزيمته؟",
+   "href": "essay.html?id=dragon-tyrant",
    "kind": "world"
   },
   {
-   "id": "w-free-will-ai-1",
-   "q": "القهوة ما زالت هناك على الطاولة. أنت اخترتها. وذلك الاختيار كان لك.",
-   "by": "ألبرت يوان",
-   "src": "هل اخترت قهوتك حقًّا؟ الإرادة الحرة في عصر الذكاء الاصطناعي",
-   "href": "essay.html?id=free-will-ai",
-   "kind": "world"
-  },
-  {
-   "id": "w-corn-pone-opinions-1",
-   "q": "رضانا عن أنفسنا، في العادة، له مصدر واحد لا غير: رضا الآخرين عنّا.",
-   "by": "مارك توين",
-   "src": "قل لي من أين يأتي خبزك، أقل لك ما رأيك",
-   "href": "essay.html?id=corn-pone-opinions",
+   "id": "w-bullshit-jobs-1",
+   "q": "إنها ندبة على روحنا الجماعية.",
+   "by": "ديفيد غريبر",
+   "src": "ظاهرة الوظائف التافهة",
+   "href": "essay.html?id=bullshit-jobs",
    "kind": "world"
   },
   {
@@ -99,26 +99,37 @@
   }
  ],
  "shown": {
-  "r-1-3": "2026-11-27",
+  "r-1-3": "2026-11-28",
+  "w-aes-triplex-1": "2026-11-28",
   "w-after-the-human-1": "2026-11-26",
   "w-apology-for-idlers-1": "2026-11-26",
+  "w-attention-economy-1": "2026-11-28",
+  "w-bullshit-jobs-1": "2026-11-28",
+  "w-certain-blindness-1": "2026-11-28",
   "w-certain-blindness-2": "2026-11-27",
   "w-consciousness-creep-1": "2026-11-27",
   "w-consciousness-illusion-1": "2026-11-26",
   "w-corn-pone-opinions-1": "2026-11-27",
   "w-decay-of-lying-1": "2026-11-26",
   "w-digital-star-chamber-1": "2026-11-26",
+  "w-dragon-tyrant-1": "2026-11-28",
   "w-free-will-ai-1": "2026-11-27",
   "w-meritocracy-is-bad-1": "2026-11-27",
+  "w-meritocracy-is-bad-2": "2026-11-28",
   "w-myth-of-freedom-1": "2026-11-26",
   "w-on-liberty-ch2-1": "2026-11-26",
   "w-on-men-of-learning-2": "2026-11-27",
+  "w-on-noise-2": "2026-11-28",
   "w-philosophy-of-composition-1": "2026-11-27",
+  "w-philosophy-was-once-alive-1": "2026-11-28",
   "w-pleasure-of-hating-1": "2026-11-27",
+  "w-pleasure-of-hating-2": "2026-11-28",
   "w-problems-and-progress-1": "2026-11-26",
+  "w-regulate-the-internet-1": "2026-11-28",
   "w-regulate-the-internet-2": "2026-11-27",
   "w-singer-solution-poverty-1": "2026-11-26",
   "w-the-empty-brain-1": "2026-11-26",
+  "w-total-work-1": "2026-11-28",
   "w-total-work-2": "2026-11-27",
   "w-united-by-feelings-1": "2026-11-26",
   "w-wrong-about-the-world-1": "2026-11-27"
