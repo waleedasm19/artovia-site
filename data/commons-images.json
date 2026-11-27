@@ -503,7 +503,7 @@
     "width": 1280,
     "json": "data/world/certain-blindness.json",
     "field": "cover",
-    "query": "Patagonia steppe landscape"
+    "query": "Patagonian steppe"
   },
   {
     "out": "assets/img/world/regulate-the-internet.jpg",
@@ -531,14 +531,14 @@
     "width": 1280,
     "json": "data/world/aes-triplex.json",
     "field": "cover",
-    "query": "Edinburgh Old Town skyline"
+    "query": "mountaineers climbing rope glacier"
   },
   {
     "out": "assets/img/world/attention-economy.jpg",
     "width": 1280,
     "json": "data/world/attention-economy.json",
     "field": "cover",
-    "query": "people looking at smartphones"
+    "query": "commuters using smartphones train"
   },
   {
     "out": "assets/img/world/on-men-of-learning.jpg",

@@ -50,9 +50,5 @@
  ],
  "slug": "aes-triplex",
  "added": "2026-11-27",
- "mode": "translation",
- "cover": "assets/img/world/aes-triplex.jpg",
- "credit": "Anthony O'Neil · CC BY-SA 2.0 · ويكيميديا كومنز",
- "creditUrl": "https://commons.wikimedia.org/wiki/File:Old_Town_skyline,_Edinburgh_-_geograph.org.uk_-_8087811.jpg",
- "coverAlt": "Old Town skyline, Edinburgh"
+ "mode": "translation"
 }
