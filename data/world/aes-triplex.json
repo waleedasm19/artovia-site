@@ -50,5 +50,9 @@
  ],
  "slug": "aes-triplex",
  "added": "2026-11-27",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/aes-triplex.jpg",
+ "credit": "Mzalewski89 · CC0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Tomasz_Bryl_1983.jpg",
+ "coverAlt": "Polish mountaineer Tomasz Bryl - wpinaczka lodowcowa"
 }
