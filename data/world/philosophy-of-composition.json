@@ -6,7 +6,10 @@
  "author": {
   "name": "Edgar Allan Poe",
   "nameAr": "إدغار آلان بو",
-  "bio": "الكاتب والشاعر والناقد الأمريكي (١٨٠٩–١٨٤٩)، رائد القصة القصيرة الحديثة وأدب الرعب، ومؤسس القصة البوليسية، وصاحب قصيدة «الغراب»."
+  "bio": "الكاتب والشاعر والناقد الأمريكي (١٨٠٩–١٨٤٩)، رائد القصة القصيرة الحديثة وأدب الرعب، ومؤسس القصة البوليسية، وصاحب قصيدة «الغراب».",
+  "photo": "assets/img/world/authors/edgar-allan-poe.jpg",
+  "photoCredit": "Unknown authorUnknown author; Restored by Yann Forget and Adam Cuerden · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg"
  },
  "source": "إدغار آلان بو، «فلسفة التأليف» (١٨٤٦)",
  "pubDate": "نُشر في مجلة «غراهامز» في أبريل ١٨٤٦",
@@ -82,5 +85,9 @@
  ],
  "slug": "philosophy-of-composition",
  "added": "2026-11-27",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/philosophy-of-composition.jpg",
+ "credit": "Frank Schulenburg · CC BY-SA 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg",
+ "coverAlt": "American Raven (Corvus corax clarionensis) calling at Point Reyes National Seashore, Marin County, California"
 }

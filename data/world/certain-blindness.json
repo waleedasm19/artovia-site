@@ -93,5 +93,9 @@
  ],
  "slug": "certain-blindness",
  "added": "2026-11-27",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/certain-blindness.jpg",
+ "credit": "European Space Agency · CC BY-SA 3.0 igo · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Envisat_image_of_Patagonia_ESA217987.tiff",
+ "coverAlt": "This Envisat image highlights the contrasting landscapes of the Patagonia Plateau in Argentina (right) and southern Chil"
 }

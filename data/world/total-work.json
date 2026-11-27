@@ -69,5 +69,9 @@
  ],
  "slug": "total-work",
  "added": "2026-11-27",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/total-work.jpg",
+ "credit": "Seattle Municipal Archives · CC BY 2.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Seattle_City_Light_worker_with_office_machine,_1954.jpg",
+ "coverAlt": "Seattle City Light worker with office machine, 1954. According to discussion on the Wikipedia reference desk, it's an IB"
 }
