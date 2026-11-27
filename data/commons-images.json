@@ -475,5 +475,83 @@
     "json": "data/world/after-the-human.json",
     "field": "cover",
     "query": "Xenopus laevis frog"
+  },
+  {
+    "out": "assets/img/world/authors/edgar-allan-poe.jpg",
+    "width": 500,
+    "json": "data/world/philosophy-of-composition.json",
+    "field": "author",
+    "query": "Edgar Allan Poe daguerreotype",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/pleasure-of-hating.jpg",
+    "width": 1280,
+    "json": "data/world/pleasure-of-hating.json",
+    "field": "cover",
+    "query": "spider web dew"
+  },
+  {
+    "out": "assets/img/world/meritocracy-is-bad.jpg",
+    "width": 1280,
+    "json": "data/world/meritocracy-is-bad.json",
+    "field": "cover",
+    "query": "running race start athletes"
+  },
+  {
+    "out": "assets/img/world/certain-blindness.jpg",
+    "width": 1280,
+    "json": "data/world/certain-blindness.json",
+    "field": "cover",
+    "query": "Patagonia steppe landscape"
+  },
+  {
+    "out": "assets/img/world/regulate-the-internet.jpg",
+    "width": 1280,
+    "json": "data/world/regulate-the-internet.json",
+    "field": "cover",
+    "query": "slot machines casino"
+  },
+  {
+    "out": "assets/img/world/philosophy-of-composition.jpg",
+    "width": 1280,
+    "json": "data/world/philosophy-of-composition.json",
+    "field": "cover",
+    "query": "common raven"
+  },
+  {
+    "out": "assets/img/world/free-will-ai.jpg",
+    "width": 1280,
+    "json": "data/world/free-will-ai.json",
+    "field": "cover",
+    "query": "cup of coffee"
+  },
+  {
+    "out": "assets/img/world/aes-triplex.jpg",
+    "width": 1280,
+    "json": "data/world/aes-triplex.json",
+    "field": "cover",
+    "query": "Edinburgh Old Town skyline"
+  },
+  {
+    "out": "assets/img/world/attention-economy.jpg",
+    "width": 1280,
+    "json": "data/world/attention-economy.json",
+    "field": "cover",
+    "query": "people looking at smartphones"
+  },
+  {
+    "out": "assets/img/world/on-men-of-learning.jpg",
+    "width": 1280,
+    "json": "data/world/on-men-of-learning.json",
+    "field": "cover",
+    "query": "old university lecture hall"
+  },
+  {
+    "out": "assets/img/world/total-work.jpg",
+    "width": 1280,
+    "json": "data/world/total-work.json",
+    "field": "cover",
+    "query": "office workers desks computers"
   }
 ]
