@@ -6,7 +6,10 @@
  "author": {
   "name": "Benjamin Franklin",
   "nameAr": "بنجامين فرانكلين",
-  "bio": "كاتب وعالم ومخترع ودبلوماسي أمريكي (١٧٠٦–١٧٩٠)، اشتهر بتجاربه على الكهرباء واختراع مانعة الصواعق، وبأسلوبه الساخر الحكيم."
+  "bio": "كاتب وعالم ومخترع ودبلوماسي أمريكي (١٧٠٦–١٧٩٠)، اشتهر بتجاربه على الكهرباء واختراع مانعة الصواعق، وبأسلوبه الساخر الحكيم.",
+  "photo": "assets/img/world/authors/benjamin-franklin.jpg",
+  "photoCredit": "After Joseph-Siffred Duplessis · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Franklin_after_Joseph_Siffred_Duplessis.jpg"
  },
  "source": "بنجامين فرانكلين، رسالة إلى مدام بريّون (١٧٧٨)",
  "pubDate": "كُتبت عام ١٧٧٨ في باسي قرب باريس",
@@ -40,5 +43,9 @@
  ],
  "slug": "the-ephemera",
  "added": "2026-11-28",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/the-ephemera.jpg",
+ "credit": "Alvesgaspar · CC BY-SA 3.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Tipulidae_April_2008-2.jpg",
+ "coverAlt": "Female Spotted Crane-Fly"
 }

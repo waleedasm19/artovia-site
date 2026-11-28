@@ -52,5 +52,9 @@
  ],
  "slug": "the-whistle",
  "added": "2026-11-28",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/the-whistle.jpg",
+ "credit": "Zinnmann · CC BY-SA 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:20260414_Clarke_Tin_Whistle_A7302190.jpg",
+ "coverAlt": "Clarke tin whistle from 1843. A modern replica from the 1990s."
 }

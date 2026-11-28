@@ -74,5 +74,9 @@
  ],
  "slug": "fragile-humanity",
  "added": "2026-11-28",
- "mode": "presentation"
+ "mode": "presentation",
+ "cover": "assets/img/world/fragile-humanity.jpg",
+ "credit": "NASA/Bill Anders · Public domain · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:NASA-Apollo8-Dec24-Earthrise.jpg",
+ "coverAlt": "Taken by Apollo 8 crewmember Bill Anders on December 24, 1968, at mission time 075:49:07 [8] (16:40 UTC), while in orbit"
 }

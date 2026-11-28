@@ -6,7 +6,10 @@
  "author": {
   "name": "Francis Bacon",
   "nameAr": "فرانسيس بيكون",
-  "bio": "فيلسوف ورجل دولة إنجليزي (١٥٦١–١٦٢٦)، يُعدّ من رواد المنهج التجريبي في العلم، وصاحب «المقالات» التي صارت من كلاسيكيات النثر الإنجليزي."
+  "bio": "فيلسوف ورجل دولة إنجليزي (١٥٦١–١٦٢٦)، يُعدّ من رواد المنهج التجريبي في العلم، وصاحب «المقالات» التي صارت من كلاسيكيات النثر الإنجليزي.",
+  "photo": "assets/img/world/authors/francis-bacon.jpg",
+  "photoCredit": "Paul van Somer I / Formerly attributed to Frans Pourbus the Younger · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Somer_Francis_Bacon.jpg"
  },
  "source": "فرانسيس بيكون، «المقالات، أو المشورات المدنية والأخلاقية» (١٦٢٥)",
  "pubDate": "الطبعة النهائية عام ١٦٢٥",
@@ -55,5 +58,9 @@
  ],
  "slug": "of-envy",
  "added": "2026-11-28",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/of-envy.jpg",
+ "credit": "Lbassity · CC BY-SA 4.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:White_peacock_displaying_feathers.JPG",
+ "coverAlt": "Peacock on grounds of the Cathedral of St. John the Divine"
 }
