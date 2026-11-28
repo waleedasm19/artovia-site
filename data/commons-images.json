@@ -575,7 +575,7 @@
     "width": 1280,
     "json": "data/world/place-of-science.json",
     "field": "cover",
-    "query": "chemistry laboratory glassware"
+    "query": "Erlenmeyer flasks colored liquids"
   },
   {
     "out": "assets/img/world/misery-teaches.jpg",
@@ -603,7 +603,7 @@
     "width": 1280,
     "json": "data/world/the-ephemera.json",
     "field": "cover",
-    "query": "mayfly"
+    "query": "Ephemera danica"
   },
   {
     "out": "assets/img/world/six-second-hug.jpg",
@@ -617,7 +617,7 @@
     "width": 1280,
     "json": "data/world/on-gifts.json",
     "field": "cover",
-    "query": "basket of fruit"
+    "query": "fruit stall market colorful"
   },
   {
     "out": "assets/img/world/fragile-humanity.jpg",

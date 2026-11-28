@@ -6,7 +6,10 @@
  "author": {
   "name": "Benjamin Franklin",
   "nameAr": "بنجامين فرانكلين",
-  "bio": "كاتب وعالم ومخترع ودبلوماسي أمريكي (١٧٠٦–١٧٩٠)، اشتهر بتجاربه على الكهرباء واختراع مانعة الصواعق، وبأسلوبه الساخر الحكيم."
+  "bio": "كاتب وعالم ومخترع ودبلوماسي أمريكي (١٧٠٦–١٧٩٠)، اشتهر بتجاربه على الكهرباء واختراع مانعة الصواعق، وبأسلوبه الساخر الحكيم.",
+  "photo": "assets/img/world/authors/benjamin-franklin.jpg",
+  "photoCredit": "After Joseph-Siffred Duplessis · Public domain · ويكيميديا كومنز",
+  "photoUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Franklin_after_Joseph_Siffred_Duplessis.jpg"
  },
  "source": "بنجامين فرانكلين، رسالة إلى مدام بريّون (١٧٧٩)",
  "pubDate": "كُتبت عام ١٧٧٩ في باسي قرب باريس",
