@@ -553,5 +553,91 @@
     "json": "data/world/total-work.json",
     "field": "cover",
     "query": "office workers desks computers"
+  },
+  {
+    "out": "assets/img/world/authors/francis-bacon.jpg",
+    "width": 500,
+    "json": "data/world/of-envy.json",
+    "field": "author",
+    "query": "Francis Bacon Paul van Somer portrait",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/authors/benjamin-franklin.jpg",
+    "width": 500,
+    "json": "data/world/the-ephemera.json",
+    "field": "author",
+    "query": "Benjamin Franklin Duplessis portrait",
+    "minw": 300
+  },
+  {
+    "out": "assets/img/world/place-of-science.jpg",
+    "width": 1280,
+    "json": "data/world/place-of-science.json",
+    "field": "cover",
+    "query": "chemistry laboratory glassware"
+  },
+  {
+    "out": "assets/img/world/misery-teaches.jpg",
+    "width": 1280,
+    "json": "data/world/misery-teaches.json",
+    "field": "cover",
+    "query": "rain drops on window"
+  },
+  {
+    "out": "assets/img/world/of-envy.jpg",
+    "width": 1280,
+    "json": "data/world/of-envy.json",
+    "field": "cover",
+    "query": "peacock displaying feathers"
+  },
+  {
+    "out": "assets/img/world/protopia.jpg",
+    "width": 1280,
+    "json": "data/world/protopia.json",
+    "field": "cover",
+    "query": "stone staircase steps"
+  },
+  {
+    "out": "assets/img/world/the-ephemera.jpg",
+    "width": 1280,
+    "json": "data/world/the-ephemera.json",
+    "field": "cover",
+    "query": "mayfly"
+  },
+  {
+    "out": "assets/img/world/six-second-hug.jpg",
+    "width": 1280,
+    "json": "data/world/six-second-hug.json",
+    "field": "cover",
+    "query": "forest path"
+  },
+  {
+    "out": "assets/img/world/on-gifts.jpg",
+    "width": 1280,
+    "json": "data/world/on-gifts.json",
+    "field": "cover",
+    "query": "basket of fruit"
+  },
+  {
+    "out": "assets/img/world/fragile-humanity.jpg",
+    "width": 1280,
+    "json": "data/world/fragile-humanity.json",
+    "field": "cover",
+    "query": "Earthrise"
+  },
+  {
+    "out": "assets/img/world/the-whistle.jpg",
+    "width": 1280,
+    "json": "data/world/the-whistle.json",
+    "field": "cover",
+    "query": "tin whistle"
+  },
+  {
+    "out": "assets/img/world/ai-changing-intelligence.jpg",
+    "width": 1280,
+    "json": "data/world/ai-changing-intelligence.json",
+    "field": "cover",
+    "query": "microchip die close-up"
   }
 ]
