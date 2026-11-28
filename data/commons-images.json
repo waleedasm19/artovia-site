@@ -575,7 +575,8 @@
     "width": 1280,
     "json": "data/world/place-of-science.json",
     "field": "cover",
-    "query": "chemistry laboratory flasks"
+    "query": "students science laboratory experiment",
+    "minw": 1000
   },
   {
     "out": "assets/img/world/misery-teaches.jpg",
