@@ -1,6 +1,77 @@
 {
- "updated": "2026-11-27T21:25:10Z",
+ "updated": "2026-11-28T04:52:25Z",
  "items": [
+  {
+   "field": "space",
+   "title": "يعرض Event Horizon Telescope ديناميكيات وهندسة نفاثات الثقب الأسود بتفاصيل دقيقة",
+   "summary": "إن تلسكوب أفق الحدث (EHT)، وهو عبارة عن تعاون دولي ضخم بين العلماء والمراصد الراديوية، يشبه الهدية التي تستمر في العطاء. في عام 2019، أعطتنا مؤسسة EHT أول صورة لثقب أسود: الثقب الأسود الهائل (SMBH)…",
+   "url": "https://phys.org/news/2026-11-event-horizon-telescope-views-dynamics.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-28",
+   "orig": "Event Horizon Telescope views the dynamics and geometry of a black hole jet in extreme detail"
+  },
+  {
+   "field": "space",
+   "title": "هل ينبغي أن تعمل مراكز البيانات الفضائية على الألواح الشمسية أو المفاعلات النووية أو كليهما؟",
+   "summary": "قمنا في الأيام القليلة الماضية بتغطية سلسلة من الأوراق البحثية للدكتورة سلافا توريشيف من مختبر الدفع النفاث التابع لناسا حول القيود المحيطة باستخدام مراكز البيانات المدارية في الفضاء. أحد الأمور التي ظهرت بشكل متكرر هو الوزن، والألواح الشمسية المستخدمة ...",
+   "url": "https://phys.org/news/2026-11-space-centers-solar-panels-nuclear.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-28",
+   "orig": "Should space data centers run on solar panels, nuclear reactors or both?"
+  },
+  {
+   "field": "physics",
+   "title": "بحث جديد يحدد حد التعقيد الأساسي لتحسين الدوائر الكمومية",
+   "summary": "يعد تحسين الدوائر الكمومية مجالًا بحثيًا مهمًا، حيث تظل الموارد الحسابية المطلوبة لتنفيذ الخوارزميات الكمومية تمثل تحديًا كبيرًا. على وجه الخصوص، ترتبط العمليات ذات الكيوبت الواحد عمومًا بمعدلات خطأ أعلى من العمليات ذات الكيوبت الواحد...",
+   "url": "https://phys.org/news/2026-11-fundamental-complexity-limit-quantum-circuit.html",
+   "source": "Phys.org",
+   "lang": "ar",
+   "date": "2026-11-27",
+   "orig": "New research establishes fundamental complexity limit for quantum circuit optimization"
+  },
+  {
+   "field": "space",
+   "url": "https://www.nasa.gov/image-article/artemis-iii-astronaut-andre-douglas-visits-vab/",
+   "source": "NASA",
+   "lang": "ar",
+   "date": "2026-11-27",
+   "slug": "artemis-rs25-engines",
+   "cover": "assets/img/news/artemis-rs25-engines.jpg",
+   "title": "رائد «أرتميس ٣» يقف داخل محرك صاروخ: أربعة محركات RS-25 تستعد للرحلة",
+   "summary": "زار أندريه دوغلاس مبنى تجميع المركبات في مركز كينيدي، حيث تُجهَّز المحركات التي ستدفع صاروخ SLS في مهمة تختبر التحام «أوريون» بمركبات الهبوط القمرية."
+  },
+  {
+   "field": "physics",
+   "title": "العلماء يحولون أحد المواد البلاستيكية التي يصعب إعادة تدويرها في العالم إلى زيوت تشحيم عالية الأداء",
+   "summary": "اكتشف علماء جامعة فرجينيا للتكنولوجيا كيفية تحويل أحد أصعب المواد البلاستيكية في إعادة التدوير في العالم إلى عنصر قيم لزيت المحركات عالي الأداء. تعمل عمليتهم المبتكرة على تحويل مادة PVC المهملة إلى مادة تشحيم مفيدة في ثلاثة فقط ...",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261126033501.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-27",
+   "orig": "Scientists turn one of the world’s hardest-to-recycle plastics into high-performance lubricating oil"
+  },
+  {
+   "field": "biology",
+   "title": "يحمل \"قرن وحيد القرن\" الأسطوري لكركدن البحر سرًا هندسيًا رائعًا",
+   "summary": "إن ناب كركدن البحر الحلزوني الشهير، الذي كان يُقدَّر في أوروبا في السابق باعتباره قرن وحيد القرن الأسطوري، يخفي إنجازًا استثنائيًا في الهندسة الطبيعية. وباستخدام تكنولوجيا الأشعة السينية المتقدمة، اكتشف فريق دولي من العلماء أن الناب يحتوي على اثنين من…",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261126063316.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-27",
+   "orig": "The narwhal’s legendary “unicorn horn” holds a remarkable engineering secret"
+  },
+  {
+   "field": "health",
+   "title": "إن استنشاق كميات أقل من الأكسجين يضاعف عمر الفئران المصابة باضطراب دماغي مميت ثلاث مرات",
+   "summary": "الأكسجين ضروري للحياة، ولكن الكثير منه يمكن أن يصبح سامًا بشكل خطير، خاصة عند الأشخاص الذين يعانون من بعض الاضطرابات العصبية والميتوكوندريا. اكتشف العلماء في معاهد جلادستون أن البروتينات المعيبة يمكن أن تعطل قدرة…",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261125045304.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-27",
+   "orig": "Breathing less oxygen tripled lifespan in mice with a deadly brain disorder"
+  },
   {
    "field": "health",
    "url": "https://www.sciencedaily.com/releases/2026/11/261124055906.htm",
@@ -11,39 +82,6 @@
    "cover": "assets/img/news/loneliness-medicalization.jpg",
    "title": "الوحدة تمرضنا، لكن هل علاجها في العيادة؟",
    "summary": "باحثة من جامعة ميشيغان تحذر من «تطبيب» الوحدة: الصلة بالصحة حقيقية، لكن تحويلها إلى مشكلة طبية قد يزيح عن المجتمع مسؤولية بناء الروابط بين الناس."
-  },
-  {
-   "field": "health",
-   "url": "https://www.sciencedaily.com/releases/2026/11/261123005346.htm",
-   "source": "ScienceDaily",
-   "lang": "ar",
-   "date": "2026-11-24",
-   "slug": "cannabis-psychosis-onset",
-   "cover": "assets/img/news/cannabis-psychosis-onset.jpg",
-   "title": "الذهان يبدأ أبكر بسنوات عند متعاطي القنب، والفجوة تتسع مع العمر",
-   "summary": "تحليل ١٤٩ دراسة شملت أكثر من ٧١ ألف شخص: الذهان الأول جاء أبكر بنحو ٢٫٥ عام في المتوسط، وبـ٦٫٣ أعوام لمن ظهر لديهم بعد الثلاثين."
-  },
-  {
-   "field": "space",
-   "url": "https://www.sciencedaily.com/releases/2026/11/261122060346.htm",
-   "source": "ScienceDaily",
-   "lang": "ar",
-   "date": "2026-11-25",
-   "slug": "primordial-black-hole-phoebe",
-   "cover": "assets/img/news/primordial-black-hole-phoebe.jpg",
-   "title": "«فيبي»: جسم بكتلة ثلاثة أقمار قد يكون ثقبًا أسود وُلد قبل النجوم",
-   "summary": "وميض عدسة جاذبية دام ٦٠ دقيقة نحو سحابة ماجلان الكبرى عام ٢٠١٩ يرجّح، بحسب دراسة أولية، جسمًا من هالة المادة المظلمة قد يكون ثقبًا أسود بدائيًّا."
-  },
-  {
-   "field": "earth",
-   "url": "https://www.sciencedaily.com/releases/2026/11/261122060340.htm",
-   "source": "ScienceDaily",
-   "lang": "ar",
-   "date": "2026-11-23",
-   "slug": "oxygen-stages-earth",
-   "cover": "assets/img/news/oxygen-stages-earth.jpg",
-   "title": "أكسجين الأرض ارتفع على ثلاث درجات، والمحيط العميق تأخر ملياري سنة",
-   "summary": "مراجعة لسجلات جيوكيميائية تقول إن الغلاف الجوي والمحيطات لم يتأكسجا معًا، بل سارا أحيانًا في اتجاهين متعاكسين، ولم يتشبع المحيط العميق بالأكسجين إلا قبل ٤١٠ ملايين سنة."
   },
   {
    "field": "health",
@@ -88,168 +126,6 @@
    "cover": "assets/img/news/uv-chip-quantum.jpg",
    "title": "رقاقة من هارفارد تصنع ضوءًا فوق بنفسجي أقوى ١٢٠ مرة لتصغير الحواسيب الكمومية",
    "summary": "رقاقة من نيوبات الليثيوم الرقيق تدمج فوتونين أحمرين في فوتون فوق بنفسجي واحد، فتنتج ٤٫٢ مللي واط عند طول موجة ٣٩٠ نانومترًا."
-  },
-  {
-   "field": "biology",
-   "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0345236",
-   "source": "PLOS ONE",
-   "lang": "ar",
-   "date": "2026-11-26",
-   "slug": "uintatherium-dimorphism",
-   "cover": "assets/img/news/uintatherium-dimorphism.jpg",
-   "title": "ثدييات ما قبل التاريخ ذات القرون: هل أخطأنا فهمها ١٥٠ عامًا؟",
-   "summary": "قياس نحو ٣٠ جمجمة من «يونتاثيريوم» لم يجد الفرق الواضح بين الذكور والإناث الذي عُدّ مثالًا كلاسيكيًّا في الكتب منذ القرن التاسع عشر."
-  },
-  {
-   "field": "health",
-   "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005274",
-   "source": "PLOS Medicine",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "dha-preterm-genotype",
-   "cover": "assets/img/news/dha-preterm-genotype.jpg",
-   "title": "جين واحد قد يحدد من تستفيد من جرعة أوميغا ٣ العالية في الحمل",
-   "summary": "تحليل ٧٦١ حاملًا في تجربة ADORE: حاملات نسخة معينة من جين FADS انخفضت ولادتهن المبكرة جدًّا من ٤٫٣٪ إلى ١٫١٪ مع ١٠٠٠ ملغ يوميًّا من DHA."
-  },
-  {
-   "field": "health",
-   "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1005262",
-   "source": "PLOS Medicine",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "ssri-immunotherapy",
-   "cover": "assets/img/news/ssri-immunotherapy.jpg",
-   "title": "مضادات اكتئاب شائعة ارتبطت ببقاء أطول لمرضى السرطان المعالجين بالمناعة",
-   "summary": "تحليل ٣١٣٤ مريضًا: الوفاة خلال عامين ٢٣٫٥٪ مع مثبطات استرداد السيروتونين مقابل ٣٤٫٤٪ مع البنزوديازيبينات، لكنها نتيجة ارتباطية تحتاج تجارب."
-  },
-  {
-   "field": "biology",
-   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004031",
-   "source": "PLOS Biology",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "cryptococcus-titanide",
-   "cover": "assets/img/news/cryptococcus-titanide.jpg",
-   "title": "«التيتانيد»: شكل جديد لفطر قاتل يولد من خلايا عادية حين يدخل الجسم",
-   "summary": "فطر الكريبتوكوكس المسبب لالتهاب السحايا يصنع خلايا صغيرة بيضوية بجدار أرقّ بثلاث مرات، صارت أكثر من نصف خلاياه بعد ٧٢ ساعة في ظروف تحاكي الجسم."
-  },
-  {
-   "field": "health",
-   "url": "https://elifesciences.org/digests/108134/breath-of-life",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "preterm-hypoxia-interneurons",
-   "cover": "assets/img/news/preterm-hypoxia-interneurons.jpg",
-   "title": "نقص الأكسجين يعرقل هجرة خلايا الدماغ عند الخدّج، وبروتين واحد يصلحها",
-   "summary": "نماذج من خلايا دماغ بشرية أظهرت أن نقص الأكسجين يوقف هجرة العصبونات المثبِّطة، وأن إضافة «الأدرينوميدولين» الفعّال أثناء النقص تعيدها."
-  },
-  {
-   "field": "earth",
-   "url": "https://elifesciences.org/digests/104205/bouncing-back-from-extinction",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "permian-recovery-china",
-   "cover": "assets/img/news/permian-recovery-china.jpg",
-   "title": "الحياة عادت أسرع مما ظننا بعد أكبر انقراض في تاريخ الأرض",
-   "summary": "صخور شمال الصين تكشف أن نظامًا بيئيًّا نهريًّا معقدًا، فيه لواحم متوسطة الحجم وجذور وجحور، قام بعد نحو مليوني سنة فقط من انقراض نهاية البرمي."
-  },
-  {
-   "field": "biology",
-   "url": "https://elifesciences.org/digests/108224/closing-the-tube",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "neural-tube-organoids",
-   "cover": "assets/img/news/neural-tube-organoids.jpg",
-   "title": "ثلاثة جينات تُغلق «الأنبوب العصبي» في الدماغ البشري المبكر",
-   "summary": "عضيّات من خلايا جذعية بشرية رُتبت في شبكة سداسية، وعُطّل فيها ٧٧ جينًا واحدًا تلو الآخر، فظهر أن ZIC2 وSOX11 وZNF521 لازمة لإغلاق مقدمة الأنبوب."
-  },
-  {
-   "field": "biology",
-   "url": "https://elifesciences.org/digests/103774/step-by-mutational-step",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "ecoli-regulation-landscape",
-   "cover": "assets/img/news/ecoli-regulation-landscape.jpg",
-   "title": "كيف يولد مفتاح جيني من تسلسل عشوائي؟ خرائط بكتيريا القولون تجيب",
-   "summary": "قياس ٣٠ ألف تسلسل لكل عامل نسخ في ملايين الخلايا كشف «تضاريس» فيها آلاف القمم، وأن التطور يصل إلى القمم العالية النادرة خطوة خطوة أكثر مما يتوقع الحظ."
-  },
-  {
-   "field": "health",
-   "url": "https://elifesciences.org/digests/107820/immune-suppressors",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "malaria-immune-imprint",
-   "cover": "assets/img/news/malaria-immune-imprint.jpg",
-   "title": "الملاريا في الطفولة تترك أثرًا طويلًا يضعف المناعة ضد أمراض أخرى",
-   "summary": "متابعة ١٢٣ طفلًا كينيًّا ١٥ عامًا في قريتين متجاورتين وجدت أن من أصيبوا بالملاريا صغارًا حملوا أجسامًا مضادة أقل ضد أمراض ولقاحات أخرى حتى سن العاشرة."
-  },
-  {
-   "field": "health",
-   "url": "https://elifesciences.org/digests/107661/estimating-brain-cells-in-huntingtons-disease",
-   "source": "eLife",
-   "lang": "ar",
-   "date": "2026-11-28",
-   "slug": "huntington-sandi-mri",
-   "cover": "assets/img/news/huntington-sandi-mri.jpg",
-   "title": "رنين مغناطيسي يعدّ خلايا الدماغ: طريقة جديدة لتتبع داء هنتنغتون",
-   "summary": "تقنية SANDI قدّرت كثافة أجسام الخلايا العصبية وحجمها في ١١٣ شخصًا، فرصدت في المخطط تغيرات تطابق ما يُرى بعد الوفاة، وفسرت حتى ٦٣٪ من ضموره."
-  },
-  {
-   "field": "space",
-   "url": "https://www.nasa.gov/image-article/artemis-iii-astronaut-andre-douglas-visits-vab/",
-   "source": "NASA",
-   "lang": "ar",
-   "date": "2026-11-27",
-   "slug": "artemis-rs25-engines",
-   "cover": "assets/img/news/artemis-rs25-engines.jpg",
-   "title": "رائد «أرتميس ٣» يقف داخل محرك صاروخ: أربعة محركات RS-25 تستعد للرحلة",
-   "summary": "زار أندريه دوغلاس مبنى تجميع المركبات في مركز كينيدي، حيث تُجهَّز المحركات التي ستدفع صاروخ SLS في مهمة تختبر التحام «أوريون» بمركبات الهبوط القمرية."
-  },
-  {
-   "field": "earth",
-   "url": "https://science.nasa.gov/earth/earth-observatory/shivelyuch-socked-in/",
-   "source": "NASA Earth Observatory",
-   "lang": "ar",
-   "date": "2026-11-27",
-   "slug": "shiveluch-volcano-clouds",
-   "cover": "assets/img/news/shiveluch-volcano-clouds.jpg",
-   "title": "بركان شيفيلوتش يطل من فوق الغيوم: قبة حمم تنمو في كامتشاتكا",
-   "summary": "صورة من القمر الصناعي «لاندسات ٩» أظهرت طوقًا من السحب حول أنشط براكين شبه جزيرة كامتشاتكا، وفوقه فوهة عرضها ٩ كيلومترات تنمو فيها قبة من الحمم."
-  },
-  {
-   "field": "physics",
-   "title": "العلماء يحولون أحد المواد البلاستيكية التي يصعب إعادة تدويرها في العالم إلى زيوت تشحيم عالية الأداء",
-   "summary": "اكتشف علماء جامعة فرجينيا للتكنولوجيا كيفية تحويل أحد أصعب المواد البلاستيكية في إعادة التدوير في العالم إلى عنصر قيم لزيت المحركات عالي الأداء. تعمل عمليتهم المبتكرة على تحويل مادة PVC المهملة إلى مادة تشحيم مفيدة في ثلاثة فقط ...",
-   "url": "https://www.sciencedaily.com/releases/2026/11/261126033501.htm",
-   "source": "ScienceDaily",
-   "lang": "ar",
-   "date": "2026-11-27",
-   "orig": "Scientists turn one of the world’s hardest-to-recycle plastics into high-performance lubricating oil"
-  },
-  {
-   "field": "biology",
-   "title": "يحمل \"قرن وحيد القرن\" الأسطوري لكركدن البحر سرًا هندسيًا رائعًا",
-   "summary": "إن ناب كركدن البحر الحلزوني الشهير، الذي كان يُقدَّر في أوروبا في السابق باعتباره قرن وحيد القرن الأسطوري، يخفي إنجازًا استثنائيًا في الهندسة الطبيعية. وباستخدام تكنولوجيا الأشعة السينية المتقدمة، اكتشف فريق دولي من العلماء أن الناب يحتوي على اثنين من…",
-   "url": "https://www.sciencedaily.com/releases/2026/11/261126063316.htm",
-   "source": "ScienceDaily",
-   "lang": "ar",
-   "date": "2026-11-27",
-   "orig": "The narwhal’s legendary “unicorn horn” holds a remarkable engineering secret"
-  },
-  {
-   "field": "health",
-   "title": "إن استنشاق كميات أقل من الأكسجين يضاعف عمر الفئران المصابة باضطراب دماغي مميت ثلاث مرات",
-   "summary": "الأكسجين ضروري للحياة، ولكن الكثير منه يمكن أن يصبح سامًا بشكل خطير، خاصة عند الأشخاص الذين يعانون من بعض الاضطرابات العصبية والميتوكوندريا. اكتشف العلماء في معاهد جلادستون أن البروتينات المعيبة يمكن أن تعطل قدرة…",
-   "url": "https://www.sciencedaily.com/releases/2026/11/261125045304.htm",
-   "source": "ScienceDaily",
-   "lang": "ar",
-   "date": "2026-11-27",
-   "orig": "Breathing less oxygen tripled lifespan in mice with a deadly brain disorder"
   },
   {
    "field": "health",
@@ -338,6 +214,17 @@
    "cover": "assets/img/news/x59-nasa-ownership.jpg",
    "title": "ناسا تتسلّم رسميًّا الطائرة X-59 الأسرع من الصوت بلا دويّ مزعج",
    "summary": "انتقلت ملكية الطائرة التجريبية من «لوكهيد مارتن» إلى ناسا، لتواصل اختبارات قد تعيد الطيران التجاري الأسرع من الصوت فوق اليابسة."
+  },
+  {
+   "field": "space",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261122060346.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-25",
+   "slug": "primordial-black-hole-phoebe",
+   "cover": "assets/img/news/primordial-black-hole-phoebe.jpg",
+   "title": "«فيبي»: جسم بكتلة ثلاثة أقمار قد يكون ثقبًا أسود وُلد قبل النجوم",
+   "summary": "وميض عدسة جاذبية دام ٦٠ دقيقة نحو سحابة ماجلان الكبرى عام ٢٠١٩ يرجّح، بحسب دراسة أولية، جسمًا من هالة المادة المظلمة قد يكون ثقبًا أسود بدائيًّا."
   },
   {
    "field": "health",
@@ -579,6 +466,17 @@
   },
   {
    "field": "health",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261123005346.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-24",
+   "slug": "cannabis-psychosis-onset",
+   "cover": "assets/img/news/cannabis-psychosis-onset.jpg",
+   "title": "الذهان يبدأ أبكر بسنوات عند متعاطي القنب، والفجوة تتسع مع العمر",
+   "summary": "تحليل ١٤٩ دراسة شملت أكثر من ٧١ ألف شخص: الذهان الأول جاء أبكر بنحو ٢٫٥ عام في المتوسط، وبـ٦٫٣ أعوام لمن ظهر لديهم بعد الثلاثين."
+  },
+  {
+   "field": "health",
    "url": "https://www.sciencedaily.com/releases/2026/11/261123005352.htm",
    "source": "ScienceDaily",
    "lang": "ar",
@@ -749,6 +647,17 @@
    "cover": "assets/img/news/kuiper-belt-ancient-ice-dust.jpg",
    "title": "ذرات غبار جمعتها طائرة على حافة الفضاء تحمل أثر جليد قديم وراء نبتون",
    "summary": "حللت ناسا ١٢ حبة غبار من طبقة الستراتوسفير، فوجدت فيها معادن تكوّنت من ماء غني بنظائر الأكسجين الثقيلة، في دليل قوي على خزان جليد قديم في حزام كايبر."
+  },
+  {
+   "field": "earth",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261122060340.htm",
+   "source": "ScienceDaily",
+   "lang": "ar",
+   "date": "2026-11-23",
+   "slug": "oxygen-stages-earth",
+   "cover": "assets/img/news/oxygen-stages-earth.jpg",
+   "title": "أكسجين الأرض ارتفع على ثلاث درجات، والمحيط العميق تأخر ملياري سنة",
+   "summary": "مراجعة لسجلات جيوكيميائية تقول إن الغلاف الجوي والمحيطات لم يتأكسجا معًا، بل سارا أحيانًا في اتجاهين متعاكسين، ولم يتشبع المحيط العميق بالأكسجين إلا قبل ٤١٠ ملايين سنة."
   },
   {
    "field": "physics",
