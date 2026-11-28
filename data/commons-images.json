@@ -575,7 +575,7 @@
     "width": 1280,
     "json": "data/world/place-of-science.json",
     "field": "cover",
-    "query": "Erlenmeyer flasks colored liquids"
+    "query": "chemistry laboratory flasks"
   },
   {
     "out": "assets/img/world/misery-teaches.jpg",
