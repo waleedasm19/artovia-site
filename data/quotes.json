@@ -2,91 +2,91 @@
  "date": "2026-11-28",
  "items": [
   {
+   "id": "w-of-envy-1",
+   "q": "من يئس من بلوغ فضيلة غيره سعى إلى التساوي معه بالحطّ من حظّه.",
+   "by": "فرانسيس بيكون",
+   "src": "في الحسد",
+   "href": "essay.html?id=of-envy",
+   "kind": "world"
+  },
+  {
+   "id": "w-place-of-science-2",
+   "q": "غير أن عيبًا واحدًا يبدو ملازمًا للتعليم الكلاسيكي الخالص، هو التركيز المفرط على الماضي.",
+   "by": "برتراند راسل",
+   "src": "مكان العلم في التعليم الحرّ",
+   "href": "essay.html?id=place-of-science",
+   "kind": "world"
+  },
+  {
+   "id": "w-the-ephemera-1",
+   "q": "لكن ماذا ستكون الشهرة لذبابة يوم لم تعد موجودة؟",
+   "by": "بنجامين فرانكلين",
+   "src": "ذبابة اليوم الواحد",
+   "href": "essay.html?id=the-ephemera",
+   "kind": "world"
+  },
+  {
+   "id": "w-ai-changing-intelligence-1",
+   "q": "الحياة حوسبية لأن استقرارها يعتمد على النمو أو الالتئام أو التكاثر.",
+   "by": "بليز أغويرا إي أركاس وجيمس مانييكا",
+   "src": "الذكاء الاصطناعي يغيّر فهمنا للذكاء",
+   "href": "essay.html?id=ai-changing-intelligence",
+   "kind": "world"
+  },
+  {
+   "id": "w-protopia-1",
+   "q": "البروتوبيا حال أفضل اليوم من الأمس، وإن كانت أفضل قليلًا فقط.",
+   "by": "مايكل شيرمر",
+   "src": "اليوتوبيا مثال خطِر: فلنسعَ إلى «البروتوبيا»",
+   "href": "essay.html?id=protopia",
+   "kind": "world"
+  },
+  {
+   "id": "w-fragile-humanity-1",
+   "q": "نهاية العالم صناعة في نموّ.",
+   "by": "كلير كولبروك",
+   "src": "نهاية الزمان للبشرية",
+   "href": "essay.html?id=fragile-humanity",
+   "kind": "world"
+  },
+  {
+   "id": "w-on-gifts-2",
+   "q": "انتظار الامتنان دناءة، ويعاقَب باستمرار بالتبلّد التام للشخص المتفضَّل عليه.",
+   "by": "رالف والدو إمرسون",
+   "src": "الهدايا",
+   "href": "essay.html?id=on-gifts",
+   "kind": "world"
+  },
+  {
+   "id": "w-misery-teaches-1",
+   "q": "أما البؤس، في المقابل، فهو مصدر غني على نحو مدهش للبيانات.",
+   "by": "جون كويغين",
+   "src": "التعاسة تعلّمنا أكثر مما تعلّمنا السعادة",
+   "href": "essay.html?id=misery-teaches",
+   "kind": "world"
+  },
+  {
+   "id": "w-what-awaits-us-1",
+   "q": "طبقة تكنوقراطية قد تكون مؤيدة للإنجاب بقوة، لكن بانتقائية.",
+   "by": "جنيفر بانكس",
+   "src": "ماذا ينتظرنا؟ الإنسانية بين موريسون وبوستروم",
+   "href": "essay.html?id=what-awaits-us",
+   "kind": "world"
+  },
+  {
+   "id": "w-six-second-hug-1",
+   "q": "الحياة ليست تدريبًا من أجل المستقبل. إنها لعبة بدأت بالفعل.",
+   "by": "جوليان باجيني",
+   "src": "عناق الثواني الست",
+   "href": "essay.html?id=six-second-hug",
+   "kind": "world"
+  },
+  {
    "id": "w-philosophy-was-once-alive-1",
    "q": "الطريق إلى إحياء الفلسفة، وملئها بالحياة والحيوية والإلحاح، ليس نسخ شكل قديم.",
    "by": "برناي سانكليشا",
    "src": "كانت الفلسفة حيّة يومًا",
    "href": "essay.html?id=philosophy-was-once-alive",
-   "kind": "world"
-  },
-  {
-   "id": "w-on-noise-2",
-   "q": "الضجيج أوقح أشكال المقاطعة كلها.",
-   "by": "آرثر شوبنهاور",
-   "src": "في الضجيج",
-   "href": "essay.html?id=on-noise",
-   "kind": "world"
-  },
-  {
-   "id": "w-aes-triplex-1",
-   "q": "ليست لدينا أي فكرة عما هو الموت، بعيدًا عن ملابساته وبعض عواقبه على الآخرين.",
-   "by": "روبرت لويس ستيفنسون",
-   "src": "قلبٌ من نحاس مثلّث",
-   "href": "essay.html?id=aes-triplex",
-   "kind": "world"
-  },
-  {
-   "id": "w-attention-economy-1",
-   "q": "كلنا اقتصاديون هواة للانتباه، نكنز لحظاتنا ونقايض بها.",
-   "by": "توم تشاتفيلد",
-   "src": "هل تكلّفنا كل نقرة قطعة من أنفسنا؟",
-   "href": "essay.html?id=attention-economy",
-   "kind": "world"
-  },
-  {
-   "id": "w-certain-blindness-1",
-   "q": "حيثما كان هناك تعارض في الرأي واختلاف في الرؤية، فعلينا أن نعتقد أن الجانب الأصدق هو الجانب الذي يشعر أكثر، لا الجانب الذي يشعر أقل.",
-   "by": "وليام جيمس",
-   "src": "في نوع من العمى عند البشر",
-   "href": "essay.html?id=certain-blindness",
-   "kind": "world"
-  },
-  {
-   "id": "w-pleasure-of-hating-2",
-   "q": "نكره الأصدقاء القدامى، ونكره الكتب القديمة، ونكره الآراء القديمة، وفي النهاية نصل إلى كراهية أنفسنا.",
-   "by": "وليام هازلت",
-   "src": "في لذّة الكراهية",
-   "href": "essay.html?id=pleasure-of-hating",
-   "kind": "world"
-  },
-  {
-   "id": "w-meritocracy-is-bad-2",
-   "q": "محاولات تطبيق الجدارة تقود إلى نوع اللامساواة نفسه الذي تسعى إلى إزالته.",
-   "by": "كليفتون مارك",
-   "src": "الإيمان بالجدارة ليس خاطئًا فقط بل مؤذٍ",
-   "href": "essay.html?id=meritocracy-is-bad",
-   "kind": "world"
-  },
-  {
-   "id": "w-regulate-the-internet-1",
-   "q": "لا شيء في شبكة حواسيب عالمية يحتّم سلوكًا يشبه الإدمان.",
-   "by": "مايكل شولسون",
-   "src": "إن كان الإنترنت إدمانًا، فلماذا لا نُخضعه للقانون؟",
-   "href": "essay.html?id=regulate-the-internet",
-   "kind": "world"
-  },
-  {
-   "id": "w-total-work-1",
-   "q": "ما يضيع هو البحث عن سبب وجودنا هنا.",
-   "by": "أندرو تاغارت",
-   "src": "لو التهم العمل كل لحظة، هل تستحق الحياة أن تُعاش؟",
-   "href": "essay.html?id=total-work",
-   "kind": "world"
-  },
-  {
-   "id": "w-dragon-tyrant-1",
-   "q": "في هذه المسألة، الوقت يساوي حياة، بمعدّل نحو سبعين حياة في الدقيقة.",
-   "by": "نِك بوستروم",
-   "src": "أسطورة التنّين الطاغية: هل الشيخوخة عدوّ يمكن هزيمته؟",
-   "href": "essay.html?id=dragon-tyrant",
-   "kind": "world"
-  },
-  {
-   "id": "w-bullshit-jobs-1",
-   "q": "إنها ندبة على روحنا الجماعية.",
-   "by": "ديفيد غريبر",
-   "src": "ظاهرة الوظائف التافهة",
-   "href": "essay.html?id=bullshit-jobs",
    "kind": "world"
   },
   {
@@ -100,38 +100,38 @@
  ],
  "shown": {
   "r-1-3": "2026-11-28",
-  "w-aes-triplex-1": "2026-11-28",
   "w-after-the-human-1": "2026-11-26",
+  "w-ai-changing-intelligence-1": "2026-11-28",
   "w-apology-for-idlers-1": "2026-11-26",
-  "w-attention-economy-1": "2026-11-28",
-  "w-bullshit-jobs-1": "2026-11-28",
-  "w-certain-blindness-1": "2026-11-28",
   "w-certain-blindness-2": "2026-11-27",
   "w-consciousness-creep-1": "2026-11-27",
   "w-consciousness-illusion-1": "2026-11-26",
   "w-corn-pone-opinions-1": "2026-11-27",
   "w-decay-of-lying-1": "2026-11-26",
   "w-digital-star-chamber-1": "2026-11-26",
-  "w-dragon-tyrant-1": "2026-11-28",
+  "w-fragile-humanity-1": "2026-11-28",
   "w-free-will-ai-1": "2026-11-27",
   "w-meritocracy-is-bad-1": "2026-11-27",
-  "w-meritocracy-is-bad-2": "2026-11-28",
+  "w-misery-teaches-1": "2026-11-28",
   "w-myth-of-freedom-1": "2026-11-26",
+  "w-of-envy-1": "2026-11-28",
+  "w-on-gifts-2": "2026-11-28",
   "w-on-liberty-ch2-1": "2026-11-26",
   "w-on-men-of-learning-2": "2026-11-27",
-  "w-on-noise-2": "2026-11-28",
   "w-philosophy-of-composition-1": "2026-11-27",
   "w-philosophy-was-once-alive-1": "2026-11-28",
+  "w-place-of-science-2": "2026-11-28",
   "w-pleasure-of-hating-1": "2026-11-27",
-  "w-pleasure-of-hating-2": "2026-11-28",
   "w-problems-and-progress-1": "2026-11-26",
-  "w-regulate-the-internet-1": "2026-11-28",
+  "w-protopia-1": "2026-11-28",
   "w-regulate-the-internet-2": "2026-11-27",
   "w-singer-solution-poverty-1": "2026-11-26",
+  "w-six-second-hug-1": "2026-11-28",
   "w-the-empty-brain-1": "2026-11-26",
-  "w-total-work-1": "2026-11-28",
+  "w-the-ephemera-1": "2026-11-28",
   "w-total-work-2": "2026-11-27",
   "w-united-by-feelings-1": "2026-11-26",
+  "w-what-awaits-us-1": "2026-11-28",
   "w-wrong-about-the-world-1": "2026-11-27"
  }
 }
