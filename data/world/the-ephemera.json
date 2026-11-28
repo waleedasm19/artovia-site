@@ -43,5 +43,9 @@
  ],
  "slug": "the-ephemera",
  "added": "2026-11-28",
- "mode": "translation"
+ "mode": "translation",
+ "cover": "assets/img/world/the-ephemera.jpg",
+ "credit": "No machine-readable author provided. Jeffdelonge assumed (based on copyright claims). · CC BY-SA 3.0 · ويكيميديا كومنز",
+ "creditUrl": "https://commons.wikimedia.org/wiki/File:Ephemera_danica01.jpg",
+ "coverAlt": "Ephemera danica photo by Jeffdelonge Vellefrey et Vellefrange Mai 2006"
 }
